@@ -31,12 +31,12 @@ export function Architecture() {
         })
     }, [])
 
-    return <div ref={ref} className="relative container lg:pb-72" style={{ height: 8000 }}>
-        <section className="sticky top-24 2xl:top-60 h-screen flex flex-col">
+    return <div ref={ref} className="container relative lg:pb-72" style={{ height: 8000 }}>
+        <section className="sticky flex flex-col h-screen top-24 2xl:top-60">
             <h2 className="section-title">Our Architecture</h2>
 
-            <div className="flex flex-col lg:flex-row gap-16">
-                <div className="flex lg:flex-col lg:gap-8 2xl:gap-16 mt-16 justify-between lg:justify-start">
+            <div className="flex flex-col gap-16 lg:flex-row">
+                <div className="flex justify-between mt-16 lg:flex-col lg:gap-8 2xl:gap-16 lg:justify-start">
                     {
                         architecture.map(({ title, description, icon }, index) => {
                             const Icon = icon
@@ -49,24 +49,24 @@ export function Architecture() {
                                         transition: 'all 0.3s ease-in-out',
                                     }}
                                     className={clsx("architecture__item border p-4", currentIndex === index ? 'bg-black/20 border-white/10 rounded-3xl' : 'border-transparent')} key={index}>
-                                    <div className="flex items-center gap-1 flex-col lg:flex-row">
+                                    <div className="flex flex-col items-center gap-1 lg:flex-row">
                                         <Icon />
                                         <h3 className="text-xs text-center lg:text-left lg:text-2xl">{title}</h3>
                                     </div>
-                                    <p className="opacity-50 mt-4 hidden lg:block">{description}</p>
+                                    <p className="hidden mt-4 opacity-50 lg:block">{description}</p>
                                 </div>
                             )
                         })
                     }
                 </div>
-                <div className="relative w-screen lg:mt-24 min-h-full lg:m-0 max-w-full">
-                    <div className="h-4 z-10 max-w-full">
+                <div className="relative w-screen max-w-full min-h-full lg:mt-24 lg:m-0">
+                    <div className="z-10 h-4 max-w-full">
                         <img style={{ transform: `translateY(${currentIndex > -1 ? 80 : 0}px)`, opacity: currentIndex > -1 ? 1 : 0, transition: 'all 0.4s' }} src="/resource.png" className="" />
                     </div>
-                    <div className="h-4 z-20 relative max-w-full">
+                    <div className="relative z-20 h-4 max-w-full">
                         <img style={{ transform: `translateY(${currentIndex > 0 ? 0 : -80}px)`, opacity: currentIndex > 0 ? 1 : 0, transition: 'all 0.4s' }} src="/orchestration.png" className="" />
                     </div>
-                    <div className="h-4 z-30 relative max-w-full">
+                    <div className="relative z-30 h-4 max-w-full">
                         <img style={{ transform: `translateY(${currentIndex > 1 ? -80 : -160}px)`, opacity: currentIndex > 1 ? 1 : 0, transition: 'all 0.4s' }} src="/application.png" className="" />
                     </div>
                 </div>

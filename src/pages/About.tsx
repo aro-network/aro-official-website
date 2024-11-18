@@ -13,7 +13,7 @@ export function About() {
                     <div className="about-subtitle">Pioneering the Edge Cloud for the AI Era</div>
 
                     <p className="text-2xl leading-relaxed about-content">
-                        EnReach bridges the gap between centralized cloud systems and the needs of next-generation applications. As AI reshapes industries, we bring the cloud closer to users, enabling instant responses, seamless interactions, and scalable performance. By creating an open-layered edge cloud, we empower the AI-driven world with infrastructure designed for speed, flexibility, and accessibility.
+                        EnReach bridges the gap between centralized cloud systems and the needs of next-generation applications. As AI reshapes industries, we bring the cloud closer to users, enabling instant responses, seamless interactions, and scalable performance. By creating an globally-connected edge cloud, we empower the AI-driven world with infrastructure designed for speed, flexibility, and accessibility.
 
                     </p>
 
@@ -24,13 +24,13 @@ export function About() {
                 <div>
                     <div className="mt-20 about-title">What Drives Us</div>
                     <div className="about-subtitle">Accelerating Innovation with Edge-First Infrastructure</div>
-                    <p className="text-2xl leading-relaxed about-content">The cloud is too “far” to deliver the real-time responsiveness today’s digital experiences demand. EnReach is leading the shift from centralized clouds to edge-first networks, unlocking real-time capabilities and efficiency for AI and next-gen applications. Our edge cloud transforms fragmented resources into a seamless, scalable system, ensuring the future of innovation happens where it’s needed most—right at the edge.</p>
+                    <p className="text-2xl leading-relaxed about-content">The cloud is too “far” to deliver the real-time responsiveness today’s digital experiences demand. EnReach is leading the shift from centralized clouds to edge-first networks, unlocking real-time capabilities and efficiency for AI and next-gen applications. Our edge cloud transforms fragmented resources into a seamless, scalable system, ensuring the future of innovation happens where it’s needed most—right at the edge. </p>
                 </div>
 
             </div>
 
             <div className="mt-20 about-title">How We're Doing It</div>
-            <div className="about-subtitle">Shaping an Open Edge Cloud Ecosystem</div>
+            <div className="about-subtitle">Shaping an Open Edge Ecosystem</div>
             <p className="text-2xl about-content">At EnReach, we blend openness and innovation to transform edge computing into a seamless and accessible foundation for the AI era.</p>
 
             <div className="grid grid-cols-1 gap-16 mt-16 lg:grid-cols-2">

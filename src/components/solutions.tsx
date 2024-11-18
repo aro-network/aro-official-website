@@ -36,13 +36,13 @@ export function Solutions() {
     }, [setState])
 
     return <div className="solutions" ref={ref}>
-        <section className="solutions__section sticky top-16 lg:top-0 h-screen pt-16 lg:pt-32 2xl:pt-60">
+        <section className="sticky h-screen pt-16 solutions__section top-16 lg:top-0 lg:pt-32 2xl:pt-60">
             <div className="container">
-                <h2 className="section-title" onClick={() => { }}>EnReach’s Open Layer</h2>
+                <h2 className="section-title" onClick={() => { }}>The Open Edge</h2>
             </div>
 
-            <div className="container flex flex-col lg:flex-row gap-8 w-full">
-                <div className="w-full lg:w-1/2 mt-8 lg:mt-24">
+            <div className="container flex flex-col w-full gap-8 lg:flex-row">
+                <div className="w-full mt-8 lg:w-1/2 lg:mt-24">
                     <div className="relative overflow-x-hidden flex before:content-[''] before:absolute before:right-0 before:top-0 before:bottom-0 before:w-8 before:bg-gradient-to-r before:from-transparent before:to-[rgba(13,13,13,1)] before:z-20">
                         <motion.div className="flex gap-24 lg:gap-32" style={{ x: scrollProgress }} >
                             {
@@ -63,12 +63,12 @@ export function Solutions() {
                         </motion.div>
                     </div>
 
-                    <div className="mt-8 flex gap-4">
-                        <div onClick={() => { window.scrollTo({ top: window.scrollY - 1800, behavior: "smooth" }) }} className="w-12 h-12 border border-white/10 rounded-full flex items-center justify-center text-white/50 z-50">
+                    <div className="flex gap-4 mt-8">
+                        <div onClick={() => { window.scrollTo({ top: window.scrollY - 1800, behavior: "smooth" }) }} className="z-50 flex items-center justify-center w-12 h-12 border rounded-full border-white/10 text-white/50">
                             <IconChevronLeft />
                         </div>
 
-                        <div onClick={() => { window.scrollTo({ top: window.scrollY + 1800, behavior: "smooth" }) }} className="w-12 h-12 border border-white/10 rounded-full flex items-center justify-center text-white/50 z-50">
+                        <div onClick={() => { window.scrollTo({ top: window.scrollY + 1800, behavior: "smooth" }) }} className="z-50 flex items-center justify-center w-12 h-12 border rounded-full border-white/10 text-white/50">
                             <IconChevronRight />
                         </div>
                     </div>
