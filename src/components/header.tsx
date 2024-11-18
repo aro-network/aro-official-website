@@ -2,8 +2,9 @@ import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import { IconMenu } from "@tabler/icons-react";
 import { Logo } from "./logo";
 import { useState } from "react";
-
+import * as Popover from "@radix-ui/react-popover";
 const sections = [
+
     { label: 'Home', href: '/' },
     { label: 'About Us', href: '/about' },
     { label: 'Docs', href: 'https://docs.enreach.network' },
@@ -24,19 +25,36 @@ export function Header() {
                 <div className="hidden gap-16 lg:flex">
                     {
                         sections.map((section, index) => (
-
-                            <a
-                                onMouseOver={() => {
-                                    setDealHover({ index, isHover: true });
-                                }}
-                                onMouseLeave={() => {
-                                    setDealHover({ index, isHover: false });
-                                }}
-                                key={section.href} href={section.href}>
-
-                                {index === 3 && dealHover?.index === 3 && dealHover.isHover ? 'Coming Soon…' : section.label}</a>
+                            <div
+                                key={section.href}
+                                className="relative"
+                                onMouseEnter={() => index === 3 && setDealHover({ index, isHover: true })}
+                                onMouseLeave={() => index === 3 && setDealHover({ index, isHover: false })}
+                            >
+                                {index === 3 ? (
+                                    <Popover.Root open={dealHover?.index === 3 && dealHover.isHover}>
+                                        <Popover.Trigger asChild>
+                                            <div className="cursor-default ">{section.label}</div>
+                                        </Popover.Trigger>
+                                        <Popover.Content
+                                            className="z-10 px-4 py-2 text-black bg-white border border-white rounded-md"
+                                            align="center"
+                                            side="bottom"
+                                            sideOffset={8}
+                                        >
+                                            Coming Soon…
+                                        </Popover.Content>
+                                    </Popover.Root>
+                                ) : (
+                                    // Render normal links for other sections
+                                    <a href={section.href}>{section.label}</a>
+                                )}
+                            </div>
                         ))
                     }
+
+
+
                 </div>
 
                 <DropdownMenu.Root modal={false}>

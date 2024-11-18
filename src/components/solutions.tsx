@@ -35,6 +35,32 @@ export function Solutions() {
         })
     }, [setState])
 
+
+
+    const leftPage = () => {
+        const index = state === 3 ? 2 : state
+        const Icon = solutions[index]?.icon
+        console.log('IconIconIcon', Icon, index);
+
+        return (
+            <div className="flex flex-col w-[calc(100%-23px)] gap-4 p-4 solutions__item lg:p-6 shrink-0" >
+                <div className="w-[72px] h-[72px] rounded-full flex items-center justify-center" style={{ border: '1px solid rgba(243, 243, 243, 0.1)' }}>
+                    <Icon size={40} className="strƒ" />
+                </div>
+                <h3 className="text-xl lg:text-3xl">{solutions[index]?.title}</h3>
+                <p className="text-sm lg:text-base text-white/50">{solutions[index]?.description}</p>
+            </div>
+        )
+    }
+
+
+    console.log('dadsadsadsa', solutions[state], state);
+
+
+
+
+
+
     return <div className="solutions" ref={ref}>
         <section className="sticky h-screen pt-16 solutions__section top-16 lg:top-0 lg:pt-32 2xl:pt-60">
             <div className="container">
@@ -44,23 +70,7 @@ export function Solutions() {
             <div className="container flex flex-col w-full gap-8 lg:flex-row">
                 <div className="w-full mt-8 lg:w-1/2 lg:mt-24">
                     <div className="relative overflow-x-hidden flex before:content-[''] before:absolute before:right-0 before:top-0 before:bottom-0 before:w-8 before:bg-gradient-to-r before:from-transparent before:to-[rgba(13,13,13,1)] before:z-20">
-                        <motion.div className="flex gap-24 lg:gap-32" style={{ x: scrollProgress }} >
-                            {
-                                solutions.map(({ title, description, icon }, index) => {
-                                    const Icon = icon
-
-                                    return (
-                                        <div className="solutions__item p-4 lg:p-6 flex flex-col gap-4 w-[375px] lg:w-[560px] shrink-0" key={index}>
-                                            <div className="w-[72px] h-[72px] rounded-full flex items-center justify-center" style={{ border: '1px solid rgba(243, 243, 243, 0.1)' }}>
-                                                <Icon size={40} className="strƒ" />
-                                            </div>
-                                            <h3 className="text-xl lg:text-3xl">{title}</h3>
-                                            <p className="text-sm lg:text-base text-white/50">{description}</p>
-                                        </div>
-                                    )
-                                })
-                            }
-                        </motion.div>
+                        {leftPage()}
                     </div>
 
                     <div className="flex gap-4 mt-8">

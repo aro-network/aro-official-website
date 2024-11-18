@@ -21,7 +21,9 @@ export function Hero() {
                 <SocialButtons />
             </div>
 
-            <p className="m-0 mt-5 text-4xl lg:text-7xl font-normal leading-[1.1] drop-shadow-lg">The Genesis of Open Edge, for the AI Era</p>
+            <p className="m-0 mt-5 text-4xl lg:text-7xl font-normal leading-[1.1] drop-shadow-lg">The Genesis of Open Edge,</p>
+            <p className="m-0 mt-5 text-4xl lg:text-7xl font-normal leading-[1.1] drop-shadow-lg">for the AI Era</p>
+
             <p className="m-0 text-3xl lg:text-[24px] leading-[1.4] font-light lg:max-w-[55%] text-white/50 mt-8">
                 Unleashing Intelligence with a Globally-Connected Edge Cloud.
             </p>
