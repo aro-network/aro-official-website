@@ -1,0 +1,45 @@
+name: build to page
+
+on:
+  push:
+    branches: ["main"]
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "page"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: set Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: "yarn"
+          cache-dependency-path: "./"
+      - name: install
+        run: yarn install
+      - name: build
+        run: yarn build
+      - name: set page
+        uses: actions/configure-pages@v3
+      - name: update pages
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: "./docs"
+      - name: build to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
