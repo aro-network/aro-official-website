@@ -2,7 +2,7 @@ import { IconDiscord, IconTelegram, IconX } from "../icons"
 
 
 const socialLinks = [
-    { label: 'Discord', href: 'https://discord.gg/z3887JQP', icon: IconDiscord },
+    { label: 'Discord', href: 'https://discord.gg/XbWKu397', icon: IconDiscord },
     { label: 'Twitter', href: 'https://x.com/EnReachAI', icon: IconX },
     { label: 'Telegram', href: 'https://t.me/+bwjcPLf_ZQ00YTBh', icon: IconTelegram },
 ]
