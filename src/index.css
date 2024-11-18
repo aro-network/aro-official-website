@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply relative px-4 md:px-24 2xl:px-0 max-w-[1440px] mx-auto my-0 overflow-visible;
+  }
+
+  .section-title {
+    @apply text-[32px] leading-[1.1] font-normal uppercase text-center lg:text-left;
+  }
+
+  .about-title {
+    @apply px-4 py-1 bg-white text-black rounded-2xl text-3xl w-fit;
+  }
+
+  .about-subtitle {
+    @apply text-white italic text-3xl font-normal mt-4;
+  }
+
+  .about-content {
+    @apply text-white/50 mt-12
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+:root {
+  font-family: "Albert Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
