@@ -3,8 +3,8 @@ export function Animation(props: { state: number }) {
     const { state } = props
 
 
-    return <div className="w-full lg:w-1/2 h-72 lg:h-96 relative scale-75 2xl:scale-100">
-        <svg className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1292 1292" fill="none" xmlns="http://www.w3.org/2000/svg">
+    return <div className="relative w-full scale-75 sm:mt-10 lg:w-1/2 h-72 lg:h-96 2xl:scale-100">
+        <svg className="absolute scale-150 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1292 1292" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect style={{ animationDelay: '0.2s' }} className="fill-blue-400 animate-pulse" x="527" y="200" width="8" height="8" rx="4" />
             <rect style={{ animationDelay: '0.4s' }} className="fill-blue-400 animate-pulse" x="573" y="200" width="8" height="8" rx="4" />
             <rect style={{ animationDelay: '0.6s' }} className="fill-blue-400 animate-pulse" x="619" y="200" width="8" height="8" rx="4" />
@@ -51,7 +51,7 @@ export function Animation(props: { state: number }) {
                         top: i <= state ? `${50 - i * 5}%` : `${50 - i * 5 - 10}%`,
                         transition: 'all .5s'
                     }}
-                    className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 max-h-full max-w-full h-full scale-125" preserveAspectRatio="xMidYMid meet" viewBox="0 0 656 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    className="absolute h-full max-w-full max-h-full scale-125 -translate-x-1/2 -translate-y-1/2 left-1/2" preserveAspectRatio="xMidYMid meet" viewBox="0 0 656 480" fill="none" xmlns="http://www.w3.org/2000/svg">
 
                     <g clip-path="url(#clip0_5887_5141)">
                         <path d="M0.984 254.89C0.374 254.531 0 253.875 0 253.167V227.339C0 226.629 0.377 225.972 0.99 225.613L78.001 180.584C78.619 180.223 79.383 180.219 80.004 180.574L156.993 224.612C157.616 224.968 158 225.631 158 226.348V253.145C158 253.865 157.613 254.53 156.987 254.885L78.506 299.429C77.884 299.782 77.12 299.776 76.503 299.412L0.984 254.89Z" fill="url(#paint0_linear_5887_5141)" />
@@ -95,7 +95,7 @@ export function Animation(props: { state: number }) {
         }
 
 
-        <svg className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 scale-75"
+        <svg className="absolute scale-75 -translate-x-1/2 -translate-y-1/2 left-1/2"
             style={{
                 opacity: state === 0 ? 1 : 0,
                 top: state === 0 ? '40%' : '30%',
@@ -143,7 +143,7 @@ export function Animation(props: { state: number }) {
         </svg>
 
         <svg
-            className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 scale-75"
+            className="absolute scale-75 -translate-x-1/2 -translate-y-1/2 left-1/2"
             style={{
                 opacity: (state === 2 || state === 3) ? 1 : 0,
                 top: (state === 2 || state === 3) ? '40%' : '30%',
@@ -336,7 +336,7 @@ export function Animation(props: { state: number }) {
 
 
         <svg
-            className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 scale-75"
+            className="absolute scale-75 -translate-x-1/2 -translate-y-1/2 left-1/2"
             style={{
                 opacity: state === 1 ? 1 : 0,
                 top: state === 1 ? '40%' : '30%',
@@ -357,7 +357,7 @@ export function Animation(props: { state: number }) {
             </defs>
         </svg>
 
-        {/* <svg className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 scale-75"
+        {/* <svg className="absolute scale-75 -translate-x-1/2 -translate-y-1/2 left-1/2"
             style={{
                 opacity: state === 1 ? 1 : 0,
                 top: state === 1 ? '40%' : '30%',
@@ -374,7 +374,7 @@ export function Animation(props: { state: number }) {
 
         {/* <svg
             style={{ top: "40%" }}
-            className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 scale-75"
+            className="absolute scale-75 -translate-x-1/2 -translate-y-1/2 left-1/2"
             viewBox="0 0 238 281" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2.69694 214.446C1.46694 213.73 0.710938 212.414 0.710938 210.99V71.1419C0.710938 69.7159 1.46894 68.3989 2.70094 67.6829L117.226 1.15288C118.455 0.438882 119.971 0.430882 121.207 1.13088L235.683 65.9969C236.936 66.7079 237.711 68.0369 237.711 69.4779V210.946C237.711 212.393 236.929 213.727 235.667 214.435L118.926 279.882C117.69 280.575 116.18 280.562 114.956 279.849L2.69694 214.446Z" fill="url(#paint0_linear_5891_5165)" />
             <defs>

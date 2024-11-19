@@ -31,7 +31,7 @@ export function Architecture() {
         })
     }, [])
 
-    return <div ref={ref} className="container relative lg:pb-72" style={{ height: 8000 }}>
+    return <div ref={ref} className="container relative lg:pb-72 h-[8000px] sm:h-[4000px]" >
         <section className="sticky flex flex-col h-screen top-24 2xl:top-60">
             <h2 className="section-title">Our Architecture</h2>
 

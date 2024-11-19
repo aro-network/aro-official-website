@@ -4,9 +4,9 @@ import { Header } from "./components/header";
 
 export function Layout() {
     return (
-        <div className="pb-20">
+        <div className="pb-20 sm:pb-0">
             <Header />
-            <img src="/bg.avif" alt="" className="fixed w-screen h-screen object-cover z-0" />
+            <img src="/bg.avif" alt="" className="fixed z-0 object-cover w-screen h-screen" />
             <Outlet />
             <Footer />
         </div>

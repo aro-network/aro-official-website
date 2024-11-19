@@ -18,6 +18,10 @@ export function Solutions() {
         }
     }, []);
 
+
+
+
+
     const p = useTransform(scrollY, scrollRange, [0, 1])
 
     useEffect(() => {
@@ -39,10 +43,9 @@ export function Solutions() {
     const leftPage = () => {
         const index = state === 3 ? 2 : state
         const Icon = solutions[index]?.icon
-        console.log('IconIconIcon', Icon, index);
 
         return (
-            <div className="flex flex-col w-[calc(100%-23px)] gap-4 p-4 solutions__item lg:p-6 shrink-0" >
+            <div className="flex flex-col w-[calc(100%-23px)] sm:w-full gap-4 p-4 solutions__item lg:p-6 shrink-0" >
                 <div className="w-[72px] h-[72px] rounded-full flex items-center justify-center" style={{ border: '1px solid rgba(243, 243, 243, 0.1)' }}>
                     <Icon size={40} className="strƒ" />
                 </div>
@@ -53,31 +56,25 @@ export function Solutions() {
     }
 
 
-    console.log('dadsadsadsa', solutions[state], state);
 
-
-
-
-
-
-    return <div className="solutions" ref={ref}>
+    return <div className="solutions sm:h-[5000px]" ref={ref}>
         <section className="sticky h-screen pt-16 solutions__section top-16 lg:top-0 lg:pt-32 2xl:pt-60">
             <div className="container">
                 <h2 className="section-title" onClick={() => { }}>The Open Edge</h2>
             </div>
 
             <div className="container flex flex-col w-full gap-8 lg:flex-row">
-                <div className="w-full mt-8 lg:w-1/2 lg:mt-24">
-                    <div className="relative overflow-x-hidden flex before:content-[''] before:absolute before:right-0 before:top-0 before:bottom-0 before:w-8 before:bg-gradient-to-r before:from-transparent before:to-[rgba(13,13,13,1)] before:z-20">
+                <div className="w-full mt-8 lg:w-1/2 lg:mt-24 ">
+                    <div className="relative overflow-x-hidden flex before:content-[''] before:absolute before:right-0 before:top-0 before:bottom-0 before:w-8 before:bg-gradient-to-r sm:before:bg-none before:from-transparent before:to-[rgba(13,13,13,1)] before:z-20">
                         {leftPage()}
                     </div>
 
-                    <div className="flex gap-4 mt-8">
-                        <div onClick={() => { window.scrollTo({ top: window.scrollY - 1800, behavior: "smooth" }) }} className="z-50 flex items-center justify-center w-12 h-12 border rounded-full border-white/10 text-white/50">
+                    <div className="flex gap-4 mt-8 sm:gap-20 sm:justify-center">
+                        <div onClick={() => { window.scrollTo({ top: window.scrollY - 3800, behavior: "smooth" }) }} className="z-50 flex items-center justify-center w-12 h-12 border rounded-full border-white/10 text-white/50">
                             <IconChevronLeft />
                         </div>
 
-                        <div onClick={() => { window.scrollTo({ top: window.scrollY + 1800, behavior: "smooth" }) }} className="z-50 flex items-center justify-center w-12 h-12 border rounded-full border-white/10 text-white/50">
+                        <div onClick={() => { window.scrollTo({ top: window.scrollY + 3800, behavior: "smooth" }) }} className="z-50 flex items-center justify-center w-12 h-12 border rounded-full border-white/10 text-white/50">
                             <IconChevronRight />
                         </div>
                     </div>
