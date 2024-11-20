@@ -32,22 +32,23 @@ export function Header() {
                                 onMouseLeave={() => index === 3 && setDealHover({ index, isHover: false })}
                             >
                                 {index === 3 ? (
-                                    <Popover.Root open={dealHover?.index === 3 && dealHover.isHover}>
-                                        <Popover.Trigger asChild>
+
+                                    <Popover.Root open={dealHover?.index === 3 && dealHover.isHover} >
+                                        <Popover.Trigger asChild >
                                             <div className="cursor-default ">{section.label}</div>
                                         </Popover.Trigger>
                                         <Popover.Content
-                                            className="z-10 px-4 py-2 text-black bg-white border border-white rounded-md"
+                                            hideWhenDetached
                                             align="center"
                                             side="bottom"
-                                            sideOffset={8}
+                                            sideOffset={20}
                                         >
                                             Coming Soon…
                                         </Popover.Content>
                                     </Popover.Root>
                                 ) : (
                                     // Render normal links for other sections
-                                    <a href={section.href}>{section.label}</a>
+                                    <a key={section.href} href={section.href}>{section.label}</a>
                                 )}
                             </div>
                         ))
