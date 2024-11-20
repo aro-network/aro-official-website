@@ -81,11 +81,11 @@ export function Solutions() {
                     </div>
 
                     <div className="flex gap-4 mt-8 sm:gap-20 sm:justify-center">
-                        <div onClick={() => { window.scrollTo({ top: window.scrollY - 3800, behavior: "smooth" }) }} className="z-50 flex items-center justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
+                        <div onClick={() => { window.scrollTo({ top: window.scrollY - 3800, behavior: "smooth" }) }} className="z-50 flex items-center cursor-pointer justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
                             <IconChevronLeft />
                         </div>
 
-                        <div onClick={() => { window.scrollTo({ top: window.scrollY + 3800, behavior: "smooth" }) }} className="z-50 flex items-center justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
+                        <div onClick={() => { window.scrollTo({ top: window.scrollY + 3800, behavior: "smooth" }) }} className="z-50 flex items-center cursor-pointer justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
                             <IconChevronRight />
                         </div>
                     </div>
