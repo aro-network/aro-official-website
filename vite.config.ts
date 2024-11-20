@@ -5,11 +5,5 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: "./docs",
-    rollupOptions: {
-      input: {
-        main: "src/main.tsx",
-        aboutUs: "src/aboutUs.tsx",
-      },
-    },
   },
 });
