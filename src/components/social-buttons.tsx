@@ -15,7 +15,7 @@ export function SocialButtons() {
 
                 return <a
                     key={label}
-                    className="flex items-center justify-center border rounded-full w-14 h-14 border-white/20 hover:bg-white/10"
+                    className="flex items-center justify-center border rounded-full w-[40px] h-[40px] border-white/20 hover:bg-white/10"
                     href={href}
                     target="_blank"
                     rel="noreferrer"

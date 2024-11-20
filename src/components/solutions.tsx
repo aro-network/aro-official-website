@@ -1,5 +1,5 @@
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
-import { useScroll, useTransform } from "motion/react";
+import { motion, useScroll, useTransform } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { solutions } from "../config/solutions";
 import { Animation } from "./Animation";
@@ -23,6 +23,7 @@ export function Solutions() {
 
 
     const p = useTransform(scrollY, scrollRange, [0, 1])
+    const scrollProgress = useTransform(scrollY, scrollRange, [40, -560 * 3 - 72 * 4]);
 
     useEffect(() => {
         p.on('change', v => {
@@ -42,22 +43,32 @@ export function Solutions() {
 
     const leftPage = () => {
         const index = state === 3 ? 2 : state
-        const Icon = solutions[index]?.icon
+        const Icon = solutions[index]?.icon;
 
         return (
-            <div className="flex flex-col w-[calc(100%-23px)] sm:w-full gap-4 p-4 solutions__item lg:p-6 shrink-0" >
-                <div className="w-[72px] h-[72px] rounded-full flex items-center justify-center" style={{ border: '1px solid rgba(243, 243, 243, 0.1)' }}>
-                    <Icon size={40} className="strƒ" />
+
+
+            <section className="flex flex-col w-[calc(100%-230px)] sm:w-full gap-4 p-4 solutions__item lg:p-6 shrink-0">
+                <div ref={ref}>
+                    <div
+                        className="w-[72px] h-[72px] rounded-full flex items-center justify-center"
+                        style={{ border: "1px solid rgba(243, 243, 243, 0.1)" }}
+                    >
+                        <Icon size={40} />
+                    </div>
+                    <h3 className="text-xl lg:text-3xl">{solutions[index]?.title}</h3>
+                    <p className="text-sm lg:text-base text-white/50">
+                        {solutions[index]?.description}
+                    </p>
                 </div>
-                <h3 className="text-xl lg:text-3xl">{solutions[index]?.title}</h3>
-                <p className="text-sm lg:text-base text-white/50">{solutions[index]?.description}</p>
-            </div>
-        )
+
+            </section>
+        );
     }
 
 
 
-    return <div className="solutions sm:h-[5000px]" ref={ref}>
+    return <div className="solutions sm:h-[3000px]" ref={ref}>
         <section className="sticky h-screen pt-16 solutions__section top-16 lg:top-0 lg:pt-32 2xl:pt-60">
             <div className="container">
                 <h2 className="section-title" onClick={() => { }}>The Open Edge</h2>
@@ -70,11 +81,11 @@ export function Solutions() {
                     </div>
 
                     <div className="flex gap-4 mt-8 sm:gap-20 sm:justify-center">
-                        <div onClick={() => { window.scrollTo({ top: window.scrollY - 3800, behavior: "smooth" }) }} className="z-50 flex items-center justify-center w-12 h-12 border rounded-full border-white/10 text-white/50">
+                        <div onClick={() => { window.scrollTo({ top: window.scrollY - 3800, behavior: "smooth" }) }} className="z-50 flex items-center justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
                             <IconChevronLeft />
                         </div>
 
-                        <div onClick={() => { window.scrollTo({ top: window.scrollY + 3800, behavior: "smooth" }) }} className="z-50 flex items-center justify-center w-12 h-12 border rounded-full border-white/10 text-white/50">
+                        <div onClick={() => { window.scrollTo({ top: window.scrollY + 3800, behavior: "smooth" }) }} className="z-50 flex items-center justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
                             <IconChevronRight />
                         </div>
                     </div>
@@ -82,6 +93,6 @@ export function Solutions() {
 
                 <Animation state={state} />
             </div>
-        </section>
+        </section >
     </div >
 }

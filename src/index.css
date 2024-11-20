@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url('https://fonts.cdnfonts.com/css/abc-ginto-nord-unlicensed-trial');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,15 +14,15 @@
   }
 
   .about-title {
-    @apply px-4 py-1 bg-white text-black rounded-2xl text-3xl w-fit;
+    @apply px-4 py-1 text-3xl text-black bg-white rounded-2xl w-fit ;
   }
 
   .about-subtitle {
-    @apply text-white italic text-3xl font-normal mt-4;
+    @apply mt-4 text-3xl font-normal text-white max-w-[750px];
   }
 
   .about-content {
-    @apply text-white/50 mt-12;
+    @apply text-white/50 mt-12 max-w-[750px];
   }
 }
 
@@ -30,7 +30,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: "/font/blackTrial.otf";
+  font-family: 'ABC Ginto Nord Unlicensed Trial';
 }
 * {
   margin: 0;
@@ -83,7 +83,6 @@ h6 {
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
@@ -92,3 +91,4 @@ h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+

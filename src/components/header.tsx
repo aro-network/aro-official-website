@@ -17,7 +17,7 @@ export function Header() {
     const [dealHover, setDealHover] = useState<{ index?: number, isHover?: boolean } | null>(null);
 
     return (
-        <div className="fixed left-0 right-0 z-50 flex items-center justify-center w-screen top-4 sm:top-2">
+        <div className="fixed left-0 right-0 z-50 flex items-center justify-center w-screen sm:top-2">
             <div className="w-full max-w-[1440px] py-4 px-8 bg-[#0d0d0d4d] border border-[#f3f3f31a] rounded-[30px] flex justify-between items-center z-10 backdrop-blur-lg">
                 <a href="/">
                     <Logo />
@@ -39,10 +39,12 @@ export function Header() {
                                             <Link key={section.href} to={section.href} className="cursor-default ">{section.label}</Link>
                                         </Popover.Trigger>
                                         <Popover.Content
+                                            className="px-4 py-2 text-[#FFFFF] bg-[#0d0d0d4d] border border-[#f3f3f31a] rounded-[30px]"
                                             hideWhenDetached
                                             align="center"
                                             side="bottom"
-                                            sideOffset={20}
+                                            sideOffset={25}
+                                        // border: 1px solid #F3F3F333
                                         >
                                             Coming Soon…
                                         </Popover.Content>

@@ -19,15 +19,15 @@ export const methods = [
     icon: IconEdgeComputing,
   },
   {
-    title: "Dynamic Matching for User Demand",
+    title: "Building the Core Competency of Smart Orchestration",
     content:
-      "We harness advanced algorithms and a resilient resource pool to dynamically match workloads with the best-fit edge resources, ensuring speed, efficiency, and adaptability to user needs.",
+      "We develop state-of-the-art technologies to sense, optimize, and schedule heterogeneous, massive-scale resources. This enables precise orchestration tailored to complex, real-world demands.",
     icon: IconCost,
   },
   {
-    title: "Enterprise-Grade Reliability",
+    title: "Providing Industry-Ready Solutions",
     content:
-      "Our infrastructure is designed for performance and stability, delivering dependable, scalable solutions to meet the rigorous demands of businesses and next-generation applications.",
+      "Leveraging our robust infrastructure, we deliver practical and scalable solutions tailored to real-world industries, enabling meaningful adoption and bridging the gap between Web3 technology and industry applications.",
     icon: IconReliability,
   },
 ];
