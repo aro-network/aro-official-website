@@ -1,5 +1,5 @@
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
-import { motion, useScroll, useTransform } from "motion/react";
+import { useScroll, useTransform } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { solutions } from "../config/solutions";
 import { Animation } from "./Animation";
@@ -23,7 +23,7 @@ export function Solutions() {
 
 
     const p = useTransform(scrollY, scrollRange, [0, 1])
-    const scrollProgress = useTransform(scrollY, scrollRange, [40, -560 * 3 - 72 * 4]);
+    // const scrollProgress = useTransform(scrollY, scrollRange, [40, -560 * 3 - 72 * 4]);
 
     useEffect(() => {
         p.on('change', v => {

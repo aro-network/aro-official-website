@@ -14,15 +14,15 @@
   }
 
   .about-title {
-    @apply px-4 py-1 text-3xl text-black bg-white rounded-2xl w-fit ;
+    @apply px-4 py-1 text-xl text-black bg-white rounded-2xl w-fit ;
   }
 
   .about-subtitle {
-    @apply mt-4 text-3xl font-normal text-white max-w-[750px];
+    @apply mt-4 text-[32px] font-normal text-white max-w-[750px];
   }
 
   .about-content {
-    @apply text-white/50 mt-12 max-w-[750px];
+    @apply text-white/50 mt-[30px] max-w-[750px];
   }
 }
 

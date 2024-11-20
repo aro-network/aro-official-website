@@ -60,7 +60,7 @@ function About() {
                                             <div className="about-title">{item.title}</div>
                                             <div className="about-subtitle">{item.subTitle}</div>
 
-                                            <p className="text-2xl leading-relaxed about-content">
+                                            <p className="text-base leading-relaxed  about-content">
                                                 {item.text}
 
                                             </p>
