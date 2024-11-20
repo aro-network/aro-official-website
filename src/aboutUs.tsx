@@ -1,7 +1,7 @@
 import { methods } from "./config/about";
 
 
-export function About() {
+function About() {
     return (
         <div className="container pt-40">
 
@@ -48,3 +48,5 @@ export function About() {
         </div>
     )
 }
+
+export default About
