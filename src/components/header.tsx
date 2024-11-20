@@ -6,7 +6,7 @@ import * as Popover from "@radix-ui/react-popover";
 const sections = [
 
     { label: 'Home', href: '/' },
-    { label: 'About Us', href: '/about' },
+    { label: 'About Us', href: '/About' },
     { label: 'Docs', href: 'https://docs.enreach.network' },
     { label: 'Sign In', href: '' },
 
