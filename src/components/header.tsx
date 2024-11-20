@@ -35,7 +35,7 @@ export function Header() {
 
                                     <Popover.Root open={dealHover?.index === 3 && dealHover.isHover} >
                                         <Popover.Trigger asChild >
-                                            <div className="cursor-default ">{section.label}</div>
+                                            <a key={section.href} href={section.href} className="cursor-default ">{section.label}</a>
                                         </Popover.Trigger>
                                         <Popover.Content
                                             hideWhenDetached
