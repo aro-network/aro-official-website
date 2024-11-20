@@ -1,4 +1,5 @@
-import { methods } from "../config/about";
+import { methods } from "./config/about";
+
 
 export function About() {
     return (

@@ -33,7 +33,7 @@ export function Architecture() {
 
     return <div ref={ref} className="container relative lg:pb-72 h-[8000px] sm:h-[4000px]" >
         <section className="sticky flex flex-col h-screen top-24 2xl:top-60">
-            <h2 className="section-title">Our Architecture</h2>
+            <h2 className="section-title">The Open-Layered Fabric</h2>
 
             <div className="flex flex-col gap-32 lg:flex-row">
                 <div className="flex justify-between mt-16 lg:flex-col lg:gap-8 2xl:gap-16 lg:justify-start">

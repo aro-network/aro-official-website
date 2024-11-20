@@ -3,7 +3,7 @@ import { SocialButtons } from "./social-buttons";
 
 
 export function Hero() {
-    return <div className="flex justify-center hero ">
+    return <div className="flex justify-end hero">
         <div className="flex flex-col">
             <div className="flex items-center h-fit">
                 <Tooltip.Provider>
@@ -22,16 +22,16 @@ export function Hero() {
             </div>
             <div>
                 <div className="block sm:hidden">
-                    <p className="m-0 mt-5 text-4xl lg:text-6xl font-normal leading-[1.1] drop-shadow-lg">
-                        The Genesis of Open Edge,
+                    <p className="m-0 mt-5 text-4xl lg:text-6xl font-normal  leading-[1.1] drop-shadow-lg">
+                        THE GENESIS OF OPEN EDGE,
                     </p>
                     <p className="m-0 mt-5 text-4xl lg:text-6xl font-normal leading-[1.1] drop-shadow-lg">
-                        for the AI Era
+                        FOR THE AI ERA
                     </p>
                 </div>
                 <div className="hidden sm:block ">
                     <p className="m-0 mt-5 text-4xl lg:text-7xl font-normal leading-[1.5] drop-shadow-lg">
-                        The Genesis of Open Edge,for the AI Era
+                        THE GENESIS OF OPEN EDGE,FOR THE AI ERA
                     </p>
                 </div>
             </div>
