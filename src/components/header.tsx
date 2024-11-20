@@ -3,6 +3,7 @@ import { IconMenu } from "@tabler/icons-react";
 import { Logo } from "./logo";
 import { useState } from "react";
 import * as Popover from "@radix-ui/react-popover";
+import { Link } from "react-router-dom";
 const sections = [
 
     { label: 'Home', href: '/' },
@@ -48,7 +49,7 @@ export function Header() {
                                     </Popover.Root>
                                 ) : (
                                     // Render normal links for other sections
-                                    <a key={section.href} href={'/aboutUs'}>{section.label}</a>
+                                    <Link key={section.href} to={'/aboutUs'}>{section.label}</Link>
                                 )}
                             </div>
                         ))
