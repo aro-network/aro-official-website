@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const sections = [
 
     { label: 'Home', href: '/' },
-    { label: 'About Us', href: '/aboutUs' },
+    { label: 'About Us', href: 'https://about-us.enreach.network/' },
     { label: 'Docs', href: 'https://docs.enreach.network' },
     { label: 'Sign In', href: '' },
 

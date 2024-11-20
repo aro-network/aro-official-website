@@ -4,13 +4,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.tsx'
 import './index.css'
 import { Layout } from './Layout.tsx'
-import About from './aboutUs.tsx'
 
 const router = createBrowserRouter([
   {
     element: <Layout />, children: [
       { path: '/', element: <App /> },
-      { path: '/aboutUs', element: <About /> },
     ]
   }
 ])

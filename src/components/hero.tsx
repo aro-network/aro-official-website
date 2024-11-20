@@ -9,7 +9,7 @@ export function Hero() {
                 <Tooltip.Provider>
                     <Tooltip.Root>
                         <Tooltip.Trigger asChild>
-                            <button className="bg-white text-black py-[10px] sm:py-[8px] sm:text-4  px-6 sm:px-4 rounded-full text-xl mr-4 font-semibold">
+                            <button className="bg-white text-black py-[10px] sm:py-[8px] sm:text-4  px-6 sm:px-4 rounded-full text-xl mr-4 ">
                                 Get Started
                             </button>
                         </Tooltip.Trigger>
