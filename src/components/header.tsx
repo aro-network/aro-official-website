@@ -48,7 +48,7 @@ export function Header() {
                                     </Popover.Root>
                                 ) : (
                                     // Render normal links for other sections
-                                    <a key={section.href} href={section.href}>{section.label}</a>
+                                    <a key={section.href} href={'/aboutUs'}>{section.label}</a>
                                 )}
                             </div>
                         ))
