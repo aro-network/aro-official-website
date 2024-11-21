@@ -51,10 +51,10 @@ export function Solutions() {
             <section className="flex flex-col w-[calc(100%-23px)] sm:w-full  gap-4 p-4 solutions__item lg:p-6 shrink-0">
                 <div ref={ref} >
                     <div
-                        className="w-[72px] h-[72px] rounded-full flex items-center justify-center"
+                        className="w-[72px] h-[72px] rounded-full flex items-center justify-center bg-[#4281FF]"
                         style={{ border: "1px solid rgba(243, 243, 243, 0.1)" }}
                     >
-                        <Icon size={40} />
+                        <Icon className={''} size={40} />
                     </div>
                     <h3 className="pt-3 text-xl lg:text-3xl">{solutions[index]?.title}</h3>
                     <p className="pt-3 text-sm lg:text-base text-white/50">
@@ -65,7 +65,6 @@ export function Solutions() {
             </section>
         );
     }
-
 
 
     return <div className="solutions sm:h-[3000px] " ref={ref}>
@@ -81,11 +80,11 @@ export function Solutions() {
                     </div>
 
                     <div className="flex gap-4 mt-8 sm:gap-20 sm:justify-center">
-                        <div onClick={() => { window.scrollTo({ top: window.scrollY - 3800, behavior: "smooth" }) }} className="z-50 flex items-center cursor-pointer justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
+                        <div onClick={() => { state === 0 ? null : window.scrollTo({ top: window.scrollY - 3800, behavior: "smooth" }) }} className="z-50 flex items-center cursor-pointer justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
                             <IconChevronLeft />
                         </div>
 
-                        <div onClick={() => { window.scrollTo({ top: window.scrollY + 3800, behavior: "smooth" }) }} className="z-50 flex items-center cursor-pointer justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
+                        <div onClick={() => { state === 2 || state === 3 ? null : window.scrollTo({ top: window.scrollY + 3800, behavior: "smooth" }) }} className="z-50 flex items-center cursor-pointer justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
                             <IconChevronRight />
                         </div>
                     </div>
