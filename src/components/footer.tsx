@@ -17,7 +17,7 @@ export function Footer() {
                     <div className="flex justify-between w-full mt-4 sm:flex-col-reverse sm:gap-5 sm:text-sm">
                         <div className=" text-white/50"> © EnReach AI Foundation, {currentYear}. All rights reserved.</div>
                         <div className=" flex gap-[42px] sm:flex-col sm:justify-center sm:w-full sm:items-center  sm:gap-5">
-                            <a className="transition-colors text-white/50 hover:text-white" href="/media-kit">Media Kit</a>
+                            <a className="transition-colors text-white/50 hover:text-white" href="https://enreach.network/Media kit.zip">Media Kit</a>
                             <a className="transition-colors text-white/50 hover:text-white" target='_blank' href="https://docs.google.com/document/d/1YZDlxE88v2SwYPclcFeUVfu2U-LgmpEqy2As1ensDg0/edit?tab=t.0">Privacy Policy</a>
                             <a className="transition-colors text-white/50 hover:text-white" target='_blank' href="https://docs.google.com/document/d/1k1uHHMCDgJP2tOpgCUslHo3ai6ovMYbvO2adMxNtOUI/edit?tab=t.0">Terms & Conditions</a>
                         </div>
@@ -25,6 +25,6 @@ export function Footer() {
                 </div>
             </div>
 
-        </footer>
+        </footer >
     )
 }
