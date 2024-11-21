@@ -48,7 +48,7 @@ export function Solutions() {
         return (
 
 
-            <section className="flex flex-col w-[calc(100%-230px)] sm:w-full gap-4 p-4 solutions__item lg:p-6 shrink-0">
+            <section className="flex flex-col w-[calc(100%-23px)] sm:w-full gap-4 p-4 solutions__item lg:p-6 shrink-0">
                 <div ref={ref}>
                     <div
                         className="w-[72px] h-[72px] rounded-full flex items-center justify-center"
@@ -56,8 +56,8 @@ export function Solutions() {
                     >
                         <Icon size={40} />
                     </div>
-                    <h3 className="text-xl lg:text-3xl">{solutions[index]?.title}</h3>
-                    <p className="text-sm lg:text-base text-white/50">
+                    <h3 className="pt-3 text-xl lg:text-3xl">{solutions[index]?.title}</h3>
+                    <p className="pt-3 text-sm lg:text-base text-white/50">
                         {solutions[index]?.description}
                     </p>
                 </div>

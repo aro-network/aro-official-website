@@ -1,7 +1,7 @@
 import { SocialButtons } from "./social-buttons";
 
 export function Subscribe() {
-    return <div className="relative flex flex-col items-center w-screen h-screen p-4 lg:p-16 sm:h-[70vh] sm:justify-center ">
+    return <div className="relative flex flex-col items-center w-screen p-4 lg:p-16 sm:justify-center ">
         <div className="text-center section-title">Get Started</div>
         <div className="mt-4 text-white/50 sm:text-center">Stay Ahead of the Game: Subscribe to Receive the Latest Updates from EnReach!</div>
         <div className="flex flex-col gap-2 mt-8 mb-8 lg:flex-row">
