@@ -10,7 +10,7 @@ export function Hero() {
                     <Tooltip.Root>
                         <Tooltip.Trigger asChild>
                             <button className="bg-white text-black py-[10px] sm:py-[8px] sm:text-4  px-6 sm:px-4 rounded-full text-xl mr-4 ">
-                                Get Started
+                                Learn More
                             </button>
                         </Tooltip.Trigger>
                         <Tooltip.Content align='center' sideOffset={8} className='select-none rounded-lg bg-gray-900 px-[15px] py-2.5 text-[15px] leading-none text-white'>

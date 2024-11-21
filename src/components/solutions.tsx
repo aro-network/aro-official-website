@@ -73,8 +73,8 @@ export function Solutions() {
                 <h2 className="section-title" onClick={() => { }}>The Open Edge</h2>
             </div>
 
-            <div className="container flex flex-col w-full gap-8 lg:flex-row">
-                <div className="w-full mt-8 lg:w-1/2 lg:mt-24 ">
+            <div className="container flex flex-col items-center w-full gap-8 lg:flex-row">
+                <div className="w-full lg:w-1/2 lg:mt-24 ">
                     <div className="relative overflow-x-hidden flex before:content-[''] before:absolute before:right-0 before:top-0 before:bottom-0 before:w-8 before:bg-gradient-to-r sm:before:bg-none before:from-transparent before:to-[rgba(13,13,13,1)] before:z-20">
                         {leftPage()}
                     </div>
