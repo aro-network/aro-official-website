@@ -6,11 +6,12 @@ import {
 
 export const architecture = [
   {
-    title: "Resource Layer",
+    title: "Application Layer",
     description:
-      "Standardize, virtualize, and containerize heterogeneous node resources to create a scalable, flexible digital infrastructure that can be verified, quantified, and optimized for efficient utilization.",
-    icon: IconResourceLayer,
+      "Provide developer SDKs and user interfaces that expose the network’s capabilities, allowing for easy development, deployment, management, and scaling of edge applications and AI solutions.",
+    icon: IconApplicationLayer,
   },
+
   {
     title: "Open Layer",
     description:
@@ -18,9 +19,9 @@ export const architecture = [
     icon: IconOrchestrationLayer,
   },
   {
-    title: "Application Layer",
+    title: "Resource Layer",
     description:
-      "Provide developer SDKs and user interfaces that expose the network’s capabilities, allowing for easy development, deployment, management, and scaling of edge applications and AI solutions.",
-    icon: IconApplicationLayer,
+      "Standardize, virtualize, and containerize heterogeneous node resources to create a scalable, flexible digital infrastructure that can be verified, quantified, and optimized for efficient utilization.",
+    icon: IconResourceLayer,
   },
 ];

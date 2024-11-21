@@ -4,7 +4,7 @@ import { SocialButtons } from "./social-buttons";
 export function Footer() {
     const currentYear = new Date().getFullYear()
     return (
-        <footer className="bg-black/20 border border-white/30 text-white relative container p-8 sm:p-[30px] rounded-[40px] mt-16">
+        <footer className="bg-black/20 border border-white/30 text-white bottom-0  relative container p-8 sm:p-[30px] rounded-[40px] mt-16">
             <div className="flex flex-col items-center justify-between lg:items-center lg:flex-row">
                 <Logo />
                 <div className="mt-8">

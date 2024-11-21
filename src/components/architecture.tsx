@@ -31,12 +31,12 @@ export function Architecture() {
         })
     }, [])
 
-    return <div ref={ref} className="container relative lg:pb-72 h-[8000px] sm:h-[4000px]" >
-        <section className="sticky flex flex-col h-screen top-24 2xl:top-60">
-            <h2 className="section-title">The Open-Layered Fabric</h2>
 
-            <div className="flex flex-col gap-32 lg:flex-row">
-                <div className="flex justify-between mt-16 lg:flex-col lg:gap-8 2xl:gap-16 lg:justify-start">
+    return <div ref={ref} className="container relative lg:pb-72 h-[8000px] sm:h-[4000px]" >
+        <section className="sticky flex flex-col h-screen top-24 2xl:top-40">
+            <h2 className="section-title">The Open-Layered Fabric</h2>
+            <div className="flex flex-col h-full gap-16 mt-10 lg:flex-row">
+                <div className="flex justify-between lg:flex-col lg:gap-8 2xl:gap-16 lg:justify-start">
                     {
                         architecture.map(({ title, description, icon }, index) => {
                             const Icon = icon
@@ -47,8 +47,10 @@ export function Architecture() {
                                         opacity: currentIndex === index ? 1 : 0.5,
                                         transform: `scale(${currentIndex === index ? 1.1 : 1})`,
                                         transition: 'all 0.3s ease-in-out',
+
                                     }}
-                                    className={clsx("architecture__item border p-4", currentIndex === index ? 'bg-black/20 border-white/10 rounded-3xl' : 'border-transparent')} key={index}>
+                                    onClick={() => setCurrentIndex(index)}
+                                    className={clsx("architecture__item border p-4 cursor-pointer", currentIndex === index ? 'bg-black/20 border-white/10 rounded-3xl' : 'border-transparent')} key={index}>
                                     <div className="flex flex-col items-center gap-1 lg:flex-row">
                                         <Icon />
                                         <h3 className="text-xs text-center lg:text-left lg:text-2xl">{title}</h3>
@@ -59,15 +61,15 @@ export function Architecture() {
                         })
                     }
                 </div>
-                <div className="relative w-screen max-w-full min-h-full lg:mt-24 lg:m-0">
+                <div className="relative w-screen max-w-full min-h-full">
                     <div className="z-10 h-4 max-w-full">
-                        <img style={{ transform: `translateY(${currentIndex > -1 ? 80 : 0}px)`, opacity: currentIndex > -1 ? 1 : 0, transition: 'all 0.4s' }} src="/resource.png" className="" />
+                        <img className={'bg-cover object-cover'} style={{ transform: `translateY(${currentIndex > -1 ? 80 : 0}px)`, opacity: currentIndex > -1 ? 1 : 0, transition: 'all 0.4s' }} src="/application.png" />
                     </div>
                     <div className="relative z-20 h-4 max-w-full">
                         <img style={{ transform: `translateY(${currentIndex > 0 ? 0 : -80}px)`, opacity: currentIndex > 0 ? 1 : 0, transition: 'all 0.4s' }} src="/orchestration.png" className="" />
                     </div>
                     <div className="relative z-30 h-4 max-w-full">
-                        <img style={{ transform: `translateY(${currentIndex > 1 ? -80 : -160}px)`, opacity: currentIndex > 1 ? 1 : 0, transition: 'all 0.4s' }} src="/application.png" className="" />
+                        <img style={{ transform: `translateY(${currentIndex > 1 ? -80 : -160}px)`, opacity: currentIndex > 1 ? 1 : 0, transition: 'all 0.4s' }} src="/resource.png" className="" />
                     </div>
                 </div>
             </div>

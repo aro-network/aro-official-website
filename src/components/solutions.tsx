@@ -48,8 +48,8 @@ export function Solutions() {
         return (
 
 
-            <section className="flex flex-col w-[calc(100%-23px)] sm:w-full gap-4 p-4 solutions__item lg:p-6 shrink-0">
-                <div ref={ref}>
+            <section className="flex flex-col w-[calc(100%-23px)] sm:w-full  gap-4 p-4 solutions__item lg:p-6 shrink-0">
+                <div ref={ref} >
                     <div
                         className="w-[72px] h-[72px] rounded-full flex items-center justify-center"
                         style={{ border: "1px solid rgba(243, 243, 243, 0.1)" }}
@@ -68,7 +68,7 @@ export function Solutions() {
 
 
 
-    return <div className="solutions sm:h-[3000px]" ref={ref}>
+    return <div className="solutions sm:h-[3000px] " ref={ref}>
         <section className="sticky h-screen pt-16 solutions__section top-16 lg:top-0 lg:pt-32 2xl:pt-60">
             <div className="container">
                 <h2 className="section-title" onClick={() => { }}>The Open Edge</h2>

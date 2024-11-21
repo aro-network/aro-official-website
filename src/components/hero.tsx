@@ -27,11 +27,6 @@ export function Hero() {
                     </p>
 
                 </div>
-                {/* <div className="hidden sm:block ">
-                    <p className="m-0 mt-5 text-4xl lg:text-7xl font-normal leading-[1.5] drop-shadow-lg">
-                        THE GENESIS OF OPEN EDGE,FOR THE AI ERA
-                    </p>
-                </div> */}
             </div>
 
 
