@@ -22,18 +22,16 @@ export function Hero() {
             </div>
             <div>
                 <div className="block sm:hidden">
-                    <p className="m-0 mt-5 text-4xl lg:text-6xl font-normal  leading-[1.1] drop-shadow-lg">
-                        THE GENESIS OF OPEN EDGE,
+                    <p className="m-0 mt-5 text-4xl lg:text-5xl font-normal  leading-[1.1] drop-shadow-lg">
+                        THE GENESIS OF OPEN EDGE, FOR THE AI ERA
                     </p>
-                    <p className="m-0 mt-5 text-4xl lg:text-6xl font-normal leading-[1.1] drop-shadow-lg">
-                        FOR THE AI ERA
-                    </p>
+
                 </div>
-                <div className="hidden sm:block ">
+                {/* <div className="hidden sm:block ">
                     <p className="m-0 mt-5 text-4xl lg:text-7xl font-normal leading-[1.5] drop-shadow-lg">
                         THE GENESIS OF OPEN EDGE,FOR THE AI ERA
                     </p>
-                </div>
+                </div> */}
             </div>
 
 

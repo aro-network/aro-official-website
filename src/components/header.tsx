@@ -19,7 +19,7 @@ export function Header() {
     return (
         <div className="fixed left-0 right-0 z-50 flex items-center justify-center w-screen sm:top-2">
             <div className="w-full max-w-[1440px] py-4 px-8 bg-[#0d0d0d4d] border border-[#f3f3f31a] rounded-[30px] flex justify-between items-center z-10 backdrop-blur-lg">
-                <a href="/">
+                <a href="https://enreach.network/">
                     <Logo />
                 </a>
 
