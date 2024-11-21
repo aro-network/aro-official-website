@@ -13,6 +13,7 @@ export function Subscribe() {
         const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
         if (!validEmail.test(inputEmail)) {
             setErrorText('must be a valid email address ')
+            return
         }
 
         fetch('https://email.enreach.network/email', {
