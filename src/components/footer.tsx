@@ -19,7 +19,7 @@ export function Footer() {
                         <div className=" flex gap-[42px] sm:flex-col sm:justify-center sm:w-full sm:items-center  sm:gap-5">
                             <a className="transition-colors text-white/50 hover:text-white" href="/media-kit">Media Kit</a>
                             <a className="transition-colors text-white/50 hover:text-white" target='_blank' href="https://docs.google.com/document/d/1YZDlxE88v2SwYPclcFeUVfu2U-LgmpEqy2As1ensDg0/edit?tab=t.0">Privacy Policy</a>
-                            <a className="transition-colors text-white/50 hover:text-white" target='_blank' href="https://docs.google.com/document/d/1YZDlxE88v2SwYPclcFeUVfu2U-LgmpEqy2As1ensDg0/edit?usp=sharing">Terms & Conditions</a>
+                            <a className="transition-colors text-white/50 hover:text-white" target='_blank' href="https://docs.google.com/document/d/1k1uHHMCDgJP2tOpgCUslHo3ai6ovMYbvO2adMxNtOUI/edit?tab=t.0">Terms & Conditions</a>
                         </div>
                     </div>
                 </div>
