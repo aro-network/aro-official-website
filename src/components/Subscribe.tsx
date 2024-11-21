@@ -28,14 +28,14 @@ export function Subscribe() {
             .then(response => response.json())
             .then(data => {
                 toast.success('Submit subscription successfully！');
-                console.log('Success:', data);
+                setInputEmail('')
             })
             .catch(error => {
                 console.error('Error:', error);
             });
 
     }
-    return <div className="relative flex flex-col items-center w-screen p-4 lg:p-16 sm:justify-center sm:mt-0 mt-[-400px] ">
+    return <div className="relative flex flex-col items-center w-screen p-4 lg:p-16 sm:justify-center sm:mt-0 mt-[-300px] ">
         <div className="text-center section-title">Get Started</div>
         <div className="mt-4 text-white/50 sm:text-center">Stay Ahead of the Game: Subscribe to Receive the Latest Updates from EnReach!</div>
         <div className="flex flex-col gap-2 mt-8 mb-8 sm:gap-5 lg:flex-row">
