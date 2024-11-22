@@ -42,7 +42,7 @@ export function Architecture() {
     };
 
 
-    return <div ref={ref} className="container relative lg:pb-72 h-[8000px] sm:h-full" >
+    return <div ref={ref} className="container relative lg:pb-72 h-[3000px] sm:h-full" >
         <section className="sticky flex flex-col h-screen top-24 2xl:top-40 mo:hidden">
             <h2 className="section-title">The Open-Layered Fabric</h2>
             <div className="flex flex-col h-full gap-16 mt-10 lg:flex-row">

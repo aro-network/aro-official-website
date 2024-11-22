@@ -20,8 +20,6 @@ export function Solutions() {
 
 
 
-
-
     const p = useTransform(scrollY, scrollRange, [0, 1])
     // const scrollProgress = useTransform(scrollY, scrollRange, [40, -560 * 3 - 72 * 4]);
 
@@ -68,7 +66,7 @@ export function Solutions() {
 
 
 
-    return <div className="solutions sm:h-[3000px] " ref={ref}>
+    return <div className="solutions  sm:h-[3000px] " ref={ref}>
 
         <section className="sticky h-screen pt-16 solutions__section top-16 lg:top-0 lg:pt-32 2xl:pt-60">
             <div className="container">
@@ -82,11 +80,11 @@ export function Solutions() {
                     </div>
 
                     <div className="flex gap-4 mt-8 sm:gap-20 sm:justify-center mo:hidden">
-                        <div onClick={() => { state === 0 ? null : window.scrollTo({ top: window.scrollY - 3800, behavior: "smooth" }) }} className="z-50 flex items-center cursor-pointer justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
+                        <div onClick={() => { state === 0 ? null : window.scrollTo({ top: window.scrollY - 2800, behavior: "smooth" }) }} className="z-50 flex items-center cursor-pointer justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
                             <IconChevronLeft />
                         </div>
 
-                        <div onClick={() => { state === 2 || state === 3 ? null : window.scrollTo({ top: window.scrollY + 3800, behavior: "smooth" }) }} className="z-50 flex items-center cursor-pointer justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
+                        <div onClick={() => { state === 2 || state === 3 ? null : window.scrollTo({ top: window.scrollY + 2800, behavior: "smooth" }) }} className="z-50 flex items-center cursor-pointer justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
                             <IconChevronRight />
                         </div>
                     </div>
