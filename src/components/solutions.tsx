@@ -14,7 +14,7 @@ export function Solutions() {
         if (ref.current) {
             const start = ref.current.offsetTop;
             const end = start + ref.current.getBoundingClientRect().height;
-            setScrollRange([start, end]);
+            setScrollRange([start - 1000, end - 1000]);
         }
     }, []);
 
@@ -68,7 +68,7 @@ export function Solutions() {
 
     return <div className="solutions  sm:h-[3000px] " ref={ref}>
 
-        <section className="sticky h-screen pt-16 solutions__section top-16 lg:top-0 lg:pt-32 2xl:pt-60">
+        <section className="sticky h-screen pt-16 mt-[2rem] solutions__section top-16 lg:top-0 lg:pt-32 2xl:pt-60">
             <div className="container">
                 <h2 className="section-title" onClick={() => { }}>The Open Edge</h2>
             </div>

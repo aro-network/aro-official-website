@@ -10,11 +10,11 @@ import { VisionStatement } from './components/vision-statement'
 
 function App() {
   const { scrollY } = useScroll()
-  const [showSpline, setShowSpline] = useState(false)
+  const [showSpline, setShowSpline] = useState(true)
 
   useEffect(() => {
     scrollY.on('change', (latest) => {
-      setShowSpline(latest <= window.innerHeight + 3000)
+      setShowSpline(latest <= window.innerHeight + 2000)
     })
   }, [scrollY])
 
@@ -22,22 +22,18 @@ function App() {
     <div className='w-screen'>
       <AnimatePresence>
         {
-          showSpline && (
-            <motion.div
-              style={{
-                position: 'fixed',
-                width: '100%',
-                height: '100vh',
-                pointerEvents: 'none',
-                inset: 0,
-              }}
-              initial={{ opacity: 1 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-            >
-              <Spline scene="https://prod.spline.design/ES73NlbvyVeXL41Y/scene.splinecode" />
-            </motion.div>
-          )
+          showSpline && <motion.div
+            style={{
+              position: 'fixed',
+              width: '100%',
+              height: '100vh',
+            }}
+            initial={{ opacity: 1 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <Spline scene="https://prod.spline.design/ES73NlbvyVeXL41Y/scene.splinecode" />
+          </motion.div>
         }
       </AnimatePresence>
       <main className='container'>

@@ -16,7 +16,7 @@ export function Architecture() {
         if (ref.current) {
             const start = ref.current.offsetTop;
             const end = start + ref.current.getBoundingClientRect().height;
-            setScrollRange([start, end]);
+            setScrollRange([start - 1000, end - 1000]);
         }
     }, [])
 
@@ -45,7 +45,7 @@ export function Architecture() {
     return <div ref={ref} className="container relative lg:pb-72 h-[3000px] sm:h-full" >
         <section className="sticky flex flex-col h-screen top-24 2xl:top-40 mo:hidden">
             <h2 className="section-title">The Open-Layered Fabric</h2>
-            <div className="flex flex-col h-full gap-16 mt-10 lg:flex-row">
+            <div className="flex flex-col h-full gap-[70px] mt-10 lg:flex-row">
                 <div className="flex justify-between lg:flex-col lg:gap-8 2xl:gap-16 lg:justify-start">
                     {
                         architecture.map(({ title, description, icon }, index) => {
@@ -59,10 +59,10 @@ export function Architecture() {
 
                                     }}
                                     onClick={() => setCurrentIndex(index)}
-                                    className={clsx("architecture__item border p-4 cursor-pointer", currentIndex === index ? 'bg-black/20 border-white/10 rounded-3xl' : 'border-transparent')} key={index}>
+                                    className={clsx(" architecture__item border p-3 cursor-pointer", currentIndex === index ? 'bg-black/20 border-white/10 rounded-3xl' : 'border-transparent')} key={index}>
                                     <div className="flex flex-col items-center gap-1 lg:flex-row">
                                         <Icon />
-                                        <h3 className="text-xs text-center lg:text-left lg:text-2xl">{title}</h3>
+                                        <h3 className="text-xs text-center lg:text-left lg:text-[22px]">{title}</h3>
                                     </div>
                                     <p className="hidden mt-4 opacity-50 lg:block">{description}</p>
                                 </div>

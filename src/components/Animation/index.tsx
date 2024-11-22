@@ -3,7 +3,7 @@ export function Animation(props: { state: number }) {
     const { state } = props
 
 
-    return <div className="relative w-full scale-75 sm:mt-10 lg:w-1/2 h-72 lg:h-96 2xl:scale-100">
+    return <div className="relative w-full mt-3 scale-75 sm:mt-10 lg:w-1/2 h-72 lg:h-96 2xl:scale-100">
         <svg className="absolute scale-150 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1292 1292" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect style={{ animationDelay: '0.2s' }} className="fill-blue-400 animate-pulse" x="527" y="200" width="8" height="8" rx="4" />
             <rect style={{ animationDelay: '0.4s' }} className="fill-blue-400 animate-pulse" x="573" y="200" width="8" height="8" rx="4" />
