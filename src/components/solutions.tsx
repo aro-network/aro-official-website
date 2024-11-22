@@ -67,7 +67,9 @@ export function Solutions() {
     }
 
 
+
     return <div className="solutions sm:h-[3000px] " ref={ref}>
+
         <section className="sticky h-screen pt-16 solutions__section top-16 lg:top-0 lg:pt-32 2xl:pt-60">
             <div className="container">
                 <h2 className="section-title" onClick={() => { }}>The Open Edge</h2>
@@ -75,7 +77,7 @@ export function Solutions() {
 
             <div className="container flex flex-col items-center w-full gap-8 lg:flex-row">
                 <div className="w-full lg:w-1/2 lg:mt-24 ">
-                    <div className="relative overflow-x-hidden flex before:content-[''] before:absolute before:right-0 before:top-0 before:bottom-0 before:w-8 before:bg-gradient-to-r sm:before:bg-none before:from-transparent before:to-[rgba(13,13,13,1)] before:z-20">
+                    <div className="relative overflow-x-hidden flex before:content-[''] before:absolute before:right-0 before:top-0 before:bottom-0 before:w-8 before:bg-none sm:before:bg-none before:from-transparent before:to-[rgba(13,13,13,1)] before:z-20">
                         {leftPage()}
                     </div>
 

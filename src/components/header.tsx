@@ -6,7 +6,7 @@ import * as Popover from "@radix-ui/react-popover";
 import { Link } from "react-router-dom";
 const sections = [
 
-    { label: 'Home', href: '/' },
+    { label: 'Home', href: 'https://enreach.network/' },
     { label: 'About Us', href: 'https://about-us.enreach.network/' },
     { label: 'Docs', href: 'https://docs.enreach.network' },
 
@@ -50,7 +50,7 @@ export function Header() {
                                     </Popover.Root>
                                 ) : (
                                     // Render normal links for other sections
-                                    <Link key={section.href} to={section.href}>{section.label}</Link>
+                                    <Link key={section.href} reloadDocument={true} to={section.href}>{section.label}</Link>
                                 )}
                             </div>
                         ))
