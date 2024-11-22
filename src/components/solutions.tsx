@@ -75,13 +75,13 @@ export function Solutions() {
                 <h2 className="section-title" onClick={() => { }}>The Open Edge</h2>
             </div>
 
-            <div className="container flex flex-col items-center w-full gap-8 lg:flex-row">
+            <div className="container flex flex-col items-center w-full gap-8 mo:mt-10 lg:flex-row">
                 <div className="w-full lg:w-1/2 lg:mt-24 ">
                     <div className="relative overflow-x-hidden flex before:content-[''] before:absolute before:right-0 before:top-0 before:bottom-0 before:w-8 before:bg-none sm:before:bg-none before:from-transparent before:to-[rgba(13,13,13,1)] before:z-20">
                         {leftPage()}
                     </div>
 
-                    <div className="flex gap-4 mt-8 sm:gap-20 sm:justify-center">
+                    <div className="flex gap-4 mt-8 sm:gap-20 sm:justify-center mo:hidden">
                         <div onClick={() => { state === 0 ? null : window.scrollTo({ top: window.scrollY - 3800, behavior: "smooth" }) }} className="z-50 flex items-center cursor-pointer justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
                             <IconChevronLeft />
                         </div>

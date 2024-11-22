@@ -10,7 +10,7 @@
   }
 
   .section-title {
-    @apply text-[32px] leading-[1.1] font-normal uppercase text-center lg:text-left;
+    @apply text-[36px] leading-[1.1] font-normal uppercase text-center lg:text-left;
   }
 
   .about-title {

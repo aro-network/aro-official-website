@@ -5,6 +5,8 @@ export default {
     extend: {
       screens: {
         sm: { max: "640px" },
+        mo: { max: "900px" },
+        ng: { min: "900px" },
       },
     },
   },
