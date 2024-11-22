@@ -57,6 +57,5 @@ export function Subscribe() {
 
         </div>
 
-        <SocialButtons />
     </div>
 }
