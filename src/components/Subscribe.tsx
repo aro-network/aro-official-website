@@ -42,7 +42,7 @@ export function Subscribe() {
             <div className="flex flex-col gap-2 sm:gap-5 ">
                 <div className="flex gap-2 sm:gap-5 ">
                     <div>
-                        <input onChange={(e) => { setInputEmail(e.target.value); setErrorText('') }} className="w-full h-12 px-4 border rounded-full sm:text-lg bg-black/10 lg:w-60 border-white/10" placeholder="Enter your email" />
+                        <input value={inputEmail} onChange={(e) => { setInputEmail(e.target.value); setErrorText('') }} className="w-full h-12 px-4 border rounded-full sm:text-lg bg-black/10 lg:w-60 border-white/10" placeholder="Enter your email" />
 
                         <div className="mt-2 text-center text-red-600">
                             {errorText}
