@@ -2,6 +2,9 @@ import clsx from "clsx";
 import { useScroll, useTransform } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { architecture } from "../config/architecture";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export function Architecture() {
     const { scrollY } = useScroll();
@@ -32,15 +35,21 @@ export function Architecture() {
     }, [])
 
 
-    return <div ref={ref} className="container relative lg:pb-72 h-[8000px] sm:h-[4000px]" >
-        <section className="sticky flex flex-col h-screen top-24 2xl:top-40">
+    const settings = {
+        dots: true,
+        slidesPerRow: 1,
+        arrows: false,
+    };
+
+
+    return <div ref={ref} className="container relative lg:pb-72 h-[8000px] sm:h-full" >
+        <section className="sticky flex flex-col h-screen top-24 2xl:top-40 mo:hidden">
             <h2 className="section-title">The Open-Layered Fabric</h2>
             <div className="flex flex-col h-full gap-16 mt-10 lg:flex-row">
                 <div className="flex justify-between lg:flex-col lg:gap-8 2xl:gap-16 lg:justify-start">
                     {
                         architecture.map(({ title, description, icon }, index) => {
                             const Icon = icon
-
                             return (
                                 <div
                                     style={{
@@ -61,7 +70,7 @@ export function Architecture() {
                         })
                     }
                 </div>
-                <div className="relative w-screen max-w-full min-h-full">
+                <div className="relative w-screen max-w-full min-h-full ">
                     <div className="z-10 h-4 max-w-full">
                         <img className={'bg-cover object-cover'} style={{ transform: `translateY(${currentIndex > -1 ? 80 : 0}px)`, opacity: currentIndex > -1 ? 1 : 0, transition: 'all 0.4s' }} src="/application.png" />
                     </div>
@@ -74,5 +83,33 @@ export function Architecture() {
                 </div>
             </div>
         </section>
+
+        <div className=" 2xl:top-40 ng:hidden">
+            <h2 className="section-title">The Open-Layered Fabric</h2>
+            <div className="flex flex-col gap-16 mt-10 lg:flex-row">
+                <Slider {...settings} className="">
+                    {
+                        architecture.map(({ title, description, icon }, index) => {
+                            const Icon = icon
+                            return (
+                                <div>
+                                    <div
+                                        className=' p-4   h-[232px]' key={index}>
+                                        <div className="flex items-center gap-1 lg:flex-row">
+                                            <Icon />
+                                            <h3 className="text-xl text-center ">{title}</h3>
+                                        </div>
+                                        <p className="mt-4 opacity-50 lg:block">{description}</p>
+                                    </div>
+                                    <img className={'bg-cover object-cover'} src="/application.png" />
+
+                                </div>
+                            )
+                        })
+                    }
+                </Slider>
+            </div>
+
+        </div>
     </div>
 }
