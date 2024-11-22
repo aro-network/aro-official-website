@@ -21,7 +21,7 @@ export function Hero() {
                 <SocialButtons />
             </div>
             <div>
-                <div className="block sm:hidden">
+                <div className="">
                     <p className="m-0 mt-5 text-4xl lg:text-5xl font-normal  leading-[1.1] drop-shadow-lg">
                         THE GENESIS OF OPEN EDGE, FOR THE AI ERA
                     </p>
