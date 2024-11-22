@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { SocialButtons } from "./social-buttons";
 import { toast } from "sonner";
 
 export function Subscribe() {
