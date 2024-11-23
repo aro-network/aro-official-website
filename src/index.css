@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.cdnfonts.com/css/abc-ginto-nord-unlicensed-trial');
+@import url("https://fonts.cdnfonts.com/css/abc-ginto-nord-unlicensed-trial");
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,7 +15,7 @@
   }
 
   .about-title {
-    @apply px-4 py-1 text-xl text-black bg-white rounded-2xl w-fit ;
+    @apply px-4 py-1 text-xl text-black bg-white rounded-2xl w-fit;
   }
 
   .about-subtitle {
@@ -30,7 +31,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: 'ABC Ginto Nord Unlicensed Trial';
+  font-family: "ABC Ginto Nord Unlicensed Trial";
 }
 * {
   margin: 0;
@@ -92,3 +93,20 @@ h6 {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.cardText {
+  font-family: "Albert Sans", sans-serif;
+}
+
+.description{
+  font-family: "ABC Ginto Nord Unlicensed Trial";
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--red);
+  transform-origin: 0%;
+}

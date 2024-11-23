@@ -14,9 +14,13 @@ function App() {
 
   useEffect(() => {
     scrollY.on('change', (latest) => {
-      setShowSpline(latest <= window.innerHeight + 2000)
+      setShowSpline(latest <= window.innerHeight + 3000)
     })
+
   }, [scrollY])
+
+
+
 
   return (
     <div className='w-screen'>
@@ -27,6 +31,9 @@ function App() {
               position: 'fixed',
               width: '100%',
               height: '100vh',
+              pointerEvents: 'none',
+              inset: 0,
+              overflowY: 'hidden',
             }}
             initial={{ opacity: 1 }}
             animate={{ opacity: 1 }}
@@ -40,8 +47,10 @@ function App() {
         <Hero />
         <VisionStatement />
       </main>
+      {/* <MainContainer /> */}
       <Solutions />
       <Architecture />
+
       <Subscribe />
     </div>
   )

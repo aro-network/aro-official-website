@@ -1,97 +1,73 @@
+import { useRef } from "react";
+import { motion } from "motion/react";
+import { useScrollControl } from "../hooks/useScrollControl";
+
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
-import { useScroll, useTransform } from "motion/react";
-import { useEffect, useRef, useState } from "react";
-import { solutions } from "../config/solutions";
 import { Animation } from "./Animation";
+import { solutions } from "../config/solutions";
+
 
 export function Solutions() {
     const ref = useRef<HTMLDivElement>(null);
-    const { scrollY } = useScroll();
-    const [scrollRange, setScrollRange] = useState([0, 0]);
-    const [state, setState] = useState(0)
-
-    useEffect(() => {
-        if (ref.current) {
-            const start = ref.current.offsetTop;
-            const end = start + ref.current.getBoundingClientRect().height;
-            setScrollRange([start - 1000, end - 1000]);
-        }
-    }, []);
+    const containerRef = useRef<HTMLDivElement>(null);
+    const { currentSection, scroll, setCurrentSection } = useScrollControl();
 
 
+    const handleWheel = (e: React.WheelEvent) => {
+        scroll(e.deltaY > 0 ? 'down' : 'up', 1, solutions.length);
+    };
 
-    const p = useTransform(scrollY, scrollRange, [0, 1])
-    // const scrollProgress = useTransform(scrollY, scrollRange, [40, -560 * 3 - 72 * 4]);
+    const currentSolution = solutions[currentSection];
 
-    useEffect(() => {
-        p.on('change', v => {
-            if (v >= 0.25 && v < 0.5) {
-                setState(1)
-            } else if (v >= 0.5 && v < 0.75) {
-                setState(2)
-            } else if (v >= 0.75) {
-                setState(3)
-            } else if (v < 0.25) {
-                setState(0)
-            }
-        })
-    }, [setState])
+    return (
+        <div className=" h-[150vh] mo:pb-20  solutions mt-20" ref={ref} onWheel={handleWheel}>
+            <section
+                ref={containerRef}
+                className="container sticky top-0 h-screen min-h-screen pt-16 solutions__section"
+            >
 
+                <div className="flex flex-col items-center h-full gap-16 lg:flex-row ">
 
+                    <div className="flex flex-col gap-8 lg:w-1/2">
+                        <div className="container px-4 mx-auto">
+                            <h2 className="mb-12 text-3xl font-light leading-10 text-white">THE OPEN EDGE</h2>
+                        </div>
 
-    const leftPage = () => {
-        const index = state === 3 ? 2 : state
-        const Icon = solutions[index]?.icon;
+                        <motion.div
+                            className="p-6 transition-all duration-300 border rounded-3xl bg-white/10 border-white/20"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
 
-        return (
+                        >
+                            <div
+                                className="w-[72px] h-[72px] rounded-full flex items-center justify-center bg-[#5D93FF]"
+                            >
+                                <currentSolution.icon className={''} size={40} />
+                            </div>
 
+                            <h3 className="mb-4 text-[20px] font-light text-[#F3F3F3] mt-4">
+                                {currentSolution.title}
+                            </h3>
+                            <p className="leading-relaxed text-[#F3F3F3B2] text-base cardText">
+                                {currentSolution.description}
+                            </p>
+                        </motion.div>
+                        <div className="flex gap-4 mt-8 sm:gap-20 sm:justify-center mo:hidden">
+                            <div onClick={() => { setCurrentSection((prev) => prev - 1) }} className="z-50 flex items-center cursor-pointer justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
+                                <IconChevronLeft />
+                            </div>
 
-            <section className="flex flex-col w-[calc(100%-23px)] sm:w-full  gap-4 p-4 solutions__item lg:p-6 shrink-0">
-                <div ref={ref} >
-                    <div
-                        className="w-[72px] h-[72px] rounded-full flex items-center justify-center bg-[#4281FF]"
-                        style={{ border: "1px solid rgba(243, 243, 243, 0.1)" }}
-                    >
-                        <Icon className={''} size={40} />
+                            <div onClick={() => { setCurrentSection((prev) => prev + 1) }} className="z-50 flex items-center cursor-pointer justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
+                                <IconChevronRight />
+                            </div>
+                        </div>
+
                     </div>
-                    <h3 className="pt-3 text-xl lg:text-3xl">{solutions[index]?.title}</h3>
-                    <p className="pt-3 text-sm lg:text-base text-white/50">
-                        {solutions[index]?.description}
-                    </p>
-                </div>
 
+                    <Animation state={currentSection} />
+                </div>
             </section>
-        );
-    }
-
-
-
-    return <div className="solutions  sm:h-[3000px] " ref={ref}>
-
-        <section className="sticky h-screen pt-16 mt-[2rem] solutions__section top-16 lg:top-0 lg:pt-32 2xl:pt-60">
-            <div className="container">
-                <h2 className="section-title" onClick={() => { }}>The Open Edge</h2>
-            </div>
-
-            <div className="container flex flex-col items-center w-full gap-8 mo:mt-10 lg:flex-row">
-                <div className="w-full lg:w-1/2 lg:mt-24 ">
-                    <div className="relative overflow-x-hidden flex before:content-[''] before:absolute before:right-0 before:top-0 before:bottom-0 before:w-8 before:bg-none sm:before:bg-none before:from-transparent before:to-[rgba(13,13,13,1)] before:z-20">
-                        {leftPage()}
-                    </div>
-
-                    <div className="flex gap-4 mt-8 sm:gap-20 sm:justify-center mo:hidden">
-                        <div onClick={() => { state === 0 ? null : window.scrollTo({ top: window.scrollY - 2800, behavior: "smooth" }) }} className="z-50 flex items-center cursor-pointer justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
-                            <IconChevronLeft />
-                        </div>
-
-                        <div onClick={() => { state === 2 || state === 3 ? null : window.scrollTo({ top: window.scrollY + 2800, behavior: "smooth" }) }} className="z-50 flex items-center cursor-pointer justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
-                            <IconChevronRight />
-                        </div>
-                    </div>
-                </div>
-
-                <Animation state={state} />
-            </div>
-        </section >
-    </div >
+        </div>
+    );
 }
