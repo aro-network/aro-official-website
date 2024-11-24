@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export function Architecture() {
-    const { currentSection, scroll } = useScrollControl();
+    const { currentSection, scroll, setCurrentSection } = useScrollControl();
 
     const handleWheel = (e: React.WheelEvent) => {
         scroll(e.deltaY > 0 ? 'down' : 'up', 1, architecture.length);
@@ -23,10 +23,10 @@ export function Architecture() {
         <>
 
             <div
-                className="relative h-[150vh] mt-10 mo:mt-40 sm:h-full mo:hidden"
-                onWheel={handleWheel}
+                className="relative h-[200vh] mt-10 mo:mt-40 sm:h-full mo:hidden"
             >
-                <section className="sticky top-0 flex flex-col h-screen">
+
+                <section className="sticky top-0 flex flex-col h-screen" onWheel={handleWheel}>
                     <div className="container px-4 py-16 mx-auto">
                         <h2 className="mb-16 text-4xl font-bold text-white">
                             THE OPEN-LAYERED FABRIC
@@ -49,6 +49,7 @@ export function Architecture() {
                                             opacity: currentSection === index ? 1 : 0.5,
                                             y: 0
                                         }}
+                                        onClick={() => setCurrentSection(index)}
                                         transition={{ duration: 0.5 }}
                                     >
                                         <div className="flex flex-col items-center gap-4 lg:flex-row ga">

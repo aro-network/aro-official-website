@@ -20,7 +20,7 @@ export function Solutions() {
     const currentSolution = solutions[currentSection];
 
     return (
-        <div className=" h-[150vh] mo:pb-20  solutions mt-20" ref={ref} onWheel={handleWheel}>
+        <div className=" h-[200vh] mo:pb-20  solutions mt-20" ref={ref} onWheel={handleWheel}>
             <section
                 ref={containerRef}
                 className="container sticky top-0 h-screen min-h-screen pt-16 solutions__section"
@@ -54,11 +54,11 @@ export function Solutions() {
                             </p>
                         </motion.div>
                         <div className="flex gap-4 mt-8 sm:gap-20 sm:justify-center mo:hidden">
-                            <div onClick={() => { setCurrentSection((prev) => prev - 1) }} className="z-50 flex items-center cursor-pointer justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
+                            <div onClick={() => { currentSection !== 0 && setCurrentSection((prev) => prev - 1) }} className="z-50 flex items-center cursor-pointer justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
                                 <IconChevronLeft />
                             </div>
 
-                            <div onClick={() => { setCurrentSection((prev) => prev + 1) }} className="z-50 flex items-center cursor-pointer justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]">
+                            <div onClick={() => { currentSection !== 2 && setCurrentSection((prev) => prev + 1) }} className={` ${currentSection === 2 && ' cursor-not-allowed'} z-50 flex items-center cursor-pointer justify-center w-12 h-12 border rounded-full border-white/10 text-white/50 hover:bg-[#4281FF]`}>
                                 <IconChevronRight />
                             </div>
                         </div>

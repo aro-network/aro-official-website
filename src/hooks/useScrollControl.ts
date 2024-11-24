@@ -42,7 +42,7 @@ export function useScrollControl() {
 
       scrollTimeout.current = setTimeout(() => {
         isScrolling.current = false;
-      }, 700); // Shorter delay for better responsiveness
+      }, 1000); // Shorter delay for better responsiveness
     },
 
     [currentContainer, currentSection]
