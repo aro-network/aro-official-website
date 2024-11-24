@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { architecture } from "../config/architecture";
-
 import { motion, } from "motion/react";
 import { useScrollControl } from "../hooks/useScrollControl";
 import Slider from "react-slick";
@@ -10,9 +9,12 @@ import "slick-carousel/slick/slick-theme.css";
 export function Architecture() {
     const { currentSection, scroll, setCurrentSection } = useScrollControl();
 
+
     const handleWheel = (e: React.WheelEvent) => {
         scroll(e.deltaY > 0 ? 'down' : 'up', 1, architecture.length);
     };
+
+
 
     const settings = {
         dots: true,
@@ -23,10 +25,11 @@ export function Architecture() {
         <>
 
             <div
-                className="relative h-[200vh] mt-10 mo:mt-40 sm:h-full mo:hidden"
+                className=" relative h-[200vh]  mt-[120px] mo:mt-40 sm:h-full mo:hidden"
+                onWheel={handleWheel}
             >
 
-                <section className="sticky top-0 flex flex-col h-screen" onWheel={handleWheel}>
+                <section className="sticky top-0 flex flex-col h-screen ">
                     <div className="container px-4 py-16 mx-auto">
                         <h2 className="mb-16 text-4xl font-bold text-white">
                             THE OPEN-LAYERED FABRIC
@@ -39,7 +42,7 @@ export function Architecture() {
                                     return <motion.div
                                         key={item.title}
                                         className={clsx(
-                                            "p-6 rounded-3xl transition-all duration-300",
+                                            "p-6  rounded-3xl transition-all duration-300",
                                             currentSection === index
                                                 ? "bg-white/10 border border-white/20"
                                                 : "opacity-50"
