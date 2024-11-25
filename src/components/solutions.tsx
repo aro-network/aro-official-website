@@ -108,7 +108,7 @@ export function Solutions() {
     const currentSolution = solutions[currentSection];
 
     return (
-        <div className=" h-[100vh] mo:pb-20  solutions mt-20 section" ref={ref} onWheel={handleWheel}>
+        <div className="h-[120vh] mo:pb-20 solutions section" ref={ref} onWheel={handleWheel}>
             <section
                 ref={containerRef}
                 className="container sticky top-0 h-screen min-h-screen pt-16 solutions__section"

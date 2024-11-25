@@ -12,6 +12,7 @@ function App() {
   const { scrollY } = useScroll()
   const [showSpline, setShowSpline] = useState(true)
 
+
   useEffect(() => {
     scrollY.on('change', (latest) => {
       setShowSpline(latest <= window.innerHeight + 3000)
@@ -47,7 +48,6 @@ function App() {
         <Hero />
         <VisionStatement />
       </main>
-      {/* <MainContainer /> */}
       <Solutions />
       <Architecture />
 

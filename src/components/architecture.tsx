@@ -30,19 +30,19 @@ export function Architecture() {
             >
 
                 <section className="sticky top-0 flex flex-col h-screen ">
-                    <div className="container px-4 py-16 mx-auto">
-                        <h2 className="mb-16 text-4xl font-bold text-white">
+                    <div className="container px-4 py-10 mx-auto">
+                        <h2 className="mt-16 text-4xl font-bold text-white">
                             THE OPEN-LAYERED FABRIC
                         </h2>
 
-                        <div className="flex flex-col justify-between w-full h-full gap-16 lg:flex-row">
-                            <div className="flex flex-col w-full gap-8">
+                        <div className="flex flex-col justify-between w-full h-full gap-8 mt-10 lg:flex-row">
+                            <div className="flex flex-col w-full gap-4">
                                 {architecture.map((item, index) => {
                                     const Icon = item.icon
                                     return <motion.div
                                         key={item.title}
                                         className={clsx(
-                                            "p-6  rounded-3xl transition-all duration-300",
+                                            "p-5  rounded-3xl cursor-pointer",
                                             currentSection === index
                                                 ? "bg-white/10 border border-white/20"
                                                 : "opacity-50"
@@ -53,7 +53,7 @@ export function Architecture() {
                                             y: 0
                                         }}
                                         onClick={() => setCurrentSection(index)}
-                                        transition={{ duration: 0.5 }}
+                                    // transition={{ duration: 0.5 }}
                                     >
                                         <div className="flex flex-col items-center gap-4 lg:flex-row ga">
                                             <Icon />
@@ -67,15 +67,15 @@ export function Architecture() {
                                 })}
 
                             </div>
-                            <div className="relative w-full ">
+                            <div className="relative w-full bottom-20 ">
                                 <div className="z-10 h-4 max-w-full">
-                                    <img className={'bg-cover object-cover'} style={{ transform: `translateY(${currentSection > -1 ? 80 : 0}px)`, opacity: currentSection > -1 ? 1 : 0, transition: 'all 0.4s' }} src="/application.png" />
+                                    <img className={'bg-cover object-cover w-[700px]'} style={{ transform: `translateY(${currentSection > -1 ? 80 : 0}px)`, opacity: currentSection > -1 ? 1 : 0, transition: 'all 0.4s' }} src="/application.png" />
                                 </div>
                                 <div className="relative z-20 h-4 max-w-full">
-                                    <img style={{ transform: `translateY(${currentSection > 0 ? 0 : -80}px)`, opacity: currentSection > 0 ? 1 : 0, transition: 'all 0.4s' }} src="/orchestration.png" className="" />
+                                    <img className={'w-[700px]'} style={{ transform: `translateY(${currentSection > 0 ? 0 : -80}px)`, opacity: currentSection > 0 ? 1 : 0, transition: 'all 0.4s' }} src="/orchestration.png" />
                                 </div>
                                 <div className="relative z-30 h-4 max-w-full">
-                                    <img style={{ transform: `translateY(${currentSection > 1 ? -80 : -160}px)`, opacity: currentSection > 1 ? 1 : 0, transition: 'all 0.4s' }} src="/resource.png" className="" />
+                                    <img className={'w-[700px]'} style={{ transform: `translateY(${currentSection > 1 ? -80 : -160}px)`, opacity: currentSection > 1 ? 1 : 0, transition: 'all 0.4s' }} src="/resource.png" />
                                 </div>
                             </div>
 

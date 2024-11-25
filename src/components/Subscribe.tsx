@@ -35,7 +35,7 @@ export function Subscribe() {
 
     }
 
-    return <div className="relative flex flex-col items-center w-screen px-[30px] sm:justify-center sm:mt-0 mo:mt-40">
+    return <div className="relative flex flex-col items-center w-screen px-[30px] sm:justify-center justify-center h-screen mt-40 sm:mt-0 mo:mt-40">
         <div className="text-center section-title">Get Started</div>
         <div className="mt-4 text-white/50 sm:text-center ">Stay Ahead of the Game: Subscribe to Receive the Latest Updates from EnReach!</div>
         <div className="flex flex-col gap-2 mt-8 mb-8 sm:gap-5 lg:flex-row">
