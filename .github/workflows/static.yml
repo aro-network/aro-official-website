@@ -37,7 +37,7 @@ jobs:
           pnpm build
 
       - name: Deploy Gh-Pages 🚀
-        uses: actions/actions-gh-pages@v4.0.1
+        uses: peaceiris/actions-gh-pages@v4.0.1
         with:
           publish_dir: ./out
           cname: enreach.network
