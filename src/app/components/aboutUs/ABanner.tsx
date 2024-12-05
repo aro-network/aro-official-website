@@ -1,10 +1,10 @@
 const ABanner = () => {
   return <div data-aos="fade-up"
     data-aos-duration="1000"
-    className="m-auto  aos-init aos-animate w-container md:w-full">
+    className="m-auto aos-init aos-animate w-container md:w-full">
     <div className="flex items-center justify-between w-full ">
       <div className="bg-[#1B1B1B] p-20 md:p-0  w-[50%] md:h-[700px]">
-        <img src="./ai.gif" className="" />
+        <img src="./aI.gif" className="" />
       </div>
       <div className="w-[50%]">
         <div className="h-[700px] md:mx-[30px] flex  flex-col justify-center md:pl-[10px] items-baseline  gap-[40px] md:gap-5">
