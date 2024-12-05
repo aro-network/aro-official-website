@@ -31,14 +31,13 @@ jobs:
           version: 8
 
       - name: Install dependencies & build
-        env:
-          NEXT_PUBLIC_ENV: "beta"
+
         run: |
           pnpm install --frozen-lockfile    
           pnpm build
 
       - name: Deploy Gh-Pages 🚀
-        uses: wuhaixian1984/actions-gh-pages@v4.0.1
+        uses: actions/actions-gh-pages@v4.0.1
         with:
           publish_dir: ./out
           cname: enreach.network
