@@ -23,23 +23,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-      - name: set Node
-        uses: actions/setup-node@v3
+        uses: actions/checkout@v4.1.7
+
+      - name: Set pnpm
+        uses: pnpm/action-setup@v4
         with:
-          node-version: 18
-          cache: "yarn"
-          cache-dependency-path: "./"
-      - name: install
-        run: yarn install
-      - name: build
-        run: yarn build
-      - name: set page
-        uses: actions/configure-pages@v3
-      - name: update pages
-        uses: actions/upload-pages-artifact@v1
+          version: 8
+
+      - name: Install dependencies & build
+        env:
+          NEXT_PUBLIC_ENV: "beta"
+        run: |
+          pnpm install --frozen-lockfile    
+          pnpm build
+
+      - name: Deploy Gh-Pages 🚀
+        uses: actions/actions-gh-pages@v4.0.1
         with:
-          path: "./docs"
-      - name: build to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+          publish_dir: ./out
+          cname: enreach.network
