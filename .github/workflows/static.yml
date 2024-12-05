@@ -38,6 +38,7 @@ jobs:
           pnpm build
 
       - name: Deploy Gh-Pages 🚀
+        uses: picascaz/actions-gh-pages@v4.0.1
         with:
           publish_dir: ./out
           cname: enreach.network
