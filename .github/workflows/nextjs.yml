@@ -78,9 +78,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
-          cname: enreach.network
 
   # Deployment job
   deploy:
@@ -93,3 +91,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./out
+        cname: enreach.network
