@@ -33,7 +33,7 @@ jobs:
       - name: Install dependencies & build
 
         run: |
-          pnpm install --frozen-lockfile    
+          pnpm install --no-frozen-lockfile
           pnpm build
 
       - name: Deploy Gh-Pages 🚀
