@@ -42,7 +42,7 @@ const AFooter = () => {
     data-aos-duration="1000"
     className=" aos-init aos-animate w-full bg-[#313131] h-auto  ">
     <div className="w-container m-auto md:w-full md:px-[30px] ">
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col items-center justify-center">
         <div className=" mt-[95px]">
           <img src="./logo.png" width={231} height={51} />
         </div>
@@ -63,11 +63,11 @@ const AFooter = () => {
             <div className="mt-[58px] flex justify-center">
               <div>
                 <input value={inputEmail} onChange={(e) => { setInputEmail(e.target.value); setErrorText('') }} placeholder="sample@email.com" className=" w-[393px] h-[67px] rounded-[33px] bg-[#242424]" />
-                <div className="mt-2 text-center text-red-600 h-5">
+                <div className="h-5 mt-2 text-center text-red-600">
                   {errorText}
                 </div>
               </div>
-              <button onClick={onSubmitEmail} className=" bg-[#4281FF] text-[#FFFFFF] rounded-[33.5px] w-[198px] h-[67px] abcgintoText text-[25px] font-medium leading-normal ">Submit</button>
+              <button onClick={onSubmitEmail} className=" bg-[#4281FF] btn  text-[#FFFFFF] rounded-[33.5px] w-[198px] h-[67px] abcgintoText text-[25px] font-medium leading-normal ">Submit</button>
             </div>
           </div>
           <div className="mt-[224px] mb-5">

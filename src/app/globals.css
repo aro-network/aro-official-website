@@ -58,7 +58,7 @@ body {
 }
 .ipsText:hover{
   background-color: unset;
-  border: 1px solid #4281ff;
+  border: 2px solid #4281ff;
 }
 
 .transition-img {
@@ -81,9 +81,9 @@ input:focus {
 
 input {
   text-align: center;
-  font-size: 28px; /* 设置字体大小为18px */
-  padding: 10px; /* 可选：增加内边距 */
-  width: 300px; /* 可选：设置输入框宽度 */
+  font-size: 28px; 
+  padding: 10px; 
+  width: 300px;
 }
 
 #chartdiv {
@@ -107,6 +107,12 @@ input {
   border: 1px solid #4281ff;
   background-color: #4281ff;
   width: 120px;
+}
+
+.btn:hover{
+  background-color: unset;
+  border: 2px solid #4281ff;
+
 }
 
 .animated-button {
@@ -137,7 +143,7 @@ input {
 }
 
 .animated-button:hover::before {
-  animation: fillEffect 1s ease-out forwards;
+  animation: fillEffect 0.6s ease-out forwards;
 }
 
 .animated-button:hover {

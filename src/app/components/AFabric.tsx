@@ -38,7 +38,7 @@ const AFabric = () => {
           onMouseLeave={() => {
             setDealHover({ index, isHover: false });
           }}>
-          <div className="w-[32%]">
+          <div className="w-[35%]">
             <div className={`abcgintoText  text-[40px] w-full text-right font-medium leading-normal ${clickTab.index === index && 'text-[#ffffff]'}  ${dealHover?.isHover && dealHover.index === index
               ? "text-[#BEBEBE] "
               : "text-[#787878]"
@@ -55,7 +55,7 @@ const AFabric = () => {
 
           </div>
           {clickTab.title && clickTab.index === index &&
-            <div className=" mt-20 md:mt-40  w-[70%]">
+            <div className=" mt-20 md:mt-40  w-[65%]">
               <img src={item.icon} />
             </div>
           }
