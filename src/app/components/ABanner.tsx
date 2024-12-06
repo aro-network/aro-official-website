@@ -45,10 +45,12 @@ const ABanner = () => {
       tooltipText: "{name}",
       fill: am5.color('#2E2E2E'),
       stroke: am5.color('#2E2E2E'),
+      strokeWidth: 1.5,
     });
 
     polygonSeries.mapPolygons.template.states.create("hover", {
       fill: am5.color('#4281ff'),
+
     });
 
     chart.animate({
@@ -56,6 +58,7 @@ const ABanner = () => {
       to: 360,
       duration: 30000,
       loops: Infinity,
+
     });
 
   }

@@ -40,7 +40,7 @@ const AFabric = () => {
           }}>
           <div className="w-[35%]">
             <div className={`abcgintoText  text-[40px] w-full text-right font-medium leading-normal ${clickTab.index === index && 'text-[#ffffff]'}  ${dealHover?.isHover && dealHover.index === index
-              ? "text-[#BEBEBE] "
+              ? "text-[#BEBEBE] ml-1 "
               : "text-[#787878]"
               }`}>
               {item.title}

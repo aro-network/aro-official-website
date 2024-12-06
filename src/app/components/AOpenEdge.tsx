@@ -10,11 +10,11 @@ const AOpenEdge = () => {
   return <div data-aos="fade-up"
     data-aos-duration="1000"
     className="overflow-hidden aos-init aos-animate">
-    <div className="relative h-auto py-10 m-auto overflow-hidden w-container md:w-full ">
+    <div className="relative h-auto py-20 m-auto overflow-hidden w-container md:w-full ">
 
       <div className="flex flex-col gap-[72px] content md:px-[30px] md:ml-0 ml-[121px] " >
         {openEdgeList.map((item, index) => {
-          return <div key={`edge_${index}`} className={`flex ${!!index ? 'items-center gap-20 smd:gap-10 ' : 'items-end'}`}
+          return <div key={`edge_${index}`} className={`flex ${!!index ? 'items-center gap-[40px] smd:gap-10 ' : 'items-end'}`}
             onMouseOver={() => {
               setDealHover({ index, isHover: true });
             }}
@@ -42,7 +42,7 @@ const AOpenEdge = () => {
             </div>
 
 
-            {!!index && <div className="w-auto relative right-[49px] smd:right-0 z-50 ">
+            {!!index && <div className="w-auto relative right-[10px] smd:right-0 z-50 ">
               <div className="border rounded-[100%] border-[#E8E8E8] w-5 h-5  px-0 py-0">
                 <div className={`border  rounded-[100%] ${dealHover?.isHover && dealHover.index === index
                   ? "bg-[#4281FF]"

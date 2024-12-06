@@ -40,7 +40,7 @@ const AFooter = () => {
 
   return <div data-aos="fade-up"
     data-aos-duration="1000"
-    className=" aos-init aos-animate w-full bg-[#313131] h-auto  ">
+    className=" aos-init aos-animate w-full bg-[#313131] h-auto pb-5  ">
     <div className="w-container m-auto md:w-full md:px-[30px] ">
       <div className="flex flex-col items-center justify-center">
         <div className=" mt-[95px]">
