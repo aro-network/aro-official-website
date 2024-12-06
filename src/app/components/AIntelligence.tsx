@@ -3,9 +3,9 @@ const AIntelligence = () => {
   return <div data-aos="fade-up"
     data-aos-duration="1000"
     className=" aos-init aos-animate bg-[#000000]">
-    <div className="w-container m-auto flex md:w-full ">
+    <div className="flex items-center m-auto w-container md:w-full ">
       <div className="w-[40%] h-[762px] ">
-        <img src="./line-enreach.png" className="object-cover bg-cover w-full h-full" />
+        <img src="./line-enreach.png" className="object-cover w-full h-full bg-cover" />
       </div>
       <div className="w-[60%] h-[600px] md:mx-[30px] flex  flex-col justify-center md:pl-[10px] items-baseline ">
         <span className=" font-medium text-[70px]  md:text-[50px] md:leading-[70px] leading-[91.84px] abcgintoText text-[#FFFFFF]">
