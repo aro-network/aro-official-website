@@ -9,7 +9,7 @@ const ADoingIt = () => {
   return <div className=" bg-[#1B1B1B]">
     <div data-aos="fade-up"
       data-aos-duration="1000"
-      className=" aos-init aos-animate w-container m-auto md:w-full ">
+      className="m-auto aos-init aos-animate w-container md:w-full">
       <div className="flex justify-center pt-[121px] flex-col items-center">
         <div >
           <img src="./enReachNetwork.svg" />
@@ -35,7 +35,9 @@ const ADoingIt = () => {
               onMouseLeave={() => {
                 setDealHover({ index, isHover: false });
               }}
-              className={`${dealHover?.isHover && dealHover.index === index
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              className={` aos-init aos-animate ${dealHover?.isHover && dealHover.index === index
                 && "bg-[#4281FF]"
                 }  w-full rounded-[49px] bg-[#313131] flex justify-between items-end gap-[100px] px-[86px] md:px-[66px] py-[69px] md:py-[30px]`}>
               <div className={`${dealHover?.isHover && dealHover.index === index
