@@ -23,7 +23,7 @@ const AWhatDrivesUs = () => {
             Our edge cloud transforms fragmented resources into a seamless, scalable system, ensuring the future of innovation happens where it’s needed most—right at the edge.
           </div>
         </div>
-        <div className="w-[60%]">
+        <div className="w-[60%] relative top-3">
           <img src="./edge.gif" className="bg-cover " />
         </div>
 
