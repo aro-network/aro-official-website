@@ -80,7 +80,7 @@ const ABanner = () => {
           <Tooltip.Provider>
             <Tooltip.Root>
               <Tooltip.Trigger asChild>
-                <button style={{ letterSpacing: '-0.36px' }} className="bg-[#4281FF] text-[#FFFFFF] w-[229px] items-center text-2xl font-semibold leading-9  flex justify-center h-[50px] rounded-3xl ipsText p-3">Learn More</button>
+                <button className="bg-[#4281FF]   text-[#FFFFFF] w-[229px] items-center text-2xl font-semibold leading-9  flex justify-center h-[50px] rounded-3xl ipsText p-3">Learn More</button>
               </Tooltip.Trigger>
               <Tooltip.Content align='center' sideOffset={8} className='select-none rounded-lg bg-gray-900 px-[15px] py-2.5 text-[15px] leading-none text-white'>
                 <p>Coming Soon</p>
@@ -102,26 +102,26 @@ const ABanner = () => {
             <span className="text-[55px] md:text-[50px] font-medium leading-[72px]">
               <CountUp start={0} end={1000000} duration={3} />
             </span>
-            <span className="asText text-xl font-medium leading-6">Unlimited Edge Scalability</span>
+            <span className="text-xl font-medium leading-6 asText">Unlimited Edge Scalability</span>
           </div>
           <div className="flex flex-col items-center">
             <span className="text-[55px] md:text-[50px]  font-medium leading-[72px]">
               {`<`}{<CountUp start={100} end={1} duration={3} />}{`%`}
             </span>
-            <span className="asText text-xl font-medium leading-6">Stuttering Rate </span>
+            <span className="text-xl font-medium leading-6 asText">Stuttering Rate </span>
           </div>
           <div className="flex flex-col items-center">
             <span className="text-[55px] md:text-[50px]  font-medium leading-[72px]">
               {`<`}{<CountUp start={100} end={60} duration={3} />}{`%`}
             </span>
-            <span className="asText text-xl font-medium leading-6">Save on Traffic </span>
+            <span className="text-xl font-medium leading-6 asText">Save on Traffic </span>
           </div>
           <div className="flex flex-col items-center">
             <span className="text-[55px] md:text-[50px]  font-medium leading-[72px]">
               {`<`}{<CountUp start={100} end={20} duration={3} />}ms
 
             </span>
-            <span className="asText text-xl font-medium leading-6">Response Time</span>
+            <span className="text-xl font-medium leading-6 asText">Response Time</span>
           </div>
 
         </div>

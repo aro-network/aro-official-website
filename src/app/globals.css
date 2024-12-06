@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/abc-ginto-nord-unlicensed-trial");
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,18 +18,18 @@
 }
 
 body {
-  color: #7C7C7C;
-  background:#000000;
+  color: #7c7c7c;
+  background: #000000;
   font-family: Arial, Helvetica, sans-serif;
   cursor: default;
-
 }
 
 .headerbtn {
   font-family: "Albert Sans", sans-serif;
+  font-size: 20px;
   display: inline-block;
   position: relative;
-  font-size: 20px;
+
   cursor: pointer;
   padding-left: 15px;
   padding-right: 15px;
@@ -37,17 +37,13 @@ body {
   padding-bottom: 4px;
   border-radius: 20px;
   width: 120px;
-
 }
 
-.headerbtn:hover{
-  border: 1px solid #4281FF;
-  background-color: #4281FF;
+.headerbtn:hover {
+  border: 1px solid #4281ff;
+  background-color: #4281ff;
   width: 120px;
-
 }
-
-
 
 .abcgintoText {
   font-family: "ABC Ginto Nord Unlicensed Trial", sans-serif;
@@ -57,43 +53,42 @@ body {
   font-family: "Albert Sans", sans-serif;
 }
 
-.ipsText{
+.ipsText {
   font-family: "IBM Plex Sans", sans-serif;
-
 }
-
+.ipsText:hover{
+  background-color: unset;
+  border: 1px solid #4281ff;
+}
 
 .transition-img {
   transition: opacity 0.3s ease-in-out;
 }
 
-
 input::placeholder {
-  color: #8A8A8A;
-  font-size: 24px; 
-  font-style: normal; 
+  color: #8a8a8a;
+  font-size: 24px;
+  font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-align: center;
 }
 
 input:focus {
-  border-color: #8A8A8A;
-  box-shadow: 0 0 5px #8A8A8A ;
+  box-shadow: 0 0 5px #8a8a8a;
   outline: none;
-  
 }
 
-input{
+input {
   text-align: center;
+  font-size: 28px; /* 设置字体大小为18px */
+  padding: 10px; /* 可选：增加内边距 */
+  width: 300px; /* 可选：设置输入框宽度 */
 }
-
-
-
 
 #chartdiv {
-	width: 1000px;
-	height: 1000px;
+  width: 1000px;
+  height: 1000px;
   position: relative;
   left: 100px;
 }
@@ -108,24 +103,55 @@ input{
   transform: scale(1);
 }
 
-
-
-
-
 .current {
-  border: 1px solid #4281FF;
-  background-color: #4281FF;
+  border: 1px solid #4281ff;
+  background-color: #4281ff;
   width: 120px;
 }
 
-
-.existText{
-  -webkit-text-stroke-width: 1;
-  -webkit-text-stroke-color: #FFF;
-  font-family: "ABC Ginto Nord Unlicensed Trial", sans-serif;
-  font-size: 55px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+.animated-button {
+  position: relative;
+  padding: 10px 20px;
+  color: #fff;
+  font-family: "Albert Sans", sans-serif;
+  font-size: 20px;
+  background: none;
+  border-radius: 60px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
 }
 
+.animated-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  z-index: -1;
+  transform: translateX(-50%);
+  animation: none;
+}
+
+.animated-button:hover::before {
+  animation: fillEffect 1s ease-out forwards;
+}
+
+.animated-button:hover {
+  color: #fff;
+}
+
+@keyframes fillEffect {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 120%;
+  }
+  100% {
+    width: 200%;
+  }
+}

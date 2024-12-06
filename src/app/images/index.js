@@ -4,6 +4,8 @@ import IconReliability from "./IconReliability";
 import IconStack from "./IconStack";
 import IconTeam from "./IconTeam";
 import IconProtocol from "./IconProtocol";
+import IconCloud from "./IconCloud";
+import IconEcosystem from "./IconEcosystem";
 
 export const base = {
   IconTeam,
@@ -12,6 +14,8 @@ export const base = {
   IconMatch,
   IconReliability,
   IconProtocol,
+  IconCloud,
+  IconEcosystem,
 };
 
 const Icon = ({ name, ...otherProps }) => {

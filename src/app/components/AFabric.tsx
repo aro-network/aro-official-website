@@ -13,7 +13,7 @@ const AFabric = () => {
 
   return <div data-aos="fade-up"
     data-aos-duration="1000"
-    className=" aos-init aos-animate  w-container m-auto h-auto  md:w-full md:px-[30px] my-40">
+    className=" aos-init aos-animate  w-container m-auto h-auto  md:w-full md:px-[30px] my-20">
     <div className="text-[70px] font-medium leading-normal text-[#FFFFFF] abcgintoText">
       <div>
         The Open-Layered
@@ -22,7 +22,7 @@ const AFabric = () => {
         Fabric
       </div>
     </div>
-    <div className=" mt-10 flex flex-col gap-10 w-full justify-center  ">
+    <div className="flex flex-col justify-center w-full gap-10 mt-10 ">
       {fabricList.map((item, index) => {
         return <div
           key={`tab_${index}`}

@@ -44,20 +44,23 @@ export const openEdgeList = [
     content:
       "A decentralized protocol enabling robust data storage and transmission functions through a vast network of connected edge nodes. ",
     icon: "IconProtocol",
+    gif: "./box1.gif",
   },
   {
     title: "Open Cloud ",
     subTitle: "Enabling Edge Intelligence",
     content:
       "A complete cloud enabling AI model/computation functions deployment, execution, and context data management across the network. ",
-    icon: "IconProtocol",
+    icon: "IconCloud",
+    gif: "./box2.gif",
   },
   {
     title: "Open Ecosystem  ",
     subTitle: "Accelerating Edge Innovation",
     content:
       "An open ecosystem fostering innovation, incentivizing application growth, and guided by community-driven governance.",
-    icon: "IconProtocol",
+    gif: "./box3.gif",
+    icon: "IconEcosystem",
   },
 ];
 

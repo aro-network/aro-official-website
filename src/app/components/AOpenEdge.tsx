@@ -9,10 +9,10 @@ const AOpenEdge = () => {
 
   return <div data-aos="fade-up"
     data-aos-duration="1000"
-    className=" aos-init aos-animate   overflow-hidden ">
-    <div className="w-container m-auto h-auto  md:w-full py-10 overflow-hidden relative    ">
+    className="overflow-hidden aos-init aos-animate">
+    <div className="relative h-auto py-10 m-auto overflow-hidden w-container md:w-full ">
 
-      <div className="flex flex-col gap-[72px] content md:px-[30px] ml-[121px] " >
+      <div className="flex flex-col gap-[72px] content md:px-[30px] md:ml-0 ml-[121px] " >
         {openEdgeList.map((item, index) => {
           return <div key={`edge_${index}`} className={`flex ${!!index ? 'items-center gap-20 smd:gap-10 ' : 'items-end'}`}
             onMouseOver={() => {
@@ -21,11 +21,24 @@ const AOpenEdge = () => {
             onMouseLeave={() => {
               setDealHover({ index, isHover: false });
             }}>
-            <div className={` ${!!index && 'rounded-[50px] bg-[#1B1B1B] px-[132px] smd:px-[151px]  flex h-[295px]  '}  items-center justify-center`}>
-              <Icon name={item.icon} color={`${dealHover?.isHover && dealHover.index === index
-                ? "#4281FF"
-                : " #D9D9D9"
-                }`} />
+            <div className={` ${!!index && 'rounded-[50px] bg-[#373737] px-[132px] smd:px-[151px]  flex h-[295px]  '}  items-center justify-center`}>
+              {!!index &&
+                <div className="w-[257px] h-[212px] relative" >
+                  <img src={item.gif} width={257} height={212} />
+                  <div className={` absolute  translate-x-[100px] ${index === 3 ? ' translate-y-[-176px]' : ' translate-y-[-150px]'} `}>
+                    <Icon name={item.icon} seColor={`${dealHover?.isHover && dealHover.index === index
+                      ? "#144097"
+                      : " #D9D9D9"
+                      }`}
+                      color={`${dealHover?.isHover && dealHover.index === index
+                        ? "#4281FF"
+                        : " #D9D9D9"
+                        }`} />
+                  </div>
+                </div>
+              }
+
+
             </div>
 
 
