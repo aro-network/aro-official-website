@@ -72,6 +72,7 @@ input::placeholder {
   font-weight: 400;
   line-height: normal;
   text-align: center;
+  font-family: "Albert Sans", sans-serif;
 }
 
 input:focus {

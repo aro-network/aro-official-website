@@ -1,8 +1,8 @@
 const AWhatDrivesUs = () => {
 
   return <div data-aos="fade-up"
-    data-aos-duration="1000"
-    className=" aos-init aos-animate w-container m-auto md:w-full mt-[138px] ">
+    data-aos-duration="1500"
+    className=" w-container m-auto md:w-full mt-[138px] ">
     <div className="ml-[98px] md:ml-[50px]">
       <img src="./whatDrivesUs.svg" />
       <div className="abcgintoText font-medium text-[50px] leading-normal mt-20">
@@ -13,7 +13,8 @@ const AWhatDrivesUs = () => {
           Edge-First Infrastructure.
         </div>
       </div>
-      <div className=" mt-[118px] flex items-center w-full gap-[177px] md:gap-[100px] md:pb-10">
+      <div data-aos="fade-up"
+        data-aos-duration="1000" className=" mt-[118px] flex items-center w-full gap-[177px] md:gap-[100px] md:pb-10">
         <div className="text-2xl font-normal leading-normal w-[40%] flex flex-col gap-10">
           <div>
             The cloud is too “far” to deliver the real-time responsiveness today’s digital experiences demand. EnReach is leading the shift from centralized clouds to edge-first networks, unlocking real-time capabilities and efficiency for AI and next-gen applications.
@@ -23,7 +24,7 @@ const AWhatDrivesUs = () => {
           </div>
         </div>
         <div className="w-[60%]">
-          <img src="./edge.gif" className=" bg-cover" />
+          <img src="./edge.gif" className="bg-cover " />
         </div>
 
       </div>
