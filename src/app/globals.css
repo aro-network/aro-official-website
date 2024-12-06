@@ -104,6 +104,12 @@ input {
   transform: scale(1);
 }
 
+.hoverItem{
+  transform: scale(0.95);
+  transition: height 1s ease, opacity 1s ease, transform 1s ease;
+  margin-left: 4px;
+}
+
 .current {
   border: 1px solid #4281ff;
   background-color: #4281ff;
