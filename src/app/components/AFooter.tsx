@@ -67,7 +67,7 @@ const AFooter = () => {
                   {errorText}
                 </div>
               </div>
-              <button onClick={onSubmitEmail} className=" bg-[#4281FF] btn  text-[#FFFFFF] rounded-[33.5px] w-[198px] h-[67px] abcgintoText text-[25px] font-medium leading-normal ">Submit</button>
+              <button onClick={onSubmitEmail} className=" bg-[#4281FF] btn items-center  text-[#FFFFFF] rounded-[33.5px] w-[198px] h-[67px] abcgintoText text-[25px] font-medium leading-normal ">Submit</button>
             </div>
           </div>
           <div className="mt-[224px] mb-5">

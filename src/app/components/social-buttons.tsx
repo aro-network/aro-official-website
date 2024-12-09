@@ -1,9 +1,11 @@
+'use client'
 
+import React from 'react'
 
 const socialLinks = [
-    { href: 'https://discord.gg/XbWKu397', icon: './discord.svg' },
-    { href: 'https://x.com/EnReachAI', icon: './x.svg' },
-    { href: 'https://t.me/+bwjcPLf_ZQ00YTBh', icon: './telegram.svg' },
+    { href: 'https://discord.gg/Rc4BMUjbNB', icon: './discord.svg' },
+    { href: 'https://x.com/EnReachNetwork', icon: './x.svg' },
+    { href: 'https://t.me/EnReachNetwork', icon: './telegram.svg' },
 ]
 
 export function SocialButtons() {

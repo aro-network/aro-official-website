@@ -1,4 +1,4 @@
-import { FC, Fragment } from "react"
+import { FC } from "react"
 import { headerBtnList } from "../utils/common"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
@@ -8,9 +8,9 @@ const AHeader: FC<{ className?: string, containerClassName?: string }> = ({ clas
 
   const ur = useRouter()
 
-  return <Fragment>
-    <div className={` w-container m-auto flex  items-center  ${containerClassName} md:w-full  `}>
-      <div className={`w-[50%] px-10 pt-10 ${className}`}>
+  return <div>
+    <div className={` w-container m-auto flex  pt-10  items-center  ${containerClassName} md:w-full  `}>
+      <div className={`w-[50%] px-10 ${className}`}>
         <Link href={'/'}>
           <img src="./logo.png" width={166} />
         </Link>
@@ -23,7 +23,7 @@ const AHeader: FC<{ className?: string, containerClassName?: string }> = ({ clas
 
       </div>
     </div>
-  </Fragment>
+  </div>
 
 }
 

@@ -34,7 +34,11 @@ const AboutUs = () => {
 
 
   return <div>
-    <AHeader className={'bg-[#1B1B1B] px-10 pt-10'} containerClassName={' !py-0 pt-10 '} />
+    <div className="   w-container m-auto flex md:w-full">
+      <div className="w-[50%] pt-10  bg-[#1B1B1B]">
+        <AHeader className={'bg-[#1B1B1B] '} containerClassName={'  pt-0 '} />
+      </div>
+    </div>
     <ABanner />
     <AWhatDrivesUs />
     <ADoingIt />
