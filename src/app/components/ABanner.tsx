@@ -64,7 +64,7 @@ const ABanner = () => {
 
 
 
-  return <div className="">
+  return <div className=" overflow-hidden">
 
     <div className="w-container md:w-full md:px-[30px] m-auto flex justify-end ">
       <div className="w-[500px] pt-10" id="chartdiv"></div>
