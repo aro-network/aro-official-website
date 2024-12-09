@@ -49,7 +49,7 @@ const ADoingIt = () => {
               <div className={`${dealHover?.isHover && dealHover.index === index
                 ? "text-[#FFFFFF]"
                 : "text-[#8A8A8A]"
-                } text-[22px] font-medium leading-normal w-[44%]`}>
+                } text-[22px] font-medium asText leading-normal w-[44%]`}>
                 {item.contnet}
               </div>
 
