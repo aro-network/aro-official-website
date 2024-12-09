@@ -33,14 +33,16 @@ export default function Home() {
     });
   }, []);
 
-  return <>
+  return <div className=" overflow-hidden">
     <AHeader />
     <ABanner />
-    <AIntelligence />
-    <AOpenEdge />
-    <AShowCase />
-    <AFabric />
-    <AFooter />
+    <div className=" relative  translate-y-[-60px]">
+      <AIntelligence />
+      <AOpenEdge />
+      <AShowCase />
+      <AFabric />
+      <AFooter />
+    </div>
 
-  </>
+  </div>
 }

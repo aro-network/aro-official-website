@@ -40,7 +40,7 @@ const AFooter = () => {
 
   return <div data-aos="fade-up"
     data-aos-duration="1000"
-    className=" aos-init aos-animate w-full bg-[#313131] h-auto pb-5  ">
+    className="  w-full bg-[#313131] h-full  relative bottom-[-60px]  ">
     <div className="w-container m-auto md:w-full md:px-[30px] ">
       <div className="flex flex-col items-center justify-center">
         <div className=" mt-[95px]">
@@ -91,7 +91,7 @@ const AFooter = () => {
                   onClick={() => window.open(item.link, '_blank')}
                   className={`${dealHover?.index === index && 'text-[#ffffff]'} `}
                 >
-                  <span className={`text-xl abcgintoText font-medium leading-normal  ${dealHover?.isHover && dealHover.index === index
+                  <span className={`text-xl cursor-pointer abcgintoText font-medium leading-normal  ${dealHover?.isHover && dealHover.index === index
                     ? "text-[#BEBEBE]"
                     : "text-[#8A8A8A]"
                     }`} >{item.name}</span>

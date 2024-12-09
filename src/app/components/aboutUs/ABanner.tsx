@@ -25,7 +25,7 @@ const ABanner = () => {
           <div data-aos="fade-up"
             data-aos-duration="1000"
             className=" ml-[54px] md:ml-0 mt-5">
-            <div className="text-[#7C7C7C] font-normal asText text-[22px] leading-normal">
+            <div className="text-[#7C7C7C]  font-normal asText text-[22px] leading-normal">
               <div className="mb-5 ">
                 EnReach bridges the gap between centralized cloud systems and the needs of next-generation applications. As AI reshapes industries, we bring the cloud closer to users, enabling instant responses, seamless interactions, and scalable performance.
               </div>

@@ -13,7 +13,7 @@ const AFabric = () => {
 
   return <div data-aos="fade-up"
     data-aos-duration="1000"
-    className=" aos-init aos-animate  w-container m-auto h-auto  md:w-full md:px-[30px] my-20">
+    className=" aos-init aos-animate  w-container m-auto h-auto  md:w-full md:px-[30px] mt-20">
     <div className="text-[70px] font-medium leading-normal text-[#FFFFFF] abcgintoText">
       <div>
         The Open-Layered

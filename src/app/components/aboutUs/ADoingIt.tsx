@@ -21,7 +21,7 @@ const ADoingIt = () => {
         <div className=" text-[55px] pt-5 font-medium leading-normal abcgintoText ">
           {`How We're Doing It?`}
         </div>
-        <div className=" text-[30px] pt-5 font-medium leading-normal text-center w-full px-[270px]">
+        <div className=" text-[30px] pt-5 font-medium abcgintoText leading-normal text-center w-full px-[270px]">
           At EnReach, we blend openness and innovation to transform edge computing into a seamless and accessible foundation for the AI era.
         </div>
 
