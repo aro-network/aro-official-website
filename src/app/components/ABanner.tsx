@@ -7,10 +7,8 @@ import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import { SocialButtons } from "./social-buttons";
 import CountUp from "react-countup";
 import * as am5geodata_continentsLow from "@amcharts/amcharts5-geodata/continentsLow";
-import { useRouter } from "next/navigation"
 
 const ABanner = () => {
-  const ur = useRouter()
 
 
   const initMap = async () => {
