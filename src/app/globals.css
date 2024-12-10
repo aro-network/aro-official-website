@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.cdnfonts.com/css/abc-ginto-nord-unlicensed-trial");
-@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"); */
+/* @import url("https://fonts.cdnfonts.com/css/abc-ginto-nord-unlicensed-trial");
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -67,9 +67,8 @@ body {
 
 input::placeholder {
   color: #8a8a8a;
-  font-size: 24px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
   font-family: "Albert Sans", sans-serif;
 }
@@ -79,12 +78,16 @@ input:focus {
   box-shadow: 0 0 5px #8a8a8a;
   outline: none;
   content:'';
+  font-family: "Albert Sans", sans-serif;
+
 }
 
 input {
   font-size: 28px; 
   padding: 30px; 
   width: 300px;
+  font-family: "Albert Sans", sans-serif;
+
 }
 
 #chartdiv {
@@ -167,4 +170,54 @@ input {
   100% {
     width: 200%;
   }
+}
+
+
+
+.title{
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.subTitle{
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+
+
+
+
+.headerBtn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  font-family: "Albert Sans", sans-serif;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+
+.headerBtn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: #4281ff;
+  border-radius: 60px;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  z-index: -1; 
+}
+
+.headerBtn:hover::before {
+  transform: translate(-50%, -50%) scale(10); 
 }

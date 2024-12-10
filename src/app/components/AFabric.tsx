@@ -1,87 +1,64 @@
-import { MouseEvent, useState } from "react";
+import { useState } from "react";
 import { fabricList } from "../utils/common"
 
 const AFabric = () => {
   const [dealHover, setDealHover] = useState<{ index: number, isHover: boolean } | null>(null);
-  const [clickTab, setClickTab] = useState<{ title: string, index: number | null }>({ title: '', index: null })
 
 
-  const onCurrentValue = (title: string, index: number, e: MouseEvent<HTMLDivElement>) => {
-    e.stopPropagation();
-    setClickTab({ title, index })
-  }
-
-  return <div data-aos="fade-up"
-    data-aos-duration="1000"
-    className=" aos-init aos-animate  w-container m-auto h-auto  md:w-full md:px-[30px] mt-20">
-    <div className="text-[70px] font-medium leading-normal text-[#FFFFFF] abcgintoText">
-      <div>
-        The Open-Layered
+  return <div className="bg-[#373737] overflow-hidden">
+    <div data-aos="fade-up"
+      data-aos-duration="1000"
+      className=" aos-init aos-animate   w-container m-auto h-auto  md:w-full md:px-[30px] pt-40 pb-80">
+      <div className="text-[70px] font-medium leading-normal text-[#FFFFFF] abcgintoText">
+        <div>
+          The Open-Layered
+        </div>
+        <div>
+          Fabric
+        </div>
       </div>
-      <div>
-        Fabric
-      </div>
-    </div>
-    <div className="flex flex-col justify-center w-full gap-10 mt-10 ">
-      {fabricList.map((item, index) => {
-        return <div
-          key={`tab_${index}`}
+      <div className="flex flex-col justify-center w-full gap-10 mt-10 bg-[#373737]">
+        {fabricList.map((item, index) => {
+          return <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            key={`tab_${index}`}
+            className={`  aos-init aos-animate flex justify-between tab-item relative transition-all duration-500 ease-in-out  h-[380px] ${dealHover?.isHover && dealHover.index === index
+              ? " bg-[#4281FF] w-full active z-[100000]"
+              : ""
+              }  `}
+            onMouseOver={() => {
+              setDealHover({ index, isHover: true });
+            }}
+            onMouseLeave={() => {
+              setDealHover(null);
+            }}>
+            <div className="w-[35%] md:w-[40%]">
+              <div className={`abcgintoText mt-7  transition-all duration-500  text-[40px] w-full text-right font-medium leading-normal ${dealHover?.isHover && dealHover.index === index && 'text-[#ffffff]'}  ${dealHover?.isHover && dealHover.index === index
+                ? "text-[#BEBEBE]  hoverItem"
+                : "text-[#787878]"
+                }`}>
+                {item.title}
 
-          className={`flex justify-between tab-item ${clickTab.title === item.title
-            ? " h-[508px] bg-[#4281FF] w-full active"
-            : ""
-            }  `}
-          onClick={(e) => onCurrentValue(item.title, index, e)}
-          onMouseOver={() => {
-            setDealHover({ index, isHover: true });
-          }}
-          onMouseLeave={() => {
-            setDealHover({ index, isHover: false });
-          }}>
-          <div className="w-[35%]">
-            <div className={`abcgintoText  text-[40px] w-full text-right font-medium leading-normal ${clickTab.index === index && 'text-[#ffffff]'}  ${dealHover?.isHover && dealHover.index === index
-              ? "text-[#BEBEBE]  hoverItem"
-              : "text-[#787878]"
-              }`}>
-              {item.title}
-
-            </div>
-
-            {clickTab.title && clickTab.index === index &&
-              <div className=" text-[22px] font-medium pt-6 pl-[81px] md:pl-[30px] leading-normal text-[#FFFFFF] asText">
-                {item.content}
               </div>
-            }
 
-          </div>
-          {clickTab.title && clickTab.index === index &&
-            <div className=" mt-20 md:mt-40  w-[65%]">
-              <img src={item.icon} />
+              {dealHover?.isHover && dealHover.index === index &&
+                <div className=" text-[22px] font-medium pt-6 pl-[81px] md:pl-[30px] leading-normal text-[#FFFFFF] asText">
+                  {item.content}
+                </div>
+              }
+
             </div>
-          }
-        </div>
-      })}
-      {!clickTab.title && (
-        <div className="w-full flex justify-end relative top-[-300px] z-[-10000]">
-          <div className="relative w-[1000px] h-[1000px]">
-            <img
-              src="./hoverDefaultLayer.svg"
-              alt="hover"
-              className={`absolute top-0 left-0 w-full h-full transition-opacity duration-300 ${dealHover?.isHover ? "opacity-100" : "opacity-0"
-                }`}
-            />
-            <img
-              src="./defaultLayer.svg"
-              alt="default"
-              className={`absolute top-0 left-0 w-full h-full transition-opacity duration-300 ${dealHover?.isHover ? "opacity-0" : "opacity-100"
-                }`}
-            />
+            <div className=" mt-20 md:mt-40  w-[65%] md:w-[60%]">
+              <img className={`transition-transform duration-500 ${dealHover?.isHover && dealHover.index === index
+                ? "scale-110"
+                : "scale-100"
+                }`} src={dealHover?.isHover ? (dealHover?.index === index ? item.icon : item.default) : item.icon} />
+            </div>
           </div>
-        </div>
-      )}
-
+        })}
+      </div>
     </div>
-
 
   </div>
 

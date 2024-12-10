@@ -84,8 +84,8 @@ const ABanner = () => {
 
     <div data-aos="fade-up"
       data-aos-duration="1000"
-      className=" aos-init aos-animate  text-[#FFFFFF] relative bottom-[60px]  ">
-      <div className="w-container m-auto bg-[#0C0C0C] py-[60px]  md:w-full ">
+      className=" aos-init aos-animate  text-[#FFFFFF] bg-[#0C0C0C] relative bottom-[60px]  ">
+      <div className="w-container m-auto  py-[60px]  md:w-full ">
         <div className="mx-[80px] md:mx-[30px] abcgintoText flex justify-between">
           <div className="flex flex-col items-center">
             <span className="text-[55px] md:text-[50px] font-medium leading-[72px]">

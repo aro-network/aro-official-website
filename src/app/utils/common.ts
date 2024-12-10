@@ -68,18 +68,21 @@ export const fabricList = [
   {
     title: "Application Layer",
     icon: "./application.svg",
+    default: "./default-application.svg",
     content:
       "Provide developer SDKs and user interfaces that expose the network’s capabilities, allowing for easy development, deployment, management, and scaling of edge applications and AI solutions.",
   },
   {
     title: "Orchestration layer",
     icon: "./open.svg",
+    default: "./default-open.svg",
     content:
       "Coordinate network consensus, data, computation flows, and task management across nodes to meet the dynamic demands of edge computing, data transmission & processing with high precision and reliability.",
   },
   {
     title: "Resource Layer",
     icon: "./resource.svg",
+    default: " default-resource.svg",
     content:
       "Standardize, virtualize, and containerize heterogeneous node resources to create a scalable, flexible digital infrastructure that can be verified, quantified, and optimized for efficient utilization.",
   },
@@ -89,11 +92,11 @@ export const list = [
   { name: "Media Kit", link: "https://enreach.network/Media kit.zip" },
   {
     name: "Privacy Policy",
-    link: "https://docs.google.com/document/d/1YZDlxE88v2SwYPclcFeUVfu2U-LgmpEqy2As1ensDg0/edit?tab=t.0",
+    link: "privacy",
   },
   {
     name: "Terms & Conditions",
-    link: "https://docs.google.com/document/d/1k1uHHMCDgJP2tOpgCUslHo3ai6ovMYbvO2adMxNtOUI/edit?tab=t.0",
+    link: "terms",
   },
 ];
 

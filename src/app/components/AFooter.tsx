@@ -2,9 +2,10 @@ import { useState } from "react";
 import { list } from "../utils/common"
 import { SocialButtons } from "./social-buttons";
 import { toast } from "sonner";
+import { FC } from "react";
 
 
-const AFooter = ({ className }) => {
+const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
   const [dealHover, setDealHover] = useState<{ index: number, isHover: boolean } | null>(null);
   const [inputEmail, setInputEmail] = useState('')
   const [errorText, setErrorText] = useState('')
@@ -40,7 +41,7 @@ const AFooter = ({ className }) => {
 
   return <div data-aos="fade-up"
     data-aos-duration="1000"
-    className={`  w-full bg-[#313131] h-full  relative bottom-[-60px] ${className}  `}>
+    className={`  w-full bg-[#313131] h-full   relative bottom-[0px] ${className}  `}>
     <div className="w-container m-auto md:w-full md:px-[30px] ">
       <div className="flex flex-col items-center justify-center">
         <div className=" mt-[95px]">
@@ -67,7 +68,7 @@ const AFooter = ({ className }) => {
                   {errorText}
                 </div>
               </div>
-              <button onClick={onSubmitEmail} className=" bg-[#4281FF] btn items-center  text-[#FFFFFF] rounded-[33.5px] w-[198px] h-[67px] abcgintoText text-[25px] font-medium leading-normal ">Submit</button>
+              <button onClick={onSubmitEmail} className=" bg-[#4281FF] btn items-center  text-[#FFFFFF] rounded-[33.5px] w-[198px] h-[67px] abcgintoText text-[24px] font-medium leading-normal ">Submit</button>
             </div>
           </div>
           <div className="mt-[224px] mb-5">
@@ -76,7 +77,10 @@ const AFooter = ({ className }) => {
               <div>
                 Get in Touch
               </div>
-              contact@enreach.network
+              <a href="mailto:contact@enreach.network" >
+                contact@enreach.network
+              </a>
+
             </div>
             <div className="flex w-full justify-end gap-[81px] smd:gap-10">
               {list.map((item, index) => {
@@ -99,7 +103,7 @@ const AFooter = ({ className }) => {
               })}
             </div>
             <div className="flex w-full justify-end text-[#737373] abcgintoText font-medium leading-normal  ">
-              © EnReach Labs Foundation, {new Date().getFullYear()}. All rights reserved.
+              © EnReach Foundation, {new Date().getFullYear()}. All rights reserved.
             </div>
           </div>
         </div>
