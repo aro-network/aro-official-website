@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { fabricList } from "../utils/common"
 
 const AFabric = () => {
 
