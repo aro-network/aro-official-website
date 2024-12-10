@@ -19,7 +19,8 @@ const ABanner = () => {
               </span>
               for
             </div>
-            the <span className="text-[#FFF]"> AI Era.</span>
+            the <span className="text-[#FFF]"> AI Era</span>
+            <span>.</span>
 
           </span>
           <div data-aos="fade-up"

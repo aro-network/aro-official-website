@@ -38,7 +38,7 @@ const AboutUs = () => {
     <ABanner />
     <AWhatDrivesUs />
     <ADoingIt />
-    <AFooter className={` bottom-0 `} />
+    <AFooter className={` !bottom-0 `} />
 
   </div>
 

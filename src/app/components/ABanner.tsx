@@ -73,7 +73,7 @@ const ABanner = () => {
     <div className="w-container m-auto items-center flex pl-[105px] md:w-full md:pl-0  mb-[-120px] ">
       <div className="  relative z-[100000] bottom-[600px] md:w-full overflow-hidden">
         <div className='text-[70px] md:text-[62px] text-nowrap  abcgintoText font-medium md:px-[30px] text-[#FFFFFF]  leading-[91px] relative z-[100000]'><div>The Genesis of Open Edge,</div> for the AI Era.</div>
-        <div className="text-[32px] md:text-[28px] pt-2  leading-[38px] font-semibold md:px-[30px] asText text-[#7C7C7C]">Unleashing Intelligence with a Globally-Connected Edge Cloud.</div>
+        <div className="text-[32px] md:text-[28px] py-3  leading-[38px] font-semibold md:px-[30px] asText text-[#7C7C7C]">Unleashing Intelligence with a Globally-Connected Edge Cloud.</div>
         <div className=" pt-5 flex  items-center gap-10 md:px-[30px]">
           <a href={'https://docs.enreach.network'} target="_blank" className="bg-[#4281FF]   text-[#FFFFFF] w-[229px] items-center text-2xl font-semibold leading-9  flex justify-center h-[50px] rounded-3xl ipsText p-3">Learn More</a>
           <SocialButtons />
@@ -84,8 +84,8 @@ const ABanner = () => {
 
     <div data-aos="fade-up"
       data-aos-duration="1000"
-      className=" aos-init aos-animate bg-[#0C0C0C] text-[#FFFFFF] relative bottom-[60px]  ">
-      <div className="w-container m-auto py-[60px]  md:w-full ">
+      className=" aos-init aos-animate  text-[#FFFFFF] relative bottom-[60px]  ">
+      <div className="w-container m-auto bg-[#0C0C0C] py-[60px]  md:w-full ">
         <div className="mx-[80px] md:mx-[30px] abcgintoText flex justify-between">
           <div className="flex flex-col items-center">
             <span className="text-[55px] md:text-[50px] font-medium leading-[72px]">

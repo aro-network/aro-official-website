@@ -50,7 +50,7 @@ const AFooter = ({ className }) => {
           Get Started
         </div>
         <div className=" bg-[url(/footerBgIcon.svg)]  bg-no-repeat w-full  ">
-          <div className="text-center mt-[30px] h-auto">
+          <div className="text-center mt-[21px] h-auto">
             <div className="abcgintoText text-xl font-normal leading-normal text-[#8A8A8A]">
               <div>
                 Stay Ahead of the Game: Subscribe to Receive the Latest
@@ -60,7 +60,7 @@ const AFooter = ({ className }) => {
 
               </div>
             </div>
-            <div className="mt-[58px] flex justify-center">
+            <div className="mt-[27px] flex justify-center">
               <div>
                 <input value={inputEmail} onChange={(e) => { setInputEmail(e.target.value); setErrorText('') }} placeholder="sample@email.com" className=" w-[393px] h-[67px] rounded-[33px] bg-[#242424]" />
                 <div className="h-5 mt-2 text-center text-red-600">

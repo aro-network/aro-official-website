@@ -5,12 +5,16 @@ const AWhatDrivesUs = () => {
     className=" w-container m-auto md:w-full mt-[138px] ">
     <div className="ml-[98px] md:ml-[50px]">
       <img src="./whatDrivesUs.svg" />
-      <div className="abcgintoText font-medium text-[50px] leading-normal mt-20">
+      <div className="abcgintoText font-medium text-[50px] leading-normal mt-[100px]">
         <div>
           Accelerating Innovation with
         </div>
-        <div className="text-[#4281FF]">
-          Edge-First Infrastructure.
+        <div >
+          <span className="text-[#4281FF]">
+            Edge-First Infrastructure
+          </span>
+          <span>.</span>
+
         </div>
       </div>
       <div data-aos="fade-up"
