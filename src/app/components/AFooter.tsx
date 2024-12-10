@@ -4,7 +4,7 @@ import { SocialButtons } from "./social-buttons";
 import { toast } from "sonner";
 
 
-const AFooter = () => {
+const AFooter = ({ className }) => {
   const [dealHover, setDealHover] = useState<{ index: number, isHover: boolean } | null>(null);
   const [inputEmail, setInputEmail] = useState('')
   const [errorText, setErrorText] = useState('')
@@ -40,7 +40,7 @@ const AFooter = () => {
 
   return <div data-aos="fade-up"
     data-aos-duration="1000"
-    className="  w-full bg-[#313131] h-full  relative bottom-[-60px]  ">
+    className={`  w-full bg-[#313131] h-full  relative bottom-[-60px] ${className}  `}>
     <div className="w-container m-auto md:w-full md:px-[30px] ">
       <div className="flex flex-col items-center justify-center">
         <div className=" mt-[95px]">

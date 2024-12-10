@@ -34,15 +34,11 @@ const AboutUs = () => {
 
 
   return <div>
-    <div className="   w-container m-auto flex md:w-full">
-      <div className="w-[50%] pt-10  bg-[#1B1B1B]">
-        <AHeader className={'bg-[#1B1B1B] '} containerClassName={'  pt-0 '} />
-      </div>
-    </div>
+    <AHeader rightClassName={`pt-10`} className={'bg-[#1B1B1B]  pt-10 '} containerClassName={'  !pt-0 '} />
     <ABanner />
     <AWhatDrivesUs />
     <ADoingIt />
-    <AFooter />
+    <AFooter className={` bottom-0 `} />
 
   </div>
 

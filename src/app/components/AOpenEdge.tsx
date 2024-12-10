@@ -10,7 +10,7 @@ const AOpenEdge = () => {
   return <div data-aos="fade-up"
     data-aos-duration="1000"
     className="overflow-hidden aos-init aos-animate">
-    <div className="relative h-auto py-20 m-auto overflow-hidden w-container md:w-full ">
+    <div className="relative h-auto py-[120px] m-auto overflow-hidden w-container md:w-full ">
 
       <div className="flex flex-col gap-[72px] content md:px-[30px] md:ml-0 ml-[121px] " >
         {openEdgeList.map((item, index) => {
@@ -59,17 +59,20 @@ const AOpenEdge = () => {
               : "text-[#8A8A8A]"
               }`}>
               <div className={` ${!index ? 'text-[70px] text-[#fff] text-left flex justify-start' : 'text-[25px] '}  font-medium leading-normal abcgintoText`}>{item.title}</div>
-              <div className={`abcgintoText text-[40px] md:text-[24px] font-medium leading-normal ${!!index && dealHover?.isHover && dealHover.index === index
+              <div className={`abcgintoText text-[40px] font-medium leading-normal ${!!index && dealHover?.isHover && dealHover.index === index
                 ? "text-[#4281FF]"
                 : "text-[#8A8A8A]"
                 }`}>{item.subTitle}</div>
-              <div className="asText text-[22px] font-semibold leading-normal">{item.content}</div>
+              <div className={`asText text-[22px] leading-normal ${!!index && dealHover?.isHover && dealHover.index === index
+                ? "font-semibold"
+                : "font-normal "
+                }`}>{item.content}</div>
             </div>
           </div>
         })}
 
         {/*   */}
-        <div className={`w-[1px] h-[40px] border-dashed border overflow-hidden p-0  translate-x-[520px] translate-y-[-37px]   mx-10 absolute  smd:translate-x-[568px] `}></div>
+        <div className={`w-[1px] h-[120px] border-dashed border overflow-hidden p-0  translate-x-[520px] translate-y-[-120px]   mx-10 absolute  smd:translate-x-[568px] `}></div>
         <div className={`w-[1px] h-[940px] border-dashed border  overflow-hidden p-0  translate-x-[520px] translate-y-[120px]   mx-10 absolute  smd:translate-x-[568px]  `}></div>
         {/*         
         // <div className={`w-[1px] h-[90px] border-dashed border overflow-hidden p-0   mx-10 relative left-[520px] smd:left-[568px] top-[-1370px]  `}></div>

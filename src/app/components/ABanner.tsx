@@ -89,7 +89,7 @@ const ABanner = () => {
         <div className="mx-[80px] md:mx-[30px] abcgintoText flex justify-between">
           <div className="flex flex-col items-center">
             <span className="text-[55px] md:text-[50px] font-medium leading-[72px]">
-              <CountUp start={0} end={1000000} duration={3} />
+              <CountUp start={0} end={1000000} duration={3} />+
             </span>
             <span className="text-xl font-medium leading-6 asText">Unlimited Edge Scalability</span>
           </div>
@@ -101,7 +101,7 @@ const ABanner = () => {
           </div>
           <div className="flex flex-col items-center">
             <span className="text-[55px] md:text-[50px]  font-medium leading-[72px]">
-              {`<`}{<CountUp start={100} end={60} duration={3} />}{`%`}
+              {`>`}{<CountUp start={100} end={60} duration={3} />}{`%`}
             </span>
             <span className="text-xl font-medium leading-6 asText">Save on Traffic </span>
           </div>

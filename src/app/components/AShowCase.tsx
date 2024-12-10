@@ -8,7 +8,7 @@ const AShowCase = () => {
 
   return <div data-aos="fade-up"
     data-aos-duration="1000"
-    className=" aos-init aos-animate bg-[#1C1C1C] py-[89px] ">
+    className=" aos-init aos-animate bg-[#1C1C1C] py-[110px] ">
     <div className="w-container m-auto md:w-full md:px-[30px] ">
       <div className="flex justify-center ">
         <img src="./title.svg" />
@@ -28,12 +28,16 @@ const AShowCase = () => {
               ? "text-[#FFFFFF]"
               : "text-[#7C7C7C]"
               } rounded-[51px]  bg-[#313131] hover:bg-[#4281FF] flex flex-col items-center justify-center w-full  max-w-[421px] px-8 py-16`}>
-            <div><Icon color={`${dealHover?.isHover && dealHover.index === index
+            <div ><Icon color={`${dealHover?.isHover && dealHover.index === index
               ? "#FFFFFF"
               : " #7C7C7C"
-              }`} name={item.icon} /></div>
-            <div style={{ letterSpacing: '-0.42px' }} className={` mt-[46px] abcgintoText text-[28px] font-medium leading-7`}>{item.title}</div>
-            <div style={{ letterSpacing: '-0.3px' }} className="asText text-center mt-4 text-xl font-normal leading-[22px] ">{item.content}</div>
+              }`} name={item.icon} />
+            </div>
+            <div className="  w-[350px] max-h-[200px] h-full mt-[46px] text-center">
+              <div style={{ letterSpacing: '-0.42px' }} className={` abcgintoText text-[28px] font-medium leading-7`}>{item.title}</div>
+              <div style={{ letterSpacing: '-0.3px' }} className="asText text-center mt-4 text-xl font-normal leading-[22px] ">{item.content}</div>
+            </div>
+
           </div>
         })}
 

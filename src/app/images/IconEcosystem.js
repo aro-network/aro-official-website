@@ -7,7 +7,7 @@ const IconEcosystem = ({ color = "", seColor = "" }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_110_1402)">
+      <g clipPath="url(#clip0_110_1402)">
         <path
           d="M10.1191 67.8968L14.6551 77.0562L31.433 79.6129L43.6881 72.5885L39.2317 63.0075L22.7456 60.6221L10.1191 67.8968Z"
           fill={color}
