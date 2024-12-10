@@ -89,7 +89,7 @@ export const fabricList = [
 ];
 
 export const list = [
-  { name: "Media Kit", link: "https://enreach.network/Media kit.zip" },
+  { name: "Media Kit", link: "https://enreach.network/Enreach Media kit.zip" },
   {
     name: "Privacy Policy",
     link: "privacy",

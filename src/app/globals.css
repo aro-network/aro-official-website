@@ -54,7 +54,7 @@ body {
 }
 
 .ipsText {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Albert Sans", sans-serif;
 }
 .ipsText:hover{
   background-color: unset;
@@ -68,7 +68,7 @@ body {
 input::placeholder {
   color: #8a8a8a;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: normal;
   font-family: "Albert Sans", sans-serif;
 }
@@ -83,7 +83,7 @@ input:focus {
 }
 
 input {
-  font-size: 28px; 
+  font-size: 24px; 
   padding: 30px; 
   width: 300px;
   font-family: "Albert Sans", sans-serif;

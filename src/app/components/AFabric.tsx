@@ -2,6 +2,48 @@ import { useState } from "react";
 import { fabricList } from "../utils/common"
 
 const AFabric = () => {
+
+  const fabricList = [
+    {
+      title: "Application Layer",
+      icon: "./application.svg",
+      // icon: <div>
+      //   <img src="./application.svg" />
+      // </div>,
+      // default: <div>
+      //   <img src="./default-application.svg" />
+      // </div>,
+      content:
+        "Provide developer SDKs and user interfaces that expose the network’s capabilities, allowing for easy development, deployment, management, and scaling of edge applications and AI solutions.",
+    },
+    {
+      title: "Orchestration layer",
+      icon: "./open.svg",
+      default: "./default-open.svg",
+      // icon: <div>
+      //   <img src="./open.svg" />
+      // </div>,
+      // default: <div>
+      //   <img src="./default-open.svg" />
+      // </div>,
+      content:
+        "Coordinate network consensus, data, computation flows, and task management across nodes to meet the dynamic demands of edge computing, data transmission & processing with high precision and reliability.",
+    },
+    {
+      title: "Resource Layer",
+      icon: "./resource.svg",
+      default: " default-resource.svg",
+      // icon: <div>
+      //   <img src="./resource.svg" />
+      // </div>,
+      // default: <div>
+      //   <img src="./default-resource.svg" />
+      // </div>,
+      content:
+        "Standardize, virtualize, and containerize heterogeneous node resources to create a scalable, flexible digital infrastructure that can be verified, quantified, and optimized for efficient utilization.",
+    },
+  ];
+
   const [dealHover, setDealHover] = useState<{ index: number, isHover: boolean } | null>(null);
 
 
@@ -23,7 +65,7 @@ const AFabric = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
             key={`tab_${index}`}
-            className={`  aos-init aos-animate flex justify-between tab-item relative transition-all duration-500 ease-in-out  h-[380px] ${dealHover?.isHover && dealHover.index === index
+            className={`  aos-init aos-animate flex justify-between tab-item relative transition-all duration-500 ease-in-out  h-[410px] ${dealHover?.isHover && dealHover.index === index
               ? " bg-[#4281FF] w-full active z-[100000]"
               : ""
               }  `}
@@ -33,8 +75,8 @@ const AFabric = () => {
             onMouseLeave={() => {
               setDealHover(null);
             }}>
-            <div className="w-[35%] md:w-[40%]">
-              <div className={`abcgintoText mt-7  transition-all duration-500  text-[40px] w-full text-right font-medium leading-normal ${dealHover?.isHover && dealHover.index === index && 'text-[#ffffff]'}  ${dealHover?.isHover && dealHover.index === index
+            <div className="w-[33%] md:w-[40%]">
+              <div className={`abcgintoText mt-7  transition-all duration-500  text-[33px] w-full text-right font-medium leading-normal ${dealHover?.isHover && dealHover.index === index && 'text-[#ffffff]'}  ${dealHover?.isHover && dealHover.index === index
                 ? "text-[#BEBEBE]  hoverItem"
                 : "text-[#787878]"
                 }`}>
@@ -43,14 +85,14 @@ const AFabric = () => {
               </div>
 
               {dealHover?.isHover && dealHover.index === index &&
-                <div className=" text-[22px] font-medium pt-6 pl-[81px] md:pl-[30px] leading-normal text-[#FFFFFF] asText">
+                <div className=" text-[20px] font-medium pt-6 pl-[81px] md:pl-[30px] leading-tight text-[#FFFFFF] asText">
                   {item.content}
                 </div>
               }
 
             </div>
-            <div className=" mt-20 md:mt-40  w-[65%] md:w-[60%]">
-              <img className={`transition-transform duration-500 ${dealHover?.isHover && dealHover.index === index
+            <div className=" mt-20 md:mt-40  w-[67%] md:w-[60%]">
+              <img className={`transition-transform duration-500 relative ${dealHover?.isHover && dealHover.index === index
                 ? "scale-110"
                 : "scale-100"
                 }`} src={dealHover?.isHover ? (dealHover?.index === index ? item.icon : item.default) : item.icon} />

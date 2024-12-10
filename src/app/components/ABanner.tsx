@@ -67,11 +67,11 @@ const ABanner = () => {
   return <div className=" overflow-hidden">
 
     <div className="w-container md:w-full md:px-[30px] m-auto flex justify-end ">
-      <div className="w-[500px] pt-10" id="chartdiv"></div>
+      <div className="w-[500px] pt-10 " id="chartdiv"></div>
     </div>
 
     <div className="w-container m-auto items-center flex pl-[105px] md:w-full md:pl-0  mb-[-120px] ">
-      <div className="  relative z-[100000] bottom-[600px] md:w-full overflow-hidden">
+      <div className="  relative z-[100000] bottom-[700px] md:w-full overflow-hidden">
         <div className='text-[70px] md:text-[62px] text-nowrap  abcgintoText font-medium md:px-[30px] text-[#FFFFFF]  leading-[91px] relative z-[100000]'><div>The Genesis of Open Edge,</div> for the AI Era.</div>
         <div className="text-[32px] md:text-[28px] py-3  leading-[38px] font-semibold md:px-[30px] asText text-[#7C7C7C]">Unleashing Intelligence with a Globally-Connected Edge Cloud.</div>
         <div className=" pt-5 flex  items-center gap-10 md:px-[30px]">
