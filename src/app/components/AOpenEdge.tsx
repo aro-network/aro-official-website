@@ -12,7 +12,7 @@ const AOpenEdge = () => {
     className="overflow-hidden aos-init aos-animate">
     <div className="relative h-auto py-[120px] m-auto overflow-hidden w-container md:w-full ">
 
-      <div className="flex flex-col gap-[72px] content md:px-[30px] md:ml-0 ml-[121px] " >
+      <div className="flex flex-col gap-[72px] content md:px-[30px] md:ml-0 ml-[100px]" >
         {openEdgeList.map((item, index) => {
           return <div key={`edge_${index}`} className={`flex ${!!index ? 'items-center gap-[40px] smd:gap-10 ' : 'items-end'}`}
             onMouseOver={() => {
@@ -58,8 +58,8 @@ const AOpenEdge = () => {
               ? "text-[#FFFFFF]"
               : "text-[#8A8A8A]"
               }`}>
-              <div className={` ${!index ? 'text-[70px] text-[#fff] text-left flex justify-start' : 'text-[25px] '}  font-medium leading-normal abcgintoText`}>{item.title}</div>
-              <div className={`abcgintoText text-[40px] font-medium leading-normal ${!!index && dealHover?.isHover && dealHover.index === index
+              <div className={` ${!index ? 'text-[80px] text-[#fff] text-left flex justify-start' : 'text-[35px] '}  font-semibold leading-normal abcgintoText`}>{item.title}</div>
+              <div className={`abcgintoText text-[48px] font-semibold leading-normal ${!!index && dealHover?.isHover && dealHover.index === index
                 ? "text-[#4281FF]"
                 : "text-[#8A8A8A]"
                 }`}>{item.subTitle}</div>

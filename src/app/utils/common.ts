@@ -1,9 +1,8 @@
 export const headerBtnList = [
-  { id: 1, name: "Home", href: "/", target: "_self" },
-  { id: 2, name: "About Us", href: "/aboutUs", target: "_self" },
+  { name: "Home", href: "/", target: "_self" },
+  { name: "About Us", href: "/aboutUs", target: "_self" },
   // { id: 3, name: "Wiki", href: "" },
   {
-    id: 4,
     name: "Docs",
     href: "https://docs.enreach.network",
     target: "_blank",

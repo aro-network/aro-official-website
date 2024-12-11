@@ -34,8 +34,8 @@ const AShowCase = () => {
               }`} name={item.icon} />
             </div>
             <div className="  w-[350px] max-h-[200px] h-full mt-[46px] text-center">
-              <div style={{ letterSpacing: '-0.42px' }} className={` abcgintoText text-[28px] font-medium leading-7`}>{item.title}</div>
-              <div style={{ letterSpacing: '-0.3px' }} className="asText text-center mt-4 text-xl font-normal leading-[22px] ">{item.content}</div>
+              <div style={{ letterSpacing: '-0.45px' }} className={` abcgintoText text-[30px] font-semibold leading-7`}>{item.title}</div>
+              <div style={{ letterSpacing: '-0.27px' }} className="asText text-center mt-4 text-xl font-normal leading-[22px] ">{item.content}</div>
             </div>
 
           </div>

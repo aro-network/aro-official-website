@@ -33,7 +33,7 @@ export default function Home() {
     });
   }, []);
 
-  return <div className=" overflow-hidden h-auto">
+  return <div className=" lg:overflow-hidden h-auto">
     <AHeader />
     <ABanner />
     <AIntelligence />

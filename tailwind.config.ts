@@ -21,6 +21,7 @@ export default {
         ng: { min: "900px" },
         md: [{ min: "901px", max: "1440px" }],
         smd: [{ min: "901px", max: "1260px" }],
+        lg: { min: "900px" },
       },
     },
   },

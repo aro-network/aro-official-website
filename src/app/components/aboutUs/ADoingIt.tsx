@@ -18,7 +18,7 @@ const ADoingIt = () => {
         <div className=" pt-[74px]">
           <img src="./flower.svg" />
         </div>
-        <div className=" text-[55px] pt-5 font-medium leading-normal abcgintoText ">
+        <div className=" text-[60px] pt-5 font-bold leading-normal abcgintoText ">
           {`How We're Doing It?`}
         </div>
         <div className=" text-[30px] pt-5 font-medium abcgintoText leading-normal text-center w-full px-[270px]">
@@ -43,7 +43,7 @@ const ADoingIt = () => {
               <div className={`${dealHover?.isHover && dealHover.index === index
                 ? "text-[#FFFFFF]"
                 : "text-[#8A8A8A]"
-                } text-[45px] md:text-[35px] abcgintoText font-medium leading-normal w-[56%]`}>
+                } text-[50px] md:text-[35px] abcgintoText font-semibold leading-normal w-[56%]`}>
                 {item.title}
               </div>
               <div className={`${dealHover?.isHover && dealHover.index === index

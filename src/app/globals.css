@@ -46,7 +46,8 @@ body {
 }
 
 .abcgintoText {
-  font-family: "ABC Ginto Nord Unlicensed Trial", sans-serif;
+  /* font-family: "ABC Ginto Nord Unlicensed Trial", sans-serif; */
+  font-family: "Alexandria", sans-serif;
 }
 
 .asText {

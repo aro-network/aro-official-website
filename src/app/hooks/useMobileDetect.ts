@@ -9,7 +9,7 @@ const useMobileDetect = () => {
     document.body.clientWidth;
 
   const handleResize = () => {
-    setIsMobile(getWindowWidth() <= 900);
+    setIsMobile(getWindowWidth() <= 1000);
   };
   const isBrowser = typeof window !== "undefined";
 

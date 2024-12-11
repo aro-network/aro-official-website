@@ -47,7 +47,7 @@ const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
         <div className=" mt-[95px]">
           <img src="./logo.png" width={231} height={51} />
         </div>
-        <div className=" abcgintoText text-[40px] font-medium leading-normal mt-[43px] text-[#FFFFFF]">
+        <div className=" abcgintoText text-[50px] font-semibold leading-normal mt-[43px] text-[#FFFFFF]">
           Get Started
         </div>
         <div className=" bg-[url(/footerBgIcon.svg)]  bg-no-repeat w-full  ">

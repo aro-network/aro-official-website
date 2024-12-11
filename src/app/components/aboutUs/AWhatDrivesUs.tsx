@@ -5,7 +5,7 @@ const AWhatDrivesUs = () => {
     className=" w-container m-auto md:w-full mt-[138px] ">
     <div className="ml-[98px] md:ml-[50px]">
       <img src="./whatDrivesUs.svg" />
-      <div className="abcgintoText font-medium text-[50px] leading-normal mt-[100px]">
+      <div className="abcgintoText font-semibold text-[65px] leading-normal mt-[100px]">
         <div>
           Accelerating Innovation with
         </div>

@@ -10,7 +10,7 @@ const ABanner = () => {
         data-aos-duration="1000" className="w-[50%]">
         <div className="h-[700px] md:mx-[30px] flex  flex-col justify-center md:pl-[10px] items-baseline  gap-[40px] md:gap-5">
           <img src="./whyWeExist.svg" className="" />
-          <span className=" font-medium text-[50px] md:text-[30px] leading-normal   abcgintoText text-[#7C7C7C]">
+          <span className=" font-semibold text-[65px] md:text-[30px] leading-normal   abcgintoText text-[#7C7C7C]">
             Pioneering
             <div className="flex items-center w-full gap-3">
               the

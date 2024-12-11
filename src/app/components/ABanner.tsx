@@ -64,17 +64,19 @@ const ABanner = () => {
 
 
 
-  return <div className=" overflow-hidden">
+  return <div className=" lg:overflow-hidden mo:w-full ">
 
-    <div className="w-container md:w-full md:px-[30px] m-auto flex justify-end ">
-      <div className="w-[500px] pt-10 " id="chartdiv"></div>
+    <div className="w-container md:w-full mo:mx-[30px]  md:px-[30px] m-auto lg:flex justify-end ">
+      <div className="w-[500px] mo:w-[200px]   pt-10 " id="chartdiv"></div>
     </div>
 
-    <div className="w-container m-auto items-center flex pl-[105px] md:w-full md:pl-0  mb-[-120px] ">
-      <div className="  relative z-[100000] bottom-[700px] md:w-full overflow-hidden">
-        <div className='text-[70px] md:text-[62px] text-nowrap  abcgintoText font-medium md:px-[30px] text-[#FFFFFF]  leading-[91px] relative z-[100000]'><div>The Genesis of Open Edge,</div> for the AI Era.</div>
-        <div className="text-[32px] md:text-[28px] py-3  leading-[38px] font-semibold md:px-[30px] asText text-[#7C7C7C]">Unleashing Intelligence with a Globally-Connected Edge Cloud.</div>
-        <div className=" pt-5 flex  items-center gap-10 md:px-[30px]">
+    <div className="w-container m-auto items-center flex lg:pl-[105px] md:w-full md:pl-0  mb-[-120px] mo:w-full  ">
+      <div className="  relative z-[100000] bottom-[700px] mo:bottom-[900px] md:w-full overflow-hidden mo:w-full mo:text-center">
+        <div className='mo:hidden text-[80px] md:text-[62px] text-nowrap  abcgintoText font-semibold md:px-[30px] text-[#FFFFFF]   leading-[91px] relative z-[100000]'><div>The Genesis of Open Edge,</div> for the AI Era.</div>
+        <div className='lg:hidden text-2xl     abcgintoText  font-medium   text-[#FFFFFF] leading-normal relative z-[100000]'><div>The Genesis of Open </div> Edge,for the AI Era.</div>
+
+        <div className="text-[32px]  mo:text-xs md:text-[28px] py-3 mo:px-[77px]  leading-[38px] font-semibold md:px-[30px] asText text-[#7C7C7C]">Unleashing Intelligence with a Globally-Connected Edge Cloud.</div>
+        <div className=" pt-5 flex mo:mt-[100px]  items-center gap-10 md:px-[30px] mo:flex-col-reverse">
           <a href={'https://docs.enreach.network'} target="_blank" className="bg-[#4281FF]   text-[#FFFFFF] w-[229px] items-center text-2xl font-semibold leading-9  flex justify-center h-[50px] rounded-3xl ipsText p-3">Learn More</a>
           <SocialButtons />
 
@@ -88,25 +90,25 @@ const ABanner = () => {
       <div className="w-container m-auto  py-[60px]  md:w-full ">
         <div className="mx-[80px] md:mx-[30px] abcgintoText flex justify-between">
           <div className="flex flex-col items-center">
-            <span className="text-[55px] md:text-[50px] font-medium leading-[72px]">
+            <span className="text-[60px] md:text-[50px] font-semibold leading-[72px]">
               <CountUp start={0} end={1000000} duration={3} />+
             </span>
             <span className="text-xl font-medium leading-6 asText">Unlimited Edge Scalability</span>
           </div>
           <div className="flex flex-col items-center">
-            <span className="text-[55px] md:text-[50px]  font-medium leading-[72px]">
+            <span className="text-[60px] md:text-[50px]  font-semibold leading-[72px]">
               {`<`}{<CountUp start={100} end={1} duration={3} />}{`%`}
             </span>
             <span className="text-xl font-medium leading-6 asText">Stuttering Rate </span>
           </div>
           <div className="flex flex-col items-center">
-            <span className="text-[55px] md:text-[50px]  font-medium leading-[72px]">
+            <span className="text-[60px] md:text-[50px]  font-semibold leading-[72px]">
               {`>`}{<CountUp start={100} end={60} duration={3} />}{`%`}
             </span>
             <span className="text-xl font-medium leading-6 asText">Save on Traffic </span>
           </div>
           <div className="flex flex-col items-center">
-            <span className="text-[55px] md:text-[50px]  font-medium leading-[72px]">
+            <span className="text-[60px] md:text-[50px]  font-semibold leading-[72px]">
               {`<`}{<CountUp start={100} end={20} duration={3} />}ms
 
             </span>
