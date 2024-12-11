@@ -1,8 +1,13 @@
 export const headerBtnList = [
-  { id: 1, name: "Home", href: "/" },
-  { id: 2, name: "About Us", href: "/aboutUs" },
+  { id: 1, name: "Home", href: "/", target: "_self" },
+  { id: 2, name: "About Us", href: "/aboutUs", target: "_self" },
   // { id: 3, name: "Wiki", href: "" },
-  { id: 4, name: "Docs", href: "https://docs.enreach.network" },
+  {
+    id: 4,
+    name: "Docs",
+    href: "https://docs.enreach.network",
+    target: "_blank",
+  },
 ];
 
 export const showCaseList = [

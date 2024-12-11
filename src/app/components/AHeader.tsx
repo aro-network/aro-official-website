@@ -18,7 +18,7 @@ const AHeader: FC<{ className?: string, containerClassName?: string, rightClassN
       </div>
       <div className={`flex ${rightClassName} justify-end gap-[36px] md:gap-5  w-[50%] button-container`}>
         {headerBtnList.map((item, index) => {
-          return <button onClick={() => { ur.push(item.href) }} className={` headerBtn   text-[#FFFFFF] font-extrabold md:font-semibold text-xl md:text-base bg-[rgba(255, 255, 255, 1)] leading-6`} key={`btn_${index}`}>{item.name}</button>
+          return <a href={item.href} target={item.target} className={` headerBtn   text-[#FFFFFF] font-extrabold md:font-semibold text-xl md:text-base bg-[rgba(255, 255, 255, 1)] leading-6`} key={`btn_${index}`}>{item.name}</a>
         })}
 
 
