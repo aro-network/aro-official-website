@@ -1,54 +1,36 @@
 import classNames from "classnames";
 import React, { Fragment, HTMLAttributes, useState } from "react";
-import { RxTriangleUp } from "react-icons/rx";
 import { useClickAway, useToggle } from "react-use";
 import { useRouter } from "next/navigation";
 import { useAutoAnim } from "../hooks/useAutoAnim";
 
 
-export const headerBtnList = [
-  { name: "Home", href: "/", target: "_self" },
-  { name: "About Us", href: "/aboutUs", target: "_self" },
-  // { id: 3, name: "Wiki", href: "" },
-  {
-    name: "Docs",
-    href: "https://docs.enreach.network",
-    target: "_blank",
-  },
-];
 
 export interface MenuItem {
   topSplit?: boolean;
-  icon?: any;
-  text?: any;
+  icon?: string;
+  text?: string;
   href?: string;
   name: string
   content?: string;
   selected?: boolean;
   onClick?: () => void;
-  [key: string]: any;
   target?: string
 }
 export interface PoperMenuProps {
-  arrow?: HTMLAttributes<HTMLDivElement>;
   menus: MenuItem[];
   keys?: string;
-  containerClassName?: any;
-  chooseItem?: (item: any) => void;
-  isShowText?: boolean;
-  iconClassName?: any;
+  containerClassName?: string;
+  chooseItem?: (item: { name: string }) => void;
 }
-function _APoperMenu(p: HTMLAttributes<HTMLDivElement> & PoperMenuProps) {
+const AMenu = (p: HTMLAttributes<HTMLDivElement> & PoperMenuProps) => {
   const {
     className,
     containerClassName,
     children,
-    arrow = {},
     keys = "name",
     menus,
-    isShowText = false,
     chooseItem,
-    iconClassName,
     ...other
   } = p;
   const r = useRouter();
@@ -56,10 +38,16 @@ function _APoperMenu(p: HTMLAttributes<HTMLDivElement> & PoperMenuProps) {
   const [show, toggleShow] = useToggle(false);
   const ref = useAutoAnim<HTMLDivElement>("t-side");
   const [active, setActive] = useState("");
+
+
+
   useClickAway(ref, () => show && toggleShow(false));
 
   const onClickItem = (item: MenuItem) => {
-    typeof chooseItem === "function" && chooseItem(item);
+    if (typeof chooseItem === "function") {
+      chooseItem(item);
+
+    }
     if (item.onClick) {
       item.onClick();
     }
@@ -75,7 +63,7 @@ function _APoperMenu(p: HTMLAttributes<HTMLDivElement> & PoperMenuProps) {
     >
       <div
         className="flex  "
-        onClick={(e) => {
+        onClick={() => {
           toggleShow();
         }}
       >
@@ -119,7 +107,7 @@ function _APoperMenu(p: HTMLAttributes<HTMLDivElement> & PoperMenuProps) {
                   )}
                   <div className=" flex flex-col">
                     <div className=" text-sm font-bold text-white  font-ns mo:text-base mo:font-normal flex items-center gap-2">
-                      {item[keys]}{" "}
+                      {item.name}{" "}
                     </div>
                     <div className="w-auto text-xs font-ns ">
                       {item.content}
@@ -135,4 +123,4 @@ function _APoperMenu(p: HTMLAttributes<HTMLDivElement> & PoperMenuProps) {
   );
 }
 
-export const APoperMenu = React.memo(_APoperMenu);
+export const APoperMenu = React.memo(AMenu);

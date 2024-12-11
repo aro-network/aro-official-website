@@ -1,16 +1,14 @@
-import { FC, useState } from "react"
+import { FC } from "react"
 import { headerBtnList } from "../utils/common"
 import Link from "next/link"
 import useMobileDetect from "../hooks/useMobileDetect"
-import { HiOutlineMenu, HiOutlineX } from 'react-icons/hi'
+import { HiOutlineMenu } from 'react-icons/hi'
 import classNames from "classnames"
 import { APoperMenu } from "./APoperModal"
 
 
 const AHeader: FC<{ className?: string, containerClassName?: string, rightClassName?: string }> = ({ className = '', containerClassName = '', rightClassName = '' }) => {
   const isMobile = useMobileDetect()
-  const [isShow, setIsShow] = useState(false)
-  console.log('isMobileisMobileisMobile', isMobile);
 
 
 
@@ -29,7 +27,6 @@ const AHeader: FC<{ className?: string, containerClassName?: string, rightClassN
             containerClassName={"!w-[106px] !h-[179px] mo:!right-[0px] "}
             menus={headerBtnList}
             keys={"name"}
-            isShowText={true}
             className="absolute z-[9999]"
           >
             <HiOutlineMenu className={classNames(`w-6 h-6 !text-white`)} />
