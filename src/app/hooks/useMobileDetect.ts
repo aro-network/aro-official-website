@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect } from "react";
+import { useState, useEffect } from "react";
 
 const useMobileDetect = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -13,7 +13,7 @@ const useMobileDetect = () => {
   };
   const isBrowser = typeof window !== "undefined";
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (!isBrowser) return;
     handleResize();
     window.addEventListener("resize", handleResize);

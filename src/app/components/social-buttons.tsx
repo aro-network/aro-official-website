@@ -15,7 +15,7 @@ export function SocialButtons() {
 
                 return <a
                     key={href}
-                    className=" border-white/20 hover:bg-white/10 rounded-full "
+                    className=" mo:w-6 mo:h-6 border-white/20 hover:bg-white/10 rounded-full "
                     href={href}
                     target="_blank"
                     rel="noreferrer"

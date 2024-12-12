@@ -1,3 +1,4 @@
+"use client"
 import { useState } from "react";
 import { list } from "../utils/common"
 import { SocialButtons } from "./social-buttons";
@@ -9,6 +10,7 @@ const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
   const [dealHover, setDealHover] = useState<{ index: number, isHover: boolean } | null>(null);
   const [inputEmail, setInputEmail] = useState('')
   const [errorText, setErrorText] = useState('')
+  const currentYear = new Date().getFullYear()
 
   const onSubmitEmail = () => {
     if (!inputEmail) return
@@ -42,17 +44,17 @@ const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
   return <div data-aos="fade-up"
     data-aos-duration="1000"
     className={`  w-full bg-[#313131] h-full   relative bottom-[0px] ${className}  `}>
-    <div className="w-container m-auto md:w-full md:px-[30px] ">
+    <div className="w-container m-auto md:w-full mo:w-full md:px-[30px]  mo:px-5 ">
       <div className="flex flex-col items-center justify-center">
-        <div className=" mt-[95px]">
-          <img src="./logo.png" width={231} height={51} />
+        <div className=" mt-[95px] mo:mt-6">
+          <img src="./logo.png" width={231} height={51} className="mo:w-[102px] mo:h-[23px]" />
         </div>
-        <div className=" abcgintoText text-[50px] font-semibold leading-normal mt-[43px] text-[#FFFFFF]">
+        <div className=" abcgintoText text-[50px] mo:text-xl font-semibold leading-normal mt-[43px] mo:mt-[26px] text-[#FFFFFF]">
           Get Started
         </div>
-        <div className=" bg-[url(/footerBgIcon.svg)]  bg-no-repeat w-full  ">
+        <div className=" lg:bg-[url(/footerBgIcon.svg)] bg-no-repeat w-full  ">
           <div className="text-center mt-[21px] h-auto">
-            <div className="abcgintoText text-xl font-normal leading-normal text-[#8A8A8A]">
+            <div className="abcgintoText text-[25px] mo:text-[10px] font-normal leading-normal text-[#8A8A8A]">
               <div>
                 Stay Ahead of the Game: Subscribe to Receive the Latest
               </div>
@@ -61,19 +63,21 @@ const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
 
               </div>
             </div>
-            <div className="mt-[27px] flex justify-center">
+            <div className="mt-[27px] mo:mt-10  flex justify-center mo:flex-col mo:!w-full  mo:bg-[url(/mo-footerBgIcon.svg)] mo:bg-contain mo:bg-no-repeat  ">
               <div>
-                <input value={inputEmail} onChange={(e) => { setInputEmail(e.target.value); setErrorText('') }} placeholder="sample@email.com" className=" w-[393px] h-[67px] rounded-[33px] bg-[#242424]" />
+                <input value={inputEmail} onChange={(e) => { setInputEmail(e.target.value); setErrorText('') }} placeholder="sample@email.com" className=" w-[393px] mo:!w-[204px] h-[67px] mo:!h-[38px] rounded-[33px] bg-[#242424]" />
                 <div className="h-5 mt-2 text-center text-red-600">
                   {errorText}
                 </div>
               </div>
-              <button onClick={onSubmitEmail} className=" bg-[#4281FF] btn items-center  text-[#FFFFFF] rounded-[33.5px] w-[198px] h-[67px] abcgintoText text-[24px] font-medium leading-normal ">Submit</button>
+              <div>
+                <button onClick={onSubmitEmail} className=" bg-[#4281FF] btn items-center mo:!justify-center  text-[#FFFFFF] rounded-[33.5px] w-[198px] mo:w-[204px] h-[67px] mo:h-[38px] abcgintoText text-[25px] mo:text-base font-semibold leading-normal ">Submit</button>
+              </div>
             </div>
           </div>
-          <div className="mt-[224px] mb-5">
+          <div className="mt-[224px] mo:mt-6 mb-5 mo:w-full mo:flex mo:justify-center mo:flex-col mo:items-center">
             <SocialButtons />
-            <div className="text-xl abcgintoText font-medium leading-normal mt-[23px] text-[#FFFFFF]">
+            <div className="text-xl mo:text-sm abcgintoText mo:text-center mo:font-semibold font-medium leading-normal mt-[23px] text-[#FFFFFF]">
               <div>
                 Get in Touch
               </div>
@@ -82,7 +86,7 @@ const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
               </a>
 
             </div>
-            <div className="flex w-full justify-end gap-[81px] smd:gap-10">
+            <div className="flex mo:mt-[60px] w-full justify-end mo:justify-between gap-[81px] mo:gap-[33px] smd:gap-10">
               {list.map((item, index) => {
                 return <div
                   key={`list_${index}`}
@@ -95,15 +99,15 @@ const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
                   onClick={() => window.open(item.link, '_blank')}
                   className={`${dealHover?.index === index && 'text-[#ffffff]'} `}
                 >
-                  <span className={`text-xl cursor-pointer abcgintoText font-medium leading-normal  ${dealHover?.isHover && dealHover.index === index
+                  <span className={`text-xl mo:text-xs cursor-pointer abcgintoText font-medium leading-normal  ${dealHover?.isHover && dealHover.index === index
                     ? "text-[#BEBEBE]"
                     : "text-[#8A8A8A]"
                     }`} >{item.name}</span>
                 </div>
               })}
             </div>
-            <div className="flex w-full justify-end text-[#737373] abcgintoText font-medium leading-normal  ">
-              © EnReach Foundation, {new Date().getFullYear()}. All rights reserved.
+            <div className="flex w-full justify-end mo:justify-center text-[#737373] mo:text-xs mo:mt-[11px] text-xl abcgintoText font-medium leading-normal  ">
+              © EnReach Foundation, {currentYear}. All rights reserved.
             </div>
           </div>
         </div>

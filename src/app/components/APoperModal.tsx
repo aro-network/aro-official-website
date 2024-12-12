@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import React, { Fragment, HTMLAttributes, useState } from "react";
 import { useClickAway, useToggle } from "react-use";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useAutoAnim } from "../hooks/useAutoAnim";
 
 
@@ -38,6 +38,7 @@ const AMenu = (p: HTMLAttributes<HTMLDivElement> & PoperMenuProps) => {
   const [show, toggleShow] = useToggle(false);
   const ref = useAutoAnim<HTMLDivElement>("t-side");
   const [active, setActive] = useState("");
+  const pathname = usePathname()
 
 
 
@@ -78,22 +79,16 @@ const AMenu = (p: HTMLAttributes<HTMLDivElement> & PoperMenuProps) => {
           )}
         >
 
-
-          <div className="py-[.625rem] mo:py-[.375rem] w-full  bg-[#373737] h-[179px] mt-[.625rem] mo:mt-[.625rem] rounded-2xl z-10 relative">
+          <div className=" w-full  bg-[#373737] h-[179px]  text-center mt-[.625rem] rounded-2xl z-[-9999999999] relative">
             {menus.map((item, i) => {
-              console.log('dasdsadsa', item, keys);
+              console.log('pathname', pathname, item.href);
 
               return <Fragment key={`poper_menu_item${i}`}>
-                {item.topSplit && i > 0 && (
-                  <div className="h-[1px] my-[.625rem] mo:my-[2px] mx-4 bg-[#eeeeee]" />
-                )}
+
                 <div
                   className={classNames(
-                    "flex items-center mx-3 py-4 mo:py-[.875rem] px-4 text-black hover:text-green-2 cursor-pointer",
-                    {
-                      "hover:bg-[#F5F5F5]  hover:rounded-lg":
-                        item.name === active,
-                    }
+                    "flex items-center justify-center   mo:py-[.875rem] text-center w-full  text-black hover:text-green-2 cursor-pointer",
+
                   )}
                   onMouseEnter={() => {
                     setActive(item.name);
@@ -102,16 +97,14 @@ const AMenu = (p: HTMLAttributes<HTMLDivElement> & PoperMenuProps) => {
                     !item.href ? onClickItem(item) : r.push(item.href)
                   }
                 >
-                  {!!item.icon && (
+                  {/* {!!item.icon && (
                     <div className="text-xl mo:text-2xl">{item.icon}</div>
-                  )}
-                  <div className=" flex flex-col">
-                    <div className=" text-sm font-bold text-white  font-ns mo:text-base mo:font-normal flex items-center gap-2">
-                      {item.name}{" "}
+                  )} */}
+                  <div className={` flex flex-col text-center  justify-center h-[34px] ${pathname === item.href && 'bg-[#4281FF]'}  w-full`}>
+                    <div className=" text-sm font-bold text-white text-center justify-center mo:text-[15px] asText mo:font-extrabold flex items-center ">
+                      {item.name}
                     </div>
-                    <div className="w-auto text-xs font-ns ">
-                      {item.content}
-                    </div>
+
                   </div>
                 </div>
               </Fragment>

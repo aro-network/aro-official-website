@@ -11,9 +11,9 @@ export const headerBtnList = [
 
 export const showCaseList = [
   {
-    title: "Experienced Team",
+    title: "Competitive Price",
     content:
-      "Extensive experience in edge computing, blockchain, ensuring the delivery of scalable solutions.",
+      "Utilizes idle resources via decentralization, cutting costs while ensuring performance and scalability.",
     icon: "IconTeam",
   },
   {

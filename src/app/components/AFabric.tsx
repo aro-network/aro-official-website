@@ -1,6 +1,15 @@
 import { useState } from "react";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 const AFabric = () => {
+  const settings = {
+    dots: true,
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  };
 
   const fabricList = [
     {
@@ -12,6 +21,7 @@ const AFabric = () => {
       // default: <div>
       //   <img src="./default-application.svg" />
       // </div>,
+      moIcon: './mo-applicaiton.svg',
       content:
         "Provide developer SDKs and user interfaces that expose the network’s capabilities, allowing for easy development, deployment, management, and scaling of edge applications and AI solutions.",
     },
@@ -25,6 +35,7 @@ const AFabric = () => {
       // default: <div>
       //   <img src="./default-open.svg" />
       // </div>,
+      moIcon: './mo-orchestration.svg',
       content:
         "Coordinate network consensus, data, computation flows, and task management across nodes to meet the dynamic demands of edge computing, data transmission & processing with high precision and reliability.",
     },
@@ -38,6 +49,7 @@ const AFabric = () => {
       // default: <div>
       //   <img src="./default-resource.svg" />
       // </div>,
+      moIcon: './mo-resource.svg',
       content:
         "Standardize, virtualize, and containerize heterogeneous node resources to create a scalable, flexible digital infrastructure that can be verified, quantified, and optimized for efficient utilization.",
     },
@@ -46,11 +58,12 @@ const AFabric = () => {
   const [dealHover, setDealHover] = useState<{ index: number, isHover: boolean } | null>(null);
 
 
-  return <div className="bg-[#373737] overflow-hidden">
-    <div data-aos="fade-up"
-      data-aos-duration="1000"
-      className=" aos-init aos-animate   w-container m-auto h-auto  md:w-full md:px-[30px] pt-40 pb-80">
-      <div className="text-[80px] font-semibold leading-normal text-[#FFFFFF] abcgintoText">
+  return <div className="bg-[#373737] mo:bg-[#1B1B1B] overflow-hidden">
+    <div
+      // data-aos="fade-up"
+      //   data-aos-duration="1000"
+      className=" aos-init aos-animate mo:mt-[71px] mo:text-center  w-container mo:w-full m-auto h-auto  md:w-full md:px-[30px] lg:pt-40 lg:pb-80">
+      <div className="text-[80px] mo:text-xl mo:flex mo:justify-center font-semibold leading-normal text-[#FFFFFF] abcgintoText">
         <div>
           The Open-Layered
         </div>
@@ -58,7 +71,7 @@ const AFabric = () => {
           Fabric
         </div>
       </div>
-      <div className="flex flex-col justify-center w-full gap-10 mt-10 bg-[#373737]">
+      <div className=" mo:hidden flex flex-col justify-center w-full gap-10 mt-10 bg-[#373737] ">
         {fabricList.map((item, index) => {
           return <div
             data-aos="fade-up"
@@ -98,6 +111,25 @@ const AFabric = () => {
             </div>
           </div>
         })}
+      </div>
+      <div className="lg:hidden w-full mb-10 pb-10 px-5 overflow-auto flex flex-col gap-10">
+        {fabricList.map((item, index) => (
+          <div key={`slider_${index}`} className="w-full h-[350px] bg-[#373737] rounded-[30px]">
+            <div className="p-5">
+              <div className="text-[#4281FF] abcgintoText text-base font-semibold leading-normal">
+                {item.title}
+              </div>
+              <div className="asText text-[10px] mt-3 font-medium leading-normal">
+                {item.content}
+              </div>
+            </div>
+            <div className=" ">
+              <img src={item.moIcon} className="h-auto object-cover w-full" />
+            </div>
+          </div>
+
+
+        ))}
       </div>
     </div>
 

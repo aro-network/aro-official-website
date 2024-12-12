@@ -1,8 +1,13 @@
-const IconEcosystem = ({ color = "", seColor = "" }) => {
+const IconEcosystem = ({
+  color = "",
+  seColor = "",
+  width = "68",
+  height = "100",
+}) => {
   return (
     <svg
-      width="68"
-      height="100"
+      width={width}
+      height={height}
       viewBox="0 0 68 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
