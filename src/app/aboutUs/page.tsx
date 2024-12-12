@@ -34,8 +34,14 @@ const AboutUs = () => {
 
 
   return <div>
-    <AHeader rightClassName={`pt-10`} className={'bg-[#1B1B1B]  pt-10 '} containerClassName={'  !pt-0 '} />
+    <AHeader rightClassName={`pt-10`} className={'lg:bg-[#1B1B1B]  lg:pt-10 '} containerClassName={'  lg:!pt-0 mo:pt-5 '} />
     <ABanner />
+    <div ata-aos="fade-up"
+      data-aos-duration="1000" className=" w-full flex justify-end">
+      <div className="w-[60%] lg:hidden absolute translate-y-[-120px]  ">
+        <img src="./edge.gif" className="bg-cover " />
+      </div>
+    </div>
     <AWhatDrivesUs />
     <ADoingIt />
     <AFooter className={` !bottom-0 `} />

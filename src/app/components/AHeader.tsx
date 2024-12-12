@@ -11,9 +11,6 @@ const AHeader: FC<{ className?: string, containerClassName?: string, rightClassN
   const isMobile = useMobileDetect()
 
 
-
-
-
   return <div>
     <div className={` w-container mo:w-full mo:px-[12px] m-auto flex  pt-10 mo:pt-5  items-center  ${containerClassName} md:w-full  `}>
       <div className={`w-[50%] lg:px-10 ${className}`}>
@@ -28,7 +25,6 @@ const AHeader: FC<{ className?: string, containerClassName?: string, rightClassN
           <APoperMenu
             containerClassName={"!w-[106px] !h-[179px] mo:!right-[0px] "}
             menus={headerBtnList}
-            keys={"name"}
             className="absolute z-[9999]"
           >
             <HiOutlineMenu className={classNames(`w-6 h-6 !text-white`)} />

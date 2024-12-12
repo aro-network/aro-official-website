@@ -80,7 +80,7 @@ const AOpenEdge = () => {
       <div className={`w-[1px] h-[20px] border-dashed border overflow-hidden  ml-[14px] translate-y-[-30px]   absolute   `}></div>
       <div className={`w-[1px] h-[730px] border-dashed border  overflow-hidden  ml-[14px] translate-y-[45px]   absolute   `}></div>
       {openEdgeList.map((item, index) => {
-        return <div>
+        return <div key={`edge_${index}`}>
           <div className={`${index && 'hidden'} abcgintoText text-[22px] font-semibold leading-normal text-[#FFF]`}>
             {item.title}
           </div>

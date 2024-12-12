@@ -1,15 +1,8 @@
 import { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 const AFabric = () => {
-  const settings = {
-    dots: true,
-    infinite: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-  };
+
 
   const fabricList = [
     {
@@ -112,7 +105,7 @@ const AFabric = () => {
           </div>
         })}
       </div>
-      <div className="lg:hidden w-full mb-10 pb-10 px-5 overflow-auto flex flex-col gap-10">
+      <div className="lg:hidden w-full mb-10 pb-10 px-5  flex flex-col gap-10 mo:mt-6  mo:gap-[73px]">
         {fabricList.map((item, index) => (
           <div key={`slider_${index}`} className="w-full h-[350px] bg-[#373737] rounded-[30px]">
             <div className="p-5">

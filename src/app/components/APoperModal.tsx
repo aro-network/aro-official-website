@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React, { Fragment, HTMLAttributes, useState } from "react";
+import React, { Fragment, HTMLAttributes } from "react";
 import { useClickAway, useToggle } from "react-use";
 import { usePathname, useRouter } from "next/navigation";
 import { useAutoAnim } from "../hooks/useAutoAnim";
@@ -19,7 +19,6 @@ export interface MenuItem {
 }
 export interface PoperMenuProps {
   menus: MenuItem[];
-  keys?: string;
   containerClassName?: string;
   chooseItem?: (item: { name: string }) => void;
 }
@@ -28,7 +27,6 @@ const AMenu = (p: HTMLAttributes<HTMLDivElement> & PoperMenuProps) => {
     className,
     containerClassName,
     children,
-    keys = "name",
     menus,
     chooseItem,
     ...other
@@ -37,7 +35,6 @@ const AMenu = (p: HTMLAttributes<HTMLDivElement> & PoperMenuProps) => {
 
   const [show, toggleShow] = useToggle(false);
   const ref = useAutoAnim<HTMLDivElement>("t-side");
-  const [active, setActive] = useState("");
   const pathname = usePathname()
 
 
@@ -87,12 +84,12 @@ const AMenu = (p: HTMLAttributes<HTMLDivElement> & PoperMenuProps) => {
 
                 <div
                   className={classNames(
-                    "flex items-center justify-center   mo:py-[.875rem] text-center w-full  text-black hover:text-green-2 cursor-pointer",
+                    "flex items-center justify-center   mo:py-[10px] text-center w-full  text-black hover:text-green-2 cursor-pointer",
 
                   )}
-                  onMouseEnter={() => {
-                    setActive(item.name);
-                  }}
+                  // onMouseEnter={() => {
+                  //   setActive(item.name);
+                  // }}
                   onClick={() =>
                     !item.href ? onClickItem(item) : r.push(item.href)
                   }

@@ -43,7 +43,7 @@ const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
 
   return <div data-aos="fade-up"
     data-aos-duration="1000"
-    className={`  w-full bg-[#313131] h-full   relative bottom-[0px] ${className}  `}>
+    className={`  w-full bg-[#313131] h-full mo:pb-5   relative bottom-[0px] ${className}  `}>
     <div className="w-container m-auto md:w-full mo:w-full md:px-[30px]  mo:px-5 ">
       <div className="flex flex-col items-center justify-center">
         <div className=" mt-[95px] mo:mt-6">
@@ -66,7 +66,7 @@ const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
             <div className="mt-[27px] mo:mt-10  flex justify-center mo:flex-col mo:!w-full  mo:bg-[url(/mo-footerBgIcon.svg)] mo:bg-contain mo:bg-no-repeat  ">
               <div>
                 <input value={inputEmail} onChange={(e) => { setInputEmail(e.target.value); setErrorText('') }} placeholder="sample@email.com" className=" w-[393px] mo:!w-[204px] h-[67px] mo:!h-[38px] rounded-[33px] bg-[#242424]" />
-                <div className="h-5 mt-2 text-center text-red-600">
+                <div className="h-5 mt-2 mo:text-xs text-center text-red-600">
                   {errorText}
                 </div>
               </div>
