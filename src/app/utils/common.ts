@@ -29,7 +29,7 @@ export const showCaseList = [
   {
     title: "Dynamic Matching",
     content: "Real-time optimization of resources for speed and adaptability.",
-    icon: "IconStack",
+    icon: "IconMatch",
   },
   {
     title: "Enterprise Reliability",

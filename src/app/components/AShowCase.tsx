@@ -33,10 +33,13 @@ const AShowCase = () => {
               : "text-[#7C7C7C]"
               } rounded-[51px]  bg-[#313131] flex flex-col items-center justify-center w-full  max-w-[421px] px-8 py-16`}>
             <div >
-              <Icon color={`${dealHover?.isHover && dealHover.index === index
-                ? "#FFFFFF"
-                : " #7C7C7C"
-                }`} name={item.icon} />
+              <div className={`${index === 0 && 'mt-[5px]'}`}>
+                <Icon color={`${dealHover?.isHover && dealHover.index === index
+                  ? "#FFFFFF"
+                  : " #7C7C7C"
+                  }`} name={item.icon} />
+              </div>
+
             </div>
             <div className="  w-[350px] max-h-[200px] h-full mt-[46px] mo:mt-4 text-center">
               <div style={{ letterSpacing: '-0.45px' }} className={` abcgintoText text-[30px] mo:text-lg font-semibold leading-7`}>{item.title}</div>
@@ -49,7 +52,7 @@ const AShowCase = () => {
       </div>
 
     </div>
-  </div>
+  </div >
 }
 
 export default AShowCase
