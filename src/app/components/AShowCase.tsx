@@ -26,8 +26,8 @@ const AShowCase = () => {
             onClick={() => {
               setDealHover({ index, isHover: true });
             }}
-            data-aos="fade-up"
-            data-aos-duration="1000"
+            // data-aos="fade-up"
+            // data-aos-duration="1000"
             className={`${dealHover?.isHover && dealHover.index === index
               ? "text-[#FFFFFF] bg-[#4281FF]"
               : "text-[#7C7C7C]"
