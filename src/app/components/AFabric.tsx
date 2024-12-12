@@ -53,10 +53,10 @@ const AFabric = () => {
 
   return <div className="bg-[#373737] mo:bg-[#1B1B1B] overflow-hidden">
     <div
-      // data-aos="fade-up"
-      //   data-aos-duration="1000"
+      data-aos="fade-up"
+      data-aos-duration="1000"
       className=" aos-init aos-animate mo:mt-[71px] mo:text-center  w-container mo:w-full m-auto h-auto  md:w-full md:px-[30px] lg:pt-40 lg:pb-80">
-      <div className="text-[80px] mo:text-xl mo:flex mo:justify-center font-semibold leading-normal text-[#FFFFFF] abcgintoText">
+      <div className="text-[80px] mo:text-xl mo:flex mo:justify-center mo:gap-1 font-semibold leading-normal text-[#FFFFFF] abcgintoText">
         <div>
           The Open-Layered
         </div>
@@ -107,7 +107,8 @@ const AFabric = () => {
       </div>
       <div className="lg:hidden w-full mb-10 pb-10 px-5  flex flex-col gap-10 mo:mt-6  mo:gap-[73px]">
         {fabricList.map((item, index) => (
-          <div key={`slider_${index}`} className="w-full h-[350px] bg-[#373737] rounded-[30px]">
+          <div data-aos="fade-up"
+            data-aos-duration="1000" key={`slider_${index}`} className="w-full h-[350px] bg-[#373737] rounded-[30px]">
             <div className="p-5">
               <div className="text-[#4281FF] abcgintoText text-base font-semibold leading-normal">
                 {item.title}

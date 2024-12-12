@@ -8,8 +8,8 @@ const AOpenEdge = () => {
 
 
   return <div
-    // data-aos="fade-up"
-    //   data-aos-duration="1000"
+    data-aos="fade-up"
+    data-aos-duration="1000"
     className="overflow-hidden aos-init aos-animate">
     <div className=" mo:hidden relative h-auto py-[120px]  mo:mt-[-200px] mo:py-0 m-auto  overflow-hidden w-container md:w-full ">
       <div className="flex flex-col gap-[72px] content md:px-[30px] md:ml-0 ml-[100px]" >

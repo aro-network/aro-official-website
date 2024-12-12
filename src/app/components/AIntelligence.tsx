@@ -6,7 +6,7 @@ const AIntelligence = () => {
     <div className="flex items-center m-auto w-container mo:w-full md:w-full  mo:flex-col mo:justify-center ">
       <div className="w-[40%] mo:w-full h-[762px] mo:h-[260px] ">
         <img src="./line-enreach.png" className="object-cover w-full h-full bg-cover mo:hidden" />
-        <img src="./mo-line-enreach.svg" className="object-cover w-full h-full bg-cover lg:hidden" />
+        <img src="./mo-line-enreach.jpg" className=" w-full h-full bg-cover lg:hidden" />
 
       </div>
       <div className="w-[60%]  mo:w-full mo:px-5  h-[600px] mo:h-auto md:mx-[30px] flex  flex-col lg:justify-center md:pl-[10px] lg:items-baseline mo:mt-10">
