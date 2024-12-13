@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { showCaseList } from "../utils/common"
 import Icon from '@/app/images/index'
+import useMobileDetect from "../hooks/useMobileDetect";
 
 const AShowCase = () => {
   const [dealHover, setDealHover] = useState<{ index: number, isHover: boolean } | null>(null);
+  const isMobile = useMobileDetect()
 
 
   return <div data-aos="fade-up"
@@ -26,8 +28,8 @@ const AShowCase = () => {
             onClick={() => {
               setDealHover({ index, isHover: true });
             }}
-            // data-aos="fade-up"
-            // data-aos-duration="1000"
+            data-aos={isMobile && "fade-up"}
+            data-aos-duration={isMobile && "1000"}
             className={`${dealHover?.isHover && dealHover.index === index
               ? "text-[#FFFFFF] bg-[#4281FF]"
               : "text-[#7C7C7C]"
