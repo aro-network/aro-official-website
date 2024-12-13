@@ -65,14 +65,10 @@ const ABanner = () => {
 
 
 
-
-
-
-
   return <div className=" overflow-hidden mo:w-full  ">
     <div className="w-container m-auto items-center flex lg:pl-[105px] md:w-full md:pl-0  mb-[-120px] mo:w-full   ">
-      <div className="   flex items-center w-full h-[80vh] mo:h-[65vh]  relative">
-        <div className="  md:w-full overflow-hidden mo:w-full mo:text-center mo:mb-[200px]">
+      <div className="   flex items-center  w-full h-[83vh] mo:h-[65vh]  relative">
+        <div className="  md:w-full overflow-hidden mo:w-full mo:text-center mo:mb-[100px]">
           <div className='mo:hidden text-[80px] md:text-[55px] text-nowrap  abcgintoText font-semibold md:px-[30px] text-[#FFFFFF] md:lead-[71px]  leading-[91px] relative z-[100000]'><div>The Genesis of Open Edge,</div> for the AI Era.</div>
           <div className='lg:hidden text-2xl    abcgintoText  font-medium   text-[#FFFFFF] leading-normal relative z-[1000]'><div>The Genesis of Open Edge, </div> for the AI Era.</div>
 
@@ -83,8 +79,8 @@ const ABanner = () => {
           </div>
         </div>
       </div>
-      <div className=" absolute     ">
-        <div id="chartdiv" className=" relative left-[700px] mo:left-0 mo:w-[500px] mo:h-[500px] mo:pb-0  pb-20  bottom-[70px] "></div>
+      <div className=" w-full  mo:absolute">
+        <div id="chartdiv" className=" relative right-80  mo:left-0 mo:w-[500px] mo:h-[500px] mo:pb-0  pb-20  bottom-[70px] "></div>
       </div>
     </div>
 

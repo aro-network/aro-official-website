@@ -98,8 +98,9 @@ input {
 }
 
 #chartdiv {
-  width: 800px;
-  height: 800px;
+  width: calc(70vh) ;
+  height: calc(80vh) ;
+  margin-top: 40px;
 }
 
 @media (max-width: 1001px) {

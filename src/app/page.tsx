@@ -38,7 +38,7 @@ export default function Home() {
     <AHeader />
     <ABanner />
     <div
-      className="  text-[#FFFFFF] bg-[#0C0C0C] w-full relative ">
+      className="  text-[#FFFFFF] bg-[#0C0C0C] w-full relative mt-[10px] ">
       <div className="w-container mo:w-full m-auto py-[30px]  md:w-full  mo:px-[30px] ">
 
         <div className="mx-[80px] mo:gap-8 md:mx-[30px] abcgintoText flex mo:flex-col justify-between">
