@@ -43,7 +43,7 @@ const AShowCase = () => {
             </div>
             <div className="  w-[350px] max-h-[200px] h-full mt-[46px] mo:mt-4 text-center">
               <div style={{ letterSpacing: '-0.45px' }} className={` abcgintoText text-[30px] mo:text-lg font-semibold leading-7`}>{item.title}</div>
-              <div style={{ letterSpacing: '-0.27px' }} className="asText text-center mt-4 text-xl mo:text-sm font-normal leading-[22px] ">{item.content}</div>
+              <div style={{ letterSpacing: '-0.27px' }} className="asText text-center mo:mx-4 mt-4 text-xl mo:text-sm font-normal leading-[22px] ">{item.content}</div>
             </div>
 
           </div>

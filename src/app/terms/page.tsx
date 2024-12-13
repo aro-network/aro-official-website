@@ -66,7 +66,7 @@ const Terms = () => {
         </span>
       </div>
 
-      <div className="   mt-20 font-normal px-10">
+      <div className="   mt-20 font-normal ">
         <div className="title">1. Introduction</div>
         Welcome to EnReach Network(“EnReach,” “we,” “us,” or “our”). These Terms of Use (“Terms”) govern your access to and use of the EnReach website(s), applications, APIs, and any other software, tools, features, or functionalities provided on or in connection with our services (collectively, the “Service”). This includes using our services to explore, interact, and utilize tools for connecting with blockchain technologies and engaging in activities such as data mining and decentralized processing, at your discretion.
         For the purpose of these Terms, “User”, “You”, and “Your” refers to you as the user of the Service. If you use the Service on behalf of a company or other legal entity, “You” also includes that entity. You represent and warrant that (a) you are an authorized representative of the entity with the authority to bind the entity to these Terms, and (b) you agree to these Terms on behalf of the entity.

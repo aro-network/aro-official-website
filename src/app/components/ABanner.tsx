@@ -79,7 +79,7 @@ const ABanner = () => {
           </div>
         </div>
       </div>
-      <div className=" w-full  mo:absolute">
+      <div className=" w-full  mo:absolute mo:flex mo:justify-center">
         <div id="chartdiv" className=" relative right-80  mo:left-0 mo:w-[500px] mo:h-[500px] mo:pb-0  pb-20  bottom-[70px] "></div>
       </div>
     </div>
