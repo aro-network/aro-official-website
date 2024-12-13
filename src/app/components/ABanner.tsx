@@ -70,10 +70,10 @@ const ABanner = () => {
 
 
   return <div className=" overflow-hidden mo:w-full  ">
-    <div className="w-container m-auto items-center flex lg:pl-[105px] md:w-full md:pl-0  mb-[-120px] mo:w-full  ">
+    <div className="w-container m-auto items-center flex lg:pl-[105px] md:w-full md:pl-0  mb-[-120px] mo:w-full   ">
       <div className="   flex items-center w-full h-[80vh] mo:h-[65vh]  relative">
         <div className="  md:w-full overflow-hidden mo:w-full mo:text-center mo:mb-[200px]">
-          <div className='mo:hidden text-[80px] md:text-[62px] text-nowrap  abcgintoText font-semibold md:px-[30px] text-[#FFFFFF]   leading-[91px] relative z-[100000]'><div>The Genesis of Open Edge,</div> for the AI Era.</div>
+          <div className='mo:hidden text-[80px] md:text-[55px] text-nowrap  abcgintoText font-semibold md:px-[30px] text-[#FFFFFF] md:lead-[71px]  leading-[91px] relative z-[100000]'><div>The Genesis of Open Edge,</div> for the AI Era.</div>
           <div className='lg:hidden text-2xl    abcgintoText  font-medium   text-[#FFFFFF] leading-normal relative z-[1000]'><div>The Genesis of Open Edge, </div> for the AI Era.</div>
 
           <div className="text-[32px]  mo:text-xs md:text-[28px] py-3 mo:px-[77px]  leading-[38px] font-semibold md:px-[30px] asText text-[#7C7C7C] relative z-[99999]">Unleashing Intelligence with a Globally-Connected Edge Cloud.</div>

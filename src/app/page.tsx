@@ -39,29 +39,29 @@ export default function Home() {
     <ABanner />
     <div
       className="  text-[#FFFFFF] bg-[#0C0C0C] w-full relative ">
-      <div className="w-container mo:w-full m-auto py-[60px] mo:py-[30px]  md:w-full  mo:px-[30px] ">
+      <div className="w-container mo:w-full m-auto py-[30px]  md:w-full  mo:px-[30px] ">
 
         <div className="mx-[80px] mo:gap-8 md:mx-[30px] abcgintoText flex mo:flex-col justify-between">
           <div className="flex flex-col items-center">
-            <span className="text-[60px] mo:text-xl md:text-[50px] font-semibold leading-[72px]">
+            <span className="text-[55px] mo:text-xl md:text-[50px] font-semibold leading-[72px]">
               <CountUp startOnMount={true} start={0} end={1000000} duration={3} />+
             </span>
             <span className="text-xl mo:text-xs font-medium leading-6 asText">Unlimited Edge Scalability</span>
           </div>
           <div className="flex flex-col items-center">
-            <span className="text-[60px] mo:text-xl md:text-[50px]  font-semibold leading-[72px]">
+            <span className="text-[55px] mo:text-xl md:text-[50px]  font-semibold leading-[72px]">
               {`<`}{<CountUp start={100} end={1} duration={3} />}{`%`}
             </span>
             <span className="text-xl mo:text-xs font-medium leading-6 asText">Stuttering Rate </span>
           </div>
           <div className="flex flex-col items-center">
-            <span className="text-[60px] mo:text-xl md:text-[50px]  font-semibold leading-[72px]">
+            <span className="text-[55px] mo:text-xl md:text-[50px]  font-semibold leading-[72px]">
               {`>`}{<CountUp start={100} end={60} duration={3} />}{`%`}
             </span>
             <span className="text-xl mo:text-xs font-medium leading-6 asText">Save on Traffic </span>
           </div>
           <div className="flex flex-col items-center">
-            <span className="text-[60px] mo:text-xl md:text-[50px]  font-semibold leading-[72px]">
+            <span className="text-[55px] mo:text-xl md:text-[50px]  font-semibold leading-[72px]">
               {`<`}{<CountUp start={100} end={20} duration={3} />}ms
 
             </span>
