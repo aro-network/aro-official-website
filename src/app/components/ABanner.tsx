@@ -72,7 +72,7 @@ const ABanner = () => {
           <div className='mo:hidden text-[70px] md:text-[55px] text-nowrap  abcgintoText font-semibold md:px-[30px] text-[#FFFFFF] md:lead-[71px]  leading-[91px] relative z-[100000]'><div>The Genesis of Open Edge,</div> for the AI Era.</div>
           <div className='lg:hidden text-2xl    abcgintoText  font-medium   text-[#FFFFFF] leading-normal relative z-[1000]'><div>The Genesis of Open Edge, </div> for the AI Era.</div>
 
-          <div className="text-[32px]  mo:text-xs md:text-[28px] text-nowrap  py-3 mo:px-[77px]  leading-[38px] font-semibold md:px-[30px] asText text-[#7C7C7C] relative z-[99999]">Unleashing Intelligence with a Globally-Connected Edge Cloud.</div>
+          <div className="text-[32px]  mo:text-xs md:text-[28px] lg:text-nowrap  py-3 mo:px-[77px]  leading-[38px] font-semibold md:px-[30px] asText text-[#7C7C7C] relative z-[99999]">Unleashing Intelligence with a Globally-Connected Edge Cloud.</div>
           <div className=" pt-5 flex mo:mt-[50px]  items-center gap-10 mo:gap-[15px] md:px-[30px] mo:flex-col-reverse relative z-[99999]">
             <a href={'https://docs.enreach.network'} target="_blank" className="bg-[#4281FF]   text-[#FFFFFF] w-[229px] mo:w-[178px] items-center text-2xl mo:text-base mo:font-medium font-semibold leading-9  flex justify-center h-[50px] mo:h-[38px] rounded-3xl ipsText p-3">Learn More</a>
             <SocialButtons />
