@@ -1,11 +1,12 @@
 import { useState } from "react";
 import Icon from "../images"
 import { openEdgeList } from "../utils/common"
+import useMobileDetect from "../hooks/useMobileDetect";
 
 
 const AOpenEdge = () => {
   const [dealHover, setDealHover] = useState<{ index: number, isHover: boolean } | null>(null);
-
+  const isMobile = useMobileDetect()
 
   return <div
     data-aos="fade-up"
@@ -14,14 +15,19 @@ const AOpenEdge = () => {
     <div className=" mo:hidden relative h-auto py-[120px]  mo:mt-[-200px] mo:py-0 m-auto  overflow-hidden w-container md:w-full ">
       <div className="flex flex-col gap-[72px] content md:px-[30px] md:ml-0 ml-[100px]" >
         {openEdgeList.map((item, index) => {
-          return <div key={`edge_${index}`} className={`flex ${!!index ? 'items-center gap-[40px] smd:gap-10 ' : 'items-end'}`}
+          return <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            key={`edge_${index}`}
+            className={`flex ${!!index ? 'items-center gap-[40px] smd:gap-10 ' : 'items-end'}`}
             onMouseOver={() => {
               setDealHover({ index, isHover: true });
             }}
             onMouseLeave={() => {
               setDealHover({ index, isHover: false });
             }}>
-            <div className={` ${!!index && 'rounded-[50px] bg-[#373737] px-[132px] smd:px-[151px]  flex h-[295px]  '} items-center justify-center`}>
+            <div
+              className={` ${!!index && 'rounded-[50px] bg-[#373737] px-[132px] smd:px-[151px]  flex h-[295px]  '} items-center justify-center`}>
               {!!index &&
                 <div className="w-[257px] smd:w-[calc(18vh)]  h-[212px] relative" >
                   <img src={item.gif} width={257} height={212} />
@@ -51,10 +57,11 @@ const AOpenEdge = () => {
             }
 
 
-            <div className={`flex flex-col  ${!!index && dealHover?.isHover && dealHover.index === index
-              ? "text-[#FFFFFF]"
-              : "text-[#8A8A8A]"
-              }`}>
+            <div
+              className={`flex flex-col  ${!!index && dealHover?.isHover && dealHover.index === index
+                ? "text-[#FFFFFF]"
+                : "text-[#8A8A8A]"
+                }`}>
               <div className={` ${!index ? 'text-[80px] text-[#fff] text-left flex justify-start' : 'text-[35px] smd:text-[25px] '}   font-semibold leading-normal abcgintoText`}>{item.title}</div>
               <div className={`abcgintoText text-[48px] smd:text-[30px] font-semibold leading-normal ${!!index && dealHover?.isHover && dealHover.index === index
                 ? "text-[#4281FF]"
@@ -80,7 +87,8 @@ const AOpenEdge = () => {
       <div className={`w-[1px] h-[20px] border-dashed border overflow-hidden  ml-[14px] translate-y-[-30px]   absolute   `}></div>
       <div className={`w-[1px] h-[730px] border-dashed border  overflow-hidden  ml-[14px] translate-y-[45px]   absolute   `}></div>
       {openEdgeList.map((item, index) => {
-        return <div key={`edge_${index}`}>
+        return <div data-aos="fade-up"
+          data-aos-duration="1000" key={`edge_${index}`}>
           <div className={`${index && 'hidden'} abcgintoText text-[22px] font-semibold leading-normal text-[#FFF]`}>
             {item.title}
           </div>

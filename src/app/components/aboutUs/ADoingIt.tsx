@@ -15,13 +15,20 @@ const ADoingIt = () => {
           <img src="./enReachNetwork.svg" />
 
         </div>
-        <div className=" pt-[74px]">
+        <div data-aos="fade-up"
+          data-aos-duration="1000" className=" pt-[74px]">
           <img src="./flower.svg" />
         </div>
-        <div className=" text-[60px] mo:text-xl pt-5 font-bold leading-normal abcgintoText ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className=" text-[60px] mo:text-xl pt-5 font-bold leading-normal abcgintoText ">
           {`How We're Doing It?`}
         </div>
-        <div className=" text-[30px] mo:text-xs pt-5 mo:pt-4 font-medium abcgintoText leading-normal text-center w-full px-[270px] mo:px-0">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className=" text-[30px] mo:text-xs pt-5 mo:pt-4 font-medium abcgintoText leading-normal text-center w-full px-[270px] mo:px-0">
           At EnReach, we blend openness and innovation to transform edge computing into a seamless and accessible foundation for the AI era.
         </div>
 
