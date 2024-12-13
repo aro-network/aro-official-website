@@ -58,7 +58,7 @@ const Terms = () => {
 
   return <div>
     <AHeader />
-    <div className="w-container m-auto abcgintoText md:w-full md:px-[30px] pb-20 select-none relative z-[10000]">
+    <div className="w-container m-auto  mo:w-full mo:px-5 abcgintoText md:w-full md:px-[30px] pb-20 select-none relative z-[10000]">
       <div className=" font-medium text-center mt-20 ">
         <div className="text-[30px]  text-[#FFF]"> Terms & Conditions</div>
         <span className=" text-xl">
