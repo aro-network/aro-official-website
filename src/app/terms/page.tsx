@@ -58,7 +58,8 @@ const Terms = () => {
 
   return <div>
     <AHeader />
-    <div className="w-container m-auto  mo:w-full mo:px-5 abcgintoText md:w-full md:px-[30px] pb-20 select-none relative z-[10000]">
+    <div className="w-container mo:w-full mo:px-5 m-auto mo:m-0 abcgintoText md:w-full md:px-[30px] pb-20 select-none relative z-[1000] px-10">
+
       <div className=" font-medium text-center mt-20 ">
         <div className="text-[30px]  text-[#FFF]"> Terms & Conditions</div>
         <span className=" text-xl">
@@ -203,8 +204,9 @@ const Terms = () => {
       </div>
     </div>
     <div className=" w-container m-auto md:w-full">
-      <div className=" w-full h-[70vw] left-[50px]    translate-y-[-5500px]   fixed z-[-10000]" id="bgChart" ></div>
+      <div className=" w-full h-[70vw] bg-fuchsia-50 left-[50px] translate-y-[-5330px]    fixed z-[-10000]" id="bgChart" ></div>
     </div>
+
     <AFooter />
 
 
