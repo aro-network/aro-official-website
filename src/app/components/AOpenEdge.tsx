@@ -74,8 +74,8 @@ const AOpenEdge = () => {
         })}
 
         {/*   */}
-        <div className={`w-[1px] h-[120px] border-dashed border overflow-hidden p-0  translate-x-[520px] translate-y-[-120px]   mx-10 absolute  smd:translate-x-[544px] `}></div>
-        <div className={`w-[1px] h-[940px] border-dashed border  overflow-hidden p-0  translate-x-[520px] translate-y-[120px]   mx-10 absolute  smd:translate-x-[544px]  `}></div>
+        <div className={`w-[1px] h-[120px] border-dashed border overflow-hidden p-0 z-[-10000]  translate-x-[520px] translate-y-[-120px]   mx-10 absolute  smd:translate-x-[544px] `}></div>
+        <div className={`w-[1px] h-[940px] border-dashed border  overflow-hidden p-0 z-[-10000]   translate-x-[520px] translate-y-[120px]   mx-10 absolute  smd:translate-x-[544px]  `}></div>
         {/*         
         // <div className={`w-[1px] h-[90px] border-dashed border overflow-hidden p-0   mx-10 relative left-[520px] smd:left-[568px] top-[-1370px]  `}></div>
         // <div className={`w-[1px] h-[940px] border-dashed border  overflow-hidden p-0  mx-10 relative left-[520px] smd:left-[568px] top-[-1320px]  `}></div> */}
