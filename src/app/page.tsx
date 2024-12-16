@@ -9,7 +9,6 @@ import AShowCase from "./components/AShowCase";
 import AOpenEdge from "./components/AOpenEdge";
 import AFabric from "./components/AFabric";
 import AFooter from "./components/AFooter";
-import CountUp from "react-countup";
 
 
 export default function Home() {
