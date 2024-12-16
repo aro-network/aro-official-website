@@ -204,7 +204,7 @@ const Terms = () => {
       </div>
     </div>
     <div className=" w-container m-auto md:w-full">
-      <div className=" w-full h-[70vw] bg-fuchsia-50 left-[50px] translate-y-[-5330px]    fixed z-[-10000]" id="bgChart" ></div>
+      <div className=" w-full h-[70vw] left-[50px] translate-y-[-5330px]    fixed z-[-10000]" id="bgChart" ></div>
     </div>
 
     <AFooter />
