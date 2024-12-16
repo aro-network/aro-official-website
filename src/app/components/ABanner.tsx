@@ -6,6 +6,7 @@ import * as am5map from "@amcharts/amcharts5/map";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import { SocialButtons } from "./social-buttons";
 import * as am5geodata_continentsLow from "@amcharts/amcharts5-geodata/continentsLow";
+import CountUp from "react-countup";
 
 const ABanner = () => {
 
@@ -34,6 +35,7 @@ const ABanner = () => {
         geoJSON: am5geodata_continentsLow.default,
       })
     );
+
 
 
     polygonSeries.mapPolygons.template.setAll({
@@ -81,6 +83,41 @@ const ABanner = () => {
       </div>
       <div className=" w-full  mo:absolute mo:flex mo:justify-center">
         <div id="chartdiv" className=" relative right-80  mo:left-0 mo:w-[500px] mo:h-[500px] mo:pb-0  pb-20  bottom-[70px] "></div>
+      </div>
+    </div>
+
+    <div
+      className="  text-[#FFFFFF] bg-[#0C0C0C] w-full relative mt-[10px] ">
+      <div className="w-container mo:w-full m-auto py-[30px]  md:w-full  mo:px-[30px] ">
+
+        <div className="mx-[80px] mo:gap-8 md:mx-[30px] abcgintoText flex mo:flex-col justify-between">
+          <div className="flex flex-col items-center">
+            <span className="text-[55px] mo:text-xl md:text-[50px] font-semibold leading-[72px]">
+              <CountUp startOnMount={true} start={0} end={1000000} duration={3} />+
+            </span>
+            <span className="text-xl mo:text-xs font-medium leading-6 asText">Unlimited Edge Scalability</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <span className="text-[55px] mo:text-xl md:text-[50px]  font-semibold leading-[72px]">
+              {`<`}{<CountUp start={100} end={1} duration={3} />}{`%`}
+            </span>
+            <span className="text-xl mo:text-xs font-medium leading-6 asText">Stuttering Rate </span>
+          </div>
+          <div className="flex flex-col items-center">
+            <span className="text-[55px] mo:text-xl md:text-[50px]  font-semibold leading-[72px]">
+              {`>`}{<CountUp start={100} end={60} duration={3} />}{`%`}
+            </span>
+            <span className="text-xl mo:text-xs font-medium leading-6 asText">Save on Traffic </span>
+          </div>
+          <div className="flex flex-col items-center">
+            <span className="text-[55px] mo:text-xl md:text-[50px]  font-semibold leading-[72px]">
+              {`<`}{<CountUp start={100} end={20} duration={3} />}ms
+
+            </span>
+            <span className="text-xl mo:text-xs font-medium leading-6 asText">Response Time</span>
+          </div>
+
+        </div>
       </div>
     </div>
 
