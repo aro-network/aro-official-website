@@ -1,12 +1,10 @@
 import { useState } from "react";
 import Icon from "../images"
 import { openEdgeList } from "../utils/common"
-import useMobileDetect from "../hooks/useMobileDetect";
 
 
 const AOpenEdge = () => {
   const [dealHover, setDealHover] = useState<{ index: number, isHover: boolean } | null>(null);
-  const isMobile = useMobileDetect()
 
   return <div
     data-aos="fade-up"
