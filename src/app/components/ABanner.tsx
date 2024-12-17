@@ -84,22 +84,22 @@ const ABanner = () => {
       start: 100,
       end: 1,
       name: 'Stuttering Rate',
-      Prefix: '<',
-      Suffix: '%'
+      Prefix: '< ',
+      Suffix: ' %'
     },
     {
-      start: 100,
+      start: 0,
       end: 60,
       name: 'Save on Traffic',
-      Prefix: '>',
-      Suffix: '%'
+      Prefix: '> ',
+      Suffix: ' %'
     },
     {
       start: 100,
       end: 20,
       name: 'Response Time',
-      Prefix: '<',
-      Suffix: 'ms'
+      Prefix: '< ',
+      Suffix: ' ms'
     }
   ]
 
