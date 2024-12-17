@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { showCaseList } from "../utils/common"
 import Icon from '@/app/images/index'
+import useMobileDetect from "../hooks/useMobileDetect";
 
 const AShowCase = () => {
   const [dealHover, setDealHover] = useState<{ index: number, isHover: boolean } | null>(null);
+  const isMobile = useMobileDetect()
 
 
   return <div data-aos="fade-up"
@@ -17,42 +19,49 @@ const AShowCase = () => {
         {showCaseList.map((item, index) => {
           return <div
             key={`tab_${index}`}
-            onMouseOver={(e) => {
-              e.isPropagationStopped()
-              e.stopPropagation()
+            data-aos={isMobile ? "fade-up" : "flip-left"}
+            data-aos-duration="1000"
+          >
+            <div
+              onMouseOver={(e) => {
+                e.isPropagationStopped()
+                e.stopPropagation()
 
-              setDealHover({ index, isHover: true });
-            }}
-            onMouseLeave={(e) => {
-              e.isPropagationStopped()
-              e.stopPropagation()
-              setDealHover({ index, isHover: false });
-            }}
-            onClick={() => {
-              setDealHover({ index, isHover: true });
-            }}
-            className={`${dealHover?.isHover && dealHover.index === index
-              ? "text-[#FFFFFF] bg-[#4281FF]"
-              : "text-[#7C7C7C]"
-              } rounded-[51px]  bg-[#313131] flex flex-col items-center justify-center w-full  max-w-[421px] px-8 py-16`}>
-            <div >
-              <div className={`${index === 0 && 'mt-[5px]'}`}>
-                <Icon color={`${dealHover?.isHover && dealHover.index === index
-                  ? "#FFFFFF"
-                  : " #7C7C7C"
-                  }`} name={item.icon} />
+                setDealHover({ index, isHover: true });
+              }}
+              onMouseLeave={(e) => {
+                e.isPropagationStopped()
+                e.stopPropagation()
+                setDealHover({ index, isHover: false });
+              }}
+              onClick={() => {
+                setDealHover({ index, isHover: true });
+              }}
+              className={`${dealHover?.isHover && dealHover.index === index
+                ? "text-[#FFFFFF] bg-[#4281FF]"
+                : "text-[#7C7C7C]"
+                } rounded-[51px]  bg-[#313131] flex flex-col items-center justify-center w-full  max-w-[421px] px-8 py-16`}>
+              <div >
+                <div className={`${index === 0 && 'mt-[5px]'}`}>
+                  <Icon color={`${dealHover?.isHover && dealHover.index === index
+                    ? "#FFFFFF"
+                    : " #7C7C7C"
+                    }`} name={item.icon} />
+                </div>
+
               </div>
+              <div className="  w-[350px] max-h-[200px] h-full mt-[46px] mo:mt-4 text-center">
+                <div style={{ letterSpacing: '-0.45px' }} className={`  text-[30px] mo:text-lg font-semibold leading-7`}>{item.title}</div>
+                <div style={{ letterSpacing: '-0.27px' }} className="font-AlbertSans text-center mo:mx-4 mt-4 text-xl mo:text-sm font-normal leading-[22px] ">{item.content}</div>
+              </div>
+            </div>
 
-            </div>
-            <div className="  w-[350px] max-h-[200px] h-full mt-[46px] mo:mt-4 text-center">
-              <div style={{ letterSpacing: '-0.45px' }} className={`  text-[30px] mo:text-lg font-semibold leading-7`}>{item.title}</div>
-              <div style={{ letterSpacing: '-0.27px' }} className="font-AlbertSans text-center mo:mx-4 mt-4 text-xl mo:text-sm font-normal leading-[22px] ">{item.content}</div>
-            </div>
 
           </div>
         })}
 
       </div>
+
 
     </div>
   </div >
