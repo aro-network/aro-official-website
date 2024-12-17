@@ -14,7 +14,7 @@ const AFabric = () => {
   return <div data-aos="fade-up"
     data-aos-duration="1000"
     className=" aos-init aos-animate  w-container m-auto h-auto  md:w-full md:px-[30px] mt-20">
-    <div className="text-[70px] font-medium leading-normal text-[#FFFFFF] abcgintoText">
+    <div className="text-[70px] font-medium leading-normal text-[#FFFFFF] ">
       <div>
         The Open-Layered
       </div>
@@ -39,7 +39,7 @@ const AFabric = () => {
             setDealHover({ index, isHover: false });
           }}>
           <div className="w-[35%]">
-            <div className={`abcgintoText  text-[40px] w-full text-right font-medium leading-normal ${clickTab.index === index && 'text-[#ffffff]'}  ${dealHover?.isHover && dealHover.index === index
+            <div className={`  text-[40px] w-full text-right font-medium leading-normal ${clickTab.index === index && 'text-[#ffffff]'}  ${dealHover?.isHover && dealHover.index === index
               ? "text-[#BEBEBE]  hoverItem"
               : "text-[#787878]"
               }`}>
@@ -48,7 +48,7 @@ const AFabric = () => {
             </div>
 
             {clickTab.title && clickTab.index === index &&
-              <div className=" text-[22px] font-medium pt-6 pl-[81px] md:pl-[30px] leading-normal text-[#FFFFFF] asText">
+              <div className=" text-[22px] font-medium pt-6 pl-[81px] md:pl-[30px] leading-normal text-[#FFFFFF] font-AlbertSans">
                 {item.content}
               </div>
             }

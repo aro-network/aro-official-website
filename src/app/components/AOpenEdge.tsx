@@ -60,12 +60,12 @@ const AOpenEdge = () => {
                 ? "text-[#FFFFFF]"
                 : "text-[#8A8A8A]"
                 }`}>
-              <div className={` ${!index ? 'text-[80px] text-[#fff] text-left flex justify-start' : 'text-[35px] smd:text-[25px] '}   font-semibold leading-normal abcgintoText`}>{item.title}</div>
-              <div className={`abcgintoText text-[48px] smd:text-[30px] font-semibold leading-normal ${!!index && dealHover?.isHover && dealHover.index === index
+              <div className={` ${!index ? 'text-[80px] text-[#fff] text-left flex justify-start' : 'text-[35px] smd:text-[25px] '}   font-semibold leading-normal `}>{item.title}</div>
+              <div className={` text-[48px] smd:text-[30px] font-semibold leading-normal ${!!index && dealHover?.isHover && dealHover.index === index
                 ? "text-[#4281FF]"
                 : "text-[#8A8A8A]"
                 }`}>{item.subTitle}</div>
-              <div className={`asText text-[22px] leading-normal ${!!index && dealHover?.isHover && dealHover.index === index
+              <div className={`font-AlbertSans text-[22px] leading-normal ${!!index && dealHover?.isHover && dealHover.index === index
                 ? "font-semibold"
                 : "font-normal "
                 }`}>{item.content}</div>
@@ -87,7 +87,7 @@ const AOpenEdge = () => {
       {openEdgeList.map((item, index) => {
         return <div data-aos="fade-up"
           data-aos-duration="1000" key={`edge_${index}`}>
-          <div className={`${index && 'hidden'} abcgintoText text-[22px] font-semibold leading-normal text-[#FFF]`}>
+          <div className={`${index && 'hidden'}  text-[22px] font-semibold leading-normal text-[#FFF]`}>
             {item.title}
           </div>
 
@@ -99,13 +99,13 @@ const AOpenEdge = () => {
           </div>
           }
           <div className="pl-[60px] flex gap-[6px] flex-col">
-            <div className={`${!index && 'hidden'} abcgintoText text-xs  font-semibold leading-normal text-[#FFF]`}>
+            <div className={`${!index && 'hidden'}  text-xs  font-semibold leading-normal text-[#FFF]`}>
               {item.title}
             </div>
-            <div className={`abcgintoText text-base  font-semibold leading-normal text-[#4281FF]`}>
+            <div className={` text-base  font-semibold leading-normal text-[#4281FF]`}>
               {item.subTitle}
             </div>
-            <div className="asText text-[10px] font-semibold leading-normal text-[#FFF]">
+            <div className="font-AlbertSans text-[10px] font-semibold leading-normal text-[#FFF]">
               {item.content}
 
             </div>

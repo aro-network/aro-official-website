@@ -23,6 +23,10 @@ export default {
         smd: [{ min: "1001px", max: "1260px" }],
         lg: { min: "1000px" },
       },
+      fontFamily: {
+        AlbertSans: "var(--font-albert-sans)",
+        Alexandria: "var(--font-alexandria)",
+      },
     },
   },
   plugins: [],

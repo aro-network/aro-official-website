@@ -98,7 +98,7 @@ const AMenu = (p: HTMLAttributes<HTMLDivElement> & PoperMenuProps) => {
                     <div className="text-xl mo:text-2xl">{item.icon}</div>
                   )} */}
                   <div className={` flex flex-col text-center  justify-center h-[34px] ${pathname === item.href && 'bg-[#4281FF]'}  w-full`}>
-                    <div className=" text-sm font-bold text-white text-center justify-center mo:text-[15px] asText mo:font-extrabold flex items-center ">
+                    <div className=" text-sm font-bold text-white text-center justify-center mo:text-[15px] font-AlbertSans mo:font-extrabold flex items-center ">
                       {item.name}
                     </div>
 

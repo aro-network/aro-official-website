@@ -58,7 +58,7 @@ const Privacy = () => {
 
   return <div>
     <AHeader />
-    <div className="w-container mo:w-full mo:px-5 m-auto mo:m-0 abcgintoText md:w-full md:px-[30px] pb-20 select-none relative z-[1000] px-10">
+    <div className="w-container mo:w-full mo:px-5 m-auto mo:m-0  md:w-full md:px-[30px] pb-20 select-none relative z-[1000] px-10">
       <div className=" font-medium text-center mt-20 ">
         <div className=" text-[30px] text-[#FFF]">Privacy Policy</div>
         <span className=" text-xl">

@@ -49,12 +49,12 @@ const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
         <div className=" mt-[95px] mo:mt-6">
           <img src="./logo.png" width={231} height={51} className="mo:w-[102px] mo:h-[23px]" />
         </div>
-        <div className=" abcgintoText text-[50px] mo:text-xl font-semibold leading-normal mt-[43px] mo:mt-[26px] text-[#FFFFFF]">
+        <div className="  text-[50px] mo:text-xl font-semibold leading-normal mt-[43px] mo:mt-[26px] text-[#FFFFFF]">
           Get Started
         </div>
         <div className=" lg:bg-[url(/footerBgIcon.svg)] bg-no-repeat w-full  ">
           <div className="text-center mt-[21px] h-auto">
-            <div className="abcgintoText text-[25px] mo:text-[10px] font-normal leading-normal text-[#8A8A8A]">
+            <div className=" text-[25px] mo:text-[10px] font-normal leading-normal text-[#8A8A8A]">
               <div>
                 Stay Ahead of the Game: Subscribe to Receive the Latest
               </div>
@@ -71,13 +71,13 @@ const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
                 </div>
               </div>
               <div>
-                <button onClick={onSubmitEmail} className=" bg-[#4281FF] btn items-center mo:!justify-center  text-[#FFFFFF] rounded-[33.5px] w-[198px] mo:w-[204px] h-[67px] mo:h-[38px] abcgintoText text-[25px] mo:text-base font-semibold leading-normal ">Submit</button>
+                <button onClick={onSubmitEmail} className=" bg-[#4281FF] btn items-center mo:!justify-center  text-[#FFFFFF] rounded-[33.5px] w-[198px] mo:w-[204px] h-[67px] mo:h-[38px]  text-[25px] mo:text-base font-semibold leading-normal ">Submit</button>
               </div>
             </div>
           </div>
           <div className="mt-[224px] mo:mt-6 mb-5 mo:w-full mo:flex mo:justify-center mo:flex-col mo:items-center">
             <SocialButtons />
-            <div className="text-xl mo:text-sm abcgintoText mo:text-center mo:font-semibold font-medium leading-normal mt-[23px] text-[#FFFFFF]">
+            <div className="text-xl mo:text-sm  mo:text-center mo:font-semibold font-medium leading-normal mt-[23px] text-[#FFFFFF]">
               <div>
                 Get in Touch
               </div>
@@ -99,14 +99,14 @@ const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
                   onClick={() => window.open(item.link, '_blank')}
                   className={`${dealHover?.index === index && 'text-[#ffffff]'} `}
                 >
-                  <span className={`text-xl mo:text-xs cursor-pointer abcgintoText font-medium leading-normal  ${dealHover?.isHover && dealHover.index === index
+                  <span className={`text-xl mo:text-xs cursor-pointer  font-medium leading-normal  ${dealHover?.isHover && dealHover.index === index
                     ? "text-[#BEBEBE]"
                     : "text-[#8A8A8A]"
                     }`} >{item.name}</span>
                 </div>
               })}
             </div>
-            <div className="flex w-full justify-end mo:justify-center text-[#737373] mo:text-xs mo:mt-[11px] text-xl abcgintoText font-medium leading-normal  ">
+            <div className="flex w-full justify-end mo:justify-center text-[#737373] mo:text-xs mo:mt-[11px] text-xl  font-medium leading-normal  ">
               © EnReach Foundation, {currentYear}. All rights reserved.
             </div>
           </div>

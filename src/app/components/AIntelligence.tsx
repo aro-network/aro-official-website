@@ -10,7 +10,7 @@ const AIntelligence = () => {
 
       </div>
       <div className="w-[60%]  mo:w-full mo:px-5  h-[600px] mo:h-auto md:mx-[30px] flex  flex-col lg:justify-center md:pl-[10px] lg:items-baseline mo:mt-10">
-        <span className=" mo:hidden font-semibold  text-[70px] mo:text-[22px] mo:leading-normal  md:text-[50px] md:leading-[70px] leading-[91.84px] abcgintoText text-[#FFFFFF]">
+        <span className=" mo:hidden font-semibold  text-[70px] mo:text-[22px] mo:leading-normal  md:text-[50px] md:leading-[70px] leading-[91.84px]  text-[#FFFFFF]">
           Bringing
           <div >
             <span className="text-[#4281FF] mr-4">
@@ -24,7 +24,7 @@ const AIntelligence = () => {
             Your Reach.
           </div>
         </span>
-        <span className="lg:hidden text-center w-full font-semibold mo:text-[22px] mo:leading-normal abcgintoText text-[#FFFFFF]">
+        <span className="lg:hidden text-center w-full font-semibold mo:text-[22px] mo:leading-normal  text-[#FFFFFF]">
           Bringing
           <span className="text-[#4281FF]  mx-2">
             Intelligence
@@ -37,7 +37,7 @@ const AIntelligence = () => {
           </div>
         </span>
         <div className=" ml-[54px] mo:mx-5 mr-[142px] md:ml-0 mt-5 mb-10">
-          <div className="text-[#7C7C7C] font-normal mo:text-center mo:text-[10px] mo:leading-[150%] asText text-2xl leading-7">
+          <div className="text-[#7C7C7C] font-normal mo:text-center mo:text-[10px] mo:leading-[150%] font-AlbertSans text-2xl leading-7">
             We envision a future where intelligence is always within reach, delivering real-time responses and enabling boundless interactions at the edge, redefining your digital experiences.
           </div>
         </div>

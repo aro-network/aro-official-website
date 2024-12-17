@@ -15,7 +15,7 @@ const AHeader: FC<{ className?: string, containerClassName?: string, rightClassN
         <Link href={'/'} className=" flex items-center gap-[13px] mo:h-[32px] w-[105px]">
           <img src="./flower.svg" className="mo:hidden" />
           <img src="./logo.png" className="lg:hidden" />
-          <span className="text-[#FFF] mo:hidden abcgintoText text-[35px] font-semibold leading-normal">EnReach</span>
+          <span className="text-[#FFF] mo:hidden  text-[35px] font-semibold leading-normal">EnReach</span>
         </Link>
       </div>
       <div className="flex lg:hidden justify-end  w-[50%]">

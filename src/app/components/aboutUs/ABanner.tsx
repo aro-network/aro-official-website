@@ -10,7 +10,7 @@ const ABanner = () => {
         data-aos-duration="1000" className="w-[50%] mo:w-full mo:px-5 mo:pb-[124px]">
         <div className="h-[700px] mo:h-auto md:mx-[30px] flex mo:items-start  flex-col lg:justify-center md:pl-[10px] lg:items-baseline  gap-[40px] mo:gap-[10px] md:gap-5">
           <img src="./whyWeExist.svg" className=" mo:h-[25px] " />
-          <span className=" font-semibold text-[65px] mo:text-xl md:text-[30px] leading-normal   abcgintoText text-[#7C7C7C]">
+          <span className=" font-semibold text-[65px] mo:text-xl md:text-[30px] leading-normal    text-[#7C7C7C]">
             Pioneering
             <div className="flex items-center w-full gap-3 mo:gap-1">
               the
@@ -26,7 +26,7 @@ const ABanner = () => {
           <div data-aos="fade-up"
             data-aos-duration="1000"
             className=" ml-[54px] mo:ml-0 md:ml-0 mt-5 mo:mt-6">
-            <div className="text-[#7C7C7C]  font-normal asText text-[22px] mo:text-xs leading-normal">
+            <div className="text-[#7C7C7C]  font-normal font-AlbertSans text-[22px] mo:text-xs leading-normal">
               <div className="mb-5 ">
                 EnReach bridges the gap between centralized cloud systems and the needs of next-generation applications. As AI reshapes industries, we bring the cloud closer to users, enabling instant responses, seamless interactions, and scalable performance.
               </div>

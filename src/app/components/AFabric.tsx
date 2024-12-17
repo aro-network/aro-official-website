@@ -56,7 +56,7 @@ const AFabric = () => {
       data-aos="fade-up"
       data-aos-duration="1000"
       className=" aos-init aos-animate mo:mt-[71px] mo:text-center  w-container mo:w-full m-auto h-auto  md:w-full md:px-[30px] lg:pt-40 lg:pb-80">
-      <div className="text-[80px] mo:text-xl mo:flex mo:justify-center mo:gap-1 font-semibold leading-normal text-[#FFFFFF] abcgintoText">
+      <div className="text-[80px] mo:text-xl mo:flex mo:justify-center mo:gap-1 font-semibold leading-normal text-[#FFFFFF] ">
         <div>
           The Open-Layered
         </div>
@@ -81,19 +81,21 @@ const AFabric = () => {
               setDealHover(null);
             }}>
             <div className="w-[33%] md:w-[40%]">
-              <div className={`abcgintoText mt-7  transition-all duration-500  text-[45px] w-full text-right font-semibold leading-normal ${dealHover?.isHover && dealHover.index === index && 'text-[#ffffff]'}  ${dealHover?.isHover && dealHover.index === index
-                ? "text-[#BEBEBE]  hoverItem"
+              <div className={` mt-7  transition-all duration-500  text-[45px] w-full text-right font-semibold leading-normal ${dealHover?.isHover && dealHover.index === index && 'text-[#ffffff]'}  ${dealHover?.isHover && dealHover.index === index
+                ? "text-[#BEBEBE]  hoverItem  translate-x-5"
                 : "text-[#787878]"
                 }`}>
                 {item.title}
 
               </div>
+              <div className={` font-AlbertSans text-[20px]  transition-all duration-500  font-medium pt-6 pl-[81px] md:pl-[30px] 
+               ${dealHover?.isHover && dealHover.index === index
+                  ? "text-[#FFFFFF] block  hoverItem  translate-x-5"
+                  : "hidden "
+                }`}>
+                {item.content}
+              </div>
 
-              {dealHover?.isHover && dealHover.index === index &&
-                <div className=" text-[20px] font-medium pt-6 pl-[81px] md:pl-[30px] leading-tight text-[#FFFFFF] asText">
-                  {item.content}
-                </div>
-              }
 
             </div>
             <div className=" mt-20 md:mt-40  w-[67%] md:w-[60%]">
@@ -110,10 +112,10 @@ const AFabric = () => {
           <div data-aos="fade-up"
             data-aos-duration="1000" key={`slider_${index}`} className="w-full h-[350px] bg-[#373737] rounded-[30px]">
             <div className="p-5">
-              <div className="text-[#4281FF] abcgintoText text-base font-semibold leading-normal">
+              <div className="text-[#4281FF]  text-base font-semibold leading-normal">
                 {item.title}
               </div>
-              <div className="asText text-[10px] mt-3 font-medium leading-normal">
+              <div className="font-AlbertSans text-[10px] mt-3 font-medium leading-normal">
                 {item.content}
               </div>
             </div>

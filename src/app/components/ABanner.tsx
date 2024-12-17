@@ -65,18 +65,49 @@ const ABanner = () => {
   }, [])
 
 
+  const countList = [
+    {
+      start: 0,
+      end: 1000000,
+      name: 'Unlimited Edge Scalability',
+      Suffix: '+'
+    },
+    {
+      start: 100,
+      end: 1,
+      name: 'Stuttering Rate',
+      Prefix: '<',
+      Suffix: '%'
+    },
+    {
+      start: 100,
+      end: 60,
+      name: 'Save on Traffic',
+      Prefix: '>',
+      Suffix: '%'
+    },
+    {
+      start: 100,
+      end: 20,
+      name: 'Response Time',
+      Prefix: '<',
+      Suffix: 'ms'
+    }
+  ]
+
+
 
 
   return <div className=" overflow-hidden mo:w-full  ">
     <div className="w-container m-auto items-center flex lg:pl-[105px] md:w-full md:pl-0  mb-[-120px] mo:w-full   ">
       <div className="   flex items-center  w-full h-[83vh] mo:h-[65vh]  relative">
         <div className="  md:w-full overflow-hidden mo:w-full mo:text-center mo:mb-[100px]">
-          <div className='mo:hidden text-[70px] md:text-[55px] text-nowrap  abcgintoText font-semibold md:px-[30px] text-[#FFFFFF] md:lead-[71px]  leading-[91px] relative z-[100000]'><div>The Genesis of Open Edge,</div> for the AI Era.</div>
-          <div className='lg:hidden text-2xl    abcgintoText  font-medium   text-[#FFFFFF] leading-normal relative z-[1000]'><div>The Genesis of Open Edge, </div> for the AI Era.</div>
+          <div className='mo:hidden text-[70px] md:text-[55px] text-nowrap   font-semibold md:px-[30px] text-[#FFFFFF] md:lead-[71px]  leading-[91px] relative z-[100000]'><div>The Genesis of Open Edge,</div> for the AI Era.</div>
+          <div className='lg:hidden text-2xl      font-medium   text-[#FFFFFF] leading-normal relative z-[1000]'><div>The Genesis of Open Edge, </div> for the AI Era.</div>
 
-          <div className="text-[32px]  mo:text-xs md:text-[28px] lg:text-nowrap  py-3 mo:px-[77px]  leading-[38px] font-semibold md:px-[30px] asText text-[#7C7C7C] relative z-[99999]">Unleashing Intelligence with a Globally-Connected Edge Cloud.</div>
+          <div className="text-[32px]  mo:text-xs md:text-[28px] lg:text-nowrap  py-3 mo:px-[77px]  leading-[38px] font-semibold md:px-[30px] font-AlbertSans text-[#7C7C7C] relative z-[99999]">Unleashing Intelligence with a Globally-Connected Edge Cloud.</div>
           <div className=" pt-5 flex mo:mt-[50px]  items-center gap-10 mo:gap-[15px] md:px-[30px] mo:flex-col-reverse relative z-[99999]">
-            <a href={'https://docs.enreach.network'} target="_blank" className="bg-[#4281FF]   text-[#FFFFFF] w-[229px] mo:w-[178px] items-center text-2xl mo:text-base mo:font-medium font-semibold leading-9  flex justify-center h-[50px] mo:h-[38px] rounded-3xl ipsText p-3">Learn More</a>
+            <a href={'https://docs.enreach.network'} target="_blank" className="bg-[#4281FF]   text-[#FFFFFF] w-[229px] mo:w-[178px] items-center text-2xl mo:text-base mo:font-medium font-semibold leading-9  flex justify-center h-[50px] mo:h-[38px] rounded-3xl ipsText font-AlbertSans p-3">Learn More</a>
             <SocialButtons />
           </div>
         </div>
@@ -90,32 +121,20 @@ const ABanner = () => {
       className="  text-[#FFFFFF] bg-[#0C0C0C] w-full relative mt-[10px] ">
       <div className="w-container mo:w-full m-auto py-[30px]  md:w-full  mo:px-[30px] ">
 
-        <div className="mx-[80px] mo:gap-8 md:mx-[30px] abcgintoText flex mo:flex-col justify-between">
-          <div className="flex flex-col items-center">
-            <span className="text-[55px] mo:text-xl md:text-[50px] font-semibold leading-[72px]">
-              <CountUp startOnMount={true} start={0} end={1000000} duration={3} />+
-            </span>
-            <span className="text-xl mo:text-xs font-medium leading-6 asText">Unlimited Edge Scalability</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <span className="text-[55px] mo:text-xl md:text-[50px]  font-semibold leading-[72px]">
-              {`<`}{<CountUp start={100} end={1} duration={3} />}{`%`}
-            </span>
-            <span className="text-xl mo:text-xs font-medium leading-6 asText">Stuttering Rate </span>
-          </div>
-          <div className="flex flex-col items-center">
-            <span className="text-[55px] mo:text-xl md:text-[50px]  font-semibold leading-[72px]">
-              {`>`}{<CountUp start={100} end={60} duration={3} />}{`%`}
-            </span>
-            <span className="text-xl mo:text-xs font-medium leading-6 asText">Save on Traffic </span>
-          </div>
-          <div className="flex flex-col items-center">
-            <span className="text-[55px] mo:text-xl md:text-[50px]  font-semibold leading-[72px]">
-              {`<`}{<CountUp start={100} end={20} duration={3} />}ms
+        <div className="mx-[80px] mo:gap-8 md:mx-[30px]  flex mo:flex-col justify-between">
+          {countList.map((item, index) => {
+            return <div key={`countList_${index}`} className="flex flex-col items-center">
+              <span className="text-[55px] mo:text-xl md:text-[50px] font-semibold leading-[72px]">
+                {item.Prefix}<CountUp startOnMount={true} start={item.start} end={item.end} duration={3} />{item.Suffix}
+              </span>
+              <span className="text-xl mo:text-xs font-medium leading-6 font-AlbertSans">{item.name}</span>
+            </div>
 
-            </span>
-            <span className="text-xl mo:text-xs font-medium leading-6 asText">Response Time</span>
-          </div>
+          })}
+
+
+
+
 
         </div>
       </div>
