@@ -36,6 +36,14 @@ const ABanner = () => {
       })
     );
 
+    let graticuleSeries = chart.series.unshift(
+      am5map.GraticuleSeries.new(root, { step: 20 })
+    );
+
+    graticuleSeries.mapLines.template.setAll({
+      stroke: am5.color('#FFFFFF'),
+      strokeOpacity: 0.1
+    });
 
 
     polygonSeries.mapPolygons.template.setAll({
@@ -131,8 +139,6 @@ const ABanner = () => {
             </div>
 
           })}
-
-
 
 
 
