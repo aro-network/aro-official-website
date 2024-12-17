@@ -11,9 +11,9 @@ const ADoingIt = () => {
       data-aos-duration="1000"
       className="m-auto aos-init aos-animate w-container md:w-full mo:w-full mo:px-5">
       <div className="flex justify-center pt-[121px] mo:pt-[58px] flex-col items-center">
-        <div >
+        <div data-aos="fade-up"
+          data-aos-duration="1000">
           <img src="./enReachNetwork.svg" />
-
         </div>
         <div data-aos="fade-up"
           data-aos-duration="1000" className=" pt-[74px]">

@@ -4,7 +4,7 @@ const ABanner = () => {
     className="m-auto aos-init aos-animate w-container md:w-full mo:w-full ">
     <div className="flex items-center mo:flex-col justify-between w-full  mo:bg-[#1C1C1C] ">
       <div className="bg-[#1B1B1B] p-20 md:p-0  w-[50%] mo:w-full md:h-[700px] mo:flex mo:justify-end">
-        <img src="./aI.gif" className="" />
+        <img src="./AI.svg" className="" />
       </div>
       <div data-aos="fade-up"
         data-aos-duration="1000" className="w-[50%] mo:w-full mo:px-5 mo:pb-[124px]">
