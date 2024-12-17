@@ -224,9 +224,17 @@ input {
   z-index: -1;
 }
 
+.currentNavigation{
+
+  background: #4281ff;
+  border-radius: 60px;
+
+}
+
 .headerBtn:hover::before {
   transform: translate(-50%, -50%) scale(10);
 }
+
 
 .slick-slide{
   width: 260px !important;

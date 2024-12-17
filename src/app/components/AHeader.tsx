@@ -4,9 +4,14 @@ import Link from "next/link"
 import { HiOutlineMenu } from 'react-icons/hi'
 import classNames from "classnames"
 import { APoperMenu } from "./APoperModal"
+import { usePathname } from 'next/navigation'
 
 
 const AHeader: FC<{ className?: string, containerClassName?: string, rightClassName?: string }> = ({ className = '', containerClassName = '', rightClassName = '' }) => {
+  const up = usePathname()
+
+  console.log('upup', up);
+
 
 
   return <div>
@@ -30,7 +35,7 @@ const AHeader: FC<{ className?: string, containerClassName?: string, rightClassN
 
       <div className={`flex mo:hidden ${rightClassName} justify-end gap-[36px] md:gap-5  w-[50%] button-container`}>
         {headerBtnList.map((item, index) => {
-          return <a href={item.href} target={item.target} className={` headerBtn   text-[#FFFFFF] font-extrabold md:font-semibold text-xl md:text-base bg-[rgba(255, 255, 255, 1)] leading-6`} key={`btn_${index}`}>{item.name}</a>
+          return <a href={item.href} target={item.target} className={` headerBtn ${up === item.href && 'currentNavigation'}   text-[#FFFFFF] font-extrabold md:font-semibold text-xl md:text-base bg-[rgba(255, 255, 255, 1)] leading-6`} key={`btn_${index}`}>{item.name}</a>
         })}
 
 
