@@ -55,7 +55,7 @@ const AFabric = () => {
     <div
       data-aos="fade-up"
       data-aos-duration="1000"
-      className=" aos-init aos-animate mo:mt-[71px] mo:text-center  w-container mo:w-full m-auto h-auto  md:w-full md:px-[30px] lg:pt-40 lg:pb-80">
+      className=" aos-init aos-animate mo:mt-[71px] mo:text-center  w-container mo:w-full m-auto h-auto md:w-full md:px-[30px] lg:pt-40 lg:pb-80">
       <div className="text-[80px] mo:text-xl mo:flex mo:justify-center mo:gap-1 font-semibold leading-normal text-[#FFFFFF] ">
         <div>
           The Open-Layered
@@ -107,7 +107,7 @@ const AFabric = () => {
           </div>
         })}
       </div>
-      <div className="lg:hidden w-full mb-10 pb-10 px-5  flex flex-col gap-10 mo:mt-6  mo:gap-[100px]">
+      <div className="lg:hidden w-full mb-10 pb-20 px-5  flex flex-col gap-10 mo:mt-6  mo:gap-[100px] ">
         {fabricList.map((item, index) => (
           <div data-aos="fade-up"
             data-aos-duration="1000" key={`slider_${index}`} className="w-full h-[350px] bg-[#373737] rounded-[30px]">
@@ -119,8 +119,8 @@ const AFabric = () => {
                 {item.content}
               </div>
             </div>
-            <div className=" flex justify-center">
-              <img src={item.moIcon} className="h-auto object-cover w-full" />
+            <div className=" flex justify-center ">
+              <img src={item.moIcon} className="h-auto object-cover w-full " />
             </div>
           </div>
 

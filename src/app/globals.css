@@ -126,11 +126,15 @@ input {
   width: 120px;
 }
 
+@media (min-width: 1001px) {
+
 .btn:hover {
   background-color: unset;
   border: 2px solid #4281ff;
   animation: breathe 1.2s infinite ease-in-out;
 }
+}
+
 
 @keyframes breathe {
   0%, 100% { transform: scale(1); }
