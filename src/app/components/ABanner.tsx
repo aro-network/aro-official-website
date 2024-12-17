@@ -36,7 +36,7 @@ const ABanner = () => {
       })
     );
 
-    let graticuleSeries = chart.series.unshift(
+    const graticuleSeries = chart.series.unshift(
       am5map.GraticuleSeries.new(root, { step: 20 })
     );
 
