@@ -51,13 +51,13 @@ const ADoingIt = () => {
                 && "bg-[#4281FF]"
                 }  w-full rounded-[49px] mo:rounded-[30px] bg-[#313131] flex mo:flex-col justify-between items-end gap-[100px] mo:gap-[47px] px-[86px] mo:px-6 md:px-[66px] py-[69px] mo:py-8 md:py-[30px]`}>
               <div className={`${dealHover?.isHover && dealHover.index === index
-                ? "text-[#FFFFFF]  hoverItem  translate-x-5"
+                ? "text-[#FFFFFF]  hoverItem  translate-x-5 mo:translate-x-0"
                 : "text-[#8A8A8A]"
                 } text-[50px] mo:text-xl md:text-[35px] mo:w-full  font-semibold leading-normal w-[56%]`}>
                 {item.title}
               </div>
               <div className={`${dealHover?.isHover && dealHover.index === index
-                ? "text-[#FFFFFF]  hoverItem  translate-x-5"
+                ? "text-[#FFFFFF]  hoverItem  translate-x-5  mo:translate-x-0"
                 : "text-[#8A8A8A]"
                 } text-[22px] mo:text-xs font-medium font-AlbertSans leading-normal mo:w-full w-[44%]`}>
                 {item.contnet}

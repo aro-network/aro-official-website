@@ -117,7 +117,7 @@ input {
 }
 
 .hoverItem {
-  transition: transform 0.3s ease; 
+  transition: transform 0.5s ease; 
 }
 
 .current {
@@ -234,10 +234,13 @@ input {
 
 
 
+@media (min-width: 1001px) {
 
 .hoverItem:hover {
   transform: translateX(20px);
 }
+}
+
 
 
 
