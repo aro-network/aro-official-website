@@ -19,7 +19,7 @@ const AFabric = () => {
         "Provide developer SDKs and user interfaces that expose the network’s capabilities, allowing for easy development, deployment, management, and scaling of edge applications and AI solutions.",
     },
     {
-      title: "Orchestration layer",
+      title: "Orchestration Layer",
       icon: "./open.svg",
       default: "./default-open.svg",
       // icon: <div>
