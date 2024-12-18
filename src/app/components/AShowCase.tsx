@@ -40,7 +40,7 @@ const AShowCase = () => {
               className={`${dealHover?.isHover && dealHover.index === index
                 ? "text-[#FFFFFF] bg-[#4281FF]"
                 : "text-[#7C7C7C]"
-                } rounded-[51px]  bg-[#313131] flex flex-col items-center justify-center w-full  max-w-[421px] px-8 py-16`}>
+                } rounded-[51px]  bg-[#313131] flex flex-col items-center justify-center h-[330px] w-full   max-w-[421px] px-8 py-16`}>
               <div >
                 <div className={`${index === 0 && 'mt-[5px]'}`}>
                   <Icon color={`${dealHover?.isHover && dealHover.index === index
