@@ -1,5 +1,12 @@
 const AIntelligence = () => {
 
+  const list = [
+    { title: 'Real-time' },
+    { title: 'Cost-effective' },
+    { title: 'Global-reach' },
+
+  ]
+
   return <div data-aos="fade-up"
     data-aos-duration="1000"
     className=" aos-init aos-animate bg-[#000000]">
@@ -11,34 +18,43 @@ const AIntelligence = () => {
       </div>
       <div className="w-[60%]  mo:w-full mo:px-5  h-[600px] mo:h-auto md:mx-[30px] flex  flex-col lg:justify-center md:pl-[10px] lg:items-baseline mo:mt-10">
         <span className=" mo:hidden font-semibold  text-[70px] mo:text-[22px] mo:leading-normal  md:text-[50px] md:leading-[70px] leading-[91.84px]  text-[#FFFFFF]">
-          Bringing
+          Fueling  <span className="text-[#4281FF] mr-4">
+            AI Apps
+          </span>
           <div >
-            <span className="text-[#4281FF] mr-4">
-              Intelligence
-            </span>
+
             <span>
-              Within
+              at the Edge
             </span>
+
           </div>
-          <div>
-            Your Reach.
-          </div>
+
         </span>
         <span className="lg:hidden text-center w-full font-semibold mo:text-[22px] mo:leading-normal  text-[#FFFFFF]">
-          Bringing
-          <span className="text-[#4281FF]  mx-2">
-            Intelligence
+          Fueling  <span className="text-[#4281FF] mr-2">
+            AI Apps
           </span>
           <span>
-            Within
+            at the Edge
           </span>
-          <div>
-            Your Reach.
-          </div>
+
         </span>
         <div className=" ml-[54px] mo:mx-5 mr-[142px] md:ml-0 mt-5 mb-10">
           <div className="text-[#7C7C7C] font-normal mo:text-center mo:text-[10px] mo:leading-[150%] font-AlbertSans text-2xl leading-7">
-            We envision a future where intelligence is always within reach, delivering real-time responses and enabling boundless interactions at the edge, redefining your digital experiences.
+            A permissionless network enables diverse AI Apps to thrive. EnReach redefines digital experiences by delivering AI Apps from the edge.
+            <div className="flex gap-5 mt-5 w-full mo:justify-center ">
+
+              {list.map((item, index) => {
+                return <div key={`text_${index}`} className="border-[#4281FF] cursor-default border  text-[#FFFFFF]  w-[190px] mo:w-[100px] items-center leading-9  flex justify-center h-[50px] mo:h-[28px]  rounded-3xl  font-AlbertSans p-3">
+                  {item.title}
+                </div>
+
+              })}
+
+
+            </div>
+
+
           </div>
         </div>
       </div>
