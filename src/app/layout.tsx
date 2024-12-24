@@ -37,6 +37,7 @@ export default function RootLayout({
       </title>
       <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+      <meta name="description" content="Sign up to be the first to get updates. Email. Sign up-test." />
       <body
         className={classNames(fonts.map(item => item.variable).join(" "), "font-Alexandria")}
       >
