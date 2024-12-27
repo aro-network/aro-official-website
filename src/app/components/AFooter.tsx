@@ -52,7 +52,7 @@ const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
         <div className="  text-[50px] mo:text-xl font-semibold leading-normal mt-[43px] mo:mt-[26px] text-[#FFFFFF]">
           Get Started
         </div>
-        <div className=" lg:bg-[url(/footerBgIcon.svg)] bg-no-repeat w-full  ">
+        <div className=" lg:bg-[url(/footerBgIcon.svg)] bg-contain bg-no-repeat w-full  ">
           <div className="text-center mt-[21px] h-auto">
             <div className=" text-[25px] mo:text-[10px] font-normal leading-normal text-[#8A8A8A]">
               <div>

@@ -38,7 +38,7 @@ const AboutUs = () => {
     <ABanner />
     <div ata-aos="fade-up"
       data-aos-duration="1000" className=" w-full flex justify-end">
-      <div className="w-[60%] lg:hidden absolute translate-y-[-120px]  ">
+      <div className="w-[50%] lg:hidden absolute translate-y-[-120px]  ">
         <img src="./edge.gif" className="bg-cover " />
       </div>
     </div>
