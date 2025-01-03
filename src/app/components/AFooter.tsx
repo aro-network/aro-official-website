@@ -37,15 +37,14 @@ const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
       .then(() => {
         toast.success('Submit subscription successfully！');
         setInputEmail('')
-        setIsSubmiting(false)
 
       })
-      .catch(error => {
+      .catch(() => {
         toast.success('Submit subscription failed, please try again later!');
-        setIsSubmiting(false)
 
       }).finally(() => {
         console.log('jinru le');
+        setIsSubmiting(false)
 
       })
 

@@ -16,16 +16,13 @@ const AHeader: FC<{ className?: string, containerClassName?: string, rightClassN
   const [buttons, setButtons] = useState([...headerBtnList]);
 
   useEffect(() => {
-    // 如果是移动端，将 seBtnList 插入到第二个位置
     if (isMobile) {
-      // 如果是移动端，将 seBtnList 插入到 buttons
-      setButtons((prev) => {
+      setButtons(() => {
         const updatedButtons = [...headerBtnList];
-        updatedButtons.splice(2, 1, ...seBtnList); // 替换空对象为 seBtnList
+        updatedButtons.splice(2, 1, ...seBtnList);
         return updatedButtons;
       });
     } else {
-      // 如果不是移动端，恢复原始 buttons
       setButtons([...headerBtnList]);
     }
 
@@ -60,9 +57,9 @@ const AHeader: FC<{ className?: string, containerClassName?: string, rightClassN
           return (
             <>
               {index === 2 ?
-                <HoverCard.Root openDelay={200} closeDelay={200}  >
+                <HoverCard.Root openDelay={200} closeDelay={200} key={`btn_${index}`}>
                   <HoverCard.Trigger asChild>
-                    <div className={` headerBtn  text-[#FFFFFF] font-extrabold md:font-semibold text-xl md:text-base bg-[rgba(255, 255, 255, 1)] leading-6`} key={`btn_${index}`}>
+                    <div className={` headerBtn  text-[#FFFFFF] font-extrabold md:font-semibold text-xl md:text-base bg-[rgba(255, 255, 255, 1)] leading-6`} >
                       Participate
                     </div>
                   </HoverCard.Trigger>
@@ -70,7 +67,7 @@ const AHeader: FC<{ className?: string, containerClassName?: string, rightClassN
                     <HoverCard.Content className="HoverCardContent" sideOffset={10}>
                       <div className="flex flex-col  items-center text-[#FFF]  font-extrabold md:font-semibold text-base bg-[rgba(255, 255, 255, 1)] leading-6">
                         {seBtnList.map((item, index) =>
-                          <a href={item.href} target={item.target} className=" hover:bg-[#4281FF] text-center w-full p-[10px] hover:rounded-xl">
+                          <a key={`seBtn_${index}`} href={item.href} target={item.target} className=" hover:bg-[#4281FF] text-center w-full p-[10px] hover:rounded-xl">
                             {item.name}
                           </a>
                         )

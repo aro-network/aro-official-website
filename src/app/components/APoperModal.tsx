@@ -20,7 +20,7 @@ export interface MenuItem {
 export interface PoperMenuProps {
   menus: MenuItem[];
   containerClassName?: string;
-  chooseItem?: (item: { name: string }) => void;
+  chooseItem?: (item: { name?: string }) => void;
 }
 const AMenu = (p: HTMLAttributes<HTMLDivElement> & PoperMenuProps) => {
   const {
