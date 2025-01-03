@@ -15,12 +15,13 @@ const AShowCase = () => {
       <div className="flex justify-center">
         <img src="./title.svg" />
       </div>
-      <div className="flex flex-wrap justify-center pt-[50px] mo:pt-6 gap-9 mo:gap-3  w-full cursor-default">
+      <div className="flex flex-wrap justify-center pt-[50px] mo:pt-6 gap-9 mo:gap-3 w-full cursor-default">
         {showCaseList.map((item, index) => {
           return <div
             key={`tab_${index}`}
             data-aos={isMobile ? "fade-up" : "flip-left"}
             data-aos-duration="1000"
+            className="mo:w-full "
           >
             <div
               onMouseOver={(e) => {
@@ -40,9 +41,9 @@ const AShowCase = () => {
               className={`${dealHover?.isHover && dealHover.index === index
                 ? "text-[#FFFFFF] bg-[#4281FF]"
                 : "text-[#7C7C7C]"
-                } rounded-[51px]  bg-[#313131] flex flex-col items-center justify-center h-[330px] w-full   max-w-[421px] px-8 py-16`}>
-              <div >
-                <div className={`${index === 0 && 'mt-[5px]'}`}>
+                } rounded-[51px]  bg-[#313131] flex  flex-col items-center  justify-center  h-[330px] w-full   max-w-[421px] px-8 py-16`}>
+              <div className=" h-40">
+                <div className={`${index === 0 && 'mt-[5px]'} h-10 w-10`}>
                   <Icon color={`${dealHover?.isHover && dealHover.index === index
                     ? "#FFFFFF"
                     : " #7C7C7C"
@@ -50,10 +51,11 @@ const AShowCase = () => {
                 </div>
 
               </div>
-              <div className="  w-[350px] max-h-[200px] h-full mt-[46px] mo:mt-4 text-center">
+              <div className="  w-[350px] h-[400px] mo:h-[200px] mt-[45px] mo:mt-4 text-center">
                 <div style={{ letterSpacing: '-0.45px' }} className={`  text-[30px] mo:text-lg font-semibold leading-7`}>{item.title}</div>
                 <div style={{ letterSpacing: '-0.27px' }} className="font-AlbertSans text-center mo:mx-4 mt-4 text-xl mo:text-sm font-normal leading-[22px] ">{item.content}</div>
               </div>
+
             </div>
 
 

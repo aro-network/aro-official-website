@@ -11,14 +11,18 @@ const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
   const [inputEmail, setInputEmail] = useState('')
   const [errorText, setErrorText] = useState('')
   const currentYear = new Date().getFullYear()
+  const [isSubmiting, setIsSubmiting] = useState(false)
 
   const onSubmitEmail = () => {
-    if (!inputEmail) return
+
+    if (!inputEmail || isSubmiting) return
     const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     if (!validEmail.test(inputEmail)) {
       setErrorText('must be a valid email address ')
       return
     }
+    setIsSubmiting(true)
+
 
     fetch('https://email.enreach.network/email', {
       method: 'POST',
@@ -33,12 +37,22 @@ const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
       .then(() => {
         toast.success('Submit subscription successfully！');
         setInputEmail('')
+        setIsSubmiting(false)
+
       })
       .catch(error => {
-        console.error('Error:', error);
-      });
+        toast.success('Submit subscription failed, please try again later!');
+        setIsSubmiting(false)
+
+      }).finally(() => {
+        console.log('jinru le');
+
+      })
 
   }
+
+  console.log('adsadsa', isSubmiting);
+
 
 
   return <div data-aos="fade-up"

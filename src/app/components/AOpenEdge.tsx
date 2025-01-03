@@ -61,7 +61,7 @@ const AOpenEdge = () => {
                 : "text-[#8A8A8A]"
                 }`}>
               <div className={` ${!index ? 'text-[80px] text-[#fff] text-left flex justify-start' : 'text-[35px] smd:text-[25px] '}   font-semibold leading-normal `}>{item.title}</div>
-              <div className={` text-[48px] smd:text-[30px] font-semibold leading-normal ${!!index && dealHover?.isHover && dealHover.index === index
+              <div className={` text-[40px] smd:text-[30px] font-semibold leading-normal ${!!index && dealHover?.isHover && dealHover.index === index
                 ? "text-[#4281FF]"
                 : "text-[#8A8A8A]"
                 }`}>{item.subTitle}</div>
@@ -115,9 +115,9 @@ const AOpenEdge = () => {
 
             {!!index &&
               <div className="w-full h-[212px] relative bg-[#373737] rounded-[30px] m-auto flex justify-center px-[60px] py-5 " >
-                <img src={item.gif} width={258} height={140} />
-                <div className={` absolute   translate-x-[0px] ${index === 3 ? ' translate-y-[20px]' : ' translate-y-[50px]'} `}>
-                  <Icon name={item.icon} width={index === 3 && '50'} height={index === 3 && '100'} seColor={"#144097"}
+                <img src={item.gif} className="w-[258px] h-[140px] mo:w-[280px] mo:h-[170px]" />
+                <div className={` absolute   translate-x-[0px] ${index === 3 ? ' translate-y-[30px]' : ' translate-y-[50px]'} `}>
+                  <Icon name={item.icon} width={index === 3 ? '50' : '30'} height={index === 3 ? '100' : '80'} seColor={"#144097"}
                     color={`#4281FF`} />
                 </div>
               </div>

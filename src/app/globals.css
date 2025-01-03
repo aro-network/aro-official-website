@@ -27,7 +27,6 @@ body {
   font-size: 20px;
   display: inline-block;
   position: relative;
-
   cursor: pointer;
   padding-left: 15px;
   padding-right: 15px;
@@ -42,7 +41,6 @@ body {
   background-color: #4281ff;
   width: 120px;
 }
-
 
 .ipsText:hover {
   background-color: unset;
@@ -66,7 +64,6 @@ input:focus {
   outline: none;
   content: "";
   font-family: var(--font-albert-sans);
-
 }
 
 input {
@@ -74,7 +71,6 @@ input {
   padding: 30px;
   width: 300px;
   font-family: var(--font-albert-sans);
-
 }
 @media (max-width: 1001px) {
   input {
@@ -82,13 +78,12 @@ input {
     padding: 15px;
     width: 300px;
     font-family: var(--font-albert-sans);
-
   }
 }
 
 #chartdiv {
-  width: calc(70vh) ;
-  height: calc(80vh) ;
+  width: calc(70vh);
+  height: calc(80vh);
   margin-top: 40px;
 }
 
@@ -117,7 +112,7 @@ input {
 }
 
 .hoverItem {
-  transition: transform 0.5s ease; 
+  transition: transform 0.5s ease;
 }
 
 .current {
@@ -127,18 +122,21 @@ input {
 }
 
 @media (min-width: 1001px) {
-
-.btn:hover {
-  background-color: unset;
-  border: 2px solid #4281ff;
-  animation: breathe 1.2s infinite ease-in-out;
+  .btn:hover {
+    background-color: unset;
+    border: 2px solid #4281ff;
+    animation: breathe 1.2s infinite ease-in-out;
+  }
 }
-}
-
 
 @keyframes breathe {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
 
 .animated-button {
@@ -220,7 +218,7 @@ input {
   top: 50%;
   left: 50%;
   width: 20px;
-  height: 20px;
+  height: 100px;
   background: #4281ff;
   border-radius: 60px;
   transform: translate(-50%, -50%) scale(0);
@@ -228,37 +226,82 @@ input {
   z-index: -1;
 }
 
-.currentNavigation{
-
+.currentNavigation {
   background: #4281ff;
   border-radius: 60px;
-
 }
 
 .headerBtn:hover::before {
   transform: translate(-50%, -50%) scale(10);
 }
 
-
-.slick-slide{
+.slick-slide {
   width: 260px !important;
   display: flex !important;
   gap: 20px;
   margin-left: 20px;
   margin-right: 20px;
   width: 100%;
-
-} 
-
-
+}
 
 @media (min-width: 1001px) {
-
-.hoverItem:hover {
-  transform: translateX(20px);
+  .hoverItem:hover {
+    transform: translateX(20px);
+  }
 }
+
+.HoverCardContent {
+  border-radius: 6px;
+  padding: 10px;
+  width: 150px;
+  background-color: #373737;
+  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
+    hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+  animation-duration: 400ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+.HoverCardContent[data-side="top"] {
+  animation-name: slideDownAndFade;
 }
 
+@keyframes slideDownAndFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+.HoverCardContent {
+  border-radius: 12px;
+  padding: 10px;
+  width: 150px;
+  background-color: #373737;
+  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
+    hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+  animation-duration: 400ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+.HoverCardContent[data-side="top"] {
+  animation-name: slideDownAndFade;
+}
 
+@keyframes slideDownAndFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+.HoverCardArrow {
+  fill: white;
+}

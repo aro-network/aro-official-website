@@ -1,46 +1,47 @@
 export const headerBtnList = [
   { name: "Home", href: "/", target: "_self" },
   { name: "About Us", href: "/aboutUs", target: "_self" },
-  // { id: 3, name: "Wiki", href: "" },
+  {},
   {
     name: "Docs",
     href: "https://docs.enreach.network",
     target: "_blank",
   },
+  { name: "Sign In", href: "http://dashboard.enreach.network" },
 ];
 
 export const showCaseList = [
   {
-    title: "Competitive Price",
-    content:
-      "Utilizes idle resources via decentralization, cutting costs while ensuring performance and scalability.",
+    title: "P2P CDN",
+    content: "Real-time delivery of internet content, static & dynamic.",
     icon: "IconTeam",
   },
   {
-    title: "Blockchain Efficiency",
-    content: "Transparent, secure, and scalable resource coordination.",
+    title: "AI at the Edge",
+    content: "AI inference, closer to where data is generated.",
     icon: "IconEfficiency",
   },
   {
-    title: "Integrated Tech Stack",
-    content: "Simplifies edge and AI application development.",
+    title: "Media Streaming",
+    content: "Immersice content. Live media. Near-zero latency fulfilled.",
     icon: "IconStack",
   },
   {
-    title: "Dynamic Matching",
-    content: "Real-time optimization of resources for speed and adaptability.",
+    title: "Cloud Gaming",
+    content: "Games hosted by EnReach nodes, scalable with player demand.",
     icon: "IconMatch",
   },
   {
-    title: "Enterprise Reliability",
-    content: "Stable, high-performance infrastructure for business needs.",
+    title: "Autonomous Systems",
+    content:
+      "Supporting auto-drive vehicles and IoT devices with edge resilience.",
     icon: "IconReliability",
   },
 ];
 
 export const openEdgeList = [
   {
-    title: "The Open Edge",
+    title: "Openness for the Infinite Edge",
   },
   {
     title: "Open Protocol ",
@@ -51,7 +52,7 @@ export const openEdgeList = [
     gif: "./box1.gif",
   },
   {
-    title: "Open Cloud ",
+    title: "Open Platform",
     subTitle: "Enabling Edge Intelligence",
     content:
       "A complete cloud enabling AI model/computation functions deployment, execution, and context data management across the network. ",
@@ -59,8 +60,8 @@ export const openEdgeList = [
     gif: "./box2.gif",
   },
   {
-    title: "Open Ecosystem  ",
-    subTitle: "Accelerating Edge Innovation",
+    title: "Open App Ecosystem",
+    subTitle: "Forstering Edge Innovation",
     content:
       "An open ecosystem fostering innovation, incentivizing application growth, and guided by community-driven governance.",
     gif: "./box3.gif",

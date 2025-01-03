@@ -58,10 +58,10 @@ const AFabric = () => {
       className=" aos-init aos-animate mo:mt-[71px] mo:text-center  w-container mo:w-full m-auto h-auto md:w-full md:px-[30px] lg:pt-40 lg:pb-80">
       <div className="text-[80px] mo:text-xl mo:flex mo:justify-center mo:gap-1 font-semibold leading-normal text-[#FFFFFF] ">
         <div>
-          The Open-Layered
+          Resource to App,
         </div>
         <div>
-          Fabric
+          Aligned
         </div>
       </div>
       <div className=" mo:hidden flex flex-col justify-center w-full gap-10 mt-10 bg-[#373737] ">

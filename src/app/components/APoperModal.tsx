@@ -11,7 +11,7 @@ export interface MenuItem {
   icon?: string;
   text?: string;
   href?: string;
-  name: string
+  name?: string
   content?: string;
   selected?: boolean;
   onClick?: () => void;
@@ -76,9 +76,8 @@ const AMenu = (p: HTMLAttributes<HTMLDivElement> & PoperMenuProps) => {
           )}
         >
 
-          <div className=" w-full  bg-[#373737] h-[179px]  text-center mt-[.625rem] rounded-2xl z-[-9999999999] relative">
+          <div className=" w-full  bg-[#373737] h-[330px]  text-center mt-[.625rem] rounded-2xl z-[-9999999999] relative">
             {menus.map((item, i) => {
-              console.log('pathname', pathname, item.href);
 
               return <Fragment key={`poper_menu_item${i}`}>
 
@@ -97,7 +96,7 @@ const AMenu = (p: HTMLAttributes<HTMLDivElement> & PoperMenuProps) => {
                   {/* {!!item.icon && (
                     <div className="text-xl mo:text-2xl">{item.icon}</div>
                   )} */}
-                  <div className={` flex flex-col text-center  justify-center h-[34px] ${pathname === item.href && 'bg-[#4281FF]'}  w-full`}>
+                  <div className={` flex flex-col text-center  justify-center h-[34px] ${pathname === item.href && 'bg-[#4281FF] rounded-xl'}  w-full`}>
                     <div className=" text-sm font-bold text-white text-center justify-center mo:text-[15px] font-AlbertSans mo:font-extrabold flex items-center ">
                       {item.name}
                     </div>

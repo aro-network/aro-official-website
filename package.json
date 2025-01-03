@@ -13,6 +13,7 @@
     "@amcharts/amcharts5-geodata": "^5.1.4",
     "@arco-design/web-react": "^2.65.0",
     "@formkit/auto-animate": "^0.8.1",
+    "@radix-ui/react-hover-card": "^1.1.4",
     "@radix-ui/react-tooltip": "^1.1.4",
     "aos": "^2.3.4",
     "classnames": "^2.5.1",
