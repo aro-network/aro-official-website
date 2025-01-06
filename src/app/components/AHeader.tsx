@@ -11,12 +11,12 @@ const AHeader: FC<{ className?: string, containerClassName?: string, rightClassN
   const seBtnList = [
     {
       name: "Season 1",
-      href: 'https://dashboard.enreach.network',
+      // href: 'https://dashboard.enreach.network',
       target: '_blank'
     },
     {
       name: "Edge Node",
-      href: 'https://edge-node.enreach.network',
+      // href: 'https://edge-node.enreach.network',
       target: '_blank'
     },
   ]
