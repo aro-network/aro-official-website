@@ -5,7 +5,6 @@ import { SocialButtons } from "./social-buttons";
 import { toast } from "sonner";
 import { FC } from "react";
 
-
 const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
   const [dealHover, setDealHover] = useState<{ index: number, isHover: boolean } | null>(null);
   const [inputEmail, setInputEmail] = useState('')
@@ -22,8 +21,6 @@ const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
       return
     }
     setIsSubmiting(true)
-
-
     fetch('https://email.enreach.network/email', {
       method: 'POST',
       headers: {
@@ -43,16 +40,9 @@ const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
         toast.success('Submit subscription failed, please try again later!');
 
       }).finally(() => {
-        console.log('jinru le');
         setIsSubmiting(false)
-
       })
-
   }
-
-  console.log('adsadsa', isSubmiting);
-
-
 
   return <div data-aos="fade-up"
     data-aos-duration="1000"

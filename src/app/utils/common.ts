@@ -69,30 +69,6 @@ export const openEdgeList = [
   },
 ];
 
-export const fabricList = [
-  {
-    title: "Application Layer",
-    icon: "./application.svg",
-    default: "./default-application.svg",
-    content:
-      "Provide developer SDKs and user interfaces that expose the network’s capabilities, allowing for easy development, deployment, management, and scaling of edge applications and AI solutions.",
-  },
-  {
-    title: "Orchestration Layer",
-    icon: "./open.svg",
-    default: "./default-open.svg",
-    content:
-      "Coordinate network consensus, data, computation flows, and task management across nodes to meet the dynamic demands of edge computing, data transmission & processing with high precision and reliability.",
-  },
-  {
-    title: "Resource Layer",
-    icon: "./resource.svg",
-    default: " default-resource.svg",
-    content:
-      "Standardize, virtualize, and containerize heterogeneous node resources to create a scalable, flexible digital infrastructure that can be verified, quantified, and optimized for efficient utilization.",
-  },
-];
-
 export const list = [
   { name: "Media Kit", link: "https://enreach.network/Enreach Media kit.zip" },
   {
@@ -123,4 +99,36 @@ export const doingItList = [
     contnet:
       "Leveraging our robust infrastructure, we deliver practical and scalable solutions tailored to real-world industries, enabling meaningful adoption and bridging the gap between Web3 technology and industry applications.",
   },
+];
+
+export const fabricList = [
+  {
+    title: "Application Layer",
+    icon: "./application.svg",
+    moIcon: "./mo-applicaiton.svg",
+    content:
+      "Provide developer SDKs and user interfaces that expose the network’s capabilities, allowing for easy development, deployment, management, and scaling of edge applications and AI solutions.",
+  },
+  {
+    title: "Orchestration Layer",
+    icon: "./open.svg",
+    default: "./default-open.svg",
+    moIcon: "./mo-orchestration.svg",
+    content:
+      "Coordinate network consensus, data, computation flows, and task management across nodes to meet the dynamic demands of edge computing, data transmission & processing with high precision and reliability.",
+  },
+  {
+    title: "Resource Layer",
+    icon: "./resource.svg",
+    default: " default-resource.svg",
+    moIcon: "./mo-resource.svg",
+    content:
+      "Standardize, virtualize, and containerize heterogeneous node resources to create a scalable, flexible digital infrastructure that can be verified, quantified, and optimized for efficient utilization.",
+  },
+];
+
+export const titleList = [
+  { title: "Real-time" },
+  { title: "Cost-effective" },
+  { title: "Global-reach" },
 ];

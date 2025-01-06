@@ -1,11 +1,6 @@
+import { titleList } from "../utils/common"
+
 const AIntelligence = () => {
-
-  const list = [
-    { title: 'Real-time' },
-    { title: 'Cost-effective' },
-    { title: 'Global-reach' },
-
-  ]
 
   return <div data-aos="fade-up"
     data-aos-duration="1000"
@@ -37,31 +32,21 @@ const AIntelligence = () => {
           <span className="text-[#4281FF] ml-2 ">
             AI
           </span>
-
         </span>
         <div className=" ml-[54px] mo:mx-5 mr-[142px] md:ml-0 mt-5 mb-10">
           <div className="text-[#7C7C7C] font-normal mo:text-center mo:text-[10px] mo:leading-[150%] font-AlbertSans text-2xl leading-7">
             A permissionless network enables diverse AI Apps to thrive. EnReach redefines digital experiences by delivering AI Apps from the edge.
             <div className="flex gap-5 mt-5 w-full mo:justify-center ">
-
-              {list.map((item, index) => {
+              {titleList.map((item, index) => {
                 return <div key={`text_${index}`} className="border-[#4281FF] cursor-default border  text-[#FFFFFF]  w-[190px] mo:w-[120px] items-center leading-9  flex justify-center h-[50px] mo:h-[28px]  rounded-3xl  font-AlbertSans p-3 mo:p-0">
                   {item.title}
                 </div>
-
               })}
-
-
             </div>
-
-
           </div>
         </div>
       </div>
-
-
     </div>
-
   </div>
 }
 

@@ -4,9 +4,9 @@ import Icon from '@/app/images/index'
 import useMobileDetect from "../hooks/useMobileDetect";
 
 const AShowCase = () => {
+
   const [dealHover, setDealHover] = useState<{ index: number, isHover: boolean } | null>(null);
   const isMobile = useMobileDetect()
-
 
   return <div data-aos="fade-up"
     data-aos-duration="1000"
@@ -49,22 +49,15 @@ const AShowCase = () => {
                     : " #7C7C7C"
                     }`} name={item.icon} />
                 </div>
-
               </div>
               <div className="  w-[350px] h-[400px] mo:h-[200px] mt-[45px] mo:mt-4 text-center">
                 <div style={{ letterSpacing: '-0.45px' }} className={`  text-[30px] mo:text-lg font-semibold leading-7`}>{item.title}</div>
                 <div style={{ letterSpacing: '-0.27px' }} className="font-AlbertSans text-center mo:mx-4 mt-4 text-xl mo:text-sm font-normal leading-[22px] ">{item.content}</div>
               </div>
-
             </div>
-
-
           </div>
         })}
-
       </div>
-
-
     </div>
   </div >
 }

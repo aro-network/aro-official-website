@@ -1,4 +1,5 @@
 const ABanner = () => {
+
   return <div data-aos="fade-up"
     data-aos-duration="1000"
     className="m-auto aos-init aos-animate w-container md:w-full mo:w-full ">
@@ -21,7 +22,6 @@ const ABanner = () => {
             </div>
             the <span className="text-[#FFF]"> AI Era</span>
             <span>.</span>
-
           </span>
           <div data-aos="fade-up"
             data-aos-duration="1000"
@@ -30,9 +30,7 @@ const ABanner = () => {
               <div className="mb-5 ">
                 EnReach bridges the gap between centralized cloud systems and the needs of next-generation applications. As AI reshapes industries, we bring the cloud closer to users, enabling instant responses, seamless interactions, and scalable performance.
               </div>
-
               By creating an globally-connected edge cloud, we empower the AI-driven world with infrastructure designed for speed, flexibility, and accessibility.
-
             </div>
           </div>
         </div>

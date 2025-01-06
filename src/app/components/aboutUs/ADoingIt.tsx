@@ -2,9 +2,8 @@ import { doingItList } from "@/app/utils/common"
 import { useState } from "react";
 
 const ADoingIt = () => {
+
   const [dealHover, setDealHover] = useState<{ index: number, isHover: boolean } | null>(null);
-
-
 
   return <div className=" bg-[#1B1B1B]">
     <div data-aos="fade-up"
@@ -15,16 +14,19 @@ const ADoingIt = () => {
           data-aos-duration="1000">
           <img src="./enReachNetwork.svg" />
         </div>
+
         <div data-aos="fade-up"
           data-aos-duration="1000" className=" pt-[74px]">
           <img src="./flower.svg" />
         </div>
+
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
           className=" text-[60px] mo:text-xl pt-5 font-bold leading-normal  ">
           {`How We're Doing It?`}
         </div>
+
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -62,9 +64,7 @@ const ADoingIt = () => {
                 } text-[22px] mo:text-xs font-medium font-AlbertSans leading-normal mo:w-full w-[44%]`}>
                 {item.contnet}
               </div>
-
             </div>
-
           })}
         </div>
       </div>

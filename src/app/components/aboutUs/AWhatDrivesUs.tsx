@@ -14,7 +14,6 @@ const AWhatDrivesUs = () => {
             Edge-First Infrastructure
           </span>
           <span>.</span>
-
         </div>
       </div>
       <div data-aos="fade-up"
@@ -30,10 +29,8 @@ const AWhatDrivesUs = () => {
         <div className="w-[60%] mo:hidden relative top-3">
           <img src="./edge.gif" className="bg-cover " />
         </div>
-
       </div>
     </div>
-
   </div>
 
 }

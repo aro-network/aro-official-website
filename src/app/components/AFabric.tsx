@@ -1,55 +1,9 @@
 import { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { fabricList } from "../utils/common";
 const AFabric = () => {
-
-
-  const fabricList = [
-    {
-      title: "Application Layer",
-      icon: "./application.svg",
-      // icon: <div>
-      //   <img src="./application.svg" />
-      // </div>,
-      // default: <div>
-      //   <img src="./default-application.svg" />
-      // </div>,
-      moIcon: './mo-applicaiton.svg',
-      content:
-        "Provide developer SDKs and user interfaces that expose the network’s capabilities, allowing for easy development, deployment, management, and scaling of edge applications and AI solutions.",
-    },
-    {
-      title: "Orchestration Layer",
-      icon: "./open.svg",
-      default: "./default-open.svg",
-      // icon: <div>
-      //   <img src="./open.svg" />
-      // </div>,
-      // default: <div>
-      //   <img src="./default-open.svg" />
-      // </div>,
-      moIcon: './mo-orchestration.svg',
-      content:
-        "Coordinate network consensus, data, computation flows, and task management across nodes to meet the dynamic demands of edge computing, data transmission & processing with high precision and reliability.",
-    },
-    {
-      title: "Resource Layer",
-      icon: "./resource.svg",
-      default: " default-resource.svg",
-      // icon: <div>
-      //   <img src="./resource.svg" />
-      // </div>,
-      // default: <div>
-      //   <img src="./default-resource.svg" />
-      // </div>,
-      moIcon: './mo-resource.svg',
-      content:
-        "Standardize, virtualize, and containerize heterogeneous node resources to create a scalable, flexible digital infrastructure that can be verified, quantified, and optimized for efficient utilization.",
-    },
-  ];
-
   const [dealHover, setDealHover] = useState<{ index: number, isHover: boolean } | null>(null);
-
 
   return <div className="bg-[#373737] mo:bg-[#1B1B1B] overflow-hidden">
     <div

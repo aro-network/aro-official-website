@@ -10,14 +10,10 @@ import CountUp from "react-countup";
 
 const ABanner = () => {
 
-
   const initMap = async () => {
-
     am5.addLicense("AM5M-7163-0147-1745-7749");
     const root = am5.Root.new("chartdiv");
-
     root.setThemes([am5themes_Animated.new(root)]);
-
     const chart = root.container.children.push(
       am5map.MapChart.new(root, {
         projection: am5map.geoOrthographic(),
@@ -63,15 +59,12 @@ const ABanner = () => {
       to: 360,
       duration: 30000,
       loops: Infinity,
-
     });
-
   }
 
   useEffect(() => {
     initMap()
   }, [])
-
 
   const countList = [
     {
@@ -103,9 +96,6 @@ const ABanner = () => {
     }
   ]
 
-
-
-
   return <div className=" overflow-hidden mo:w-full  ">
     <div className="w-container m-auto items-center flex lg:pl-[105px] md:w-full md:pl-0  mb-[-120px] mo:w-full   ">
       <div className="   flex items-center  w-full h-[83vh] mo:h-[65vh]  relative">
@@ -117,7 +107,7 @@ const ABanner = () => {
             The Edge Cloud for Everyone to Contribute,Earn,
             <div>and Own a Share in the AI Era</div>
           </div>
-          <div className=" pt-5 flex mo:mt-[50px]  items-center gap-10 mo:gap-[15px] md:px-[30px] mo:flex-col-reverse relative z-[99999]">
+          <div className=" pt-5 flex mo:mt-[50px]  items-center gap-10 mo:gap-[15px] md:px-[30px] mo:flex-col-reverse relative z-[9999]">
             <a href={'https://docs.enreach.network'} target="_blank" className="bg-[#4281FF]   text-[#FFFFFF] ml-[6px] w-[229px] mo:w-[178px] items-center text-2xl mo:text-base mo:font-medium font-semibold leading-9  flex justify-center h-[50px] mo:h-[38px] btn rounded-3xl ipsText font-AlbertSans p-3">Learn More</a>
             <SocialButtons />
           </div>

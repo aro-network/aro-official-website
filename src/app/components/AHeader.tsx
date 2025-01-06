@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react"
+import { FC, Fragment, useEffect, useState } from "react"
 import Link from "next/link"
 import { HiOutlineMenu } from 'react-icons/hi'
 import classNames from "classnames"
@@ -25,12 +25,7 @@ const AHeader: FC<{ className?: string, containerClassName?: string, rightClassN
     } else {
       setButtons([...headerBtnList]);
     }
-
   }, [isMobile])
-
-
-
-
 
   return <div>
     <div className={` w-container mo:w-full mo:px-[12px] m-auto flex pt-10 mo:pt-5  items-center  ${containerClassName} md:w-full  `}>
@@ -43,7 +38,7 @@ const AHeader: FC<{ className?: string, containerClassName?: string, rightClassN
       </div>
       <div className="flex lg:hidden justify-end  w-[50%]">
         <APoperMenu
-          containerClassName={"!w-[106px] !h-[579px] mo:!right-[0px] "}
+          containerClassName={"!w-[115px] !h-[579px] mo:!right-[0px] "}
           menus={buttons}
           className="absolute z-[99999]"
         >
@@ -55,9 +50,9 @@ const AHeader: FC<{ className?: string, containerClassName?: string, rightClassN
       <div className={`flex mo:hidden ${rightClassName} justify-end gap-[36px] md:gap-5 smd:gap-0  w-[50%] button-container`}>
         {buttons.map((item, index) => {
           return (
-            <>
+            <Fragment key={`btn_${index}`}>
               {index === 2 ?
-                <HoverCard.Root openDelay={200} closeDelay={200} key={`btn_${index}`}>
+                <HoverCard.Root openDelay={200} closeDelay={200}>
                   <HoverCard.Trigger asChild>
                     <div className={` headerBtn  text-[#FFFFFF] font-extrabold md:font-semibold text-xl md:text-base bg-[rgba(255, 255, 255, 1)] leading-6`} >
                       Participate
@@ -78,10 +73,10 @@ const AHeader: FC<{ className?: string, containerClassName?: string, rightClassN
                   </HoverCard.Portal>
                 </HoverCard.Root>
                 :
-                <a href={item.href} target={item.target} className={` headerBtn  text-[#FFFFFF] font-extrabold md:font-semibold text-xl md:text-base bg-[rgba(255, 255, 255, 1)] leading-6`} key={`btn_${index}`}>{item.name}</a>
+                <a href={item.href} target={item.target} className={` headerBtn  text-[#FFFFFF] font-extrabold md:font-semibold text-xl md:text-base bg-[rgba(255, 255, 255, 1)] leading-6`}>{item.name}</a>
 
               }
-            </>
+            </Fragment>
           )
         })}
 

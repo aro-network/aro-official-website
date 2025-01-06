@@ -3,9 +3,6 @@ import React, { Fragment, HTMLAttributes } from "react";
 import { useClickAway, useToggle } from "react-use";
 import { usePathname, useRouter } from "next/navigation";
 import { useAutoAnim } from "../hooks/useAutoAnim";
-
-
-
 export interface MenuItem {
   topSplit?: boolean;
   icon?: string;
@@ -23,6 +20,7 @@ export interface PoperMenuProps {
   chooseItem?: (item: { name?: string }) => void;
 }
 const AMenu = (p: HTMLAttributes<HTMLDivElement> & PoperMenuProps) => {
+
   const {
     className,
     containerClassName,
@@ -32,19 +30,14 @@ const AMenu = (p: HTMLAttributes<HTMLDivElement> & PoperMenuProps) => {
     ...other
   } = p;
   const r = useRouter();
-
   const [show, toggleShow] = useToggle(false);
   const ref = useAutoAnim<HTMLDivElement>("t-side");
   const pathname = usePathname()
-
-
-
   useClickAway(ref, () => show && toggleShow(false));
 
   const onClickItem = (item: MenuItem) => {
     if (typeof chooseItem === "function") {
       chooseItem(item);
-
     }
     if (item.onClick) {
       item.onClick();
@@ -75,32 +68,22 @@ const AMenu = (p: HTMLAttributes<HTMLDivElement> & PoperMenuProps) => {
             containerClassName
           )}
         >
-
           <div className=" w-full  bg-[#373737] h-[330px]  text-center mt-[.625rem] rounded-2xl z-[-9999999999] relative">
             {menus.map((item, i) => {
-
               return <Fragment key={`poper_menu_item${i}`}>
-
                 <div
                   className={classNames(
                     "flex items-center justify-center   mo:py-[10px] text-center w-full  text-black hover:text-green-2 cursor-pointer",
 
                   )}
-                  // onMouseEnter={() => {
-                  //   setActive(item.name);
-                  // }}
                   onClick={() =>
                     !item.href ? onClickItem(item) : r.push(item.href)
                   }
                 >
-                  {/* {!!item.icon && (
-                    <div className="text-xl mo:text-2xl">{item.icon}</div>
-                  )} */}
-                  <div className={` flex flex-col text-center  justify-center h-[34px] ${pathname === item.href && 'bg-[#4281FF] rounded-xl'}  w-full`}>
+                  <div className={` flex flex-col text-center  justify-center h-[34px] ${pathname === item.href && 'bg-[#4281FF] rounded-xl w-[100px]'}  w-full`}>
                     <div className=" text-sm font-bold text-white text-center justify-center mo:text-[15px] font-AlbertSans mo:font-extrabold flex items-center ">
                       {item.name}
                     </div>
-
                   </div>
                 </div>
               </Fragment>
