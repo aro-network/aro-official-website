@@ -7,7 +7,11 @@ export const headerBtnList = [
     href: "https://docs.enreach.network",
     target: "_blank",
   },
-  { name: "Sign In", href: "http://dashboard.enreach.network" },
+  {
+    name: "Sign In",
+    // href: "http://dashboard.enreach.network",
+    target: "_blank",
+  },
 ];
 
 export const showCaseList = [

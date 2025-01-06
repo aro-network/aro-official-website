@@ -96,7 +96,8 @@ const ABanner = () => {
     }
   ]
 
-  return <div className=" overflow-hidden mo:w-full  ">
+
+  return < div className=" overflow-hidden mo:w-full  " >
     <div className="w-container m-auto items-center flex lg:pl-[105px] md:w-full md:pl-0  mb-[-120px] mo:w-full   ">
       <div className="   flex items-center  w-full h-[83vh] mo:h-[65vh]  relative">
         <div className="  md:w-full overflow-hidden mo:w-full mo:text-center mo:mb-[100px]  py-5">
@@ -104,8 +105,8 @@ const ABanner = () => {
           {/* <div className='lg:hidden text-2xl      font-medium   text-[#FFFFFF] leading-normal relative z-[1000]'><div>The Genesis of Open Edge, </div> for the AI Era.</div> */}
 
           <div className="text-[32px]  mo:text-xs md:text-[28px] lg:text-nowrap  py-3 mo:px-[77px]  leading-[38px] font-semibold md:px-[30px] font-AlbertSans text-[#7C7C7C] relative z-[9999]">
-            The Edge Cloud for Everyone to Contribute,Earn,
-            <div>and Own a Share in the AI Era</div>
+            The Edge Cloud for everyone to contribute, earn,
+            <div>and own a share in the AI era.</div>
           </div>
           <div className=" pt-5 flex mo:mt-[50px]  items-center gap-10 mo:gap-[15px] md:px-[30px] mo:flex-col-reverse relative z-[9999]">
             <a href={'https://docs.enreach.network'} target="_blank" className="bg-[#4281FF]   text-[#FFFFFF] ml-[6px] w-[229px] mo:w-[178px] items-center text-2xl mo:text-base mo:font-medium font-semibold leading-9  flex justify-center h-[50px] mo:h-[38px] btn rounded-3xl ipsText font-AlbertSans p-3">Learn More</a>
@@ -140,7 +141,7 @@ const ABanner = () => {
     </div>
 
 
-  </div>
+  </div >
 
 }
 

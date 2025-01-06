@@ -59,10 +59,10 @@ const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
           <div className="text-center mt-[21px] h-auto">
             <div className=" text-[25px] mo:text-[10px] font-normal leading-normal text-[#8A8A8A]">
               <div>
-                Stay Ahead of the Game: Subscribe to Receive the Latest
+                Stay ahead of the game: Subscribe to receive the latest
               </div>
               <div>
-                Updates from EnReach Network!
+                updates from EnReach Network!
 
               </div>
             </div>
