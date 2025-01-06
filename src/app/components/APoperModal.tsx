@@ -80,7 +80,7 @@ const AMenu = (p: HTMLAttributes<HTMLDivElement> & PoperMenuProps) => {
                     !item.href ? onClickItem(item) : r.push(item.href)
                   }
                 >
-                  <div className={` flex flex-col text-center  justify-center h-[34px] ${pathname === item.href && 'bg-[#4281FF] rounded-xl w-[100px]'}  w-full`}>
+                  <div className={` flex flex-col text-center  justify-center h-[34px] ${pathname === item.href && 'bg-[#4281FF] rounded-xl w-[100px] mo:mx-[5px]'}  w-full`}>
                     <div className=" text-sm font-bold text-white text-center justify-center mo:text-[15px] font-AlbertSans mo:font-extrabold flex items-center ">
                       {item.name}
                     </div>
