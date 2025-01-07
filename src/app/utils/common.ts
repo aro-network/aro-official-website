@@ -21,8 +21,8 @@ export const showCaseList = [
     icon: "IconTeam",
   },
   {
-    title: "AI at the Edge",
-    content: "AI inference, closer to where data is generated.",
+    title: "AI Agent Hosting",
+    content: "Decentralized hosting, with secure & verifiable executions.",
     icon: "IconEfficiency",
   },
   {
@@ -30,17 +30,17 @@ export const showCaseList = [
     content: "Immersice content. Live media. Near-zero latency fulfilled.",
     icon: "IconStack",
   },
-  {
-    title: "Cloud Gaming",
-    content: "Games hosted by EnReach nodes, scalable with player demand.",
-    icon: "IconMatch",
-  },
-  {
-    title: "Autonomous Systems",
-    content:
-      "Supporting auto-drive vehicles and IoT devices with edge resilience.",
-    icon: "IconReliability",
-  },
+  // {
+  //   title: "Cloud Gaming",
+  //   content: "Games hosted by EnReach nodes, scalable with player demand.",
+  //   icon: "IconMatch",
+  // },
+  // {
+  //   title: "Autonomous Systems",
+  //   content:
+  //     "Supporting auto-drive vehicles and IoT devices with edge resilience.",
+  //   icon: "IconReliability",
+  // },
 ];
 
 export const openEdgeList = [
@@ -134,5 +134,5 @@ export const fabricList = [
 export const titleList = [
   { title: "Real-time" },
   { title: "Cost-effective" },
-  { title: "Global-reach" },
+  { title: "Verifiable" },
 ];

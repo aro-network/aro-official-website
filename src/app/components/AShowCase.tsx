@@ -10,12 +10,12 @@ const AShowCase = () => {
 
   return <div data-aos="fade-up"
     data-aos-duration="1000"
-    className=" aos-init aos-animate bg-[#1C1C1C] py-[110px] mo:py-0 mo:pt-[38px] ">
-    <div className="w-container m-auto md:w-full md:px-[30px] mo:w-full mo:px-5 ">
+    className=" aos-init aos-animate bg-[#1C1C1C] py-[137px] mo:py-0 mo:pt-[38px] ">
+    <div className="w-container m-auto md:w-full md:px-[30px] mo:w-full mo:px-5">
       <div className="flex justify-center">
         <img src="./title.svg" />
       </div>
-      <div className="flex flex-wrap justify-center pt-[50px] mo:pt-6 gap-9 mo:gap-3 w-full cursor-default">
+      <div className="flex flex-wrap mo:w-full justify-center pt-[50px] mo:pt-6 gap-9 mo:gap-3 w-full cursor-default">
         {showCaseList.map((item, index) => {
           return <div
             key={`tab_${index}`}
@@ -41,7 +41,7 @@ const AShowCase = () => {
               className={`${dealHover?.isHover && dealHover.index === index
                 ? "text-[#FFFFFF] bg-[#4281FF]"
                 : "text-[#7C7C7C]"
-                } rounded-[51px]  bg-[#313131] flex  flex-col items-center  justify-center  h-[330px] w-full   max-w-[421px] px-8 py-16`}>
+                } rounded-[51px]  bg-[#313131] flex mo:w-full mo:max-w-full  flex-col items-center  justify-center  h-[330px] w-full   max-w-[421px] px-8 py-16`}>
               <div className=" h-40">
                 <div className={`${index === 0 && 'mt-[5px]'} h-10 w-10`}>
                   <Icon color={`${dealHover?.isHover && dealHover.index === index
