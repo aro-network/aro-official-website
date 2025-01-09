@@ -93,7 +93,7 @@ const AEdgeNode = () => {
 
   let isSubmiting = false
   const handleSubmit = (data: Record<string, string[]>) => {
-    if (isSubmiting || JSON.stringify(data) === '{}') return
+    if (isSubmiting || !data.email) return
     isSubmiting = true
     data.resources = data.resources.filter((item: string) => item)
 

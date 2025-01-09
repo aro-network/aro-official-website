@@ -66,21 +66,21 @@ const ATabs: FC<ATabsProps> = ({
                     className="noBorder  bg-[#313131] border-b border-[#FFFFFF4D] w-full"
                     placeholder={field.placeholder || ""}
                     {...register(field.name, {
-                      required: `${field.label} is required`,
-                      ...(field.validation || {}),
+                      // required: `${field.label} is required`,
+                      // ...(field.validation || {}),
                     })}
-                    onChange={(e) => {
-                      if (e.target.value.trim() !== "") {
-                        clearErrors(field.name);
-                      }
-                    }}
+                  // onChange={(e) => {
+                  //   if (e.target.value.trim() !== "") {
+                  //     clearErrors(field.name);
+                  //   }
+                  // }}
                   />
-                  {errors[field.name] && (
+                  {/* {errors[field.name] && (
                     <span className="text-red-500 text-sm mt-2">
                       {"Please enter"}
 
                     </span>
-                  )}
+                  )} */}
                 </>
               )}
 
@@ -101,7 +101,7 @@ const ATabs: FC<ATabsProps> = ({
                   />
                   {errors[field.name] && (
                     <span className="text-red-500 text-sm mt-2">
-                      {"Please enter"}
+                      Please provide your email
                     </span>
                   )}
                 </>
@@ -113,14 +113,13 @@ const ATabs: FC<ATabsProps> = ({
                     placeholder={field.placeholder || ""}
                     className="noBorder bg-[#313131] max-h-[200px] border-b border-[#FFFFFF4D] w-full"
                     {...register(field.name, {
-                      required: `${field.label} is required`,
-
+                      // required: `${field.label} is required`,
                     })}
-                    onChange={(e) => {
-                      if (e.target.value.trim() !== "") {
-                        clearErrors(field.name);
-                      }
-                    }}
+                  // onChange={(e) => {
+                  //   if (e.target.value.trim() !== "") {
+                  //     clearErrors(field.name);
+                  //   }
+                  // }}
                   />
                 </>
               )}
@@ -164,11 +163,11 @@ const ATabs: FC<ATabsProps> = ({
                     </label>
 
                   })}
-                  {errors[field.name] && (
+                  {/* {errors[field.name] && (
                     <span className="text-red-500 text-sm mt-2">
                       This option cannot be empty
                     </span>
-                  )}
+                  )} */}
                 </div>
               )}
 

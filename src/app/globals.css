@@ -307,10 +307,10 @@ body {
 }
 
 .noBorder {
-  outline: none;
   height: 40px;
   margin-top: 40px;
   font-size: 20px;
+  outline: none !important;
 }
 @media (max-width: 1001px) {
   .noBorder {
