@@ -136,3 +136,4 @@ export const titleList = [
   { title: "Cost-effective" },
   { title: "Verifiable" },
 ];
+export const baseUrl = "https://email.enreach.network";

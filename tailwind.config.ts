@@ -22,6 +22,7 @@ export default {
         md: [{ min: "1001px", max: "1440px" }],
         smd: [{ min: "1001px", max: "1260px" }],
         lg: { min: "1000px" },
+        llg: { min: "1440px" },
       },
       fontFamily: {
         AlbertSans: "var(--font-albert-sans)",

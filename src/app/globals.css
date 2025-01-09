@@ -51,7 +51,7 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
-input::placeholder {
+.emailInput input::placeholder {
   color: #8a8a8a;
   font-style: normal;
   font-weight: 400;
@@ -59,14 +59,14 @@ input::placeholder {
   font-family: var(--font-albert-sans);
 }
 
-input:focus {
+.emailInput input:focus {
   box-shadow: 0 0 5px #8a8a8a;
   outline: none;
   content: "";
   font-family: var(--font-albert-sans);
 }
 
-input {
+.emailInput input {
   font-size: 24px;
   padding: 30px;
   width: 300px;
@@ -305,3 +305,58 @@ input {
 .HoverCardArrow {
   fill: white;
 }
+
+.noBorder {
+  outline: none;
+  height: 40px;
+  margin-top: 40px;
+}
+
+.custom-checkbox {
+  appearance: none;
+  border: 2px solid #737373;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.custom-checkbox:checked {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.custom-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid #737373;
+  border-width: 0 2px 2px 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%) rotate(45deg);
+}
+
+.checkbox-text {
+  margin-left: 8px;
+  color: #737373;
+  transition: color 0.3s ease;
+}
+
+.custom-checkbox:checked + .checkbox-text {
+  color: #fff;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  color: #8a8a8a;
+  background-color: transparent !important;
+  background-clip: padding-box !important;
+  -webkit-box-shadow: 0 0 0px 1000px #313131 inset !important; 
+  -webkit-text-fill-color: #737373 !important;
+}
+

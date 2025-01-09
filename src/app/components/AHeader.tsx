@@ -16,7 +16,7 @@ const AHeader: FC<{ className?: string, containerClassName?: string, rightClassN
     },
     {
       name: "Edge Node",
-      // href: 'https://edge-node.enreach.network',
+      href: '/edgeNode',
       target: '_blank'
     },
   ]
@@ -68,9 +68,9 @@ const AHeader: FC<{ className?: string, containerClassName?: string, rightClassN
                   </HoverCard.Trigger>
                   <HoverCard.Portal>
                     <HoverCard.Content className="HoverCardContent" sideOffset={10}>
-                      <div className="flex flex-col  items-center text-[#FFF]  font-extrabold md:font-semibold text-base bg-[rgba(255, 255, 255, 1)] leading-6">
+                      <div className="flex flex-col  items-center text-[#FFF] gap-2  font-extrabold md:font-semibold text-base bg-[rgba(255, 255, 255, 1)] leading-6">
                         {seBtnList.map((item, index) =>
-                          <a key={`seBtn_${index}`} target={item.target} className=" hover:bg-[#4281FF] text-center w-full p-[10px] hover:rounded-xl">
+                          <a key={`seBtn_${index}`} href={item.href} target={item.target} className=" headerBtn text-center w-full p-[10px] hover:rounded-xl">
                             {item.name}
                           </a>
                         )

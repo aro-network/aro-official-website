@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react";
-import { list } from "../utils/common"
+import { baseUrl, list } from "../utils/common"
 import { SocialButtons } from "./social-buttons";
 import { toast } from "sonner";
 import { FC } from "react";
@@ -21,7 +21,7 @@ const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
       return
     }
     setIsSubmiting(true)
-    fetch('https://email.enreach.network/email', {
+    fetch(baseUrl + '/email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
 
       })
       .catch(() => {
-        toast.success('Submit subscription failed, please try again later!');
+        toast.error('Submit subscription failed, please try again later!');
 
       }).finally(() => {
         setIsSubmiting(false)
@@ -67,7 +67,7 @@ const AFooter: FC<{ className?: string }> = ({ className = '' }) => {
               </div>
             </div>
             <div className="mt-[27px] mo:mt-10  flex justify-center mo:flex-col mo:!w-full  mo:bg-[url(/mo-footerBgIcon.svg)] mo:bg-contain mo:bg-no-repeat  ">
-              <div>
+              <div className={'emailInput'}>
                 <input value={inputEmail} onChange={(e) => { setInputEmail(e.target.value); setErrorText('') }} placeholder="sample@email.com" className=" w-[393px] mo:!w-[204px] h-[67px] mo:!h-[38px] rounded-[33px] bg-[#242424]" />
                 <div className="h-5 mt-2 mo:text-xs text-center text-red-600">
                   {errorText}
