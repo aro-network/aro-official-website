@@ -51,11 +51,11 @@ const ATabs: FC<ATabsProps> = ({
   );
 
   return (
-    <div className="px-[148px] md:px-[30px] md:w-full mo:w-full mo:px-0 mt-5">
+    <div className="llg:px-[148px]  md:w-full mo:w-full mo:px-0 mt-5">
       <form onSubmit={handleSubmit(onSubmit)}>
         {fields.map((field, index) => (
           <div key={`form_${index}`}>
-            <div className="bg-[#313131] rounded-[50px] mo:rounded-[30px] flex px-[50px] mo:p-[30px] py-[44px] flex-col mt-5">
+            <div className="bg-[#313131] min-h-[230px] mo:min-h-max rounded-[50px] mo:rounded-[30px] flex px-[50px] mo:p-[30px] py-[44px] flex-col mt-5">
               <label className="text-[#FFF] text-[26px] mo:text-base font-medium leading-normal text-left">
                 {field.label}
               </label>
@@ -111,7 +111,7 @@ const ATabs: FC<ATabsProps> = ({
                 <>
                   <textarea
                     placeholder={field.placeholder || ""}
-                    className="noBorder bg-[#313131] border-b border-[#FFFFFF4D] w-full"
+                    className="noBorder bg-[#313131] max-h-[200px] border-b border-[#FFFFFF4D] w-full"
                     {...register(field.name, {
                       required: `${field.label} is required`,
 
