@@ -38,7 +38,7 @@ const AHeader: FC<{ className?: string, containerClassName?: string, rightClassN
   return <div>
     <div className={` w-container mo:w-full mo:px-[12px] m-auto flex pt-10 mo:pt-5  items-center  ${containerClassName} md:w-full  `}>
       <div className={`w-[50%] lg:px-10 ${className}`}>
-        <Link href={'/'} className=" flex items-center gap-[13px] mo:h-[32px] w-[105px]">
+        <Link href={'/'} className=" flex items-center gap-[13px] mo:h-[32px] mo:w-[105px] ">
           <img src="./flower.svg" className="mo:hidden" />
           <img src="./logo.png" className="lg:hidden" />
           <span className="text-[#FFF] mo:hidden  text-[35px] font-semibold leading-normal">EnReach</span>
