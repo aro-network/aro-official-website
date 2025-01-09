@@ -55,7 +55,7 @@ const ATabs: FC<ATabsProps> = ({
       <form onSubmit={handleSubmit(onSubmit)}>
         {fields.map((field, index) => (
           <div key={`form_${index}`}>
-            <div className="bg-[#313131] min-h-[230px] mo:min-h-max rounded-[50px] mo:rounded-[30px] flex px-[50px] mo:p-[30px] py-[44px] flex-col mt-5">
+            <div className="bg-[#313131] rounded-[50px] mo:rounded-[30px] flex px-[50px] mo:p-[30px] py-[44px] flex-col mt-5">
               <label className="text-[#FFF] text-[26px] mo:text-base font-medium leading-normal text-left">
                 {field.label}
               </label>
