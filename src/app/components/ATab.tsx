@@ -63,7 +63,7 @@ const ATabs: FC<ATabsProps> = ({
                 <>
                   <input
                     type="text"
-                    className="noBorder bg-[#313131] border-b border-[#FFFFFF4D] w-full"
+                    className="noBorder  bg-[#313131] border-b border-[#FFFFFF4D] w-full"
                     placeholder={field.placeholder || ""}
                     {...register(field.name, {
                       required: `${field.label} is required`,
@@ -130,15 +130,16 @@ const ATabs: FC<ATabsProps> = ({
                   {field.options.map((option, idx) => {
 
 
+
                     return <label
                       key={`check_${idx}`}
                       htmlFor={`checkbox_${field.name}_${idx}`}
-                      className="flex flex-row gap-4 mo:gap-2 items-center cursor-pointer"
+                      className="flex flex-row gap-4 mo:gap-2 items-center cursor-pointer "
                     >
                       <input
                         id={`checkbox_${field.name}_${idx}`}
                         type="checkbox"
-                        className="w-6 h-6 custom-checkbox"
+                        className="w-6 h-6  custom-checkbox"
                         {...register(field.allowMultiple ? `${field.name}[${idx}]` : field.name, {
                           validate: (value) => {
                             if (!field.allowMultiple) {
@@ -159,8 +160,9 @@ const ATabs: FC<ATabsProps> = ({
                           }
                         }}
                       />
-                      <span className="checkbox-text text-xl mo:text-base">{option.label}</span>
+                      <div className="checkbox-text text-xl mo:text-base mo:w-[250px]">{option.label}</div>
                     </label>
+
                   })}
                   {errors[field.name] && (
                     <span className="text-red-500 text-sm mt-2">

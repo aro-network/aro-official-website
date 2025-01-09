@@ -73,7 +73,7 @@ body {
   font-family: var(--font-albert-sans);
 }
 @media (max-width: 1001px) {
-  input {
+  .emailInput input {
     font-size: 12px;
     padding: 15px;
     width: 300px;
@@ -310,6 +310,12 @@ body {
   outline: none;
   height: 40px;
   margin-top: 40px;
+}
+@media (max-width: 1001px) {
+  .noBorder {
+    margin-top: 20px;
+
+  }
 }
 
 .custom-checkbox {
