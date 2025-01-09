@@ -69,7 +69,7 @@ const AEdgeNode = () => {
       name: "resources",
       label: "What type of resources do you have to run an Edge Node?",
       type: "checkbox",
-      allowMultiple: true,
+      allowMultiple: false,
       options: [
         { label: "Idle bandwidth and devices at home", value: "home" },
         { label: "Dedicated servers (on cloud, workstation, etc.)", value: "dedicated" },
@@ -95,7 +95,7 @@ const AEdgeNode = () => {
   const handleSubmit = (data: Record<string, string[]>) => {
     if (isSubmiting || !data.email) return
     isSubmiting = true
-    data.resources = data.resources.filter((item: string) => item)
+    data.resources = typeof data.resources === 'boolean' ? [''] : data.resources.filter((item: string) => item)
 
     fetch(baseUrl + '/suggest/upload', {
       method: 'POST',

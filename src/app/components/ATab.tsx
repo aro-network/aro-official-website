@@ -127,9 +127,6 @@ const ATabs: FC<ATabsProps> = ({
               {field.type === "checkbox" && field.options && (
                 <div className="mt-10 flex flex-col gap-5">
                   {field.options.map((option, idx) => {
-
-
-
                     return <label
                       key={`check_${idx}`}
                       htmlFor={`checkbox_${field.name}_${idx}`}
