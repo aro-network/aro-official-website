@@ -77,7 +77,8 @@ const ATabs: FC<ATabsProps> = ({
                   />
                   {errors[field.name] && (
                     <span className="text-red-500 text-sm mt-2">
-                      plaese enter
+                      {"Please enter"}
+
                     </span>
                   )}
                 </>
