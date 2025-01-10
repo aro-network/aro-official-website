@@ -14,6 +14,7 @@ export interface FormField {
   options?: FieldOption[];
   validation?: Record<string, string>;
   allowMultiple?: boolean;
+  maxLength?: number
 }
 export interface ATabsRef {
   resetAllField: () => void;
@@ -62,6 +63,7 @@ const ATabs: FC<ATabsProps> = ({
               {field.type === "text" && (
                 <>
                   <input
+                    maxLength={field.maxLength}
                     type="text"
                     className="noBorder  bg-[#313131] border-b border-[#FFFFFF4D] w-full"
                     placeholder={field.placeholder || ""}
@@ -93,6 +95,7 @@ const ATabs: FC<ATabsProps> = ({
                     {...register(field.name, {
                       required: `${field.label} is required`,
                     })}
+                    maxLength={field.maxLength}
                     onChange={(e) => {
                       if (e.target.value.trim() !== "") {
                         clearErrors(field.name);

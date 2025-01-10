@@ -315,6 +315,8 @@ body {
 @media (max-width: 1001px) {
   .noBorder {
     margin-top: 20px;
+    font-size: 14px;
+
 
   }
 }

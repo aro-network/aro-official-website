@@ -63,8 +63,8 @@ const AEdgeNode = () => {
 
 
   const fields: FormField[] = [
-    { name: "email", label: "Your Email", type: "email", validation: { required: "Email is required" } },
-    { name: "account", label: "If you have an EnReach account, please specify:", type: "text" },
+    { name: "email", maxLength: 50, label: "Your Email", type: "email", validation: { required: "Email is required" } },
+    { name: "account", maxLength: 50, label: "If you have an EnReach account, please specify:", type: "text" },
     {
       name: "resources",
       label: "What type of resources do you have to run an Edge Node?",
