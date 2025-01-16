@@ -139,7 +139,7 @@ const AEdgeNode = () => {
     </div>
 
     <div className=" w-container m-auto md:w-full">
-      <div className=" w-full h-[70vw] left-[50px]    translate-y-[-1900px]   fixed z-[-10000]" id="bgChart" ></div>
+      <div className=" w-full h-[70vw] left-[50px] mo:translate-y-[-1750px]  mo:left-0  translate-y-[-1900px]   fixed z-[-10000]" id="bgChart" ></div>
     </div>
     <AFooter />
 
