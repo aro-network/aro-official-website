@@ -1,68 +1,16 @@
 'use client'
 import AFooter from "../components/AFooter"
 import AHeader from "../components/AHeader"
-import { useEffect } from "react";
-import * as am5 from "@amcharts/amcharts5";
-import * as am5map from "@amcharts/amcharts5/map";
-import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
-import * as am5geodata_continentsLow from "@amcharts/amcharts5-geodata/continentsLow";
-
 const Terms = () => {
 
-  const initMap = async () => {
-    am5.addLicense("AM5M-7163-0147-1745-7749");
-    const root = am5.Root.new("bgChart");
 
-    root.setThemes([am5themes_Animated.new(root)]);
-
-    const chart = root.container.children.push(
-      am5map.MapChart.new(root, {
-        projection: am5map.geoOrthographic(),
-        panX: "rotateX",
-        panY: "rotateY",
-        wheelX: "none",
-        wheelY: "none",
-      })
-    );
-
-    chart.set("zoomLevel", 1);
-
-    const polygonSeries = chart.series.push(
-      am5map.MapPolygonSeries.new(root, {
-        geoJSON: am5geodata_continentsLow.default,
-      })
-    );
-
-
-    polygonSeries.mapPolygons.template.setAll({
-      tooltipText: "{name}",
-      fill: am5.color('#151515'),
-      stroke: am5.color('#151515'),
-      strokeWidth: 1.5,
-    });
-
-
-    chart.animate({
-      key: "rotationX",
-      to: 360,
-      duration: 30000,
-      loops: Infinity,
-
-    });
-
-  }
-
-  useEffect(() => {
-    initMap()
-  }, [])
-
-  return <div>
+  return <div className=" bg-[url(/banner-bg.svg)] mo:bg-top bg-cover  z-[100000] relative  w-full h-screen">
     <AHeader />
-    <div className="w-container mo:w-full mo:px-5 m-auto mo:m-0  md:w-full md:px-[30px] pb-20 select-none relative z-[1000] px-10">
+    <div className="w-container mo:w-full mo:px-5 m-auto mo:m-0  md:w-full md:px-[30px]  select-none relative z-[1000] px-10">
 
       <div className=" font-medium text-center mt-20 ">
-        <div className="text-[30px]  text-[#FFF]"> Terms & Conditions</div>
-        <span className=" text-xl">
+        <div className="text-2xl  text-[#000000]"> Terms & Conditions</div>
+        <span className=" text-xl text-[#000000]">
           Effective Date: {`08/12/2024`}
         </span>
       </div>

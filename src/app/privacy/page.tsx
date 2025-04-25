@@ -1,67 +1,18 @@
 'use client'
 import AFooter from "../components/AFooter"
 import AHeader from "../components/AHeader"
-import { useEffect } from "react";
-import * as am5 from "@amcharts/amcharts5";
-import * as am5map from "@amcharts/amcharts5/map";
-import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
-import * as am5geodata_continentsLow from "@amcharts/amcharts5-geodata/continentsLow";
 
 const Privacy = () => {
 
-  const initMap = async () => {
-    am5.addLicense("AM5M-7163-0147-1745-7749");
-    const root = am5.Root.new("bgChart");
-
-    root.setThemes([am5themes_Animated.new(root)]);
-
-    const chart = root.container.children.push(
-      am5map.MapChart.new(root, {
-        projection: am5map.geoOrthographic(),
-        panX: "rotateX",
-        panY: "rotateY",
-        wheelX: "none",
-        wheelY: "none",
-      })
-    );
-
-    chart.set("zoomLevel", 1);
-
-    const polygonSeries = chart.series.push(
-      am5map.MapPolygonSeries.new(root, {
-        geoJSON: am5geodata_continentsLow.default,
-      })
-    );
 
 
-    polygonSeries.mapPolygons.template.setAll({
-      tooltipText: "{name}",
-      fill: am5.color('#151515'),
-      stroke: am5.color('#151515'),
-      strokeWidth: 1.5,
-    });
+  return <div className=" bg-[url(/banner-bg.svg)] mo:bg-top bg-cover  z-[100000] relative  w-full h-screen">
 
-
-    chart.animate({
-      key: "rotationX",
-      to: 360,
-      duration: 30000,
-      loops: Infinity,
-
-    });
-
-  }
-
-  useEffect(() => {
-    initMap()
-  }, [])
-
-  return <div>
     <AHeader />
-    <div className="w-container mo:w-full mo:px-5 m-auto mo:m-0  md:w-full md:px-[30px] pb-20 select-none relative z-[1000] px-10">
+    <div className="w-container mo:w-full mo:px-5 m-auto mo:m-0  md:w-full md:px-[30px]  select-none relative z-[1000] px-10">
       <div className=" font-medium text-center mt-20 ">
-        <div className=" text-[30px] text-[#FFF]">Privacy Policy</div>
-        <span className=" text-xl">
+        <div className=" text-2xl text-[#000000]">Privacy Policy</div>
+        <span className=" text-xl text-[#000000]">
           Effective Date: {`08/12/2024`}
         </span>
       </div>
@@ -149,9 +100,7 @@ const Privacy = () => {
 
       </div>
     </div>
-    <div className=" w-container m-auto md:w-full">
-      <div className=" w-full h-[70vw] left-[50px]    translate-y-[-1900px]   fixed z-[-10000]" id="bgChart" ></div>
-    </div>
+
     <AFooter />
 
 
