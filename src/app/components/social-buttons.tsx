@@ -1,27 +1,27 @@
-'use client'
-
 import React from 'react'
+import { FaTelegramPlane } from 'react-icons/fa';
+import { FaDiscord, FaXTwitter } from 'react-icons/fa6'
 
 const socialLinks = [
-    { href: 'https://discord.gg/Rc4BMUjbNB', icon: './discord.svg' },
-    { href: 'https://x.com/EnReachNetwork', icon: './x.svg' },
-    { href: 'https://t.me/EnReachNetwork', icon: './telegram.svg' },
+    { href: 'https://x.com/EnReachNetwork', icon: <FaXTwitter className='text-[#000000B2]' /> },
+    { href: 'https://discord.gg/Rc4BMUjbNB', icon: <FaDiscord className='text-[#000000B2]' /> },
+    { href: 'https://t.me/EnReachNetwork', icon: <FaTelegramPlane className='text-[#000000B2]' /> },
 ]
+
 
 export function SocialButtons() {
 
-    return <div className="flex items-center gap-8">
+    return <div className="flex items-center gap-5  flex-row">
         {
-            socialLinks.map(({ href, icon }) => {
-
+            socialLinks.map((item) => {
                 return <a
-                    key={href}
-                    className=" mo:w-6 mo:h-6 border-white/20 hover:bg-white/10 rounded-full "
-                    href={href}
+                    key={item.href}
+                    className="border text-lg items-center justify-center flex hover:text-[#4281FF] hover:border-[#4281FF]  w-8 h-8  border-[#000000B2] rounded-full "
+                    href={item.href}
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <img src={icon}></img>
+                    {item.icon}
                 </a>
             })
         }

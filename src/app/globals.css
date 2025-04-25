@@ -16,7 +16,7 @@
 
 body {
   color: #7c7c7c;
-  background: #000000;
+  background: #F9F9F8;
   font-family: Arial, Helvetica, sans-serif;
   cursor: default;
   overflow-x: hidden;
@@ -44,7 +44,7 @@ body {
 
 .ipsText:hover {
   background-color: unset;
-  border: 2px solid #4281ff;
+  border: 2px solid black ;
 }
 
 .transition-img {
@@ -123,7 +123,7 @@ body {
 
 @media (min-width: 1001px) {
   .btn:hover {
-    background-color: unset;
+    background-color: #4281ff;
     border: 2px solid #4281ff;
     animation: breathe 1.2s infinite ease-in-out;
   }
@@ -319,6 +319,9 @@ body {
 
 
   }
+  .tab-Introduce{
+    border-radius: 40px !important;
+  }
 }
 
 .custom-checkbox {
@@ -367,5 +370,54 @@ textarea:-webkit-autofill {
   background-clip: padding-box !important;
   -webkit-box-shadow: 0 0 0px 1000px #313131 inset !important; 
   -webkit-text-fill-color: #737373 !important;
+}
+
+
+
+.tab-Introduce{
+  position: relative;
+  border-radius: 20px;
+  background:
+    linear-gradient(white, white) padding-box, 
+    linear-gradient(90deg, #197AD1 -8.53%, rgba(0, 186, 254, 0.1) 31.74%, rgba(0, 213, 255, 0.1) 70.82%, #16B8C3 114.18%) border-box;
+  border: 1px solid transparent;
+  background-clip: padding-box, border-box; 
+  box-sizing: border-box;
+}
+
+
+.enreachInput input::placeholder {
+  color: #797979;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+
+.enreachInput input:focus {
+  box-shadow: 0 0 5px #797979;
+  outline: none;
+  content: "";
+}
+
+.enreachInput input {
+  font-size: 16px;
+  padding: 30px;
+}
+@media (max-width: 1001px) {
+  .enreachInput input {
+    font-size: 12px;
+    padding: 15px;
+  width: 100%;
+
+  }
+}
+
+
+
+.footer {
+  /* box-shadow: 0px 4px 8px 1px #E6E6E64D; */
+
 }
 

@@ -51,6 +51,8 @@ const ATabs: FC<ATabsProps> = ({
     []
   );
 
+
+
   return (
     <div className="llg:px-[148px]  md:w-full mo:w-full mo:px-0 mt-5">
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -65,7 +67,7 @@ const ATabs: FC<ATabsProps> = ({
                   <input
                     maxLength={field.maxLength}
                     type="text"
-                    className="noBorder  bg-[#313131] border-b border-[#FFFFFF4D] w-full"
+                    className="noBorder  bg-[#313131] border-b border-[#FFFFFF4D] w-full cursor-auto"
                     placeholder={field.placeholder || ""}
                     {...register(field.name, {
                       // required: `${field.label} is required`,

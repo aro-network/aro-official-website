@@ -4,9 +4,7 @@ import { useEffect } from "react";
 import * as am5 from "@amcharts/amcharts5";
 import * as am5map from "@amcharts/amcharts5/map";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
-import { SocialButtons } from "./social-buttons";
 import * as am5geodata_continentsLow from "@amcharts/amcharts5-geodata/continentsLow";
-import CountUp from "react-countup";
 
 const ABanner = () => {
 
@@ -66,84 +64,40 @@ const ABanner = () => {
     initMap()
   }, [])
 
-  const countList = [
-    {
-      start: 0,
-      end: 1000000,
-      name: 'Unlimited Edge Scalability',
-      Suffix: '+'
-    },
-    {
-      start: 100,
-      end: 1,
-      name: 'Stuttering Rate',
-      Prefix: '< ',
-      Suffix: ' %'
-    },
-    {
-      start: 0,
-      end: 60,
-      name: 'Save on Traffic',
-      Prefix: '> ',
-      Suffix: ' %'
-    },
-    {
-      start: 100,
-      end: 20,
-      name: 'Response Time',
-      Prefix: '< ',
-      Suffix: ' ms'
-    }
-  ]
 
 
-  return < div className=" overflow-hidden mo:w-full  " >
-    <div className="w-container m-auto items-center flex lg:pl-[105px] md:w-full md:pl-0  mb-[-120px] mo:w-full   ">
-      <div className="   flex items-center  w-full h-[83vh] mo:h-[65vh]  relative">
-        <div className="  md:w-full overflow-hidden mo:w-full mo:text-center mo:mb-[100px]  py-5">
-          <div className=' text-[70px] mo:text-2xl md:text-[55px] text-nowrap   font-semibold md:px-[30px] text-[#FFFFFF] md:lead-[71px]  leading-[91px] relative z-[9999]'><div>AI, Within Reach.</div> </div>
-          {/* <div className='lg:hidden text-2xl      font-medium   text-[#FFFFFF] leading-normal relative z-[1000]'><div>The Genesis of Open Edge, </div> for the AI Era.</div> */}
 
-          <div className="text-[32px]  mo:text-xs md:text-[28px] lg:text-nowrap  py-3 mo:px-[77px]  leading-[38px] font-semibold md:px-[30px] font-AlbertSans text-[#7C7C7C] relative z-[9999]">
-            The Edge Cloud for everyone to contribute, earn,
-            <div>and own a share in the AI era.</div>
+  return <div
+    data-aos="fade-up"
+    data-aos-duration="1000"
+    className=" aos-init aos-animate  mo:w-full h-full mo:h-auto" >
+    <div className="w-container m-auto flex pl-[100px] mo:pl-0 mo:flex-col md:w-full md:pl-0 mo:mb-0  mo:w-full  h-full  ">
+
+      <div className="   flex  w-full h-full gap-5  pt-[25vh] mo:pt-20 mo:flex-col  ">
+        <div className="  md:w-full  mo:w-full mo:text-center relative mo:top-0  py-5">
+          <div className=' text-[66px] mo:text-[1.75rem] md:text-[45px] text-nowrap  mo:px-0  font-medium md:px-[30px] text-[#000000] md:lead-[71px] mo:leading-none  leading-[91px] relative z-[9999] font-Ubuntu'><div>   The New Edge of AI</div> </div>
+          <div className="text-[28px]  mo:text-xs md:text-[20px] lg:text-nowrap  py-6  mo:py-[.875rem] mo:px-0  leading-[38px] font-semibold md:px-[30px] font-AlbertSans text-[#000000B2] relative z-[9999]">
+            Share Your Idle Internet, Earn Rewards,<br />Build a Smarter Web, Together.
           </div>
-          <div className=" pt-5 flex mo:mt-[50px]  items-center gap-10 mo:gap-[15px] md:px-[30px] mo:flex-col-reverse relative z-[9999]">
-            <a href={'https://docs.enreach.network'} target="_blank" className="bg-[#4281FF]   text-[#FFFFFF] ml-[6px] w-[229px] mo:w-[178px] items-center text-2xl mo:text-base mo:font-medium font-semibold leading-9  flex justify-center h-[50px] mo:h-[38px] btn rounded-3xl ipsText font-AlbertSans p-3">Learn More</a>
-            <SocialButtons />
+          <div className=" pt-[3.125rem] mo:pt-0 flex mo:mt-5  items-center gap-10 mo:gap-[15px] md:px-[30px] mo:flex-col-reverse ">
+            <button
+              onClick={() => {
+                document!.getElementById('target-section')!.scrollIntoView({
+                  behavior: 'smooth'
+                })
+              }} className="bg-[#4281FF] text-white ml-[6px] w-[229px] mo:w-[178px] items-center text-2xl mo:text-base mo:font-medium font-semibold leading-9  flex justify-center h-[56px] mo:h-[42px] btn rounded-[22.5rem] ipsText font-AlbertSans p-3">Join Waitlist</button>
           </div>
         </div>
-      </div>
-      <div className=" w-full  mo:absolute mo:flex mo:justify-center">
-        <div id="chartdiv" className=" relative right-80  mo:left-0 mo:w-[500px] mo:h-[500px] mo:pb-0  pb-20  bottom-[70px] "></div>
-      </div>
-    </div>
-
-    <div
-      className="  text-[#FFFFFF] bg-[#0C0C0C] w-full relative mt-[10px] ">
-      <div className="w-container mo:w-full m-auto py-[30px]  md:w-full  mo:px-[30px] ">
-
-        <div className="mx-[80px] mo:gap-8 md:mx-[30px]  flex mo:flex-col justify-between">
-          {countList.map((item, index) => {
-            return <div key={`countList_${index}`} className="flex flex-col items-center">
-              <span className="text-[55px] mo:text-xl md:text-[50px] font-semibold leading-[72px]">
-                {item.Prefix}<CountUp startOnMount={true} start={item.start} end={item.end} duration={3} />{item.Suffix}
-              </span>
-              <span className="text-xl mo:text-xs font-medium leading-6 font-AlbertSans">{item.name}</span>
-            </div>
-
-          })}
-
-
-
+        <div className="w-full h-full   mo:pt-[3.8125rem] top-[-20vh] relative flex items-start mo:top-0 z-[-10000000] ">
+          <img alt='earth' src="./newEarth.svg" className="w-full h-full " />
         </div>
       </div>
+
+
     </div>
-
-
-  </div >
+  </div>
 
 }
 
 
-export default ABanner
+export default ABanner        

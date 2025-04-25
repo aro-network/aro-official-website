@@ -25,8 +25,8 @@ export default {
         llg: { min: "1440px" },
       },
       fontFamily: {
-        AlbertSans: "var(--font-albert-sans)",
-        Alexandria: "var(--font-alexandria)",
+        Ubuntu: "var(--font-ubuntu)",
+        Poppins: "var(--font-poppins)",
       },
     },
   },

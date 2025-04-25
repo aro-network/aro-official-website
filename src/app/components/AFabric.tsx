@@ -1,6 +1,4 @@
 import { useState } from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { fabricList } from "../utils/common";
 const AFabric = () => {
   const [dealHover, setDealHover] = useState<{ index: number, isHover: boolean } | null>(null);

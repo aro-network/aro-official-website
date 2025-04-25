@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Albert_Sans, Alexandria } from "next/font/google";
+import { Poppins, Ubuntu } from "next/font/google";
 
 
 import "./globals.css";
@@ -13,17 +13,20 @@ export const metadata: Metadata = {
   description: " Enreach Network",
 };
 
-const albertSans = Albert_Sans({
+const ubuntu = Ubuntu({
   subsets: ['latin'],
-  variable: '--font-albert-sans',
+  weight: ['400',],
+  variable: '--font-ubuntu',
 });
 
-const alexandria = Alexandria({
+const poppins = Poppins({
   subsets: ['latin'],
-  variable: '--font-alexandria',
-});
+  weight: ['400',],
+  variable: '--font-poppins',
+})
 
-const fonts = [albertSans, alexandria]
+const fonts = [ubuntu, poppins]
+
 
 export default function RootLayout({
   children,
@@ -39,8 +42,9 @@ export default function RootLayout({
       <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
       <meta name="description" content="Sign up to be the first to get updates. Email. Sign up-test." />
       <link rel="canonical" href="http://enreach.network/" />
+
       <body
-        className={classNames(fonts.map(item => item.variable).join(" "), "font-Alexandria")}
+        className={classNames(fonts.map(item => item.variable).join(" "), "font-Poppins")}
       >
         <Toaster position='top-center' />
 

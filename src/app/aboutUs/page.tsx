@@ -34,7 +34,7 @@ const AboutUs = () => {
 
 
   return <div>
-    <AHeader rightClassName={`pt-10`} className={'lg:bg-[#1B1B1B]  lg:pt-10 '} containerClassName={'  lg:!pt-0 mo:pt-5 '} />
+    <AHeader />
     <ABanner />
     <div ata-aos="fade-up"
       data-aos-duration="1000" className=" w-full flex justify-end">
@@ -44,7 +44,7 @@ const AboutUs = () => {
     </div>
     <AWhatDrivesUs />
     <ADoingIt />
-    <AFooter className={` !bottom-0 `} />
+    <AFooter />
 
   </div>
 
