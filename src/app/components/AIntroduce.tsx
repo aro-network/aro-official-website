@@ -88,7 +88,8 @@ const AIntroduce = () => {
           </div>
 
         </div>
-        <div className=" flex gap-[.375rem] mt-7 ">
+        <div className=" flex gap-[.375rem]  mt-7  items-baseline">
+
           <div className="">
             <FiAlertCircle className="text-[.6875rem]" />
           </div>
