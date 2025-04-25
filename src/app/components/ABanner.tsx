@@ -71,9 +71,9 @@ const ABanner = () => {
     data-aos="fade-up"
     data-aos-duration="1000"
     className=" aos-init aos-animate  mo:w-full h-full mo:h-auto" >
-    <div className="w-container m-auto flex pl-[100px] mo:pl-0 mo:flex-col md:w-full md:pl-0 mo:mb-0  mo:w-full  h-full  ">
+    <div className="w-container m-auto flex pl-[100px]  mo:pl-0 mo:flex-col md:w-full md:pl-[3.125rem] mo:mb-0  mo:w-full  h-full  ">
 
-      <div className="   flex  w-full h-full gap-5  pt-[25vh] mo:pt-20 mo:flex-col  ">
+      <div className="   flex  w-full h-full gap-5   pt-[25vh] mo:pt-20 mo:flex-col  ">
         <div className="  md:w-full  mo:w-full mo:text-center relative mo:top-0  py-5">
           <div className=' text-[66px] mo:text-[1.75rem] md:text-[45px] text-nowrap  mo:px-0  font-medium md:px-[30px] text-[#000000] md:lead-[71px] mo:leading-none  leading-[91px] relative z-[9999] font-Ubuntu'><div>   The New Edge of AI</div> </div>
           <div className="text-[28px]  mo:text-xs md:text-[20px] lg:text-nowrap  py-6  mo:py-[.875rem] mo:px-0  leading-[38px] font-semibold md:px-[30px] font-AlbertSans text-[#000000B2] relative z-[9999]">
@@ -89,7 +89,8 @@ const ABanner = () => {
           </div>
         </div>
         <div className="w-full h-full   mo:pt-[3.8125rem] top-[-20vh] relative flex items-start mo:top-0 z-[-10000000] ">
-          <img alt='earth' src="./newEarth.svg" className="w-full h-full " />
+          <img alt='earth' src="./newEarth.svg" className="w-full h-full mo:hidden " />
+          <img alt='earth' src="./mo-earth.svg" className="w-full h-full ng:hidden " />
         </div>
       </div>
 

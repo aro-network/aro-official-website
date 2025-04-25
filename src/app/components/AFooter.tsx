@@ -13,8 +13,8 @@ const AFooter: FC = () => {
   return <div
     data-aos="fade-up"
     data-aos-duration="1000"
-    className={`  w-full pt-[52px]  bg-[url(/footerBg.png)] footer flex mo:bg-[url(/mo-footerBg.png)]   bg-contain object-right  mo:bg-cover  `}>
-    <div className="w-container  mo:pt-[3.125rem] pt-[6.25rem] smd:pt-[3.125rem]    m-auto md:w-full mo:w-full md:px-[30px] px-[50px]  mo:px-5 ">
+    className={`  w-full pt-[52px]  bg-[url(/footerBg.svg)] mt-[3.25rem] bg-no-repeat footer flex mo:bg-[url(/mo-footerBg.png)]   bg-cover mo:bg-cover  `}>
+    <div className="w-container  mo:pt-[3.125rem]  smd:pt-[3.125rem]    m-auto md:w-full mo:w-full md:px-[30px] px-[50px]  mo:px-5 ">
       <div className="flex flex-col items-center justify-center pt-10 mo:pt-20">
         <div className="  w-full  ">
           <div className=" mo:mt-6 mb-5 mo:w-full mo:flex mo:justify-center mo:flex-col mo:items-center">
@@ -24,12 +24,12 @@ const AFooter: FC = () => {
                 <div>
                   Get in Touch
                 </div>
-                <a href="mailto:contact@enreach.network" >
+                <a href="mailto:contact@enreach.network" className="ng:pt-1" >
                   contact@enreach.network
                 </a>
               </div>
-              <div>
-                <div className="flex mo:mt-[60px] bf w-full justify-end mo:justify-between gap-[81px] mo:gap-[33px] smd:gap-10">
+              <div className="bg">
+                <div className="flex mo:mt-[60px] w-full justify-end mo:justify-between gap-[81px] mo:gap-[33px] smd:gap-10">
                   {list.map((item, index) => {
                     return <div
                       key={`list_${index}`}
@@ -49,7 +49,7 @@ const AFooter: FC = () => {
                     </div>
                   })}
                 </div>
-                <div className="flex justify-end mo:justify-center text-[#000000B2]  mo:text-xs mo:mt-[11px] text-sm  font-medium leading-normal  ">
+                <div className="flex justify-end mo:justify-center text-[#000000B2] ng:pt-1  mo:text-xs mo:mt-[11px] text-sm  font-medium leading-normal  ">
                   © EnReach Foundation, {currentYear}. All rights reserved.
                 </div>
 

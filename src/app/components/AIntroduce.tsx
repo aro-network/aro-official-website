@@ -10,7 +10,7 @@ const AIntroduce = () => {
 
       <div data-aos="fade-up"
         data-aos-duration="1000"
-        className="  aos-init aos-animate  tab-Introduce w-full h-[31.25rem] mo:h-auto px-5 pt-[30px] pb-6 ">
+        className="  aos-init aos-animate  tab-Introduce w-full h-[32.5rem] mo:h-auto px-5 pt-[30px] pb-6 ">
         <span className="font-Ubuntu font-medium text-2xl text-black">Plug it.</span>
         <div className="text-base leading-5 text-[#000000B2] pt-[10px]">
           Hardware or Software Client, your choice.
@@ -27,7 +27,7 @@ const AIntroduce = () => {
 
             <img src="./enreachNode.svg" />
             <div className="flex gap-[.375rem] flex-col">
-              <div className="flex gap-7 mo:gap-[.125rem] items-start ">
+              <div className="flex gap-2 mo:gap-[.125rem] items-start ">
                 <span className=" font-medium text-base leading-4 text-black">Software Node</span>
                 <img src="./commingSoon.svg" />
               </div>
@@ -54,7 +54,7 @@ const AIntroduce = () => {
 
       <div data-aos="fade-up"
         data-aos-duration="1000"
-        className="  aos-init aos-animate   tab-Introduce w-full  h-[31.25rem] mo:h-auto  pt-[30px] px-6 pb-6">
+        className="  aos-init aos-animate   tab-Introduce w-full  h-[32.5rem] mo:h-auto  pt-[30px] px-6 pb-6">
 
         <span className="font-Ubuntu font-medium text-2xl text-black">Install it.</span>
         <div className=" mt-[50px] w-full flex justify-center">
@@ -67,7 +67,7 @@ const AIntroduce = () => {
 
       <div data-aos="fade-up"
         data-aos-duration="1000"
-        className="  aos-init aos-animate  tab-Introduce w-full  h-[31.25rem] mo:h-auto  pt-[30px] px-6 pb-6 ">
+        className="  aos-init aos-animate  tab-Introduce w-full  h-[32.5rem] mo:h-auto  pt-[30px] px-6 pb-6 ">
         <div className="font-Ubuntu font-medium text-2xl text-black ">
           Start Earning.
         </div>
@@ -88,7 +88,7 @@ const AIntroduce = () => {
           </div>
 
         </div>
-        <div className=" flex gap-[.375rem]  mt-7  items-baseline">
+        <div className=" flex gap-[.375rem]  mt-5  items-baseline">
 
           <div className="">
             <FiAlertCircle className="text-[.6875rem]" />
