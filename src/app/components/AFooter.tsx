@@ -39,7 +39,7 @@ const AFooter: FC = () => {
                       onMouseLeave={() => {
                         setDealHover({ index, isHover: false });
                       }}
-                      onClick={() => window.open(item.link, '_blank')}
+                      // onClick={() => window.open(item.link, '_blank')}
                       className={`${dealHover?.index === index && 'text-[#ffffff]'} `}
                     >
                       <span className={`text-sm mo:text-xs cursor-pointer  font-medium leading-normal  ${dealHover?.isHover && dealHover.index === index
