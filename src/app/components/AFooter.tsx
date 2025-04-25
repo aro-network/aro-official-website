@@ -13,7 +13,7 @@ const AFooter: FC = () => {
   return <div
     data-aos="fade-up"
     data-aos-duration="1000"
-    className={`  w-full pt-[52px] mo:pb-[52px]  bg-[url(/footerBg.svg)] mt-[3.25rem] bg-no-repeat footer flex mo:bg-[url(/mo-footerBg.png)]   bg-cover mo:bg-cover  `}>
+    className={`  w-full  mo:pb-[52px]  bg-[url(/footerBg.svg)] mt-[3.25rem] bg-no-repeat footer flex mo:bg-[url(/mo-footerBg.png)]   bg-cover mo:bg-cover  `}>
     <div className="w-container     m-auto md:w-full mo:w-full md:px-[40px] px-[50px]  mo:px-5 ">
       <div className="flex flex-col items-center justify-center pt-10 nf ">
         <div className="  w-full  ">
