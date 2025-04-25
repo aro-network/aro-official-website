@@ -3,14 +3,14 @@ import { FiAlertCircle } from "react-icons/fi"
 const AIntroduce = () => {
 
 
-  return <div className="   w-container m-auto flex px-[170px] mo:px-5 mo:pt-[3.125rem] md:px-[30px] md:w-full  mo:w-full ">
+  return <div className="   w-container m-auto flex px-[170px] mo:px-5 mo:pt-[3.125rem] md:px-[40px] md:w-full  mo:w-full ">
     <div data-aos="fade-up"
       data-aos-duration="1000"
       className="  aos-init aos-animate flex gap-5 w-full mo:w-full mo:flex-wrap">
 
       <div data-aos="fade-up"
         data-aos-duration="1000"
-        className="  aos-init aos-animate  tab-Introduce w-full h-[32.5rem] mo:h-auto px-5 pt-[30px] pb-6 ">
+        className="  aos-init aos-animate  tab-Introduce w-full h-[32.5rem] mo:h-auto px-5 pt-[30px] pb-10 ">
         <span className="font-Ubuntu font-medium text-2xl text-black">Plug it.</span>
         <div className="text-base leading-5 text-[#000000B2] pt-[10px]">
           Hardware or Software Client, your choice.
@@ -45,7 +45,7 @@ const AIntroduce = () => {
             <div>
               <FiAlertCircle className="text-[.6875rem]" />
             </div>
-            <span className="text-xs text-[#909090]">
+            <span className="text-[10px] text-[#909090]">
               Hardware images shown are for reference only. Final design and specs may vary.
             </span>
           </div>
@@ -93,7 +93,7 @@ const AIntroduce = () => {
           <div className="">
             <FiAlertCircle className="text-[.6875rem]" />
           </div>
-          <span className="text-xs text-[#909090]">
+          <span className="text-[.625rem] text-[#909090]">
             For detail rules of the Testnet campaign, please refer to this <a target='_blank' href="https://docs.enreach.network/" className=" underline underline-offset-1">guide</a>.
           </span>
         </div>
