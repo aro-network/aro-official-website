@@ -93,7 +93,7 @@ const AIntroduce = () => {
             <FiAlertCircle className="text-[.6875rem]" />
           </div>
           <span className="text-xs text-[#909090]">
-            For detail rules of the Testnet campaign, please refer to this <a href="https://docs.enreach.network/" className=" underline underline-offset-1">guide</a>.
+            For detail rules of the Testnet campaign, please refer to this <a target='_blank' href="https://docs.enreach.network/" className=" underline underline-offset-1">guide</a>.
           </span>
         </div>
 
