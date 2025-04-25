@@ -10,14 +10,14 @@ const AIntroduce = () => {
 
       <div data-aos="fade-up"
         data-aos-duration="1000"
-        className="  aos-init aos-animate  tab-Introduce w-full h-[32.5rem] mo:h-auto px-5 pt-[30px] pb-10 ">
+        className="  aos-init aos-animate  tab-Introduce w-full  h-[31.875rem] mo:h-auto px-5 pt-[30px] pb-10 ">
         <span className="font-Ubuntu font-medium text-2xl text-black">Plug it.</span>
         <div className="text-base leading-5 text-[#000000B2] pt-[10px]">
           Hardware or Software Client, your choice.
         </div>
         <div className="mt-7 flex flex-col gap-5">
           <div className="flex gap-7 items-center">
-            <img src="./enreachBox.svg" />
+            <img src="./enreachBox.png" />
             <div className="flex gap-[.375rem] flex-col">
               <div className=" font-medium text-base leading-4 text-black">Berry Box</div>
               <div className="text-xs  text-[#000000B2]">Dedicated plug-and-play device. Optimized for high uptime and rewards.</div>
@@ -54,20 +54,20 @@ const AIntroduce = () => {
 
       <div data-aos="fade-up"
         data-aos-duration="1000"
-        className="  aos-init aos-animate   tab-Introduce w-full  h-[32.5rem] mo:h-auto  pt-[30px] px-6 pb-6">
+        className="  aos-init aos-animate   tab-Introduce w-full h-[31.875rem] mo:h-auto  pt-[30px] px-6">
 
         <span className="font-Ubuntu font-medium text-2xl text-black">Install it.</span>
-        <div className=" mt-[50px] w-full flex justify-center">
-          <img src="./install.svg" />
+        <div className=" mt-[50px] mo:mt-[1.5625rem]  w-full flex justify-center">
+          <img src="./install.png" />
         </div>
-        <div className=" text-xs leading-5 text-[#000000B2] mt-5">
+        <div className=" text-xs leading-5 text-[#000000B2] mt-5 mo:mb-5">
           Contribute your idle bandwidth as an Enreach Edge Node.
         </div>
       </div>
 
       <div data-aos="fade-up"
         data-aos-duration="1000"
-        className="  aos-init aos-animate  tab-Introduce w-full  h-[32.5rem] mo:h-auto  pt-[30px] px-6 pb-6 ">
+        className="  aos-init aos-animate  tab-Introduce w-full h-[31.875rem] mo:h-auto  pt-[30px] px-6 pb-6 ">
         <div className="font-Ubuntu font-medium text-2xl text-black ">
           Start Earning.
         </div>
@@ -81,14 +81,14 @@ const AIntroduce = () => {
             <div className="text-[#000000B2] text-xs">Stack Berry points during Testnet, convert them to $REACH tokens at mainnet launch.</div>
           </div>
         </div>
-        <div className=" flex items-center gap-5 mt-[30px]">
+        <div className=" flex items-center gap-5 mt-[30px] smd:mt-5">
           <img src="./refer.svg" />
           <div className="flex flex-col gap-[6px]">
             <div className="text-[#000000B2] text-xs"> Refer your friend and earn extra 15% commission.</div>
           </div>
 
         </div>
-        <div className=" flex gap-[.375rem]  mt-5  items-baseline">
+        <div className=" flex gap-[.375rem]  mt-10 smd:mt-5   items-baseline">
 
           <div className="">
             <FiAlertCircle className="text-[.6875rem]" />

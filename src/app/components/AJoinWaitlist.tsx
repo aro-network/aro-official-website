@@ -10,19 +10,9 @@ const AJoinWaitlist = () => {
   const [errorText, setErrorText] = useState('')
   const [isSubmiting, setIsSubmiting] = useState(false)
 
-  console.log('inadasdsad', inputInfo);
-
-
   const onSubmit = () => {
-    if (!inputInfo.address || !inputInfo.email || isSubmiting) return
+    if (isSubmiting) return
     setIsSubmiting(true)
-
-    const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    if (!validEmail.test(inputInfo?.email)) {
-      setErrorText('Invalid email address')
-      setIsSubmiting(false)
-      return
-    }
     try {
       getAddress(inputInfo.address);
 
@@ -34,6 +24,13 @@ const AJoinWaitlist = () => {
       setIsSubmiting(false)
 
     }
+    const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!validEmail.test(inputInfo?.email)) {
+      setErrorText('Invalid email address')
+      setIsSubmiting(false)
+      return
+    }
+
 
     fetch(baseUrl + '/email', {
       method: 'POST',
