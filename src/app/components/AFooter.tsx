@@ -13,9 +13,9 @@ const AFooter: FC = () => {
   return <div
     data-aos="fade-up"
     data-aos-duration="1000"
-    className={`  w-full pt-[52px]  bg-[url(/footerBg.svg)] mt-[3.25rem] bg-no-repeat footer flex mo:bg-[url(/mo-footerBg.png)]   bg-cover mo:bg-cover  `}>
-    <div className="w-container  mo:pt-[3.125rem]  smd:pt-[3.125rem]    m-auto md:w-full mo:w-full md:px-[30px] px-[50px]  mo:px-5 ">
-      <div className="flex flex-col items-center justify-center pt-10 mo:pt-20">
+    className={`  w-full pt-[52px] mo:pb-[52px]  bg-[url(/footerBg.svg)] mt-[3.25rem] bg-no-repeat footer flex mo:bg-[url(/mo-footerBg.png)]   bg-cover mo:bg-cover  `}>
+    <div className="w-container     m-auto md:w-full mo:w-full md:px-[30px] px-[50px]  mo:px-5 ">
+      <div className="flex flex-col items-center justify-center pt-10 nf ">
         <div className="  w-full  ">
           <div className=" mo:mt-6 mb-5 mo:w-full mo:flex mo:justify-center mo:flex-col mo:items-center">
             <SocialButtons />
