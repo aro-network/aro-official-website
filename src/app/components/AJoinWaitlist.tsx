@@ -100,7 +100,7 @@ const AJoinWaitlist = () => {
         </div>
         <span className="w-[542px] mo:w-full ml-2 text-[#1C73FF] font-semibold text-base mo:text-sm">Yes, I want to join the Pioneers Program. Run a node, give feedback, and be early 👀</span>
       </div>
-      <button onClick={onSubmit} className="bg-[#1C73FF] text-white py-[.625rem] text-base px-10 rounded-[1.25rem] h-10">
+      <button onClick={onSubmit} className="bg-[#1C73FF] btn text-white py-[.625rem] text-base px-10 rounded-[1.25rem] h-10">
         Submit
       </button>
     </div>
