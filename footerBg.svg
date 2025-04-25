@@ -1,34 +1,34 @@
-<svg width="1440" height="336" viewBox="0 0 1440 336" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_14520_2050" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1440" height="336">
-<rect width="1440" height="336" fill="#D9D9D9"/>
+<svg width="1440" height="179" viewBox="0 0 1440 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_14704_1114" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1440" height="179">
+<rect width="1440" height="179" fill="#D9D9D9"/>
 </mask>
-<g mask="url(#mask0_14520_2050)">
-<foreignObject x="-9" y="145" width="1458" height="197"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(7.5px);clip-path:url(#bgblur_0_14520_2050_clip_path);height:100%;width:100%"></div></foreignObject><g filter="url(#filter0_d_14520_2050)" data-figma-bg-blur-radius="15">
-<rect y="157" width="1440" height="179" fill="#FBFCFE"/>
+<g mask="url(#mask0_14704_1114)">
+<foreignObject x="-9" y="-12" width="1458" height="197"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(7.5px);clip-path:url(#bgblur_0_14704_1114_clip_path);height:100%;width:100%"></div></foreignObject><g filter="url(#filter0_d_14704_1114)" data-figma-bg-blur-radius="15">
+<rect width="1440" height="179" fill="#FBFCFE"/>
 </g>
-<g opacity="0.65" filter="url(#filter1_f_14520_2050)">
-<ellipse cx="720.5" cy="1044" rx="836.5" ry="595" fill="url(#paint0_linear_14520_2050)"/>
+<g opacity="0.65" filter="url(#filter1_f_14704_1114)">
+<ellipse cx="720.5" cy="887" rx="836.5" ry="595" fill="url(#paint0_linear_14704_1114)"/>
 </g>
 </g>
 <defs>
-<filter id="filter0_d_14520_2050" x="-9" y="145" width="1458" height="197" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_14704_1114" x="-9" y="-12" width="1458" height="197" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_14520_2050"/>
+<feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_14704_1114"/>
 <feOffset dy="-3"/>
 <feGaussianBlur stdDeviation="4"/>
 <feComposite in2="hardAlpha" operator="out"/>
 <feColorMatrix type="matrix" values="0 0 0 0 0.900454 0 0 0 0 0.900454 0 0 0 0 0.900454 0 0 0 0.3 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_14520_2050"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_14520_2050" result="shape"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_14704_1114"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_14704_1114" result="shape"/>
 </filter>
-<clipPath id="bgblur_0_14520_2050_clip_path" transform="translate(9 -145)"><rect y="157" width="1440" height="179"/>
-</clipPath><filter id="filter1_f_14520_2050" x="-666" y="-101" width="2773" height="2290" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<clipPath id="bgblur_0_14704_1114_clip_path" transform="translate(9 12)"><rect width="1440" height="179"/>
+</clipPath><filter id="filter1_f_14704_1114" x="-666" y="-258" width="2773" height="2290" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="275" result="effect1_foregroundBlur_14520_2050"/>
+<feGaussianBlur stdDeviation="275" result="effect1_foregroundBlur_14704_1114"/>
 </filter>
-<linearGradient id="paint0_linear_14520_2050" x1="-116" y1="1044" x2="1557" y2="1044" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_14704_1114" x1="-116" y1="887" x2="1557" y2="887" gradientUnits="userSpaceOnUse">
 <stop stop-color="#5433FF"/>
 <stop offset="0.5" stop-color="#20BDFF"/>
 <stop offset="1" stop-color="#A5FECB"/>
