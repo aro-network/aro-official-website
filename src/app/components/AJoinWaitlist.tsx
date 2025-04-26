@@ -12,9 +12,7 @@ const AJoinWaitlist = () => {
   const [isCheck, setIsCheck] = useState(false)
 
   const onSubmit = () => {
-    if (isCheck) {
-      window.open('https://enreach.fillout.com/Pioneers', '_blank')
-    }
+
     if (isSubmiting) return
     setIsSubmiting(true)
     try {
@@ -45,6 +43,10 @@ const AJoinWaitlist = () => {
     })
       .then(response => response.json())
       .then(() => {
+        if (isCheck) {
+          window.open('https://enreach.fillout.com/Pioneers', '_blank')
+        }
+        setIsCheck(false)
         toast.success('Submit successfully！');
         setInputInfo({ address: '', email: '' })
 
@@ -100,7 +102,7 @@ const AJoinWaitlist = () => {
       </div>
       <div className="w-[542px] mo:w-full my-5 flex justify-between items-baseline">
         <div>
-          <input onChange={(e) => setIsCheck(e.target.checked)
+          <input checked={isCheck} onChange={(e) => setIsCheck(e.target.checked)
           } type='checkbox' className="  accent-[#1C73FF]" />
         </div>
         <span className="w-[542px] mo:w-full ml-2 text-[#1C73FF] font-semibold text-base mo:text-sm">Yes, I want to join the Pioneers Program. Run a node, give feedback, and be early 👀</span>
