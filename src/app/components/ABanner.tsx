@@ -75,8 +75,8 @@ const ABanner = () => {
 
       <div className="   flex  w-full h-full gap-5   pt-[25vh] mo:pt-20 mo:flex-col  ">
         <div className="  md:w-full  mo:w-full mo:text-center relative mo:top-0  py-5">
-          <div className=' text-[66px] mo:text-[1.75rem] md:text-[45px] text-nowrap  mo:px-0  font-medium md:px-[30px] text-[#000000] md:lead-[71px] mo:leading-none  leading-[91px] relative z-[9999] font-Ubuntu'><div>   The New Edge of AI</div> </div>
-          <div className="text-[28px]  mo:text-xs md:text-[20px] lg:text-nowrap  py-6  mo:py-[.875rem] mo:px-0  leading-[38px] font-semibold md:px-[30px] font-AlbertSans text-[#000000B2] relative z-[9999]">
+          <div className=' text-[66px] mo:text-[1.75rem] md:text-[45px] text-nowrap  mo:px-0  font-medium md:px-[30px] text-[#000000] md:lead-[71px] mo:leading-none leading-[91px] relative z-[9999] font-Ubuntu'><div>   The New Edge of AI</div> </div>
+          <div className="text-[28px]  mo:text-xs md:text-[20px] lg:text-nowrap  mo:py-[.875rem] mo:px-0  leading-[38px] font-semibold md:px-[30px] font-AlbertSans text-[#000000B2] relative z-[9999]">
             Share Your Idle Internet, Earn Rewards,<br />Build a Smarter Web, Together.
           </div>
           <div className=" pt-[3.125rem] mo:pt-0 flex mo:mt-5  items-center gap-10 mo:gap-[15px] md:px-[30px] mo:flex-col-reverse ">
