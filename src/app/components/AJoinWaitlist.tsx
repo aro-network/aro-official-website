@@ -47,7 +47,7 @@ const AJoinWaitlist = () => {
           window.open('https://enreach.fillout.com/Pioneers', '_blank')
         }
         setIsCheck(false)
-        toast.success('Submit successfully！');
+        toast.success('Submission received! Our team will be in touch soon. Meanwhile, keep an eye on our socials.');
         setInputInfo({ address: '', email: '' })
 
       })

@@ -89,8 +89,8 @@ const ABanner = () => {
           </div>
         </div>
         <div className="w-full h-full   mo:pt-[3.8125rem] top-[-20vh] relative flex items-start mo:top-0 z-[-10000000] ">
-          <img alt='earth' src="./newEarth.svg" className="w-full h-full mo:hidden " />
-          <img alt='earth' src="./mo-earth.svg" className="w-full h-full ng:hidden " />
+          <img alt='earth' src="../newEarth.svg" className="w-full h-full mo:hidden " />
+          <img alt='earth' src="../mo-earth.svg" className="w-full h-full ng:hidden " />
         </div>
       </div>
 
