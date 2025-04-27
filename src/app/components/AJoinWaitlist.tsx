@@ -59,7 +59,7 @@ const AJoinWaitlist = () => {
   }
 
   return <div id="target-section" className="w-container m-auto flex px-[170px] mo:px-5 mo:pt-[3.125rem] md:px-[40px] md:w-full  mo:w-full flex-col ">
-    <div className="w-full text-center py-[3.75rem] mo:pt-[3.125rem] mo:pb-11 font-Ubuntu font-medium text-[3.125rem] mo:text-[1.75rem]  leading-[100%] text-black">How to join the Waitlist</div>
+    <div className="w-full text-center py-[3.75rem] mo:pt-0 mo:pb-11 font-Ubuntu font-medium text-[3.125rem] mo:text-[1.75rem]  leading-[100%] text-black">How to join the Waitlist</div>
 
     <div data-aos="fade-up"
       data-aos-duration="1000" className=" font-Ubuntu  font-medium text-2xl mo:text-lg w-full text-center text-black">Step 1: Join the EnReach Community</div>

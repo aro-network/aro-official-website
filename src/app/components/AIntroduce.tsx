@@ -17,16 +17,19 @@ const AIntroduce = () => {
         </div>
         <div className="mt-7 flex flex-col gap-5">
           <div className="flex gap-7 items-center">
-            <img src="./enreachBox.png" width={90} height={62} />
-            <div className="flex gap-[.375rem] flex-col">
+            <div className="w-[30%]">
+              <img src="./enreachBox.png" width={90} height={62} />
+            </div>
+            <div className="flex gap-[.375rem] flex-col w-[60%]">
               <div className=" font-medium text-base leading-4 text-black">Berry Box</div>
               <div className="text-xs  text-[#000000B2]">Dedicated plug-and-play device. Optimized for high uptime and rewards.</div>
             </div>
           </div>
           <div className="flex gap-7 items-center">
-
-            <img src="./enreachNode.png" />
-            <div className="flex gap-[.375rem] flex-col">
+            <div className="w-[30%]">
+              <img src="./enreachNode.png" width={90} height={62} />
+            </div>
+            <div className="flex gap-[.375rem] flex-col w-[60%]">
               <div className="flex gap-2 mo:gap-[.125rem] items-start ">
                 <span className=" font-medium text-base leading-4 text-black">Software Node</span>
                 <img src="./commingSoon.svg" />
@@ -35,8 +38,11 @@ const AIntroduce = () => {
             </div>
           </div>
           <div className="flex gap-7 items-center">
-            <img src="./enreachRouter.png" />
-            <div className="flex gap-[.375rem] flex-col">
+            <div className="w-[30%]">
+              <img src="./enreachRouter.png " width={90} height={62} />
+            </div>
+
+            <div className="flex gap-[.375rem] flex-col w-[60%]">
               <div className=" font-medium text-base leading-4 text-black">Berry Router</div>
               <div className="text-xs  text-[#000000B2]">WiFi router with built-in EnReach node. Earn while you browse.</div>
             </div>
