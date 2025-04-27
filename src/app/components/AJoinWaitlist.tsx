@@ -66,17 +66,17 @@ const AJoinWaitlist = () => {
 
     <div data-aos="fade-up"
       data-aos-duration="1000" className="flex justify-between w-full gap-[6.25rem] mo:gap-5 mt-[1.875rem] mo:mt-6 mo:flex-wrap">
-      <div onClick={() => window.open('https://x.com/EnReachNetwork', '_blank')} className=" hover:bg-[#EBEBEB] cursor-pointer rounded-[1.25rem] w-full border-[#7F7F7F] border mo:h-[5rem] h-[6.25rem] flex items-center justify-center gap-5 md:gap-[.625rem] p-[1.875rem]">
+      <div onClick={() => window.open('https://x.com/EnReachNetwork', '_blank')} className=" hover:bg-[#EBEBEB] cursor-pointer rounded-[1.25rem] w-full border-[#7F7F7F] border mo:h-[4.25rem] h-[6.25rem] flex items-center justify-center gap-5 md:gap-[.625rem] p-[1.875rem]">
         <BsTwitterX className="text-2xl text-black " />
         <span className="font-medium text-xl leading-7 text-black">Follow on X</span>
       </div>
-      <div onClick={() => window.open('https://discord.gg/Rc4BMUjbNB', '_blank')} className=" hover:bg-[#EBEBEB] cursor-pointer rounded-[1.25rem] w-full border-[#7F7F7F] border mo:h-[5rem]  h-[6.25rem]  flex items-center justify-center gap-5 md:gap-[.625rem]  p-[1.875rem]">
+      <div onClick={() => window.open('https://discord.gg/Rc4BMUjbNB', '_blank')} className=" hover:bg-[#EBEBEB] cursor-pointer rounded-[1.25rem] w-full border-[#7F7F7F] border mo:h-[4.25rem]  h-[6.25rem]  flex items-center justify-center gap-5 md:gap-[.625rem]  p-[1.875rem]">
         <BsDiscord className="text-black font-medium text-2xl leading-7 " />
         <span className="font-medium text-xl leading-7 text-black">
           Join Discord
         </span>
       </div>
-      <div onClick={() => window.open('https://t.me/EnReachNetwork', '_blank')} className=" hover:bg-[#EBEBEB] cursor-pointer  rounded-[1.25rem] w-full border-[#7F7F7F] border mo:h-[5rem]  h-[6.25rem]  flex items-center justify-center gap-5 md:gap-[.625rem]  p-[1.875rem]">
+      <div onClick={() => window.open('https://t.me/EnReachNetwork', '_blank')} className=" hover:bg-[#EBEBEB] cursor-pointer  rounded-[1.25rem] w-full border-[#7F7F7F] border mo:h-[4.25rem]  h-[6.25rem]  flex items-center justify-center gap-5 md:gap-[.625rem]  p-[1.875rem]">
         <FaTelegramPlane className="text-black text-[35px] " />
         <span className="font-medium text-xl leading-7 text-black">
           Join Telegram

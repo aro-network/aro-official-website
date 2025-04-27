@@ -17,7 +17,7 @@ const AIntroduce = () => {
         </div>
         <div className="mt-7 flex flex-col gap-5">
           <div className="flex gap-7 items-center">
-            <img src="./enreachBox.png" />
+            <img src="./enreachBox.png" width={90} height={62} />
             <div className="flex gap-[.375rem] flex-col">
               <div className=" font-medium text-base leading-4 text-black">Berry Box</div>
               <div className="text-xs  text-[#000000B2]">Dedicated plug-and-play device. Optimized for high uptime and rewards.</div>
@@ -58,9 +58,9 @@ const AIntroduce = () => {
 
         <span className="font-Ubuntu font-medium text-2xl text-black">Install it.</span>
         <div className=" mt-[50px] mo:mt-[1.5625rem]  w-full flex justify-center">
-          <img src="../install.png" />
+          <img src="../install.png" className=" object-cover" width={251} height={256} />
         </div>
-        <div className=" text-xs leading-5 text-[#000000B2] mt-5 mo:mb-5">
+        <div className=" text-xs leading-5 text-[#000000B2] mt-5 mo:mb-10 ">
           Contribute your idle bandwidth as an Enreach Edge Node.
         </div>
       </div>
@@ -88,7 +88,7 @@ const AIntroduce = () => {
           </div>
 
         </div>
-        <div className=" flex gap-[.375rem]  mt-10 smd:mt-5   items-baseline">
+        <div className=" flex gap-[.375rem]  mt-10 mo:mt-5 smd:mt-5   items-baseline">
 
           <div className="">
             <FiAlertCircle className="text-[.6875rem]" />
