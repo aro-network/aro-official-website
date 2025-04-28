@@ -32,7 +32,7 @@ const ABanner = () => {
             </div>
           </div>
           <div className="w-full ng:h-[43.75rem]  relative flex items-start top-[-6.25rem] mo:top-0 z-[-10000000] ">
-            <img alt="earth" src="../earth.png" className=" mo:w-full  " />
+            <img alt="earth" src="../earth.svg" className=" mo:w-full  " />
           </div>
         </div>
       </div>
