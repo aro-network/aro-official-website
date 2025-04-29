@@ -36,10 +36,11 @@ export default function RootLayout({
   return (
     <html lang="en" >
       <title>
-        Enreach Network
+        EnReach Network | Earn Real Income by Sharing Idle Internet to Power AI
       </title>
+
       <link rel="icon" href="/icon.svg" />
-      <meta name="description" content="Sign up to be the first to get updates. Email. Sign up-test." />
+      <meta name="description" content="Turn unused bandwidth into income. Join EnReach’s decentralized edge cloud, run a node, earn $REACH tokens, and fuel real-time AI delivery." />
       <link rel="canonical" href="http://enreach.network/" />
 
       <body
