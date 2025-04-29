@@ -85,20 +85,35 @@ export default function RootLayout({
         content="Turn unused bandwidth into income. Join EnReach’s decentralized edge cloud, run a node, earn $REACH tokens, and fuel real-time AI delivery."
       ></meta>
 
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@EnReachNetwork" />
       <meta
         name="twitter:title"
         content="EnReach Network | Earn Real Income by Sharing Idle Internet to Power AI"
-      ></meta>
+      />
       <meta
         name="twitter:description"
         content="Turn unused bandwidth into income. Join EnReach’s decentralized edge cloud, run a node, earn $REACH tokens, and fuel real-time AI delivery."
-      ></meta>
-      <meta name="twitter:site" content="@EnReachNetwork"></meta>
-      <meta name="twitter:card" content="summary_large_image"></meta>
+      />
       <meta
         name="twitter:image"
         content="https://enreach.network/metadata-img.jpg"
-      ></meta>
+      />
+
+      <meta
+        property="og:title"
+        content="EnReach Network | Earn Real Income by Sharing Idle Internet to Power AI"
+      />
+      <meta
+        property="og:description"
+        content="Turn unused bandwidth into income. Join EnReach’s decentralized edge cloud, run a node, earn $REACH tokens, and fuel real-time AI delivery."
+      />
+      <meta
+        property="og:image"
+        content="https://enreach.network/metadata-img.jpg"
+      />
+      <meta property="og:url" content="https://enreach.network/" />
+      <meta property="og:type" content="website" />
 
       <body
         className={classNames(
