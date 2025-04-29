@@ -52,7 +52,7 @@ export default function RootLayout({
 
       <meta
         name="twitter:image"
-        content="https://enreach.network/metadata-img.jpg"
+        content="https://dev-home.prismax.ai/thumbnail.png"
       ></meta>
 
       <meta
@@ -97,7 +97,7 @@ export default function RootLayout({
       />
       <meta
         name="twitter:image"
-        content="https://enreach.network/metadata-img.jpg"
+        content="https://dev-home.prismax.ai/thumbnail.png"
       />
 
       <meta
