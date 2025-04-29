@@ -82,7 +82,7 @@ export default function RootLayout({
       <meta
         data-rh="true"
         property="og:description"
-        content="PrismaX | A Base Layer for Real-World Multimodal Intelligence"
+        content="Turn unused bandwidth into income. Join EnReach’s decentralized edge cloud, run a node, earn $REACH tokens, and fuel real-time AI delivery."
       ></meta>
 
       <meta
@@ -91,9 +91,9 @@ export default function RootLayout({
       ></meta>
       <meta
         name="twitter:description"
-        content="EnReach Network | Earn Real Income by Sharing Idle Internet to Power AI"
+        content="Turn unused bandwidth into income. Join EnReach’s decentralized edge cloud, run a node, earn $REACH tokens, and fuel real-time AI delivery."
       ></meta>
-      <meta name="twitter:site" content="@EnReachNetwork/"></meta>
+      <meta name="twitter:site" content="@EnReachNetwork"></meta>
       <meta name="twitter:card" content="summary_large_image"></meta>
       <meta
         name="twitter:image"
