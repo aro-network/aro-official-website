@@ -40,67 +40,81 @@ export default function RootLayout({
 
       <link rel="icon" href="/icon.svg" />
 
-     <meta
+      <meta
         data-rh="true"
         property="og:title"
-        content="PrismaX | A Base Layer for Real-World Robotics Intelligence"
+        content="EnReach Network | Earn Real Income by Sharing Idle Internet to Power AI"
       ></meta>
       <meta
         name="description"
-        content="PrismaX | A Base Layer for Real-World Robotics Intelligence"
+        content="Turn unused bandwidth into income. Join EnReach’s decentralized edge cloud, run a node, earn $REACH tokens, and fuel real-time AI delivery."
       />
 
       <meta
         name="twitter:image"
-        content="https://dev-home.prismax.ai/thumbnail.png"
+        content="https://enreach.network/metadata-img.jpg"
       ></meta>
 
       <meta
         name="description"
-        content="PrismaX | A Base Layer for Real-World Robotics Intelligence"
+        content="Turn unused bandwidth into income. Join EnReach’s decentralized edge cloud, run a node, earn $REACH tokens, and fuel real-time AI delivery."
       />
       <meta
         property="og:title"
-        content="The PrismaX Ecosystem is the foundational layer for Real-World Robotics Intelligence "
+        content="EnReach Network | Earn Real Income by Sharing Idle Internet to Power AI"
       />
       <meta
         property="og:description"
-        content="PrismaX | A Base Layer for Real-World Robotics Intelligence"
+        content="Turn unused bandwidth into income. Join EnReach’s decentralized edge cloud, run a node, earn $REACH tokens, and fuel real-time AI delivery."
       />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://dev-home.prismax.ai" />
+      <meta property="og:url" content="https://enreach.network" />
       <meta
         property="og:image"
-        content="https://dev-home.prismax.ai/thumbnail.png"
+        content="https://enreach.network/metadata-img.jpg"
       />
       <meta property="og:image:alt" content="Default image description" />
       <meta
         property="og:site_name"
-        content="The PrismaX Ecosystem is the foundational layer for Real-World Robotics Intelligence "
+        content="EnReach Network | Earn Real Income by Sharing Idle Internet to Power AI"
       />
 
       <meta
         data-rh="true"
         property="og:description"
-        content="PrismaX | A Base Layer for Real-World Robotics Intelligence"
+        content="Turn unused bandwidth into income. Join EnReach’s decentralized edge cloud, run a node, earn $REACH tokens, and fuel real-time AI delivery."
       ></meta>
 
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@EnReachNetwork" />
       <meta
         name="twitter:title"
-        content="The PrismaX Ecosystem is the foundational layer for Real-World Robotics Intelligence "
-      ></meta>
+        content="EnReach Network | Earn Real Income by Sharing Idle Internet to Power AI"
+      />
       <meta
         name="twitter:description"
-        content="PrismaX | A Base Layer for Real-World Robotics Intelligence"
-      ></meta>
-      <meta name="twitter:site" content="@PrismaXai/"></meta>
-      <meta name="twitter:card" content="summary_large_image"></meta>
+        content="Turn unused bandwidth into income. Join EnReach’s decentralized edge cloud, run a node, earn $REACH tokens, and fuel real-time AI delivery."
+      />
       <meta
         name="twitter:image"
-        content="https://dev-home.prismax.ai/thumbnail.png"
-      ></meta>
+        content="https://enreach.network/metadata-img.jpg"
+      />
 
-   
+      <meta
+        property="og:title"
+        content="EnReach Network | Earn Real Income by Sharing Idle Internet to Power AI"
+      />
+      <meta
+        property="og:description"
+        content="Turn unused bandwidth into income. Join EnReach’s decentralized edge cloud, run a node, earn $REACH tokens, and fuel real-time AI delivery."
+      />
+      <meta
+        property="og:image"
+        content="https://enreach.network/metadata-img.jpg"
+      />
+      <meta property="og:url" content="https://enreach.network/" />
+      <meta property="og:type" content="website" />
+
       <body
         className={classNames(
           fonts.map((item) => item.variable).join(" "),
