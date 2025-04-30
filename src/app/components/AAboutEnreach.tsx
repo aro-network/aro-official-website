@@ -56,7 +56,7 @@ const AAboutEnReach = () => {
                   • 1.5M+ nodes deployed
                 </span>
                 <span>
-                  • $200M+ in annual revenue
+                  • $140M+ in annual revenue
                 </span>
                 <span>
                   • Real enterprise demand secured
