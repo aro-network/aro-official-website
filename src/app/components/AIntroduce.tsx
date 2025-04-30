@@ -39,7 +39,7 @@ const AIntroduce = () => {
             </div>
             <div className="flex gap-7 items-center">
               <div className="w-[30%]">
-                <img src="../enreachNode.png" width={90} height={62} />
+                <img src="../enreachNode.svg" width={90} height={62} />
               </div>
               <div className="flex gap-[.375rem] flex-col w-[60%]">
                 <div className="flex gap-2 mo:gap-[.125rem] items-start ">
