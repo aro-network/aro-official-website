@@ -36,7 +36,7 @@ const AAboutEnReach = () => {
           <div>
             <div className="text-[#000000CC]">
               <div>
-                • $154.7B market for Edge Cloud & P2P CDN by 2030
+                • $154.7B market for Edge Cloud by 2030
               </div>
               <div>
                 • $66.4B market for Edge AI by 2030
