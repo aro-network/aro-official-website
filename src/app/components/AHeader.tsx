@@ -14,7 +14,7 @@ const AHeader = () => {
         </Link>
         <div
           className={`  text-base font-medium flex  gap-5  `}>
-          <button className=" text-black  sociallink">Blog</button>
+          {/* <button className=" text-black  sociallink">Blog</button> */}
           <button onClick={() => { window.open('https://docs.enreach.network/') }} className=" sociallink text-black ">Docs</button>
 
         </div>

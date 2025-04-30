@@ -11,13 +11,11 @@ const AIntroduce = () => {
         data-aos-duration="1000"
         className="  aos-init aos-animate flex gap-5 w-full mo:w-full mo:flex-wrap"
       >
-
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
           className="  aos-init aos-animate  tab-Introduce w-full  h-[31.875rem] mo:h-auto px-5 pt-[30px] pb-10 "
         >
-
           <span className="font-Ubuntu font-medium text-2xl text-black">
             Plug it.
           </span>
@@ -132,27 +130,11 @@ const AIntroduce = () => {
             <img src="./refer.svg" />
             <div className="flex flex-col gap-[6px]">
               <div className="text-[#000000B2] text-xs">
-                {" "}
                 Refer your friend and earn extra 15% commission.
               </div>
             </div>
           </div>
-          <div className=" flex gap-[.375rem]  mt-10 mo:mt-5 smd:mt-5   items-baseline">
-            <div className="">
-              <FiAlertCircle className="text-[.6875rem]" />
-            </div>
-            <span className="text-[.625rem] text-[#909090]">
-              For detail rules of the Testnet campaign, please refer to this{" "}
-              <a
-                target="_blank"
-                href="https://docs.enreach.network/"
-                className=" underline underline-offset-1"
-              >
-                guide
-              </a>
-              .
-            </span>
-          </div>
+
         </div>
       </div>
     </div>
