@@ -2,7 +2,7 @@ const AAboutEnReach = () => {
 
 
   return <div
-    className="   flex-col h-auto  w-container m-auto flex px-[170px] mb-5 mo:px-5 mo:pt-[3.125rem] md:px-[40px] md:w-full  mo:w-full ">
+    className="   flex-col h-auto  w-container m-auto flex  px-[170px] mb-5 mo:px-5 mo:pt-[3.125rem] md:px-[40px] md:w-full  mo:w-full ">
     <div className="text-center text-black text-[2.75rem] font-medium mo:text-[1.75rem] "><span>EnReach Network</span></div>
     <div data-aos="fade-up"
       data-aos-duration="1000" className=" aos-init aos-animate flex gap-5 mo:flex-col mo:pt-[1.875rem] pt-16 ">
@@ -36,10 +36,10 @@ const AAboutEnReach = () => {
           <div>
             <div className="text-[#000000CC]">
               <div>
-                $154.7B market for Edge Cloud & P2P CDN by 2030
+                • $154.7B market for Edge Cloud & P2P CDN by 2030
               </div>
               <div>
-                $66.4B market for Edge AI by 2030
+                • $66.4B market for Edge AI by 2030
               </div>
             </div>
             <div className="text-xs" >
