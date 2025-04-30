@@ -26,7 +26,7 @@ const AAboutEnReach = () => {
             <div className=" text-[#000000CC] pt-5 mr-5 mo:pr-0  mo:text-[13px]">
               We’re not pitching a future — we’re scaling a proven foundation.
             </div>
-            <div className="text-[#000000CC] ">Now open to the crowd.</div>
+            <div className="text-[#000000CC] mo:text-[13px] ">Now open to the crowd.</div>
           </div>
           <div className="w-full  flex justify-end items-end mo:justify-center pr-5 mo:pt-[1.875rem] ">
             <img src="../enreach-AI.svg" />
