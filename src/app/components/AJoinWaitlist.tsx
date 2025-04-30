@@ -59,24 +59,26 @@ const AJoinWaitlist = () => {
   }
 
   return <div id="target-section" className="w-container m-auto flex px-[170px] mo:px-5 mo:pt-[3.125rem] md:px-[40px] md:w-full  mo:w-full flex-col ">
-    <div className="w-full text-center py-[3.75rem] mo:pt-0 mo:pb-11 font-Ubuntu font-medium text-[3.125rem] mo:text-[1.75rem]  leading-[100%] text-black">How to join the Waitlist</div>
+    <div data-aos="fade-up"
+      data-aos-duration="1000"
+      className="  aos-init aos-animate w-full text-center py-[3.75rem] mo:pt-0 mo:pb-11 font-Ubuntu font-medium text-[3.125rem] mo:text-[1.75rem]  leading-[100%] text-black">Apply to become a Pioneer</div>
 
     <div data-aos="fade-up"
       data-aos-duration="1000" className=" font-Ubuntu  font-medium text-2xl mo:text-lg w-full text-center text-black">Step 1: Join the EnReach Community</div>
 
     <div data-aos="fade-up"
       data-aos-duration="1000" className="flex justify-between w-full gap-[6.25rem] mo:gap-5 mt-[1.875rem] mo:mt-6 mo:flex-wrap">
-      <div onClick={() => window.open('https://x.com/EnReachNetwork', '_blank')} className=" hover:bg-[#EBEBEB] cursor-pointer rounded-[1.25rem] w-full border-[#7F7F7F] border mo:h-[4.25rem] h-[6.25rem] flex items-center justify-center gap-5 md:gap-[.625rem] p-[1.875rem]">
+      <div onClick={() => window.open('https://x.com/EnReachNetwork', '_blank')} className=" hover:bg-[#EBEBEB] bg-white cursor-pointer rounded-[1.25rem] w-full border-[#7F7F7F] border mo:h-[4.25rem] h-[6.25rem] flex items-center justify-center gap-5 md:gap-[.625rem] p-[1.875rem]">
         <BsTwitterX className="text-2xl text-black " />
         <span className="font-medium text-xl leading-7 text-black">Follow on X</span>
       </div>
-      <div onClick={() => window.open('https://discord.gg/Rc4BMUjbNB', '_blank')} className=" hover:bg-[#EBEBEB] cursor-pointer rounded-[1.25rem] w-full border-[#7F7F7F] border mo:h-[4.25rem]  h-[6.25rem]  flex items-center justify-center gap-5 md:gap-[.625rem]  p-[1.875rem]">
+      <div onClick={() => window.open('https://discord.gg/Rc4BMUjbNB', '_blank')} className=" hover:bg-[#EBEBEB] bg-white cursor-pointer rounded-[1.25rem] w-full border-[#7F7F7F] border mo:h-[4.25rem]  h-[6.25rem]  flex items-center justify-center gap-5 md:gap-[.625rem]  p-[1.875rem]">
         <BsDiscord className="text-black font-medium text-2xl leading-7 " />
         <span className="font-medium text-xl leading-7 text-black">
           Join Discord
         </span>
       </div>
-      <div onClick={() => window.open('https://t.me/EnReachNetwork', '_blank')} className=" hover:bg-[#EBEBEB] cursor-pointer  rounded-[1.25rem] w-full border-[#7F7F7F] border mo:h-[4.25rem]  h-[6.25rem]  flex items-center justify-center gap-5 md:gap-[.625rem]  p-[1.875rem]">
+      <div onClick={() => window.open('https://t.me/EnReachNetwork', '_blank')} className=" hover:bg-[#EBEBEB] bg-white cursor-pointer  rounded-[1.25rem] w-full border-[#7F7F7F] border mo:h-[4.25rem]  h-[6.25rem]  flex items-center justify-center gap-5 md:gap-[.625rem]  p-[1.875rem]">
         <FaTelegramPlane className="text-black text-[35px] " />
         <span className="font-medium text-xl leading-7 text-black">
           Join Telegram
@@ -88,7 +90,7 @@ const AJoinWaitlist = () => {
       data-aos="fade-up"
       data-aos-duration="1000"
       className=" aos-init aos-animate mt-[3.75rem] w-full flex  flex-col items-center">
-      <div className="text-black  text-2xl mo:text-lg font-medium mo:text-center  font-Ubuntu">Step 2: Submit your details to unlock early access & rewards</div>
+      <div className="text-black  text-2xl mo:text-lg font-medium mo:text-center  font-Ubuntu">Step 2: Submit your details and fill out the application form  </div>
       <div className="enreachInput flex flex-col w-full items-center">
         <input maxLength={50} className="border-[#7F7F7F] border w-[542px] mo:w-full h-[4.25rem] mt-[30px] rounded-2xl" value={inputInfo.address} placeholder="Leave your EVM address" onChange={(e) => { setInputInfo({ ...inputInfo, address: e.target.value }); setErrorText('') }} />
         <input maxLength={50} className="border-[#7F7F7F] border w-[542px] mo:w-full mt-5 h-[4.25rem] rounded-2xl" value={inputInfo.email} placeholder="Leave your email" onChange={(e) => { setInputInfo({ ...inputInfo, email: e.target.value }); setErrorText('') }} />

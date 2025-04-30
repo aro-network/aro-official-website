@@ -10,6 +10,8 @@ import "aos/dist/aos.css";
 import Aos from "aos"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import AAboutEnReach from "./components/AAboutEnreach"
+import AEarly from "./components/AEarly"
 
 export default function Home() {
 
@@ -38,7 +40,9 @@ export default function Home() {
     <div className=" bg-[url(/banner-bg.svg)] mo:bg-top bg-cover  z-[100000] relative  w-full h-screen">
       <AHeader />
       <ABanner />
+      <AAboutEnReach />
       <AIntroduce />
+      <AEarly />
       <AJoinWaitlist />
       <AFooter />
     </div>

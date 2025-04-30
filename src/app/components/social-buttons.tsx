@@ -1,11 +1,14 @@
 import React from 'react'
 import { FaTelegramPlane } from 'react-icons/fa';
 import { FaDiscord, FaXTwitter } from 'react-icons/fa6'
-
+import { RiAppsFill } from "react-icons/ri";
+import { SiGoogledocs } from "react-icons/si";
 const socialLinks = [
     { href: 'https://x.com/EnReachNetwork', icon: <FaXTwitter /> },
     { href: 'https://discord.gg/Rc4BMUjbNB', icon: <FaDiscord /> },
     { href: 'https://t.me/EnReachNetwork', icon: <FaTelegramPlane /> },
+    { href: '', icon: <RiAppsFill /> },
+    { href: 'https://docs.enreach.network/', icon: <SiGoogledocs /> },
 ]
 
 

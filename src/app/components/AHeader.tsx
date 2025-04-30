@@ -1,9 +1,9 @@
 import Link from "next/link"
 import Image from "next/image"
-import { usePathname, } from "next/navigation"
+// import { usePathname, } from "next/navigation"
 
 const AHeader = () => {
-  const r = usePathname()
+  // const r = usePathname()
 
 
   return <div>
@@ -12,16 +12,11 @@ const AHeader = () => {
         <Link href={'/'} className=" flex items-center gap-[13px] ">
           <Image alt="" width={211} height={38} src="./enreach-logo.svg" className="w-[13.1875rem] h-[2.375rem] mo:w-[6.375rem] mo:h-[1.4375rem]" />
         </Link>
-        <div className={`  text-sm font-medium ${r === '/' ? 'flex' : 'hidden'}   gap-5`}>
-          {/* <button className="text-black">Blog</button> */}
-          <button
-            onClick={() => {
-              document!.getElementById('target-section')!.scrollIntoView({
-                behavior: 'smooth'
-              })
-            }}
-            className="bg-[#1C73FF] btn text-white rounded-[1.875rem] text-sm font-medium py-[.625rem] px-5 mo:hidden">
-            Join Waitlist</button>
+        <div
+          className={`  text-base font-medium flex  gap-5  `}>
+          <button className=" text-black  sociallink">Blog</button>
+          <button onClick={() => { window.open('https://docs.enreach.network/') }} className=" sociallink text-black ">Docs</button>
+
         </div>
       </div>
     </div>
