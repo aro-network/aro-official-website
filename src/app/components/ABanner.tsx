@@ -25,9 +25,9 @@ const ABanner = () => {
                     behavior: "smooth",
                   });
                 }}
-                className="bg-[#4281FF] text-white ml-[6px] w-[229px] mo:w-[150px] items-center text-2xl mo:text-base mo:font-medium font-semibold leading-9  flex justify-center h-[56px] mo:h-[42px]  rounded-[22.5rem] btn font-AlbertSans p-3"
+                className="bg-[#1C73FF] text-white  items-center text-2xl mo:text-base mo:font-medium font-semibold leading-9  flex justify-center h-[56px] mo:h-[42px]  rounded-[22.5rem] btn font-AlbertSans py-[.625rem] px-5"
               >
-                Join Waitlist
+                Join the Pioneers Program
               </button>
             </div>
           </div>

@@ -71,10 +71,8 @@ const AIntroduce = () => {
               </div>
             </div>
             <div className=" flex gap-[.375rem] items-baseline">
-              <div>
-                <FiAlertCircle className="text-[.6875rem]" />
-              </div>
-              <span className="text-[10px] text-[#909090]">
+              <FiAlertCircle className="text-[.6875rem]" />
+              <span className="text-[12px] text-[#909090]">
                 Hardware images shown are for reference only. Final design and
                 specs may vary.
               </span>

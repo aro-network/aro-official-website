@@ -16,7 +16,7 @@ const AEarly = () => {
         </div>
 
       </div>
-      <div className="flex gap-[4.875rem] h-[15vh] mo:h-full w-full justify-between">
+      <div className="flex gap-[4.875rem]  mo:h-full w-full justify-between">
         <div>
           <div className="text-black text-base font-bold leading-6 pt-[.625rem]">
             Only 100 spots available for our first Pioneers cohort.
@@ -40,12 +40,15 @@ const AEarly = () => {
             Help build the new open internet.
           </div>
         </div>
-        <div className=" flex mo:hidden ">
-          <img src="../spots.svg" className=" relative w-[16.375rem] h-[16.375rem] " />
-        </div>
+
+
+
       </div>
 
 
+    </div>
+    <div className=" flex mo:hidden relative w-full  bg-fuchsia-300  ">
+      <img src="../spots.svg" className=" absolute  w-[16.375rem] h-[16.375rem] right-0 top-[-230px] mr-10 " />
     </div>
 
 
