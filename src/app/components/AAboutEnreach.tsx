@@ -20,7 +20,7 @@ const AAboutEnReach = () => {
             </span>
             <div className=" text-[#000000CC] pt-5 mo:text-[13px] ">
               EnReach is building a decentralized, intelligent edge cloud for
-              real-time content and AI delivery. Backed by a team with $200M+ in
+              real-time content and AI delivery. Backed by a team with $140M+ in
               annual revenue and 1.5M+ edge nodes deployed.
             </div>
             <div className=" text-[#000000CC] pt-5 mr-5 mo:pr-0  mo:text-[13px]">
