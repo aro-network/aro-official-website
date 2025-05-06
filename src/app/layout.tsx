@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <title>
-        EnReach Network | Earn Real Income by Sharing Idle Internet to Power AI
+        Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network
       </title>
 
       <meta name="description" content="" />
@@ -43,11 +43,11 @@ export default function RootLayout({
       <meta
         data-rh="true"
         property="og:title"
-        content="EnReach Network | Earn Real Income by Sharing Idle Internet to Power AI"
+        content="Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network"
       ></meta>
       <meta
         name="description"
-        content="Turn unused bandwidth into income. Join EnReach’s decentralized edge cloud, run a node, earn $REACH tokens, and fuel real-time AI delivery."
+        content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
       />
 
       <meta
@@ -57,15 +57,15 @@ export default function RootLayout({
 
       <meta
         name="description"
-        content="Turn unused bandwidth into income. Join EnReach’s decentralized edge cloud, run a node, earn $REACH tokens, and fuel real-time AI delivery."
+        content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
       />
       <meta
         property="og:title"
-        content="EnReach Network | Earn Real Income by Sharing Idle Internet to Power AI"
+        content="Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network"
       />
       <meta
         property="og:description"
-        content="Turn unused bandwidth into income. Join EnReach’s decentralized edge cloud, run a node, earn $REACH tokens, and fuel real-time AI delivery."
+        content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
       />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://enreach.network" />
@@ -76,24 +76,24 @@ export default function RootLayout({
       <meta property="og:image:alt" content="Default image description" />
       <meta
         property="og:site_name"
-        content="EnReach Network | Earn Real Income by Sharing Idle Internet to Power AI"
+        content="Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network"
       />
 
       <meta
         data-rh="true"
         property="og:description"
-        content="Turn unused bandwidth into income. Join EnReach’s decentralized edge cloud, run a node, earn $REACH tokens, and fuel real-time AI delivery."
+        content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
       ></meta>
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@EnReachNetwork" />
       <meta
         name="twitter:title"
-        content="EnReach Network | Earn Real Income by Sharing Idle Internet to Power AI"
+        content="Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network"
       />
       <meta
         name="twitter:description"
-        content="Turn unused bandwidth into income. Join EnReach’s decentralized edge cloud, run a node, earn $REACH tokens, and fuel real-time AI delivery."
+        content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
       />
       <meta
         name="twitter:image"
@@ -102,11 +102,11 @@ export default function RootLayout({
 
       <meta
         property="og:title"
-        content="EnReach Network | Earn Real Income by Sharing Idle Internet to Power AI"
+        content="Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network"
       />
       <meta
         property="og:description"
-        content="Turn unused bandwidth into income. Join EnReach’s decentralized edge cloud, run a node, earn $REACH tokens, and fuel real-time AI delivery."
+        content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
       />
       <meta
         property="og:image"
