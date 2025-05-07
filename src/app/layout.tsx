@@ -19,6 +19,12 @@ export const metadata: Metadata = {
     "Off-chain computation",
     "Smart Contract",
   ],
+  "icons": [
+    {
+      "url": "https://enreach.network/favicon.ico",
+      'rel': "icon",
+    }
+  ]
 }
 
 const ubuntu = Ubuntu({
