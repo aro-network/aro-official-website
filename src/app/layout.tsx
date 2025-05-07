@@ -5,10 +5,21 @@ import "./globals.css";
 import { Toaster } from "sonner";
 import classNames from "classnames";
 
+
 export const metadata: Metadata = {
-  title: "Enreach Network",
-  description: " Enreach Network",
-};
+  themeColor: 'rgba(232, 233, 234, 1)',
+  title: "Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network",
+  description: "Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI.",
+  keywords: [
+    "Enreach Network",
+    "Enreach",
+    "Phat Contracts",
+    "Web3",
+    "Web3 Builders Stack",
+    "Off-chain computation",
+    "Smart Contract",
+  ],
+}
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -39,6 +50,9 @@ export default function RootLayout({
       <link rel="canonical" href="http://enreach.network/" />
 
       <link rel="icon" href="/icon.svg" />
+
+      <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any" />
+
 
       <meta
         data-rh="true"
