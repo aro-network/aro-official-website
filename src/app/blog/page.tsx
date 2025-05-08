@@ -116,7 +116,7 @@ const Blog = () => {
 
           }
           <div className="mo:py-[3.125rem] mt-[3.125rem]">
-            {!isFetching && loaded && instanceRef.current && (
+            {!isFetching && articleList.length > 1 && loaded && instanceRef.current && (
               <div className="dots ">
                 {[
                   ...Array(instanceRef.current.track.details.slides.length).keys(),
