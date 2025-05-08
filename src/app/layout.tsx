@@ -13,7 +13,6 @@ export const metadata: Metadata = {
   keywords: [
     "Enreach Network",
     "Enreach",
-    "Phat Contracts",
     "Web3",
     "Web3 Builders Stack",
     "Off-chain computation",

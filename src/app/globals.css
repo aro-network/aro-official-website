@@ -415,6 +415,26 @@ textarea:-webkit-autofill {
   width: 100%;
 
   }
+  .wp-block-heading {
+    font-family: var(--font-ubuntu);
+    margin-top: 0 !important ;
+    margin-bottom: 0 !important;
+    font-size: 24px !important;
+  }
+
+  p strong{
+    color:#000000;
+    font-weight: 700;
+    font-size: 16px !important;
+  }
+  p{
+    font-size: 16px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+  
+  }
+
 }
 
 
@@ -478,4 +498,36 @@ textarea:-webkit-autofill {
     transform: scaleX(1);
     transform-origin: 0% 50%;
   }
+
+
+  
 }
+
+
+.wp-block-heading {
+  font-family: var(--font-ubuntu);
+  margin-top: 10px ;
+  margin-bottom: 10px ;
+  font-weight: 600 ;
+  font-size: 30px;
+  color:#000000 
+}
+
+p strong{
+  color:#000000;
+  font-weight: 700;
+  font-size: 20px;
+}
+p{
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+
+}
+
+.enreach-content a{
+  text-decoration: underline;
+  
+}
+

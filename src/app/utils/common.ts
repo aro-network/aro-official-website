@@ -137,3 +137,58 @@ export const titleList = [
   { title: "Verifiable" },
 ];
 export const baseUrl = "https://email.enreach.network";
+
+// export const getCurrentCategorie = (
+//   currentNames: ArticleInfo.Post | ArticleInfo.Post[],
+//   categoriesArr: ArticleInfo.Category[]
+// ) => {
+//   const result = (
+//     currentNames && Array.isArray(currentNames) ? currentNames : [currentNames]
+//   ).map((item) => {
+//     const { categories = [] } = item;
+//     item
+
+//     if (categories && categories.length > 0) {
+//       const validCategories = categories
+//         .filter((categoryId) => categoryId !== 1)
+//         .map((categoryId) => {
+//           const matchedCategory = categoriesArr.find(
+//             (category) => category.id === categoryId
+//           );
+//           return matchedCategory ? matchedCategory.name : null;
+//         })
+//         .filter(Boolean);
+
+//       return {
+//         ...item,
+//         names: validCategories,
+//       };
+//     }
+
+//     return item;
+//   });
+
+//   return result;
+// };
+
+export const convertDate = (date?: Date) => {
+  if (!date) return "";
+  const result = new Date(date);
+  const year = result.getFullYear();
+  const month = String(result.getMonth() + 1).padStart(2, "0");
+  const day = String(result.getDate()).padStart(2, "0");
+
+  return `${year}-${month}-${day}`;
+};
+
+export const getCurrentArticleTags = (data?: ArticleInfo.Post) => {
+  if (!data) return [];
+  const tags = data.tags;
+  const terms = data._embedded["wp:term"].flat();
+
+  return terms
+    .filter((term) => tags.includes(term.id))
+    .map((term) => {
+      return { name: term.name, id: term.id };
+    });
+};
