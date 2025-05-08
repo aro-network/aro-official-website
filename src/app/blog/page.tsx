@@ -166,7 +166,7 @@ const Blog = () => {
           </div>
 
           <div className="rounded-[3.0625rem] bg-white shadow-box px-[3.125rem] mo:px-5 py-[3.125rem] mo:mb-0">
-            <div className="text-center texe-[#000000] text-[2.5rem] font-semibold">Search by Tag</div>
+            <div className="text-center text-black text-[2.5rem] font-semibold">Search by Tag</div>
             <div className="flex mt-5 mo:mt-10 gap-[.625rem] flex-wrap ">
 
               {allTags && allTags.map((tab) => {
