@@ -45,6 +45,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  if (process.env.NODE_ENV === "production") {
+    console.log = function () { };
+    console.error = function () { };
+    console.warn = function () { };
+  }
   return (
     <html lang="en">
       <title>
