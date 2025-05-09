@@ -13,7 +13,7 @@ const socialLinks = [
 ]
 
 
-export function SocialButtons({ links = socialLinks, isInfo = false }: { links?: { href: string, icon?: JSX.Element, name?: string }[], isInfo: boolean }) {
+export function SocialButtons({ links = socialLinks, isInfo = false }: { links?: { href: string, icon?: JSX.Element, name?: string }[], isInfo?: boolean }) {
 
     return <div className={`flex items-center gap-5 ${isInfo && 'mo:gap-[.625rem]  flex-row flex-wrap'}`}>
         {
