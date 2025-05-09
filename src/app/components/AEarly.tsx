@@ -39,6 +39,10 @@ const AEarly = () => {
 
             Help build the new open internet.
           </div>
+
+          {/* <div className="text-[#1C73FF] text-base underline underline-offset-1 mt-5">
+            Learn more about Pioneer Program
+          </div> */}
         </div>
 
 

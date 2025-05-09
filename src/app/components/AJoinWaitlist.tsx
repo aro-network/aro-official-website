@@ -11,6 +11,9 @@ const AJoinWaitlist = () => {
   const [isSubmiting, setIsSubmiting] = useState(false)
   const [isCheck, setIsCheck] = useState(false)
 
+
+
+
   const onSubmit = () => {
 
     if (isSubmiting) return
