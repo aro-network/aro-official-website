@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+'use client'
+// import type { Metadata } from "next";
 import { Poppins, Ubuntu } from "next/font/google";
 
 import "./globals.css";
@@ -7,27 +8,28 @@ import classNames from "classnames";
 
 import Hotjar from '@hotjar/browser';
 import Head from "next/head";
+import { useEffect } from "react";
 
 
-export const metadata: Metadata = {
-  themeColor: 'rgba(232, 233, 234, 1)',
-  title: "Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network",
-  description: "Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI.",
-  keywords: [
-    "Enreach Network",
-    "Enreach",
-    "Web3",
-    "Web3 Builders Stack",
-    "Off-chain computation",
-    "Smart Contract",
-  ],
-  "icons": [
-    {
-      "url": "https://enreach.network/favicon.ico",
-      'rel': "icon",
-    }
-  ]
-}
+// export const metadata: Metadata = {
+//   themeColor: 'rgba(232, 233, 234, 1)',
+//   title: "Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network",
+//   description: "Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI.",
+//   keywords: [
+//     "Enreach Network",
+//     "Enreach",
+//     "Web3",
+//     "Web3 Builders Stack",
+//     "Off-chain computation",
+//     "Smart Contract",
+//   ],
+//   "icons": [
+//     {
+//       "url": "https://enreach.network/favicon.ico",
+//       'rel': "icon",
+//     }
+//   ]
+// }
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -56,7 +58,11 @@ export default function RootLayout({
   const siteId = 6397730;
   const hotjarVersion = 6;
 
-  Hotjar.init(siteId, hotjarVersion);
+  useEffect(() => {
+    if (typeof window !== "undefined" && process.env.NODE_ENV === "production") {
+      Hotjar.init(siteId, hotjarVersion);
+    }
+  }, []);
 
   return (
     <html lang="en">

@@ -34,6 +34,8 @@ export default function Home() {
       anchorPlacement: "top-bottom",
     });
   }, []);
+  console.log('envvvvvvv', process.env.NODE_ENV);
+
 
 
   return <div className=" h-screen">
