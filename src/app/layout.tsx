@@ -6,11 +6,8 @@ import { Toaster } from "sonner";
 import classNames from "classnames";
 
 import Hotjar from '@hotjar/browser';
+import Head from "next/head";
 
-const siteId = 6397730;
-const hotjarVersion = 6;
-
-Hotjar.init(siteId, hotjarVersion);
 
 export const metadata: Metadata = {
   themeColor: 'rgba(232, 233, 234, 1)',
@@ -56,95 +53,118 @@ export default function RootLayout({
     console.error = function () { };
     console.warn = function () { };
   }
+  const siteId = 6397730;
+  const hotjarVersion = 6;
+
+  Hotjar.init(siteId, hotjarVersion);
+
   return (
     <html lang="en">
       <title>
         Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network
       </title>
+      <Head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              `
+   (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:6397730,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  `
+          }}
+        >
 
-      <meta name="description" content="" />
-      <link rel="canonical" href="http://enreach.network/" />
+        </script>
 
-      <link rel="icon" href="/icon.svg" />
+        <meta name="description" content="" />
+        <link rel="canonical" href="http://enreach.network/" />
 
-      <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any" />
+        <link rel="icon" href="/icon.svg" />
+
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any" />
 
 
-      <meta
-        data-rh="true"
-        property="og:title"
-        content="Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network"
-      ></meta>
-      <meta
-        name="description"
-        content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
-      />
+        <meta
+          data-rh="true"
+          property="og:title"
+          content="Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network"
+        ></meta>
+        <meta
+          name="description"
+          content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
+        />
 
-      <meta
-        name="twitter:image"
-        content="https://enreach.network/metadata-img.jpg"
-      ></meta>
+        <meta
+          name="twitter:image"
+          content="https://enreach.network/metadata-img.jpg"
+        ></meta>
 
-      <meta
-        name="description"
-        content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
-      />
-      <meta
-        property="og:title"
-        content="Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network"
-      />
-      <meta
-        property="og:description"
-        content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
-      />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://enreach.network" />
-      <meta
-        property="og:image"
-        content="https://enreach.network/metadata-img.jpg"
-      />
-      <meta property="og:image:alt" content="Default image description" />
-      <meta
-        property="og:site_name"
-        content="Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network"
-      />
+        <meta
+          name="description"
+          content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
+        />
+        <meta
+          property="og:title"
+          content="Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network"
+        />
+        <meta
+          property="og:description"
+          content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://enreach.network" />
+        <meta
+          property="og:image"
+          content="https://enreach.network/metadata-img.jpg"
+        />
+        <meta property="og:image:alt" content="Default image description" />
+        <meta
+          property="og:site_name"
+          content="Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network"
+        />
 
-      <meta
-        data-rh="true"
-        property="og:description"
-        content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
-      ></meta>
+        <meta
+          data-rh="true"
+          property="og:description"
+          content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
+        ></meta>
 
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@EnReachNetwork" />
-      <meta
-        name="twitter:title"
-        content="Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network"
-      />
-      <meta
-        name="twitter:description"
-        content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
-      />
-      <meta
-        name="twitter:image"
-        content="https://enreach.network/metadata-img.jpg"
-      />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@EnReachNetwork" />
+        <meta
+          name="twitter:title"
+          content="Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network"
+        />
+        <meta
+          name="twitter:description"
+          content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
+        />
+        <meta
+          name="twitter:image"
+          content="https://enreach.network/metadata-img.jpg"
+        />
 
-      <meta
-        property="og:title"
-        content="Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network"
-      />
-      <meta
-        property="og:description"
-        content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
-      />
-      <meta
-        property="og:image"
-        content="https://enreach.network/metadata-img.jpg"
-      />
-      <meta property="og:url" content="https://enreach.network/" />
-      <meta property="og:type" content="website" />
-
+        <meta
+          property="og:title"
+          content="Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network"
+        />
+        <meta
+          property="og:description"
+          content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
+        />
+        <meta
+          property="og:image"
+          content="https://enreach.network/metadata-img.jpg"
+        />
+        <meta property="og:url" content="https://enreach.network/" />
+        <meta property="og:type" content="website" />
+      </Head>
 
       <body
         className={classNames(
