@@ -97,7 +97,7 @@ const AInfo = () => {
               By creating an globally-connected edge cloud, we empower the AI-driven world with infrastructure designed for speed, flexibility, and accessibility.
             </div>
           </div>
-          <SocialButtons links={socialLinks} />
+          <SocialButtons links={socialLinks} isInfo />
 
         </div>
         <AScrollToTop />
