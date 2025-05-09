@@ -27,10 +27,10 @@ const AEarly = () => {
                 onClick={() =>
                   window.open("https://docs.enreach.network/campaigns/pioneer")
                 }
-                className=" underline underline-offset-1"
+                className=" underline underline-offset-1 relative z-[100000] "
               >
                 Pioneers cohort
-              </button>
+              </button>{" "}
               .
             </div>
             <div className="text-[#000000] text-base pt-5">
