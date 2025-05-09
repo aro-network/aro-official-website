@@ -5,6 +5,12 @@ import "./globals.css";
 import { Toaster } from "sonner";
 import classNames from "classnames";
 
+import Hotjar from '@hotjar/browser';
+
+const siteId = 6397730;
+const hotjarVersion = 6;
+
+Hotjar.init(siteId, hotjarVersion);
 
 export const metadata: Metadata = {
   themeColor: 'rgba(232, 233, 234, 1)',
@@ -138,6 +144,7 @@ export default function RootLayout({
       />
       <meta property="og:url" content="https://enreach.network/" />
       <meta property="og:type" content="website" />
+
 
       <body
         className={classNames(

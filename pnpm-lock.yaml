@@ -17,6 +17,9 @@ dependencies:
   '@formkit/auto-animate':
     specifier: ^0.8.1
     version: 0.8.2
+  '@hotjar/browser':
+    specifier: ^1.0.9
+    version: 1.0.9
   '@radix-ui/react-hover-card':
     specifier: ^1.1.4
     version: 1.1.11(@types/react-dom@18.3.6)(@types/react@18.3.20)(react-dom@19.0.0-rc-66855b96-20241106)(react@19.0.0-rc-66855b96-20241106)
@@ -626,6 +629,10 @@ packages:
 
   /@formkit/auto-animate@0.8.2:
     resolution: {integrity: sha512-SwPWfeRa5veb1hOIBMdzI+73te5puUBHmqqaF1Bu7FjvxlYSz/kJcZKSa9Cg60zL0uRNeJL2SbRxV6Jp6Q1nFQ==}
+    dev: false
+
+  /@hotjar/browser@1.0.9:
+    resolution: {integrity: sha512-n9akDMod8BLGpYEQCrHwlYWWd63c1HlhUSXNIDfClZtKYXbUjIUOFlNZNNcUxgHTCsi4l2i+SWKsGsO0t93S8w==}
     dev: false
 
   /@humanwhocodes/config-array@0.13.0:
