@@ -16,7 +16,7 @@ const AHeader = () => {
           className={`  text-base font-medium flex  gap-5  `}>
           <button onClick={() => { window.open('blog') }} className=" text-black  sociallink">Blog</button>
           <button onClick={() => { window.open('https://docs.enreach.network/') }} className=" sociallink text-black ">Docs</button>
-          <button onClick={() => { window.open('https://devnet.dashboard.enreach.network/') }} className=" sociallink text-black ">Dashboard</button>
+          <button onClick={() => { window.open('https://devnet.dashboard.enreach.network/') }} className=" sociallink text-black mo:hidden ">Dashboard</button>
         </div>
       </div>
     </div>
