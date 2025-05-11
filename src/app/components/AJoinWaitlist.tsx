@@ -43,7 +43,13 @@ const AJoinWaitlist = () => {
       .then((response) => response.json())
       .then(() => {
         if (isCheck) {
-          window.open("https://enreach.fillout.com/Pioneers", "_blank");
+          const url = "https://enreach.fillout.com/Pioneers"
+           const newWindow = window.open("", "_blank");
+    if (newWindow) {
+      newWindow.location.href = url;
+    } else {
+      window.location.href = url;
+    }
         }
         setIsCheck(false);
         toast.success(
