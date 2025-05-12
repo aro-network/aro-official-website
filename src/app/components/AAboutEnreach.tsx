@@ -1,13 +1,13 @@
 const AAboutEnReach = () => {
   return (
     <div className="   flex-col h-auto  w-container m-auto flex  px-[170px] mb-5 mo:px-5 mo:pt-[3.125rem] md:px-[40px] md:w-full  mo:w-full ">
-      <div className="text-center text-black text-[2.75rem] font-medium mo:text-[1.75rem] ">
+      <div className="text-center text-black text-[2.75rem] font-medium mo:text-[1.75rem] mo:pt-5 ">
         <span>EnReach Network</span>
       </div>
       <div
         data-aos="fade-up"
         data-aos-duration="1000"
-        className=" aos-init aos-animate flex gap-5 mo:flex-col mo:pt-[1.875rem] pt-16 "
+        className=" aos-init aos-animate flex gap-5 mo:flex-col  pt-16"
       >
         <div
           data-aos="fade-up"

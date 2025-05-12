@@ -1,9 +1,20 @@
 import Link from "next/link"
 import Image from "next/image"
-// import { usePathname, } from "next/navigation"
+import { usePathname, } from "next/navigation"
 
 const AHeader = () => {
-  // const r = usePathname()
+  const r = usePathname()
+  console.log('rrrrr', r);
+
+  const headerTabList = [
+    { href: 'blog', tabName: 'Blog' },
+    { href: 'https://docs.enreach.network/', tabName: 'Docs' },
+    { href: 'https://devnet.dashboard.enreach.network/', tabName: 'Dashboard' },
+
+  ]
+
+
+
 
 
   return <div>
@@ -14,9 +25,12 @@ const AHeader = () => {
         </Link>
         <div
           className={`  text-base font-medium flex  gap-5  `}>
-          <button onClick={() => { window.open('blog') }} className=" text-black  sociallink">Blog</button>
-          <button onClick={() => { window.open('https://docs.enreach.network/') }} className=" sociallink text-black ">Docs</button>
-          <button onClick={() => { window.open('https://devnet.dashboard.enreach.network/') }} className=" sociallink text-black mo:hidden ">Dashboard</button>
+          {headerTabList.map((item) => {
+            return <button key={`item_${item.tabName}`}
+              onClick={() => { window.open(item.href) }}
+              className={` text-black  sociallink ${r.replace("/", "") === item.tabName.toLowerCase() && '!text-[#1C73FF]'} `}>{item.tabName}</button>
+          })}
+
         </div>
       </div>
     </div>

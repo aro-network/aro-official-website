@@ -126,11 +126,11 @@ const ATags = () => {
       </div>
         : <Skeleton className="h-[12.5rem] w-full rounded-[3.0625rem] " />
       }
-      <div className=" grid grid-cols-[repeat(auto-fill,minmax(21.875rem,1fr))] justify-between  gap-5 mt-[5rem] mo:mt-[1.875rem]  ">
+      <div className=" grid grid-cols-[repeat(auto-fill,minmax(21.875rem,1fr))] justify-between  gap-5 mt-[5rem] mo:mt-[1.875rem] ">
         {!loading ? posts.map((item) => {
           const data = getCurrentArticleTags(item)
 
-          return <button onClick={() => r.push(`/info?postId=${item.id}`)} key={item.title.rendered} className="navigation-wrapper flex rounded-[3.0625rem]  justify-center p-5 flex-col items-center">
+          return <button onClick={() => r.push(`/info?postId=${item.id}`)} key={item.title.rendered} className="navigation-wrapper flex rounded-[3.0625rem]  justify-center p-5 flex-col items-center  bg-white">
             <img src={item.imageUrl} className="w-full rounded-3xl" />
             <div className="flex justify-between flex-col pt-5 ">
               <div className="text-[1.75rem] mo:text-[1.625rem] font-semibold text-black text-left"> {item.title.rendered}</div>

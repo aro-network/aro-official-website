@@ -3,7 +3,7 @@ import { FiAlertCircle } from "react-icons/fi";
 const AIntroduce = () => {
   return (
     <div className="   w-container m-auto flex px-[170px] mo:px-5 mo:pt-[3.125rem] pt-20 md:px-[40px] md:w-full  mo:w-full  flex-col">
-      <div className=" text-center font-Ubuntu font-medium text-[2.75rem] text-black pb-[3.75rem] mo:text-[1.75rem]">
+      <div className=" text-center font-Ubuntu font-medium text-[2.75rem] text-black pb-16 mo:text-[1.75rem]">
         Run an EnReach Node in 3 Steps
       </div>
       <div
