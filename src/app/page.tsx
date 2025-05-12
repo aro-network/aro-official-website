@@ -34,9 +34,6 @@ export default function Home() {
       anchorPlacement: "top-bottom",
     });
   }, []);
-  console.log('envvvvvvv', process.env.NODE_ENV);
-
-
 
   return <div className=" h-screen">
     <div className=" bg-[url(/banner-bg.svg)] mo:bg-top bg-cover  z-[100000] relative  w-full h-screen">

@@ -134,7 +134,7 @@ const Blog = () => {
               </div>
             )}
           </div>
-          <div className=" grid grid-cols-[repeat(auto-fill,minmax(24.75rem,1fr))]  justify-between gap-5 mt-[5rem] mo:mt-0  ">
+          <div className=" grid grid-cols-[repeat(auto-fill,minmax(24.75rem,1fr))] mo:grid-cols-[repeat(auto-fill,minmax(100%,1fr))]  justify-between gap-5 mt-[5rem] mo:mt-0  ">
             {!isFetching ? articleList.map((item) => {
               const data = getCurrentArticleTags(item)
 
