@@ -24,7 +24,7 @@ const AHeader = () => {
           {headerTabList.map((item, index) => {
             return <button key={`item_${item.tabName}`}
               onClick={() => { window.open(item.href) }}
-              className={` text-black  sociallink ${index === 2 && 'hidden'} ${r.replace("/", "") === item.tabName.toLowerCase() && '!text-[#1C73FF]'} `}>{item.tabName}</button>
+              className={` text-black  sociallink ${index === 2 && 'mo:hidden'} ${r.replace("/", "") === item.tabName.toLowerCase() && '!text-[#1C73FF]'} `}>{item.tabName}</button>
           })}
 
         </div>
