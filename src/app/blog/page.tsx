@@ -79,8 +79,8 @@ const Blog = () => {
 
       <div className=" bg-[url(/banner-bg.svg)] mo:bg-top bg-cover  z-[100000] relative  w-full h-screen">
         <AHeader />
-        <div className=" w-container px-[5.125rem] mo:px-[1.0625rem]  pt-[5.0625rem] m-auto md:w-full mo:w-full ">
-          <div className="text-[4.0625rem] text-black">Blog</div>
+        <div className=" w-container px-[5.125rem] mo:px-[1.0625rem]  pt-[5.0625rem] mo:pt-11 m-auto md:w-full mo:w-full ">
+          <div className="text-[4.0625rem] mo:text-[2.5rem] text-black">Blog</div>
           {!isFetching ?
             <div className="navigation-wrapper bg-[#FFFFFF] rounded-[3.0625rem] mt-[3.125rem]  shadow-xl shadow-[#E6E6E6E5]">
               <div ref={sliderRef} className="keen-slider w-full">
@@ -166,7 +166,7 @@ const Blog = () => {
           </div>
 
           <div className="rounded-[3.0625rem] bg-white shadow-box px-[3.125rem] mo:px-5 py-[3.125rem] mo:mb-0">
-            <div className="text-center text-black text-[2.5rem] font-semibold">Search by Tag</div>
+            <div className="text-center text-black text-[2.5rem] mo:text-[1.625rem] font-semibold">Search by Tag</div>
             <div className="flex mt-5 mo:mt-10 gap-[.625rem] flex-wrap ">
 
               {allTags && allTags.map((tab) => {
