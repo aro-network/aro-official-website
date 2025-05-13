@@ -87,7 +87,7 @@ const Blog = () => {
                 {articleList.map((item) => {
                   const data = getCurrentArticleTags(item)
                   return <button onClick={() => r.push(`/info?postId=${item.id}`)} key={item.title.rendered} className="keen-slider__slide text-left number-slide1 flex gap-[1.875rem] p-5 mo:flex-col ">
-                    <img src={item.imageUrl} className="w-[50%] mo:w-full rounded-3xl" />
+                    <img src={item.imageUrl} className="w-[50%] mo:w-full rounded-3xl shadow-box " />
                     <div className="flex justify-between  w-[50%] mo:w-full flex-col pt-5 mo:pt-0  mo:gap-5">
                       <div className=" ">
                         <div className="text-4xl mo:text-[1.625rem] font-semibold text-black"> {item.title.rendered}</div>

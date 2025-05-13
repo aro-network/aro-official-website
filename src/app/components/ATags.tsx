@@ -130,21 +130,21 @@ const ATags = () => {
         {!loading ? posts.map((item) => {
           const data = getCurrentArticleTags(item)
 
-          return <button onClick={() => r.push(`/info?postId=${item.id}`)} key={item.title.rendered} className="navigation-wrapper flex rounded-[3.0625rem]  justify-center p-5 flex-col items-center  bg-white">
-            <img src={item.imageUrl} className="w-full rounded-3xl" />
-            <div className="flex justify-between flex-col pt-5 ">
-              <div className="text-[1.75rem] mo:text-[1.625rem] font-semibold text-black text-left"> {item.title.rendered}</div>
-              <div className="flex flex-col gap-[3.75rem]">
+          return <button onClick={() => r.push(`/info?postId=${item.id}`)} key={item.title.rendered} className="navigation-wrapper flex rounded-[3.0625rem] gap-4  justify-center p-5 flex-col items-center">
+            <img src={item.imageUrl} className="w-full h-[15.625rem] rounded-3xl " alt='wp' />
+            <div className="flex justify-between flex-col py-5  h-full ">
+              <div title={item.title.rendered} className="text-[1.75rem] mo:text-[1.625rem]  font-semibold text-black text-left line-clamp-2 pb-5  text-ellipsis"> {item.title.rendered}</div>
+              <div className="flex flex-col gap-[3.75rem] text-left   h-full justify-between ">
                 <div className="flex mt-5 gap-[.625rem] flex-wrap ">
                   {data.map((tab) => {
-                    return <button onClick={(e) => {
-                      e.stopPropagation()
-                      e.isDefaultPrevented()
-                      r.push(`/tags?id=${tab.id}`,)
-                    }} key={tab.id} className="bg-[#4281FF] text-base w-auto flex gap-1 py-1 px-[.8125rem] text-white rounded-[1.25rem]">{tab.name}</button>
+                    return <button
+                      onClick={() => {
+                        r.push(`tags?id=${tab.id}`)
+                      }} key={tab.id}
+                      className="bg-[#4281FF] text-base w-auto flex gap-1 py-1 px-[.8125rem] text-white rounded-[1.25rem]">{tab.name}</button>
                   })}
                 </div>
-                <div className="text-[#8A8A8A] text-base text-left mb-5">{convertDate(item.date)}</div>
+                <div className="text-[#8A8A8A] text-base texe-left">{convertDate(item.date)}</div>
               </div>
             </div>
           </button>
