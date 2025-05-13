@@ -52,7 +52,7 @@ const AInfo = () => {
               <img
                 src={selectedPost._embedded['wp:featuredmedia'][0].source_url}
                 alt={selectedPost!.title.rendered}
-                className="w-full h-auto rounded-3xl"
+                className="w-full h-[500px] mo:h-auto rounded-3xl"
               />
             ) : (
               <Skeleton className="h-[31.25rem] mo:h-[18.75rem] w-full rounded-3xl " />

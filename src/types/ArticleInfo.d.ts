@@ -134,7 +134,7 @@ declare namespace ArticleInfo {
       "wp:featuredmedia": FeaturedMedia[];
       "wp:term": Term[][];
     };
-    imageUrl?: string;
+    imageUrl: string;
   }
 
   interface Category {

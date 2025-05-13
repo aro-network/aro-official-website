@@ -36,7 +36,7 @@ export default function Home() {
   }, []);
 
   return <div className=" h-screen">
-    <div className=" bg-[url(/banner-bg.svg)] mo:bg-top bg-cover  z-[100000] relative  w-full h-screen">
+    <div className=" bg-[url(/banner-bg.svg)] mo:bg-top bg-cover  z-[100000] lg:relative  w-full h-screen">
       <AHeader />
       <ABanner />
       <AAboutEnReach />
