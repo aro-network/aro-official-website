@@ -19,6 +19,11 @@ const Blog = () => {
   const r = useRouter()
   const [sliderRef, instanceRef] = useKeenSlider({
     initial: 0,
+    slides: {
+      perView: 1,
+      spacing: 100,
+    },
+    drag: true,
     slideChanged(slider) {
       setCurrentSlide(slider.track.details.rel)
     },
@@ -83,14 +88,15 @@ const Blog = () => {
           <div className="text-[4.0625rem] mo:text-[2.5rem] text-black">Blog</div>
           {!isFetching ?
             <div className="navigation-wrapper bg-[#FFFFFF] rounded-[3.0625rem] mt-[3.125rem]  shadow-xl shadow-[#E6E6E6E5]">
-              <div ref={sliderRef} className="keen-slider w-full">
+              <div ref={sliderRef} className="keen-slider w-full rounded-[3.0625rem]">
                 {articleList.map((item) => {
                   const data = getCurrentArticleTags(item)
-                  return <button onClick={() => r.push(`/info?postId=${item.id}`)} key={item.title.rendered} className="keen-slider__slide text-left number-slide1 flex gap-[1.875rem] p-5 mo:flex-col ">
-                    <img src={item.imageUrl} className="w-[50%] mo:w-full rounded-3xl shadow-box " />
+                  return <div key={item.title.rendered} className="keen-slider__slide rounded-[3.0625rem]  text-left number-slide1 flex gap-[1.875rem] p-5 mo:flex-col ">
+
+                    <img onClick={() => r.push(`/info?postId=${item.id}`)} src={item.imageUrl} className="  cursor-pointer  w-[50%] mo:w-full rounded-3xl shadow-box " />
                     <div className="flex justify-between  w-[50%] mo:w-full flex-col pt-5 mo:pt-0  mo:gap-5">
                       <div className=" ">
-                        <div className="text-4xl mo:text-[1.625rem] font-semibold text-black"> {item.title.rendered}</div>
+                        <div onClick={() => r.push(`/info?postId=${item.id}`)} className=" cursor-pointer text-4xl mo:text-[1.625rem] font-semibold text-black"> {item.title.rendered}</div>
                         <div className="flex mt-5 gap-[.625rem] flex-wrap ">
                           {data.map((tab) => {
                             return <button onClick={(e) => {
@@ -106,7 +112,7 @@ const Blog = () => {
                     </div>
 
 
-                  </button>
+                  </div>
 
                 })}
               </div>
@@ -138,10 +144,10 @@ const Blog = () => {
             {!isFetching ? articleList.map((item) => {
               const data = getCurrentArticleTags(item)
 
-              return <button onClick={() => r.push(`/info?postId=${item.id}`)} key={item.title.rendered} className="navigation-wrapper flex rounded-[3.0625rem] gap-4  justify-center p-5 flex-col items-center">
-                <img src={item.imageUrl} className="w-full h-[15.625rem] rounded-3xl " alt='wp' />
+              return <div key={item.title.rendered} className="navigation-wrapper flex rounded-[3.0625rem] gap-4  justify-center p-5 flex-col items-center">
+                <img onClick={() => r.push(`/info?postId=${item.id}`)} src={item.imageUrl} className=" cursor-pointer w-full h-[15.625rem] rounded-3xl " alt='wp' />
                 <div className="flex justify-between flex-col py-5  h-full ">
-                  <div title={item.title.rendered} className="text-[1.75rem] mo:text-[1.625rem]  font-semibold text-black text-left line-clamp-2 pb-5  text-ellipsis"> {item.title.rendered}</div>
+                  <div onClick={() => r.push(`/info?postId=${item.id}`)} title={item.title.rendered} className="text-[1.75rem] cursor-pointer mo:text-[1.625rem]  font-semibold text-black text-left line-clamp-2 pb-5  text-ellipsis"> {item.title.rendered}</div>
                   <div className="flex flex-col gap-[3.75rem] text-left   h-full justify-between ">
                     <div className="flex mt-5 gap-[.625rem] flex-wrap ">
                       {data.map((tab) => {
@@ -155,7 +161,7 @@ const Blog = () => {
                     <div className="text-[#8A8A8A] text-base texe-left">{convertDate(item.date)}</div>
                   </div>
                 </div>
-              </button>
+              </div>
             })
               :
               <Skeleton className="h-[25rem] w-full rounded-[3.0625rem] " />
