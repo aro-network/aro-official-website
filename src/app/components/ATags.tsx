@@ -107,7 +107,7 @@ const ATags = () => {
   console.log('adsadatagsss', tagName);
 
 
-  return <div className=" bg-[url(/banner-bg.svg)] mo:bg-top bg-cover  z-[100000] relative  w-full">
+  return <div className=" bg-[url(/banner-bg.png)] mo:bg-top bg-cover  z-[100000] relative  w-full">
     <AHeader />
     <div className=" w-container px-[5.125rem]   mo:px-[1.0625rem] h-screen mo:h-full mt-[5.0625rem]  m-auto md:w-full mo:w-full ">
       {!loading ? <div className="bg-[#FFFFFF] flex flex-col px-[3.125rem] rounded-[3.0625rem] justify-center py-10 shadow-box" >

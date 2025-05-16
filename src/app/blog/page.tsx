@@ -82,7 +82,7 @@ const Blog = () => {
   return (
     <>
 
-      <div className=" bg-[url(/banner-bg.svg)] mo:bg-top bg-cover  z-[100000] lg:relative  w-full h-screen">
+      <div className=" bg-[url(/banner-bg.png)] mo:bg-top bg-cover  z-[100000] lg:relative  w-full h-screen">
         <AHeader />
         <div className=" w-container px-[5.125rem] mo:px-[1.0625rem]  pt-[5.0625rem] mo:pt-11 m-auto md:w-full mo:w-full ">
           <div className="text-[4.0625rem] mo:text-[2.5rem] text-black font-Ubuntu">Blog</div>

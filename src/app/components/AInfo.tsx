@@ -43,7 +43,7 @@ const AInfo = () => {
 
   return <>
 
-    <div className=" bg-[url(/banner-bg.svg)] mo:bg-top bg-cover  z-[100000] relative  w-full h-screen">
+    <div className=" bg-[url(/banner-bg.png)] mo:bg-top bg-cover  z-[100000] relative  w-full h-screen">
       <AHeader />
       <div className=" w-container px-[16rem] mo:px-[1.0625rem]  pt-[5.0625rem] smd:pt-10  m-auto md:w-full mo:w-full ">
         <div className="bg-[#FFFFFF] flex flex-col  rounded-[1.8125rem] justify-center  shadow-box" >
@@ -97,7 +97,9 @@ const AInfo = () => {
               By creating an globally-connected edge cloud, we empower the AI-driven world with infrastructure designed for speed, flexibility, and accessibility.
             </div>
           </div>
-          <SocialButtons links={socialLinks} isInfo />
+          <div className="mt-[3.125rem]">
+            <SocialButtons links={socialLinks} isInfo />
+          </div>
 
         </div>
         <AScrollToTop />

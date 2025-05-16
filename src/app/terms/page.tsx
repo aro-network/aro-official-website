@@ -4,7 +4,7 @@ import AHeader from "../components/AHeader"
 const Terms = () => {
 
 
-  return <div className=" bg-[url(/banner-bg.svg)] mo:bg-top bg-cover  z-[100000] relative  w-full h-screen">
+  return <div className=" bg-[url(/banner-bg.png)] mo:bg-top bg-cover  z-[100000] relative  w-full h-screen">
     <AHeader />
     <div className="w-container mo:w-full mo:px-5 m-auto mo:m-0  md:w-full md:px-[30px]  select-none relative z-[1000] px-10">
 

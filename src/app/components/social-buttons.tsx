@@ -15,7 +15,7 @@ const socialLinks = [
 
 export function SocialButtons({ links = socialLinks, isInfo = false }: { links?: { href: string, icon?: JSX.Element, name?: string }[], isInfo?: boolean }) {
 
-    return <div className={`flex items-center gap-5 ${isInfo && 'mo:gap-[.625rem]  flex-row flex-wrap'}`}>
+    return <div className={`flex items-center gap-5 ${isInfo && 'mo:gap-[.625rem] flex-row flex-wrap'}`}>
         {
             links.map((item) => {
                 return <a
@@ -25,9 +25,9 @@ export function SocialButtons({ links = socialLinks, isInfo = false }: { links?:
                     target="_blank"
                     rel="noreferrer"
                 >
-                    {item.name ? <div className='mt-[3.125rem] flex  '>
+                    {item.name ? <div className=' flex  '>
                         <div className=' hover:text-[#1C73FF] hover:border-[#1C73FF] '>{item.name} </div>
-                        <div hidden={item.name === 'Telegram'} className='mx-10 mo:mx-[.625rem]  '>|</div>
+                        <div hidden={item.name === 'Telegram'} className='mx-5 mo:mx-[.625rem]  '>|</div>
                     </div> : item.icon}
                 </a>
             })

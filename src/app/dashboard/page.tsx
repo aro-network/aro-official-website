@@ -25,7 +25,7 @@ const Dashboard = () => {
   }
 
 
-  return <div className=" mainBg mo:bg-top bg-cover  z-[100000] lg:relative  w-full h-screen">
+  return <div className=" bg-[url(/banner-bg.png)]  mo:bg-top bg-cover  z-[100000] lg:relative  w-full h-screen">
     <div className="flex justify-center w-full pt-[4.75rem] mo:pt-5 flex-col items-center">
       <Image alt="" width={211} height={46} src="../enreach-logo.svg" className="w-[13.1875rem] h-[2.375rem] mo:w-[140px] mo:h-[1.4375rem]" />
       <div className="font-medium text-xl mo:text-sm text-black mt-5 mo:mt-[.375rem]">Mobile App</div>
