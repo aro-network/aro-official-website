@@ -1,6 +1,33 @@
+'use client'
 import Image from "next/image"
+import { useEffect, useState } from "react";
 
 const Dashboard = () => {
+  const [isMobile, setIsMobile] = useState<boolean | null>(null);
+
+  function isMobileDevice() {
+    if (typeof window === "undefined") return false;
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+  }
+  useEffect(() => {
+    const mobile = isMobileDevice();
+    setIsMobile(mobile);
+
+    if (!mobile) {
+      window.location.href = "https://devnet.dashboard.enreach.network/";
+    }
+  }, []);
+
+  if (isMobile === false) {
+    return null;
+  }
+
+  if (isMobile === null) {
+    return null;
+  }
+
 
 
   return <div className=" mainBg mo:bg-top bg-cover  z-[100000] lg:relative  w-full h-screen">

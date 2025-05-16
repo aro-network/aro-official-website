@@ -9,6 +9,7 @@ const App = () => {
     const isPWA =
       window.matchMedia("(display-mode: standalone)").matches ||
       (window.navigator as NavigatorWithStandalone).standalone === true;
+
     if (!isPWA) {
       window.location.href = "/";
     }
