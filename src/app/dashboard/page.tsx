@@ -20,14 +20,9 @@ const Dashboard = () => {
     }
   }, []);
 
-  if (isMobile === false) {
+  if (!isMobile) {
     return null;
   }
-
-  if (isMobile === null) {
-    return null;
-  }
-
 
 
   return <div className=" mainBg mo:bg-top bg-cover  z-[100000] lg:relative  w-full h-screen">
