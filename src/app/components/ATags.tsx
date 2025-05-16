@@ -130,10 +130,10 @@ const ATags = () => {
         {!loading ? posts.map((item) => {
           const data = getCurrentArticleTags(item)
 
-          return <button onClick={() => r.push(`/info?postId=${item.id}`)} key={item.title.rendered} className="navigation-wrapper flex rounded-[3.0625rem] gap-4  justify-center p-5 flex-col items-center">
-            <img src={item.imageUrl} className="w-full h-[15.625rem] rounded-3xl " alt='wp' />
+          return <div key={item.title.rendered} className="navigation-wrapper flex rounded-[3.0625rem] gap-4  justify-center p-5 flex-col items-center">
+            <img onClick={() => r.push(`/info?postId=${item.id}`)} src={item.imageUrl} className="w-full h-[15.625rem] rounded-3xl " alt='wp' />
             <div className="flex justify-between flex-col py-5  h-full ">
-              <div title={item.title.rendered} className="text-[1.75rem] mo:text-[1.625rem]  font-semibold text-black text-left line-clamp-2 pb-5  text-ellipsis"> {item.title.rendered}</div>
+              <div onClick={() => r.push(`/info?postId=${item.id}`)} title={item.title.rendered} className="text-[1.75rem] cursor-pointer mo:text-[1.625rem]  font-semibold text-black text-left line-clamp-2 pb-5  text-ellipsis"> {item.title.rendered}</div>
               <div className="flex flex-col gap-[3.75rem] text-left   h-full justify-between ">
                 <div className="flex mt-5 gap-[.625rem] flex-wrap ">
                   {data.map((tab) => {
@@ -147,7 +147,7 @@ const ATags = () => {
                 <div className="text-[#8A8A8A] text-base texe-left">{convertDate(item.date)}</div>
               </div>
             </div>
-          </button>
+          </div>
         })
           :
           <Skeleton className="h-[31.25rem] w-full rounded-[3.0625rem] " />

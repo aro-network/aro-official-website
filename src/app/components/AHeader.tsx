@@ -9,7 +9,7 @@ const AHeader = () => {
   const headerTabList = [
     { href: '/blog', tabName: 'Blog' },
     { href: 'https://docs.enreach.network/', tabName: 'Docs' },
-    { href: 'https://devnet.dashboard.enreach.network/', tabName: 'Dashboard' },
+    { href: 'dashboard', tabName: 'Dashboard' },
   ];
   const handleTabClick = (href: string) => {
     if (href === '/blog') {
@@ -28,13 +28,12 @@ const AHeader = () => {
           <Image alt="" width={211} height={38} src="../enreach-logo.svg" className="w-[13.1875rem] h-[2.375rem] mo:w-[140px] mo:h-[1.4375rem]" />
         </Link>
         <div className="text-base font-medium flex gap-5">
-          {headerTabList.map((item, index) => (
+          {headerTabList.map((item) => (
             <button
               key={`item_${item.tabName}`}
               onClick={() => handleTabClick(item.href)}
               className={`
                   text-black sociallink 
-                  ${index === 2 ? 'mo:hidden' : ''} 
                   ${r === '/blog' && item.href === '/blog' ? 'cursor-default text-gray-400' : ''} 
                   ${r.replace("/", "") === item.tabName.toLowerCase() ? '!text-[#1C73FF]' : ''}
                 `}

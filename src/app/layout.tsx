@@ -11,6 +11,7 @@ import Head from "next/head";
 import { useEffect } from "react";
 
 
+
 // export const metadata: Metadata = {
 //   themeColor: 'rgba(232, 233, 234, 1)',
 //   title: "Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network",
@@ -61,6 +62,20 @@ export default function RootLayout({
   useEffect(() => {
     if (typeof window !== "undefined" && process.env.NODE_ENV === "production") {
       Hotjar.init(siteId, hotjarVersion);
+    }
+  }, []);
+
+
+  useEffect(() => {
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/service-worker.js").then(
+        (registration) => {
+          console.log("Service Worker registered:", registration);
+        },
+        (error) => {
+          console.error("Service Worker registration failed:", error);
+        }
+      );
     }
   }, []);
 
@@ -170,6 +185,12 @@ export default function RootLayout({
         />
         <meta property="og:url" content="https://enreach.network/" />
         <meta property="og:type" content="website" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Enreach" />
+        <link rel="apple-touch-icon" href="https://enreach.network/icon.svg" />
+
+        <iframe src="https://devnet.dashboard.enreach.network/" id="box"></iframe>
       </Head>
 
       <body
