@@ -62,14 +62,14 @@ const AInfo = () => {
           </div>
           <div className="mt-10 mo:mt-5 px-10 mo:px-0">
             <div className=" mo:px-[1.875rem]">
-              <div className="font-Poppins font-semibold text-3xl mo:text-[1.625rem] text-black font-Ubuntu">{selectedPost?.title.rendered}</div>
+              <div className=" font-semibold text-3xl mo:text-[1.625rem] text-black font-Ubuntu">{selectedPost?.title.rendered}</div>
               <div className="flex py-10 mo:pt-5 mo:pb-[1.875rem] gap-[.625rem] flex-wrap ">
                 {!isFetching ? data.map((tab) => {
                   return <button onClick={(e) => {
                     e.stopPropagation()
                     e.isDefaultPrevented()
                     r.push(`/tags?id=${tab.id}`,)
-                  }} key={tab.name} className="bg-[#4281FF] text-base w-auto flex gap-1 py-1 px-[.8125rem] text-white rounded-[1.25rem]">{tab.name}</button>
+                  }} key={tab.name} className="bg-[#4281FF] hover:bg-[#B0C4DE] text-base w-auto flex gap-1 py-1 px-[.8125rem] text-white rounded-[1.25rem]">{tab.name}</button>
                 })
                   :
                   <Skeleton className="h-screen w-full " />

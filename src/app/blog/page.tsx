@@ -104,7 +104,7 @@ const Blog = () => {
                               e.isDefaultPrevented()
 
                               r.push(`tags?id=${tab.id}`)
-                            }} key={tab.name} className="bg-[#4281FF] text-base w-auto flex gap-1 py-1 px-[.8125rem] text-white rounded-[1.25rem]">{tab.name}</button>
+                            }} key={tab.name} className="bg-[#4281FF] hover:bg-[#B0C4DE] text-base w-auto flex gap-1 py-1 px-[.8125rem] text-white rounded-[1.25rem]">{tab.name}</button>
                           })}
                         </div>
                       </div>
@@ -155,7 +155,7 @@ const Blog = () => {
                           onClick={() => {
                             r.push(`tags?id=${tab.id}`)
                           }} key={tab.id}
-                          className="bg-[#4281FF] text-base w-auto flex gap-1 py-1 px-[.625rem] text-white rounded-[1.25rem]">{tab.name}</button>
+                          className="bg-[#4281FF] hover:bg-[#B0C4DE] text-base w-auto flex gap-1 py-1 px-[.625rem] text-white rounded-[1.25rem]">{tab.name}</button>
                       })}
                     </div>
                     <div className="text-[#8A8A8A] text-base texe-left">{convertDate(item.date)}</div>
@@ -179,7 +179,7 @@ const Blog = () => {
               {allTags && allTags.map((tab) => {
                 return <button onClick={() => {
                   r.push(`tags?id=${tab.id}`)
-                }} key={tab.id} className="bg-[#4281FF] text-base w-auto flex gap-1 py-1 px-[.8125rem] text-white rounded-[1.25rem]">{tab.name}</button>
+                }} key={tab.id} className="bg-[#4281FF] hover:bg-[#B0C4DE] text-base w-auto flex gap-1 py-1 px-[.8125rem] text-white rounded-[1.25rem]">{tab.name}</button>
               })}
 
             </div>
