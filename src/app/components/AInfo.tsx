@@ -62,7 +62,7 @@ const AInfo = () => {
           </div>
           <div className="mt-10 mo:mt-5 px-10 mo:px-0">
             <div className=" mo:px-[1.875rem]">
-              <div className="font-Poppins font-semibold text-3xl mo:text-[1.625rem] text-black">{selectedPost?.title.rendered}</div>
+              <div className="font-Poppins font-semibold text-3xl mo:text-[1.625rem] text-black font-Ubuntu">{selectedPost?.title.rendered}</div>
               <div className="flex py-10 mo:pt-5 mo:pb-[1.875rem] gap-[.625rem] flex-wrap ">
                 {!isFetching ? data.map((tab) => {
                   return <button onClick={(e) => {
