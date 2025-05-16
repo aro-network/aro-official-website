@@ -8,7 +8,7 @@ const ABanner = () => {
       className=" aos-init aos-animate  mo:w-full h-auto mo:h-auto"
     >
       <div className="w-container m-auto flex pl-[100px]   mo:pl-0 mo:flex-col md:w-full mo:mb-0  mo:w-full  h-full  ">
-        <div className="   flex  w-full h-full gap-20 mo:gap-10  pt-[20vh] mo:pt-20 mo:flex-col  ">
+        <div className="   flex  w-full h-full gap-20 mo:gap-10  pt-[20vh] mo:pt-[3.75rem] mo:flex-col  ">
           <div className="  md:w-full  mo:w-full mo:text-center relative mo:top-0 md:top-[-50px] top-[-6.25rem] py-5">
             <div className=" text-[66px] font-extrabold mo:text-[1.75rem] md:text-[45px] text-nowrap  mo:px-0 md:px-[30px] text-[#000000] md:lead-[71px] mo:leading-none leading-[91px] relative z-[9999] font-Ubuntu">
               <div> The New Edge of AI</div>{" "}

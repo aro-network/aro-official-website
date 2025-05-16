@@ -85,7 +85,7 @@ const Blog = () => {
       <div className=" bg-[url(/banner-bg.svg)] mo:bg-top bg-cover  z-[100000] lg:relative  w-full h-screen">
         <AHeader />
         <div className=" w-container px-[5.125rem] mo:px-[1.0625rem]  pt-[5.0625rem] mo:pt-11 m-auto md:w-full mo:w-full ">
-          <div className="text-[4.0625rem] mo:text-[2.5rem] text-black">Blog</div>
+          <div className="text-[4.0625rem] mo:text-[2.5rem] text-black font-Ubuntu">Blog</div>
           {!isFetching ?
             <div className="navigation-wrapper bg-[#FFFFFF] rounded-[3.0625rem] mt-[3.125rem]  shadow-xl shadow-[#E6E6E6E5]">
               <div ref={sliderRef} className="keen-slider w-full rounded-[3.0625rem]">
@@ -96,7 +96,7 @@ const Blog = () => {
                     <img onClick={() => r.push(`/info?postId=${item.id}`)} src={item.imageUrl} className="  cursor-pointer  w-[50%] mo:w-full rounded-3xl shadow-box " />
                     <div className="flex justify-between  w-[50%] mo:w-full flex-col pt-5 mo:pt-0  mo:gap-5">
                       <div className=" ">
-                        <div onClick={() => r.push(`/info?postId=${item.id}`)} className=" cursor-pointer text-4xl mo:text-[1.625rem] font-semibold text-black"> {item.title.rendered}</div>
+                        <div onClick={() => r.push(`/info?postId=${item.id}`)} className=" cursor-pointer text-4xl mo:text-[1.625rem] font-semibold text-black font-Ubuntu"> {item.title.rendered}</div>
                         <div className="flex mt-5 gap-[.625rem] flex-wrap ">
                           {data.map((tab) => {
                             return <button onClick={(e) => {
@@ -147,15 +147,15 @@ const Blog = () => {
               return <div key={item.title.rendered} className="navigation-wrapper flex rounded-[3.0625rem] gap-4  justify-center p-5 flex-col items-center">
                 <img onClick={() => r.push(`/info?postId=${item.id}`)} src={item.imageUrl} className=" cursor-pointer w-full h-[15.625rem] rounded-3xl " alt='wp' />
                 <div className="flex justify-between flex-col py-5  h-full ">
-                  <div onClick={() => r.push(`/info?postId=${item.id}`)} title={item.title.rendered} className="text-[1.75rem] cursor-pointer mo:text-[1.625rem]  font-semibold text-black text-left line-clamp-2 pb-5  text-ellipsis"> {item.title.rendered}</div>
-                  <div className="flex flex-col gap-[3.75rem] text-left   h-full justify-between ">
+                  <div onClick={() => r.push(`/info?postId=${item.id}`)} title={item.title.rendered} className="text-[1.75rem] font-Ubuntu cursor-pointer mo:text-[1.625rem]  font-semibold text-black text-left line-clamp-2 pb-5  text-ellipsis"> {item.title.rendered}</div>
+                  <div className="flex flex-col gap-10 text-left   h-full justify-between ">
                     <div className="flex mt-5 gap-[.625rem] flex-wrap ">
                       {data.map((tab) => {
                         return <button
                           onClick={() => {
                             r.push(`tags?id=${tab.id}`)
                           }} key={tab.id}
-                          className="bg-[#4281FF] text-base w-auto flex gap-1 py-1 px-[.8125rem] text-white rounded-[1.25rem]">{tab.name}</button>
+                          className="bg-[#4281FF] text-base w-auto flex gap-1 py-1 px-[.625rem] text-white rounded-[1.25rem]">{tab.name}</button>
                       })}
                     </div>
                     <div className="text-[#8A8A8A] text-base texe-left">{convertDate(item.date)}</div>
@@ -173,7 +173,7 @@ const Blog = () => {
           </div>
 
           <div className="rounded-[3.0625rem] bg-white shadow-box px-[3.125rem] mo:px-5 py-[3.125rem] mo:mb-0">
-            <div className="text-center text-black text-[2.5rem] mo:text-[1.625rem] font-semibold">Search by Tag</div>
+            <div className="text-center text-black text-[2.5rem] mo:text-[1.625rem] font-semibold font-Ubuntu">Search by Tag</div>
             <div className="flex mt-5 mo:mt-10 gap-[.625rem] flex-wrap ">
 
               {allTags && allTags.map((tab) => {

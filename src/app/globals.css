@@ -420,6 +420,8 @@ textarea:-webkit-autofill {
     margin-top: 0 !important ;
     margin-bottom: 0 !important;
     font-size: 24px !important;
+  font-weight: 600 !important;
+
   }
 
   p strong{

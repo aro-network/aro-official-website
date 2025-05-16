@@ -15,7 +15,7 @@ const AEarly = () => {
       </div>
       <div className=" bg-[#1C73FF0F] rounded-[2.5rem] py-6 px-11 mo:px-5">
         <div className="flex">
-          <div className=" font-Ubuntu text-[2.75rem] font-medium mo:w-full text-[#1C73FF] ">
+          <div className=" font-Ubuntu text-[2.75rem] mo:text-[1.75rem] font-medium mo:w-full text-[#1C73FF] ">
             You’re Early
           </div>
         </div>
