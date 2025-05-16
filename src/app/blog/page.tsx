@@ -82,10 +82,10 @@ const Blog = () => {
   return (
     <>
 
-      <div className=" bg-[url(/banner-bg.png)] mo:bg-top bg-cover  z-[100000] lg:relative  w-full h-screen">
+      <div className=" bg-[url(/banner-bg.png)] mo:bg-top bg-cover  z-[100000] lg:relative  w-full h-screen bf">
         <AHeader />
-        <div className=" w-container px-[5.125rem] mo:px-[1.0625rem]  pt-[5.0625rem] mo:pt-11 m-auto md:w-full mo:w-full ">
-          <div className="text-[4.0625rem] mo:text-[2.5rem] text-black font-Ubuntu">Blog</div>
+        <div className=" w-container px-[5.125rem] mo:px-[1.0625rem]  pt-[5.0625rem] mo:pt-11 m-auto md:w-full mo:w-full">
+          <div className="text-[4.0625rem] font-medium mo:text-[2.5rem] text-black font-Ubuntu">Blog</div>
           {!isFetching ?
             <div className="navigation-wrapper bg-[#FFFFFF] rounded-[3.0625rem] mt-[3.125rem]  shadow-xl shadow-[#E6E6E6E5]">
               <div ref={sliderRef} className="keen-slider w-full rounded-[3.0625rem]">
@@ -96,7 +96,7 @@ const Blog = () => {
                     <img onClick={() => r.push(`/info?postId=${item.id}`)} src={item.imageUrl} className="  cursor-pointer  w-[50%] mo:w-full rounded-3xl shadow-box " />
                     <div className="flex justify-between  w-[50%] mo:w-full flex-col pt-5 mo:pt-0  mo:gap-5">
                       <div className=" ">
-                        <div onClick={() => r.push(`/info?postId=${item.id}`)} className=" cursor-pointer text-4xl mo:text-[1.625rem] font-semibold text-black font-Ubuntu"> {item.title.rendered}</div>
+                        <div onClick={() => r.push(`/info?postId=${item.id}`)} className=" cursor-pointer text-[2.5rem] mo:text-[1.625rem] font-semibold text-black font-Ubuntu"> {item.title.rendered}</div>
                         <div className="flex mt-5 gap-[.625rem] flex-wrap ">
                           {data.map((tab) => {
                             return <button onClick={(e) => {
@@ -146,7 +146,7 @@ const Blog = () => {
 
               return <div key={item.title.rendered} className="navigation-wrapper flex rounded-[3.0625rem] gap-4  justify-center p-5 flex-col items-center">
                 <img onClick={() => r.push(`/info?postId=${item.id}`)} src={item.imageUrl} className=" cursor-pointer w-full h-[15.625rem] rounded-3xl " alt='wp' />
-                <div className="flex justify-between flex-col py-5  h-full ">
+                <div className="flex justify-between flex-col pt-5 pb-[.625rem]  h-full ">
                   <div onClick={() => r.push(`/info?postId=${item.id}`)} title={item.title.rendered} className="text-[1.75rem] font-Ubuntu cursor-pointer mo:text-[1.625rem]  font-semibold text-black text-left line-clamp-2 pb-5  text-ellipsis"> {item.title.rendered}</div>
                   <div className="flex flex-col gap-10 text-left   h-full justify-between ">
                     <div className="flex mt-5 gap-[.625rem] flex-wrap ">
@@ -172,29 +172,34 @@ const Blog = () => {
             {/* <button className="py-[.8125rem] px-[2.0625rem]  bg-[#4281FF] rounded-[2.0625rem] text-white">View All Blogs</button> */}
           </div>
 
-          <div className="rounded-[3.0625rem] bg-white shadow-box px-[3.125rem] mo:px-5 py-[3.125rem] mo:mb-0">
-            <div className="text-center text-black text-[2.5rem] mo:text-[1.625rem] font-semibold font-Ubuntu">Search by Tag</div>
-            <div className="flex mt-5 mo:mt-10 gap-[.625rem] flex-wrap ">
+          {!isFetching && articleList.length &&
+            <>
+              <div className="rounded-[3.0625rem] bg-white shadow-box px-[3.125rem] mo:px-5 py-[3.125rem] mo:mb-0">
+                <div className="text-center text-black text-[2.5rem] mo:text-[1.625rem] font-semibold font-Ubuntu">Search by Tag</div>
+                <div className="flex mt-5 mo:mt-10 gap-[.625rem] flex-wrap ">
 
-              {allTags && allTags.map((tab) => {
-                return <button onClick={() => {
-                  r.push(`tags?id=${tab.id}`)
-                }} key={tab.id} className="bg-[#4281FF] hover:bg-[#B0C4DE] text-base w-auto flex gap-1 py-1 px-[.8125rem] text-white rounded-[1.25rem]">{tab.name}</button>
-              })}
+                  {allTags && allTags.map((tab) => {
+                    return <button onClick={() => {
+                      r.push(`tags?id=${tab.id}`)
+                    }} key={tab.id} className="bg-[#4281FF] hover:bg-[#B0C4DE] text-base w-auto flex gap-1 py-1 px-[.8125rem] text-white rounded-[1.25rem]">{tab.name}</button>
+                  })}
 
-            </div>
+                </div>
 
-          </div>
+              </div>
 
-          <button onClick={() => window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-          })
-          } className=" mo:mt-[4.1875rem] mt-20 mb-10 mo:mb-12 rounded-[1.5625rem] float-right shadow-box border w-[3.125rem] h-[3.125rem] flex items-center justify-center ">
-            <FiArrowUp className="w-6" />
-          </button>
+              <button onClick={() => window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+              })
+              } className=" mo:mt-[4.1875rem] mt-20 mb-10 mo:mb-12 rounded-[1.5625rem] float-right shadow-box border w-[3.125rem] h-[3.125rem] flex items-center justify-center ">
+                <FiArrowUp className="w-6" />
+              </button>
+            </>
+          }
 
         </div>
+
 
 
         <AFooter />

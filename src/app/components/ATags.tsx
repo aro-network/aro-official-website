@@ -132,7 +132,7 @@ const ATags = () => {
 
           return <div key={item.title.rendered} className="navigation-wrapper  bg-white flex rounded-[3.0625rem] gap-4  justify-center p-5 flex-col items-center">
             <img onClick={() => r.push(`/info?postId=${item.id}`)} src={item.imageUrl} className="w-full h-[15.625rem] rounded-3xl cursor-pointer " alt='wp' />
-            <div className="flex justify-between flex-col py-5  h-full ">
+            <div className="flex justify-between flex-col pt-5 pb-[.625rem]   h-full ">
               <div onClick={() => r.push(`/info?postId=${item.id}`)} title={item.title.rendered} className="text-[1.75rem] cursor-pointer mo:text-[1.625rem]  font-semibold text-black text-left line-clamp-2 pb-5  text-ellipsis font-Ubuntu"> {item.title.rendered}</div>
               <div className="flex flex-col gap-[3.75rem] text-left   h-full justify-between ">
                 <div className="flex mt-5 mo:mt-10 gap-[.625rem] flex-wrap ">
