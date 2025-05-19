@@ -93,22 +93,21 @@ const Blog = () => {
                   const data = getCurrentArticleTags(item)
                   return <div key={item.title.rendered} className="keen-slider__slide rounded-[3.0625rem]  text-left number-slide1 flex gap-[1.875rem] p-5 mo:flex-col ">
 
-                    <img onClick={() => r.push(`/info?postId=${item.id}`)} src={item.imageUrl} className="  cursor-pointer  w-[50%] mo:w-full rounded-3xl shadow-box " />
-                    <div className="flex justify-between  w-[50%] mo:w-full flex-col pt-5 mo:pt-0  mo:gap-5">
-                      <div className=" ">
-                        <div onClick={() => r.push(`/info?postId=${item.id}`)} className=" cursor-pointer text-[2.5rem] mo:text-[1.625rem] font-semibold text-black font-Ubuntu"> {item.title.rendered}</div>
+                    <img onClick={() => r.push(`/info?postId=${item.id}`)} src={item.imageUrl} className=" cursor-pointer mo:w-full  w-[50%] rounded-3xl  shadow-box " alt='wp' />
+                    <div className="flex justify-between flex-col pt-5 pb-[.625rem]  h-full ">
+                      <div onClick={() => r.push(`/info?postId=${item.id}`)} title={item.title.rendered} className="text-[2.5rem] cursor-pointer mo:text-[1.625rem] font-semibold text-black font-Ubuntu line-clamp-2 pb-5  text-ellipsis"> {item.title.rendered}</div>
+                      <div className="flex flex-col gap-10 text-left   h-full justify-between ">
                         <div className="flex mt-5 gap-[.625rem] flex-wrap ">
                           {data.map((tab) => {
-                            return <button onClick={(e) => {
-                              e.stopPropagation()
-                              e.isDefaultPrevented()
-
-                              r.push(`tags?id=${tab.id}`)
-                            }} key={tab.name} className="bg-[#4281FF] hover:bg-[#B0C4DE] text-base w-auto flex gap-1 py-1 px-[.8125rem] text-white rounded-[1.25rem]">{tab.name}</button>
+                            return <button
+                              onClick={() => {
+                                r.push(`tags?id=${tab.id}`)
+                              }} key={tab.id}
+                              className="bg-[#4281FF] hover:bg-[#0F57E9] text-base w-auto flex gap-1 py-1 px-[.625rem] text-white rounded-[1.25rem]">{tab.name}</button>
                           })}
                         </div>
+                        <div className="text-[#8A8A8A] text-base texe-left">{convertDate(item.date)}</div>
                       </div>
-                      <div className="text-[#8A8A8A] text-base mb-5 mo:mt-5">{convertDate(item.date)}</div>
                     </div>
 
 
@@ -155,7 +154,7 @@ const Blog = () => {
                           onClick={() => {
                             r.push(`tags?id=${tab.id}`)
                           }} key={tab.id}
-                          className="bg-[#4281FF] hover:bg-[#B0C4DE] text-base w-auto flex gap-1 py-1 px-[.625rem] text-white rounded-[1.25rem]">{tab.name}</button>
+                          className="bg-[#4281FF] hover:bg-[#0F57E9] text-base w-auto flex gap-1 py-1 px-[.625rem] text-white rounded-[1.25rem]">{tab.name}</button>
                       })}
                     </div>
                     <div className="text-[#8A8A8A] text-base texe-left">{convertDate(item.date)}</div>
@@ -181,7 +180,7 @@ const Blog = () => {
                   {allTags && allTags.map((tab) => {
                     return <button onClick={() => {
                       r.push(`tags?id=${tab.id}`)
-                    }} key={tab.id} className="bg-[#4281FF] hover:bg-[#B0C4DE] text-base w-auto flex gap-1 py-1 px-[.8125rem] text-white rounded-[1.25rem]">{tab.name}</button>
+                    }} key={tab.id} className="bg-[#4281FF] hover:bg-[#0F57E9] text-base w-auto flex gap-1 py-1 px-[.8125rem] text-white rounded-[1.25rem]">{tab.name}</button>
                   })}
 
                 </div>

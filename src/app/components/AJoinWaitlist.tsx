@@ -68,7 +68,7 @@ const AJoinWaitlist = () => {
   return (
     <div
       id="target-section"
-      className="w-container m-auto flex px-[170px] mo:px-5 mo:pt-16 pt-10 md:px-[40px] md:w-full  mo:w-full flex-col "
+      className="w-container m-auto flex px-[170px] mo:px-5 mo:pt-16 pt-10  md:px-[100px] md:w-full  mo:w-full flex-col "
     >
       <div
         data-aos="fade-up"

@@ -141,7 +141,7 @@ const ATags = () => {
                       onClick={() => {
                         r.push(`tags?id=${tab.id}`)
                       }} key={tab.id}
-                      className="bg-[#4281FF] hover:bg-[#B0C4DE] text-base w-auto flex gap-1 py-1 px-[.625rem] text-white rounded-[1.25rem]">{tab.name}</button>
+                      className="bg-[#4281FF] hover:bg-[#0F57E9] text-base w-auto flex gap-1 py-1 px-[.625rem] text-white rounded-[1.25rem]">{tab.name}</button>
                   })}
                 </div>
                 <div className="text-[#8A8A8A] text-base texe-left">{convertDate(item.date)}</div>
