@@ -95,8 +95,10 @@ const Blog = () => {
 
                     <img onClick={() => r.push(`/info?postId=${item.id}`)} src={item.imageUrl} className=" cursor-pointer mo:w-full  w-[50%] rounded-3xl  shadow-box " alt='wp' />
                     <div className="flex justify-between flex-col pt-5 pb-[.625rem]  h-full ">
-                      <div onClick={() => r.push(`/info?postId=${item.id}`)} title={item.title.rendered} className="text-[2.5rem] cursor-pointer mo:text-[1.625rem] font-semibold text-black font-Ubuntu line-clamp-2 pb-5  text-ellipsis"> {item.title.rendered}</div>
-                      <div className="flex flex-col gap-10 text-left   h-full justify-between ">
+
+                      <div onClick={() => r.push(`/info?postId=${item.id}`)} title={item.title.rendered} className="text-[2.1875rem] font-Ubuntu cursor-pointer mo:text-[1.625rem]  font-semibold text-black text-left line-clamp-2 pb-5  text-ellipsis"> {item.title.rendered}</div>
+
+                      <div className="flex flex-col gap-10 text-left mt-5   h-full justify-between ">
                         <div className="flex mt-5 gap-[.625rem] flex-wrap ">
                           {data.map((tab) => {
                             return <button

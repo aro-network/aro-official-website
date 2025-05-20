@@ -3,7 +3,7 @@ const AEarly = () => {
     <div
       data-aos="fade-up"
       data-aos-duration="1000"
-      className="  aos-init aos-animate   w-container m-auto flex px-[170px] mo:px-5 pt-[6.25rem]   md:px-[100px] md:w-full  mo:w-full  flex-col"
+      className="  aos-init aos-animate   w-container m-auto flex px-[170px] mo:px-5 pt-[6.25rem]   md:px-[60px] md:w-full  mo:w-full  flex-col"
     >
       <div className="w-full  absolute ng:hidden flex justify-end  mt-10 translate-x-[-40px] ">
         <img
@@ -38,7 +38,7 @@ const AEarly = () => {
               <div>
                 • Early access to Edge Nodes hardware and exclusive rewards.
               </div>
-              <div>
+              <div className=" ">
                 • Become a co-creator of EnReach and get rewarded for your
                 contributions.
               </div>
