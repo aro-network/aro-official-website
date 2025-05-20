@@ -92,8 +92,10 @@ const Blog = () => {
                 {articleList.map((item) => {
                   const data = getCurrentArticleTags(item)
                   return <div key={item.title.rendered} className="keen-slider__slide rounded-[3.0625rem]  text-left number-slide1 flex gap-[1.875rem] p-5 mo:flex-col ">
+                    <div className="">
+                      <img onClick={() => r.push(`/info?postId=${item.id}`)} src={item.imageUrl} className=" cursor-pointer mo:w-full mo:!h-[14.375rem]   w-[50%] rounded-3xl  shadow-box " alt='wp' />
+                    </div>
 
-                    <img onClick={() => r.push(`/info?postId=${item.id}`)} src={item.imageUrl} className=" cursor-pointer mo:w-full  w-[50%] rounded-3xl  shadow-box " alt='wp' />
                     <div className="flex justify-between flex-col pt-5 pb-[.625rem]  h-full ">
 
                       <div onClick={() => r.push(`/info?postId=${item.id}`)} title={item.title.rendered} className="text-[2.1875rem] font-Ubuntu cursor-pointer mo:text-[1.625rem]  font-semibold text-black text-left line-clamp-2 pb-5  text-ellipsis"> {item.title.rendered}</div>
