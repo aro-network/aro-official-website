@@ -127,10 +127,10 @@ const AJoinWaitlist = () => {
         <div className="text-black  text-2xl mo:text-lg font-medium mo:text-center  font-Ubuntu">
           Step 2: Submit your details and fill out the application form{" "}
         </div>
-        <div className="enreachInput flex flex-col w-full items-center mt-5">
+        <div className="enreachInput flex flex-col w-full items-center mt-20 mo:mt-6">
           <input
             maxLength={50}
-            className="border-[#7F7F7F] border w-[542px] mo:w-full h-[4.25rem] mt-[30px] rounded-2xl"
+            className="border-[#7F7F7F] border w-[542px] mo:w-full h-[4.25rem] rounded-2xl"
             value={inputInfo.address}
             placeholder="Leave your EVM address"
             onChange={(e) => {

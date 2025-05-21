@@ -117,7 +117,7 @@ const ATags = () => {
           <span className="font-Ubuntu font-semibold text-[2.5rem] text-black">{tagName}</span>
           <button
             onClick={() => r.push('/blog',)}
-            className="bg-[#1C73FF] text-white h-[2.8125rem]  items-center text-xl mo:text-base mo:font-medium font-medium leading-9  flex justify-center  rounded-[22.5rem]  py-[.8125rem] px-10"
+            className="bg-[#1C73FF] hover:bg-[#0F57E9] text-white h-[2.8125rem]  items-center text-xl mo:text-base mo:font-medium font-medium leading-9  flex justify-center  rounded-[22.5rem]  py-[.8125rem] px-10"
           >
             Back to Blog
           </button>

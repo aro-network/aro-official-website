@@ -35,11 +35,19 @@ const AEarly = () => {
             </div>
             <div className="text-[#000000] text-base pt-5">
               <div>As a Pioneer, you’ll get:</div>
-              <div>
-                • Early access to Edge Nodes hardware and exclusive rewards.
+              <div className="flex">
+                <div>
+                  {"\u00A0"}•{"\u00A0"}
+                </div>
+                <div>
+                  Early access to Edge Nodes hardware and exclusive rewards.
+                </div>
               </div>
-              <div className=" ">
-                • Become a co-creator of EnReach and get rewarded for your
+              <div className="flex">
+                <div>
+                  {"\u00A0"}•{"\u00A0"}
+                </div>
+                Become a co-creator of EnReach and get rewarded for your
                 contributions.
               </div>
             </div>
