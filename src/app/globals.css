@@ -411,7 +411,6 @@ textarea:-webkit-autofill {
 }
 @media (max-width: 1001px) {
   .enreachInput input {
-    padding: 15px;
   width: 100%;
 
   }
@@ -529,4 +528,39 @@ p{
 .enreach-content a{
   text-decoration: underline;
   
+}
+
+.element {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  z-index: 100;
+  
+}
+
+.element::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  z-index: -1;
+}
+
+.element::after {
+  content: '';
+  position: absolute;
+  top: 2px; 
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: #fff; 
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  z-index: 0;
 }
