@@ -187,7 +187,9 @@ const AJoinWaitlist = () => {
         </div>
         <button
           onClick={onSubmit}
-          className="bg-[#1C73FF] btn text-white py-[.625rem] text-base px-10 rounded-[1.25rem] h-10"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="aos-init aos-animate bg-[#1C73FF]   btn text-white py-[.625rem] text-base px-10 rounded-[1.25rem] h-10"
         >
           Submit
         </button>

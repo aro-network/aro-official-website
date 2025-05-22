@@ -7,7 +7,9 @@ const AFAQ = () => {
   return <div
     className="w-container m-auto flex px-[170px] mo:px-5  pt-20 mo:pt-[3.125rem]  md:px-[60px] md:w-full  mo:w-full flex-col "
   >
-    <div className="font-Ubuntu font-medium text-[2.75rem] mo:text-[1.75rem] text-black text-center mo:mb-[1.875rem] mb-[3.125rem] ">
+    <div data-aos="fade-up"
+      data-aos-duration="1000"
+      className="aos-init aos-animate font-Ubuntu font-medium text-[2.75rem] mo:text-[1.75rem] text-black text-center mo:mb-[1.875rem] mb-[3.125rem] ">
       EnReach FAQ
     </div>
     <Accordion variant="light" className="flex  flex-col gap-8 mo:gap-6  " showDivider={false}>
