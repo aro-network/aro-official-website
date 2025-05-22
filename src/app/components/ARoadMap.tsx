@@ -83,10 +83,11 @@ export default function AutoScrollRoadmap() {
     <div
       className="w-container m-auto flex px-[170px] mo:px-[1.6875rem]  mo:pt-[3.125rem] mo:pb-[3.75rem]  pt-20  md:px-[60px] md:w-full  mo:w-full flex-col "
     >
-      <div className=' mb-[100px] mo:mb-0 mo:mt-4 w-full '>
-        <div data-aos="fade-up"
-          data-aos-duration="1000"
-          className='aos-init aos-animate font-Ubuntu font-medium mo:text-[1.75rem] text-[2.75rem] text-black mb-14 mo:mb-[1.875rem] text-center'>
+      <div data-aos="fade-up"
+        data-aos-duration="1000"
+        className='aos-init aos-animate  mb-[100px] mo:mb-0 mo:mt-4 w-full '>
+        <div
+          className='font-Ubuntu font-medium mo:text-[1.75rem] text-[2.75rem] text-black mb-14 mo:mb-[1.875rem] text-center'>
           EnReach Roadmap: From Launch to Scale
         </div>
         <div className=" flex mo:hidden relative w-full  ">
@@ -115,7 +116,7 @@ export default function AutoScrollRoadmap() {
                     <div className="flex  relative h-5 bg-black w-[.0625rem]">
                       <div className='absolute top-[55px] z-[-10]'></div>
                     </div>
-                    <div className={`flex  border border-black rounded-lg bg-white  lg:h-[220px] h-[15.625rem] xsm:min-w-[380px] min-w-full xsm:mb-5 w-full flex-col ${item.isCurrent && 'current-shadow-box'}`}>
+                    <div className={`flex  border border-black rounded-lg bg-white  lg:h-[220px] h-[16.875rem] xsm:min-w-[380px] min-w-full xsm:mb-5 w-full flex-col ${item.isCurrent && 'current-shadow-box'}`}>
                       <div className={` px-[.875rem] font-medium rounded-t-md justify-between text-lg w-full h-[3.125rem] flex items-center text-white ${item.color} `}>
                         {item.title}
                         {item.finished && <BsCheckCircle />}

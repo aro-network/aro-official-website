@@ -7,7 +7,7 @@ const AEarly = () => {
     >
       <div className="w-full  absolute ng:hidden flex justify-end  mt-10 translate-x-[-40px] ">
         <img
-          src="../spots.svg"
+          src="../spots.png"
           width={118}
           height={118}
           className=" object-contain relative top-[-6.25rem] w-[7.375rem] h-[7.375rem] "
@@ -66,7 +66,7 @@ const AEarly = () => {
       </div>
       <div className=" flex mo:hidden relative w-full  ">
         <img
-          src="../spots.svg"
+          src="../spots.png"
           className=" absolute  w-[16.375rem] h-[16.375rem] right-0 top-[-230px] mr-10 "
         />
       </div>
