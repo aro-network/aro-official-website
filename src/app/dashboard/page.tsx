@@ -40,7 +40,7 @@ const Dashboard = () => {
 
       </div>
       <div className=" absolute bottom-0  mo:w-full  ">
-        <img alt="addToDesk" src="../addToDesk.svg" className=" w-full mo:h-[15.5rem] " />
+        <img alt="addToDesk" src="../addToDesk.png" className=" object-cover rounded-3xl w-full mo:h-[15.5rem] " />
 
       </div>
 
