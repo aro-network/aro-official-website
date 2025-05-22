@@ -81,7 +81,7 @@ export default function AutoScrollRoadmap() {
 
   return (
     <div
-      className="w-container m-auto flex px-[170px] mo:px-[1.6875rem] mo:pt-[3.125rem] mo:pb-20  pt-20  md:px-[60px] md:w-full  mo:w-full flex-col "
+      className="w-container m-auto flex px-[170px] mo:px-[1.6875rem]  mo:pt-[3.125rem] mo:pb-20  pt-20  md:px-[60px] md:w-full  mo:w-full flex-col "
     >
       <div className=' mb-[100px] mo:mb-0 mo:mt-4 w-full '>
         <div className=' font-Ubuntu font-medium mo:text-[1.75rem] text-[2.75rem] text-black mb-14 mo:mb-[1.875rem] text-center'>
@@ -102,18 +102,18 @@ export default function AutoScrollRoadmap() {
           onMouseUp={handleMouseUpOrLeave}
           className={`justify-start roadMap    xsm:overflow-x-auto scrollbar-hide w-full flex ${isDragging ? 'cursor-grabbing' : 'cursor-grab'
             }`}>
-          <div className="flex gap-20 mo:gap-5 flex-nowrap w-[350px] sm:flex-col sm:w-full ">
+          <div className="flex gap-20 mo:gap-5 flex-nowrap w-[350px] sm:flex-col sm:w-full">
             {roadmap.map((item, i) => {
               return (
                 <div
                   key={`content_${i}`}
-                  className={`   bg-repeat bg-cover mo:flex flex-col sm:w-full px-5`}>
+                  className={`   bg-repeat bg-cover mo:flex flex-col sm:w-full xsm:px-5`}>
                   <div className='mt-[34px] flex flex-col items-center sm:w-full'>
                     <div data-date={item.date} className="element flex w-[9.375rem] text-black"> {item.date}</div>
                     <div className="flex  relative h-5 bg-black w-[.0625rem]">
                       <div className='absolute top-[55px] z-[-10]'></div>
                     </div>
-                    <div className={`flex  border border-black rounded-lg bg-white  h-[240px] min-w-[380px] xsm:mb-5 w-[100%] flex-col ${item.isCurrent && 'current-shadow-box'}`}>
+                    <div className={`flex  border border-black rounded-lg bg-white  lg:h-[220px] h-[18.75rem] xsm:min-w-[380px] min-w-full xsm:mb-5 w-full flex-col ${item.isCurrent && 'current-shadow-box'}`}>
                       <div className={` px-[.875rem] font-medium rounded-t-md justify-between text-lg w-full h-10 flex items-center text-white ${item.color} `}>
                         {item.title}
                         {item.finished && <BsCheckCircle />}
