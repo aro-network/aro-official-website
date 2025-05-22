@@ -129,8 +129,11 @@ const AJoinWaitlist = () => {
         </div>
         <div className="enreachInput flex flex-col w-full items-center mt-20 mo:mt-6">
           <input
+
             maxLength={50}
-            className="border-[#7F7F7F] border w-[542px] mo:w-full h-[4.25rem] rounded-2xl"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className=" aos-init aos-animate border-[#7F7F7F] border w-[542px] mo:w-full h-[4.25rem] rounded-2xl"
             value={inputInfo.address}
             placeholder="Leave your EVM address"
             onChange={(e) => {
@@ -140,7 +143,9 @@ const AJoinWaitlist = () => {
           />
           <input
             maxLength={50}
-            className="border-[#7F7F7F] border w-[542px] mo:w-full mt-10 h-[4.25rem] rounded-2xl"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className=" aos-init aos-animate border-[#7F7F7F] border w-[542px] mo:w-full mt-10 mo:mt-5 h-[4.25rem] rounded-2xl"
             value={inputInfo.email}
             placeholder="Leave your email"
             onChange={(e) => {
@@ -156,7 +161,9 @@ const AJoinWaitlist = () => {
             )}
           </div>
         </div>
-        <div className="w-[542px] mo:w-full my-10 flex justify-between items-baseline">
+        <div data-aos="fade-up"
+          data-aos-duration="1000"
+          className=" aos-init aos-animate w-[542px] mo:w-full my-10 flex justify-between items-baseline">
           <div>
             <input
               checked={isCheck}

@@ -450,6 +450,12 @@ textarea:-webkit-autofill {
 
 }
 
+.current-shadow-box {
+  border-radius: 8px;
+  box-shadow: 0px 0px 12px 2px  #1C73FF;
+}
+
+
 
 .navigation-wrapper {
   position: relative;
@@ -554,8 +560,14 @@ p{
 }
 
 .element::after {
-  content: '';
+  content: attr(data-date);
+  font-family: var(--font-ubuntu);
   position: absolute;
+  font-size: 24px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 2px; 
   left: 2px;
   right: 2px;
@@ -563,4 +575,46 @@ p{
   background: #fff; 
   clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
   z-index: 0;
+}
+
+.roadMapbox{
+  margin-top: 20px;
+  height:auto;
+  width: auto;
+  background-color: red !important;
+}
+
+.roadMapbox::after {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  content: '12321';
+  position: absolute;
+  color: black;
+  display: flex;
+  top: 200px;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+.roadMapbox::before {
+  width: 1px;
+  height: 10px;
+  background-color: red;
+  content: '';
+  position: absolute;
+  color: black;
+  display: flex;
+  top: 100px;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
 }

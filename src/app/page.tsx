@@ -8,10 +8,11 @@ import AIntroduce from "./components/AIntroduce"
 import AJoinWaitlist from "./components/AJoinWaitlist"
 import "aos/dist/aos.css";
 import Aos from "aos"
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 import AAboutEnReach from "./components/AAboutEnreach"
 import AEarly from "./components/AEarly"
+import AFAQ from "./components/AFAQ"
+import ARoadMap from "./components/ARoadMap"
 
 export default function Home() {
 
@@ -43,6 +44,8 @@ export default function Home() {
       <AIntroduce />
       <AEarly />
       <AJoinWaitlist />
+      <AFAQ />
+      <ARoadMap />
       <AFooter />
     </div>
 

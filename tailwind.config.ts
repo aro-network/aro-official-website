@@ -17,6 +17,7 @@ export default {
       },
       screens: {
         sm: { max: "640px" },
+        xsm: { min: "640px" },
         mo: { max: "1000px" },
         ng: { min: "1000px" },
         md: [{ min: "1001px", max: "1440px" }],

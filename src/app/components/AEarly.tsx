@@ -64,7 +64,7 @@ const AEarly = () => {
           </div>
         </div>
       </div>
-      <div className=" flex mo:hidden relative w-full  bg-fuchsia-300  ">
+      <div className=" flex mo:hidden relative w-full  ">
         <img
           src="../spots.svg"
           className=" absolute  w-[16.375rem] h-[16.375rem] right-0 top-[-230px] mr-10 "
