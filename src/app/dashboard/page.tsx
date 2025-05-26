@@ -35,12 +35,17 @@ const Dashboard = () => {
         manage your EnReach Account and Edge Nodes.
       </div>
       <div className="pb-10 ">
-        <img alt="earth" src="../earth.svg" className="w-[30vh] mo:w-full  mo:hidden  " />
-        <img alt="earth" src="../mo-earth.svg" className=" mo:w-full ng:hidden enreachMoImg " />
-
+        <img alt="earth" src="../earth.svg" className="w-full  " />
       </div>
-      <div className=" absolute bottom-0  mo:w-full  ">
-        <img alt="addToDesk" src="../addToDesk.png" className=" object-cover rounded-3xl w-full mo:h-[15.5rem] " />
+      <div className=" absolute bottom-0  mo:w-full  rounded-3xl p-5 bg-gray-100 ">
+        <div className="  text-black  relative bottom-0 w-full  flex justify-center  flex-col  text-left gap-5 " >
+          <div>
+            1. Open browser settings
+          </div>
+          <div >
+            2. Select "Add to Home Screen"
+          </div>
+        </div>
 
       </div>
 
