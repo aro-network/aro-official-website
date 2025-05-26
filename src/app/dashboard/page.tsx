@@ -43,7 +43,7 @@ const Dashboard = () => {
             1. Open browser settings
           </div>
           <div >
-            2. Select "Add to Home Screen"
+            {`2. Select "Add to Home Screen"`}
           </div>
         </div>
 
