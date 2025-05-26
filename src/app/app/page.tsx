@@ -2,9 +2,12 @@
 
 import { useEffect } from "react";
 
+interface NavigatorWithStandalone extends Navigator {
+  standalone?: boolean;
+}
 const isInStandaloneMode = (): boolean => {
   const isStandaloneDisplay = window.matchMedia("(display-mode: standalone)").matches;
-  const isIOSStandalone = (window.navigator as any).standalone === true;
+  const isIOSStandalone = (window.navigator as NavigatorWithStandalone).standalone === true;
   const hasNoReferrer = document.referrer === "";
 
   return isStandaloneDisplay || isIOSStandalone || hasNoReferrer;
