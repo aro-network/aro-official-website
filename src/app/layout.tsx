@@ -106,9 +106,9 @@ export default function RootLayout({
         <meta name="description" content="" />
         <link rel="canonical" href="http://enreach.network/" />
 
-        <link rel="icon" href="/icon.svg" />
+        <link rel="icon" href="/favicon.ico?v=2" />
 
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any" />
+        <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" sizes="any" />
 
 
         <meta
