@@ -16,7 +16,7 @@ const Dashboard = () => {
     setIsMobile(mobile);
 
     if (!mobile) {
-      window.location.href = "https://devnet.dashboard.enreach.network/";
+      window.location.href = "https://devnet.dashboard.aro.network/";
     }
   }, []);
 
@@ -31,8 +31,8 @@ const Dashboard = () => {
       <div className="font-medium text-xl text-black mt-5 mo:mt-[.375rem]">Mobile App</div>
       <div className="text-[#000000B2] text-sm my-6 ">
         Follow instructions to install the Mobile App for <br />
-        EnReach Dashboard -- your all-in-one entry to<br />
-        manage your EnReach Account and Edge Nodes.
+        ARO Dashboard -- your all-in-one entry to<br />
+        manage your ARO Account and Edge Nodes.
       </div>
       <div className="  w-[90%] ">
         <img alt="earth" src="../earth.svg" className=" " />

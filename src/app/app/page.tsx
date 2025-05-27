@@ -28,7 +28,7 @@ const App = () => {
 
   return (
     <iframe
-      src="https://devnet.dashboard.enreach.network/"
+      src="https://devnet.dashboard.aro.network/"
       style={{ width: "100vw", height: "100vh", border: "none" }}
       allow="fullscreen"
     />
