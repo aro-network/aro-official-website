@@ -88,7 +88,7 @@ export default function AutoScrollRoadmap() {
         className='aos-init aos-animate  mb-[100px] mo:mb-0 mo:mt-4 w-full '>
         <div
           className='font-Ubuntu font-medium mo:text-[1.75rem] text-[2.75rem] text-black mb-14 mo:mb-[1.875rem] text-center'>
-          EnReach Roadmap: From Launch to Scale
+          ARO Roadmap: From Launch to Scale
         </div>
         <div className=" flex mo:hidden relative w-full  ">
           <div className='  border-[.0625rem]  w-full absolute top-[55px] border-black z-[-10]'></div>

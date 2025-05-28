@@ -5,8 +5,8 @@ export const dynamic = "force-static";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Enreach",
-    short_name: "Enreach",
+    name: "ARO Companion",
+    short_name: "ARO Companion",
     description: "/",
     scope: "/",
     start_url: "/app",

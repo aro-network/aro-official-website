@@ -10,7 +10,7 @@ const AFAQ = () => {
     <div data-aos="fade-up"
       data-aos-duration="1000"
       className="aos-init aos-animate font-Ubuntu font-medium text-[2.75rem] mo:text-[1.75rem] text-black text-center mo:mb-[1.875rem] mb-[3.125rem] ">
-      EnReach FAQ
+      ARO FAQ
     </div>
     <Accordion variant="light" className="flex  flex-col gap-8 mo:gap-6  " showDivider={false}>
       {faqText.map((item, index) => {

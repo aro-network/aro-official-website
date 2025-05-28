@@ -47,7 +47,7 @@ const AEarly = () => {
                 <div>
                   {"\u00A0"}•{"\u00A0"}
                 </div>
-                Become a co-creator of EnReach and get rewarded for your
+                Become a co-creator of ARO and get rewarded for your
                 contributions.
               </div>
             </div>

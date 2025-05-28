@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   output: "export",
   images: {
-    domains: ["wordpress.enreach.network"],
+    domains: ["wordpress.aro.network"],
   },
 
   webpack(config) {

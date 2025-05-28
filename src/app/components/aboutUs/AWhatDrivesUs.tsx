@@ -20,7 +20,7 @@ const AWhatDrivesUs = () => {
         data-aos-duration="1000" className=" mt-[118px] mo:mt-6 flex items-center w-full gap-[177px] md:gap-[100px] md:pb-10">
         <div className="text-2xl mo:text-xs font-normal font-AlbertSans leading-normal w-[40%] mo:w-full flex flex-col gap-10 mo:gap-5">
           <div>
-            The cloud is too “far” to deliver the real-time responsiveness needed for today’s digital experiences demand. EnReach is leading the shift from centralized clouds to edge-first networks, unlocking real-time capabilities and efficiency for AI and next-gen applications.
+            The cloud is too “far” to deliver the real-time responsiveness needed for today’s digital experiences demand. ARO is leading the shift from centralized clouds to edge-first networks, unlocking real-time capabilities and efficiency for AI and next-gen applications.
           </div>
           <div>
             Our edge cloud transforms fragmented resources into a seamless, scalable system, ensuring the future of innovation happens where it’s needed most—right at the edge.

@@ -64,7 +64,7 @@ const AEdgeNode = () => {
 
   const fields: FormField[] = [
     { name: "email", maxLength: 50, label: "Your Email", type: "email", validation: { required: "Email is required" } },
-    { name: "account", maxLength: 50, label: "If you have an EnReach account, please specify:", type: "text" },
+    { name: "account", maxLength: 50, label: "If you have an ARO account, please specify:", type: "text" },
     {
       name: "resources",
       label: "What type of resources do you have to run an Edge Node?",
@@ -79,7 +79,7 @@ const AEdgeNode = () => {
     { name: "location", label: "Please specify your location if you have resources available:", type: "text" },
     {
       name: "testnet",
-      label: "Are you interested in participating in EnReach testnet?",
+      label: "Are you interested in participating in ARO testnet?",
       type: "checkbox",
       allowMultiple: false,
       options: [
@@ -123,12 +123,12 @@ const AEdgeNode = () => {
     <AHeader />
     <div className=" llg:w-container m-auto llg:px-0 w-full px-[30px] ">
       <div className="mt-[80px] text-[#FFF] text-[60px]   mo:text-[28px] font-bold leading-normal text-center">
-        EnReach Edge Node
+        ARO Edge Node
       </div>
       <div className=" mt-[30px]  llg:w-full text-[30px] md:text-2xl font-medium leading-normal llg:px-[160px] w-full  md:text-center mo:text-lg">
-        EnReach is an Edge Cloud that allows everyone to contribute resources
+        ARO is an Edge Cloud that allows everyone to contribute resources
         from the edge in global regions. Tell us more about your information if
-        you are interested in running an EnReach Edge Node in the coming mainnet.
+        you are interested in running an ARO Edge Node in the coming mainnet.
       </div>
       <ATabs
         fields={fields}

@@ -2,7 +2,7 @@ const AAboutEnReach = () => {
   return (
     <div className="   flex-col h-auto  w-container m-auto flex  px-[170px] mb-5 mo:px-5 mo:pt-[3.125rem] md:px-[60px] md:w-full  mo:w-full ">
       <div className="text-center text-black text-[2.75rem] font-medium mo:text-[1.75rem] mo:pt-5 ">
-        <span>EnReach Network</span>
+        <span>ARO Network</span>
       </div>
       <div
         data-aos="fade-up"
@@ -16,10 +16,10 @@ const AAboutEnReach = () => {
         >
           <div>
             <span className="font-medium text-2xl font-Ubuntu text-black ">
-              What Is EnReach?
+              What Is ARO?
             </span>
             <div className=" text-[#000000CC] pt-5 mo:text-[13px] ">
-              EnReach is building a decentralized, intelligent edge cloud for
+              ARO is building a decentralized, intelligent edge cloud for
               real-time content and AI delivery. Backed by a team with $140M+ in
               annual revenue and 1.5M+ edge nodes deployed.
             </div>

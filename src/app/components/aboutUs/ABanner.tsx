@@ -28,7 +28,7 @@ const ABanner = () => {
             className=" ml-[54px] mo:ml-0 md:ml-0 mt-5 mo:mt-6">
             <div className="text-[#7C7C7C]  font-normal font-AlbertSans text-[22px] mo:text-xs leading-normal">
               <div className="mb-5 ">
-                EnReach bridges the gap between centralized cloud systems and the needs of next-generation applications. As AI reshapes industries, we bring the cloud closer to users, enabling instant responses, seamless interactions, and scalable performance.
+                ARO bridges the gap between centralized cloud systems and the needs of next-generation applications. As AI reshapes industries, we bring the cloud closer to users, enabling instant responses, seamless interactions, and scalable performance.
               </div>
               By creating an globally-connected edge cloud, we empower the AI-driven world with infrastructure designed for speed, flexibility, and accessibility.
             </div>

@@ -31,7 +31,7 @@ const ADoingIt = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
           className=" text-[30px] mo:text-xs pt-5 mo:pt-4 font-medium  leading-normal text-center w-full px-[270px] mo:px-0">
-          At EnReach, we blend openness and innovation to transform edge computing into a seamless and accessible foundation for the AI era.
+          At ARO, we blend openness and innovation to transform edge computing into a seamless and accessible foundation for the AI era.
         </div>
 
         <div className="flex flex-col px-[45px] mo:px-0 gap-4 mt-[69px] mo:mt-[43px] bg-[#1C1C1C] pb-[112px] mo:pb-[60px]">

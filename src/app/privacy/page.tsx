@@ -18,11 +18,11 @@ const Privacy = () => {
       </div>
       <div className="   mt-20 font-normal">
         <span className=" ">
-          Welcome to EnReach Network, managed and operated by EnReach Labs Ltd. (“EnReach,” “we,” “us,” or “our”). This Privacy Policy outlines our handling and protection of the personal information you provide when using our services, which include our website, web extension, dashboard application, desktop and mobile applications, and related hardware (collectively referred to as the “Services”).</span>
+          Welcome to ARO Network, managed and operated by ARO Labs Ltd. (“ARO,” “we,” “us,” or “our”). This Privacy Policy outlines our handling and protection of the personal information you provide when using our services, which include our website, web extension, dashboard application, desktop and mobile applications, and related hardware (collectively referred to as the “Services”).</span>
         <div className=" mt-2 ">This Privacy Policy is designed to help you understand how we collect, use, and safeguard your information and to assist you in making informed decisions when using our Services. By accessing or using our Services, you agree to this Privacy Policy.</div>
         <div className=" mt-2">
           <span className="title">1. Introduction</span><br />
-          This document serves as the Privacy Policy for EnReach, a platform enabling users to participate in a decentralized peer-to-peer networking ecosystem designed for optimized data handling and AI-driven functionalities. This policy covers all digital platforms and hardware provided under the EnReach brand.
+          This document serves as the Privacy Policy for ARO, a platform enabling users to participate in a decentralized peer-to-peer networking ecosystem designed for optimized data handling and AI-driven functionalities. This policy covers all digital platforms and hardware provided under the ARO brand.
         </div>
         <div className=" mt-2">
           <span className="title">2. Consent from Users Outside the EEA, UK, Switzerland, and BVI</span><br />
@@ -42,7 +42,7 @@ const Privacy = () => {
         <div className=" mt-2">
           <span className="title">5. Use of Your Personal Information</span><br />
           We use the personal information we collect for various purposes:<br />
-          {"\u00A0"}{"\u00A0"}•	To provide, operate, and improve the EnReach Services.<br />
+          {"\u00A0"}{"\u00A0"}•	To provide, operate, and improve the ARO Services.<br />
           {"\u00A0"}{"\u00A0"}•	To communicate with you, including sending updates and promotional materials.<br />
           {"\u00A0"}{"\u00A0"}•	To support and troubleshoot our Services, and to respond to your requests.
         </div>
@@ -71,7 +71,7 @@ const Privacy = () => {
         </div>
         <div className=" mt-2">
           <span className="title">11. Your Rights Related to Your Personal Information</span><br />
-          Depending on your location, you may have certain rights under data protection laws, including the right to access, correct, or delete your personal information maintained by EnReach.
+          Depending on your location, you may have certain rights under data protection laws, including the right to access, correct, or delete your personal information maintained by ARO.
         </div>
         <div className=" mt-2">
           <span className="title">12. Consent; Withdrawal of Consent</span><br />
@@ -96,7 +96,7 @@ const Privacy = () => {
 
         Additional Information for Users in the EEA, UK, Switzerland, or BVI
         This section provides additional information as required by the laws of the EEA, UK, Switzerland, and BVI. This includes specific rights regarding the processing of personal information and details about the transfers of personal information outside of these regions.
-        Make sure to customize the placeholders and details to fit the specific operations and legal requirements of EnReach before publishing.
+        Make sure to customize the placeholders and details to fit the specific operations and legal requirements of ARO before publishing.
 
       </div>
     </div>

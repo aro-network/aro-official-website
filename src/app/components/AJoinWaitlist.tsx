@@ -83,7 +83,7 @@ const AJoinWaitlist = () => {
         data-aos-duration="1000"
         className=" font-Ubuntu  font-medium text-2xl mo:text-lg w-full text-center text-black"
       >
-        Step 1: Join the EnReach Community
+        Step 1: Join the ARO Community
       </div>
 
       <div

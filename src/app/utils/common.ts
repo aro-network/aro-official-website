@@ -32,7 +32,7 @@ export const showCaseList = [
   },
   // {
   //   title: "Cloud Gaming",
-  //   content: "Games hosted by EnReach nodes, scalable with player demand.",
+  //   content: "Games hosted by ARO nodes, scalable with player demand.",
   //   icon: "IconMatch",
   // },
   // {
@@ -74,7 +74,7 @@ export const openEdgeList = [
 ];
 
 export const list = [
-  { name: "Media Kit", link: "https://enreach.network/Enreach Media kit.zip" },
+  { name: "Media Kit", link: "https://aro.network/AroMediaKit.zip" },
   {
     name: "Privacy Policy",
     link: "privacy",
@@ -136,7 +136,7 @@ export const titleList = [
   { title: "Cost-effective" },
   { title: "Verifiable" },
 ];
-export const baseUrl = "https://email.enreach.network";
+export const baseUrl = "https://email.aro.network";
 
 // export const getCurrentCategorie = (
 //   currentNames: ArticleInfo.Post | ArticleInfo.Post[],
@@ -200,36 +200,36 @@ export const faqText = [
       "A Decentralized Edge Cloud is a distributed network where bandwidth, computing and storage are provided by nodes from the edge in a permissionless way, instead of centralized servers. Cloud resources are moved closer to where data is generated and end-users are located, significantly enhancing the scalability, resilience and affordability for contents and AI delivery. ",
   },
   {
-    title: "2. How does EnReach work?",
+    title: "2. How does ARO work?",
     content: `
-    EnReach empowers an open infrastructure where you can easily contribute your idle and unused bandwidth to this decentralized edge cloud — and earn real rewards in return. 
-Enterprise-level customers purchase the resources collected by EnReach, for delivering faster, smarter and cheaper internet contents (videos, gaming, AI services, etc. ) to their end users.  
-$REACH tokens act as a key medium in this ecosystem. Your contributions will be measured, and you will get $REACH as a reward.  
+    ARO empowers an open infrastructure where you can easily contribute your idle and unused bandwidth to this decentralized edge cloud — and earn real rewards in return. 
+Enterprise-level customers purchase the resources collected by ARO, for delivering faster, smarter and cheaper internet contents (videos, gaming, AI services, etc. ) to their end users.  
+$ARO tokens act as a key medium in this ecosystem. Your contributions will be measured, and you will get $ARO as a reward.  
 
 `,
   },
   {
     title: "3. What are BERRY Points?",
-    content: `Before mainnet is live, your contributions to the EnReah testnet will be tracked and reflected as BERRY points. You will be rewarded with BERRY points when you participate and make contributions to the EnReach testnet. In some cases, community contributors may receive NFTs as a recognition of their special efforts. 
-The BERRY points serve as a key metric to determine your eligibility for future rewards. On mainnet launch, you will be able to exchange your BERRY points for $REACH tokens. 
+    content: `Before mainnet is live, your contributions to the ARO testnet will be tracked and reflected as BERRY points. You will be rewarded with BERRY points when you participate and make contributions to the ARO testnet. In some cases, community contributors may receive NFTs as a recognition of their special efforts. 
+The BERRY points serve as a key metric to determine your eligibility for future rewards. On mainnet launch, you will be able to exchange your BERRY points for $ARO tokens. 
 `,
   },
   {
     title: "4. Does the device compromise user privacy?",
     content: `
-  No. EnReach will NEVER collect any personal data from your daily operation. The only resource EnReach wants from you is your idle bandwidth — and nothing else.
+  No. ARO will NEVER collect any personal data from your daily operation. The only resource ARO wants from you is your idle bandwidth — and nothing else.
 `,
   },
   {
-    title: "5. Does joining the EnReach network affect my internet usage?",
-    content: `No. EnReach only collects and utilizes your idle bandwidth, without breaking your regular internet use. You just earn passive income while surfing the internet. 
-EnReach Hardware Nodes (Berry Boxes and Berry Routers) are dedicated and highly integrated devices which will help you optimize your resources contribution without compromising your daily experience.
+    title: "5. Does joining the ARO network affect my internet usage?",
+    content: `No. ARO only collects and utilizes your idle bandwidth, without breaking your regular internet use. You just earn passive income while surfing the internet. 
+ARO Hardware Nodes (Berry Boxes and Berry Routers) are dedicated and highly integrated devices which will help you optimize your resources contribution without compromising your daily experience.
 `,
   },
   {
-    title: "6. What stage is EnReach currently in?",
-    content: `EnReach is currently in the Devnet phase, which means we are still testing the core infrastructure internally with a small group of early participants. We will soon enter the Testnet phase — this is when more participants will be able to join the network, contribute bandwidth, and start earning BERRY points, which can later be exchanged for $REACH tokens upon mainnet launch.
-It’s still very early, and now is the perfect time to get involved if you want to become an early contributor and help shape the future of the EnReach decentralized edge cloud!
+    title: "6. What stage is ARO currently in?",
+    content: `ARO is currently in the Devnet phase, which means we are still testing the core infrastructure internally with a small group of early participants. We will soon enter the Testnet phase — this is when more participants will be able to join the network, contribute bandwidth, and start earning BERRY points, which can later be exchanged for $ARO tokens upon mainnet launch.
+It’s still very early, and now is the perfect time to get involved if you want to become an early contributor and help shape the future of the ARO decentralized edge cloud!
 `,
   },
 ];

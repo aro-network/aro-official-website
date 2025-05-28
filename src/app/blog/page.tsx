@@ -34,7 +34,7 @@ const Blog = () => {
 
 
   const fetchImg = async () => {
-    const url = `https://wordpress.enreach.network/wp-json/wp/v2/posts?per_page=8&page=${1}&_embed`;
+    const url = `https://wordpress.aro.network/wp-json/wp/v2/posts?per_page=8&page=${1}&_embed`;
     await fetch(url)
       .then(response => response.json())
       .then((res: ArticleInfo.Post[]) => {
@@ -55,13 +55,14 @@ const Blog = () => {
       })
 
   };
+
   useEffect(() => {
     fetchImg()
     getAllTags()
   }, [])
 
   const getAllTags = async () => {
-    const res = await axios('https://wordpress.enreach.network/wp-json/wp/v2/tags')
+    const res = await axios('https://wordpress.aro.network/wp-json/wp/v2/tags')
     console.log('resssss', res);
     setAllTags(res.data)
 

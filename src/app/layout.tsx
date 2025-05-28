@@ -14,8 +14,8 @@ import { useEffect } from "react";
 
 // export const metadata: Metadata = {
 //   themeColor: 'rgba(232, 233, 234, 1)',
-//   title: "Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network",
-//   description: "Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI.",
+//   title: "Earn Real Income by Sharing Idle Internet to Power AI | ARO Network",
+//   description: "Turn unused internet into income. Run an ARO Node, earn $ARO tokens, and power real-time AI.",
 //   keywords: [
 //     "Enreach Network",
 //     "Enreach",
@@ -82,7 +82,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <title>
-        Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network
+        Earn Real Income by Sharing Idle Internet to Power AI | ARO Network
       </title>
       <Head>
         <script
@@ -104,7 +104,7 @@ export default function RootLayout({
         </script>
 
         <meta name="description" content="" />
-        <link rel="canonical" href="http://enreach.network/" />
+        <link rel="canonical" href="http://aro.network/" />
 
         <link rel="icon" href="/favicon.ico?v=2" />
 
@@ -114,83 +114,83 @@ export default function RootLayout({
         <meta
           data-rh="true"
           property="og:title"
-          content="Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network"
+          content="Earn Real Income by Sharing Idle Internet to Power AI | ARO Network"
         ></meta>
         <meta
           name="description"
-          content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
+          content="Turn unused internet into income. Run an ARO Node, earn $ARO tokens, and power real-time AI."
         />
 
         <meta
           name="twitter:image"
-          content="https://enreach.network/metadata-img.jpg"
+          content="https://aro.network/metadata-img.jpg"
         ></meta>
 
         <meta
           name="description"
-          content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
+          content="Turn unused internet into income. Run an ARO Node, earn $ARO tokens, and power real-time AI."
         />
         <meta
           property="og:title"
-          content="Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network"
+          content="Earn Real Income by Sharing Idle Internet to Power AI | ARO Network"
         />
         <meta
           property="og:description"
-          content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
+          content="Turn unused internet into income. Run an ARO Node, earn $ARO tokens, and power real-time AI."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://enreach.network" />
+        <meta property="og:url" content="https://aro.network" />
         <meta
           property="og:image"
-          content="https://enreach.network/metadata-img.jpg"
+          content="https://aro.network/metadata-img.jpg"
         />
         <meta property="og:image:alt" content="Default image description" />
         <meta
           property="og:site_name"
-          content="Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network"
+          content="Earn Real Income by Sharing Idle Internet to Power AI | ARO Network"
         />
 
         <meta
           data-rh="true"
           property="og:description"
-          content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
+          content="Turn unused internet into income. Run an ARO Node, earn $ARO tokens, and power real-time AI."
         ></meta>
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@EnReachNetwork" />
         <meta
           name="twitter:title"
-          content="Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network"
+          content="Earn Real Income by Sharing Idle Internet to Power AI | ARO Network"
         />
         <meta
           name="twitter:description"
-          content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
+          content="Turn unused internet into income. Run an ARO Node, earn $ARO tokens, and power real-time AI."
         />
         <meta
           name="twitter:image"
-          content="https://enreach.network/metadata-img.jpg"
+          content="https://aro.network/metadata-img.jpg"
         />
 
         <meta
           property="og:title"
-          content="Earn Real Income by Sharing Idle Internet to Power AI | EnReach Network"
+          content="Earn Real Income by Sharing Idle Internet to Power AI | ARO Network"
         />
         <meta
           property="og:description"
-          content="Turn unused internet into income. Run an EnReach Node, earn $REACH tokens, and power real-time AI."
+          content="Turn unused internet into income. Run an ARO Node, earn $ARO tokens, and power real-time AI."
         />
         <meta
           property="og:image"
-          content="https://enreach.network/metadata-img.jpg"
+          content="https://aro.network/metadata-img.jpg"
         />
-        <meta property="og:url" content="https://enreach.network/" />
+        <meta property="og:url" content="https://aro.network/" />
         <meta property="og:type" content="website" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Enreach" />
-        <link rel="apple-touch-icon" href="https://enreach.network/icon.svg" />
+        <meta name="apple-mobile-web-app-title" content="Aro" />
+        <link rel="apple-touch-icon" href="https://aro.network/icon.svg" />
 
-        <iframe src="https://devnet.dashboard.enreach.network/" id="box"></iframe>
+        <iframe src="https://devnet-dashboard.aro.network/" id="box"></iframe>
       </Head>
 
       <body

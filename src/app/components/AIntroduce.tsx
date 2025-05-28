@@ -6,7 +6,7 @@ const AIntroduce = () => {
       <div data-aos="fade-up"
         data-aos-duration="1000"
         className="aos-init aos-animate text-center font-Ubuntu font-medium text-[2.75rem] text-black pb-16 mo:text-[1.75rem]">
-        Run an EnReach Node in 3 Steps
+        Run an ARO Node in 3 Steps
       </div>
       <div
         data-aos="fade-up"
@@ -27,11 +27,11 @@ const AIntroduce = () => {
           <div className="mt-7 flex flex-col gap-5">
             <div className="flex gap-7 items-center">
               <div className="w-[30%]">
-                <img src="./enreachBox.png" width={90} height={62} />
+                <img src="./AROPod.png" width={90} height={62} />
               </div>
               <div className="flex gap-[.375rem] flex-col w-[60%]">
                 <div className=" font-medium text-base leading-4 text-black">
-                  Berry Box
+                  ARO Pod
                 </div>
                 <div className="text-xs  text-[#000000B2]">
                   Dedicated plug-and-play device. Optimized for high uptime and
@@ -63,10 +63,10 @@ const AIntroduce = () => {
 
               <div className="flex gap-[.375rem] flex-col w-[60%]">
                 <div className=" font-medium text-base leading-4 text-black">
-                  Berry Router
+                  ARO Link
                 </div>
                 <div className="text-xs  text-[#000000B2]">
-                  WiFi router with built-in EnReach node. Earn while you browse.
+                  WiFi router with built-in ARO node. Earn while you browse.
                 </div>
               </div>
             </div>
@@ -97,7 +97,7 @@ const AIntroduce = () => {
             />
           </div>
           <div className=" text-xs leading-5 text-[#000000B2] mt-5 mo:mb-10 ">
-            Contribute your idle bandwidth as an Enreach Edge Node.
+            Contribute your idle bandwidth as an ARO Edge Node.
           </div>
         </div>
 
@@ -120,10 +120,10 @@ const AIntroduce = () => {
             <img src="./rewards.svg" />
             <div className="flex flex-col gap-[6px]">
               <div className="font-medium text-base text-black">
-                Earn $REACH Rewards
+                Earn $ARO Rewards
               </div>
               <div className="text-[#000000B2] text-xs">
-                Stack Berry points during Testnet, convert them to $REACH tokens
+                Stack Berry points during Testnet, convert them to $ARO tokens
                 at mainnet launch.
               </div>
             </div>

@@ -25,7 +25,7 @@ const AInfo = () => {
   const fetchPostDetail = async () => {
     try {
       const postRes = await axios.get(
-        `https://wordpress.enreach.network/wp-json/wp/v2/posts/${postId}?_embed`
+        `https://wordpress.aro.network/wp-json/wp/v2/posts/${postId}?_embed`
       );
       setSelectedPost(postRes.data);
     } catch (error) {
@@ -88,10 +88,10 @@ const AInfo = () => {
         </div>
 
         <div className="bg-[#FFFFFF] flex flex-col mt-5  rounded-[1.8125rem] justify-center  shadow-box p-10 mo:px-5" >
-          <div className="font-Ubuntu font-semibold text-3xl text-black">About Enreach</div>
+          <div className="font-Ubuntu font-semibold text-3xl text-black">About ARO</div>
           <div className=" text-xl pt-[1.875rem] flex gap-5 flex-col">
             <div>
-              EnReach bridges the gap between centralized cloud systems and the needs of next-generation applications. As AI reshapes industries, we bring the cloud closer to users, enabling instant responses, seamless interactions, and scalable performance.
+              ARO bridges the gap between centralized cloud systems and the needs of next-generation applications. As AI reshapes industries, we bring the cloud closer to users, enabling instant responses, seamless interactions, and scalable performance.
             </div>
             <div>
               By creating an globally-connected edge cloud, we empower the AI-driven world with infrastructure designed for speed, flexibility, and accessibility.

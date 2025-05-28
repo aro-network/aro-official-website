@@ -50,7 +50,7 @@ const AFooter: FC = () => {
                   })}
                 </div>
                 <div className="flex justify-end mo:justify-center text-[#000000B2] ng:pt-1  mo:text-xs mo:mt-[11px] text-sm  font-medium leading-normal  ">
-                  © EnReach Foundation, {currentYear}. All rights reserved.
+                  © ARO Foundation, {currentYear}. All rights reserved.
                 </div>
 
               </div>
