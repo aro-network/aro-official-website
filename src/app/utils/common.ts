@@ -4,7 +4,7 @@ export const headerBtnList = [
   {},
   {
     name: "Docs",
-    href: "https://docs.enreach.network",
+    href: "https://docs.aro.network",
     target: "_blank",
   },
   {

@@ -8,7 +8,7 @@ const AHeader = () => {
 
   const headerTabList = [
     { href: '/blog', tabName: 'Blog' },
-    { href: 'https://docs.enreach.network/', tabName: 'Docs' },
+    { href: 'https://docs.aro.network/', tabName: 'Docs' },
     { href: 'dashboard', tabName: 'Dashboard' },
   ];
   const handleTabClick = (href: string) => {

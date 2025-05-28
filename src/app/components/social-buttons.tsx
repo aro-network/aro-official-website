@@ -9,7 +9,7 @@ const socialLinks = [
     { href: 'https://discord.gg/Rc4BMUjbNB', icon: <FaDiscord /> },
     { href: 'https://t.me/EnReachNetwork', icon: <FaTelegramPlane /> },
     { href: 'blog', icon: <RiAppsFill /> },
-    { href: 'https://docs.enreach.network/', icon: <SiGoogledocs /> },
+    { href: 'https://docs.aro.network/', icon: <SiGoogledocs /> },
 ]
 
 
