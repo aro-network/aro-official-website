@@ -46,7 +46,7 @@ const AIntroduce = () => {
               <div className="flex gap-[.375rem] flex-col w-[60%]">
                 <div className="flex gap-2 mo:gap-[.125rem] items-start ">
                   <span className=" font-medium text-base leading-4 text-black">
-                    Software Node
+                    ARO Client
                   </span>
                   <img src="./commingSoon.svg" />
                 </div>
@@ -123,7 +123,7 @@ const AIntroduce = () => {
                 Earn $ARO Rewards
               </div>
               <div className="text-[#000000B2] text-xs">
-                Stack Berry points during Testnet, convert them to $ARO tokens
+                Stack Jades during Testnet, convert them to $ARO tokens
                 at mainnet launch.
               </div>
             </div>
