@@ -24,8 +24,9 @@ const AHeader = () => {
   return <div>
     <div className={` w-container mo:w-full mo:px-5 md:px-[2.5rem] h-[6.25rem] m-auto flex py-5 px-[3.125rem] md:w-full  `}>
       <div className="flex justify-between w-full items-center">
-        <Link href={'/'} className=" flex items-center gap-[13px] ">
-          <Image alt="" width={211} height={38} src="../enreach-logo.svg" className="w-[13.1875rem] h-[2.375rem] mo:w-[140px] mo:h-[1.4375rem]" />
+        <Link href={'/'} className=" flex items-center gap-[10px]">
+          <Image alt="" width={39} height={39} src="../enreach-logo.svg" className="" />
+          <div className=" font-Ubuntu font-bold text-[23px] mo:text-base text-black">ARO</div>
         </Link>
         <div className="text-base font-medium flex gap-5">
           {headerTabList.map((item) => (
