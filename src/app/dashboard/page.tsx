@@ -16,7 +16,7 @@ const Dashboard = () => {
     setIsMobile(mobile);
 
     if (!mobile) {
-      window.location.href = "https://devnet.dashboard.aro.network/";
+      window.location.href = "https://devnet-dashboard.aro.network/";
     }
   }, []);
 
