@@ -223,7 +223,7 @@ The Jades serve as a key metric to determine your eligibility for future rewards
   {
     title: "5. Does joining the ARO network affect my internet usage?",
     content: `No. ARO only collects and utilizes your idle bandwidth, without breaking your regular internet use. You just earn passive income while surfing the internet. 
-ARO Hardware Nodes (Berry Boxes and Berry Routers) are dedicated and highly integrated devices which will help you optimize your resources contribution without compromising your daily experience.
+ARO Hardware Nodes (ARO Pod and ARO Link) are dedicated and highly integrated devices which will help you optimize your resources contribution without compromising your daily experience.
 `,
   },
   {
