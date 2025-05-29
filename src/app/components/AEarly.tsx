@@ -25,7 +25,7 @@ const AEarly = () => {
               Only 100 spots available for our first{" "}
               <button
                 onClick={() =>
-                  window.open("https://docs.enreach.network/campaigns/pioneer")
+                  window.open("https://docs.aro.network/campaigns/pioneer")
                 }
                 className=" underline underline-offset-1 relative z-[100000] "
               >

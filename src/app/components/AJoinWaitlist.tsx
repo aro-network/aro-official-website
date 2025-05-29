@@ -176,7 +176,7 @@ const AJoinWaitlist = () => {
             Yes, I want to join the {""}
             <button
               onClick={() =>
-                window.open("https://docs.enreach.network/campaigns/pioneer")
+                window.open("https://docs.aro.network/campaigns/pioneer")
               }
               className=" underline underline-offset-1"
             >
