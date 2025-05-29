@@ -123,7 +123,7 @@ export default function RootLayout({
 
         <meta
           name="twitter:image"
-          content="https://aro.network/metadata-img.jpg"
+          content="https://aro.network/metadata-img.png"
         ></meta>
 
         <meta
@@ -142,7 +142,7 @@ export default function RootLayout({
         <meta property="og:url" content="https://aro.network" />
         <meta
           property="og:image"
-          content="https://aro.network/metadata-img.jpg"
+          content="https://aro.network/metadata-img.png"
         />
         <meta property="og:image:alt" content="Default image description" />
         <meta
@@ -168,7 +168,7 @@ export default function RootLayout({
         />
         <meta
           name="twitter:image"
-          content="https://aro.network/metadata-img.jpg"
+          content="https://aro.network/metadata-img.png"
         />
 
         <meta
@@ -181,7 +181,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://aro.network/metadata-img.jpg"
+          content="https://aro.network/metadata-img.png"
         />
         <meta property="og:url" content="https://aro.network/" />
         <meta property="og:type" content="website" />

@@ -209,9 +209,8 @@ $ARO tokens act as a key medium in this ecosystem. Your contributions will be me
 `,
   },
   {
-    title: "3. What are Jades?",
-    content: `Before mainnet is live, your contributions to the ARO testnet will be tracked and reflected as Jades. You will be rewarded with Jades when you participate and make contributions to the ARO testnet. In some cases, community contributors may receive NFTs as a recognition of their special efforts. 
-The Jades serve as a key metric to determine your eligibility for future rewards. On mainnet launch, you will be able to exchange your Jades for $ARO tokens. 
+    title: "3. What are Jades / Jade Shards?",
+    content: `Before mainnet is live, your contributions to the ARO Testnet will be tracked and reflected as Jade Shards (or just Jades for simpler term). You will be rewarded with Jades when you participate and make contributions to the ARO Testnet. In some cases, community contributors may receive NFTs as a recognition of their special efforts. The Jades serve as a key metric to determine your eligibility for future rewards. On Mainnet launch, you will be able to exchange your Jades for $ARO tokens.. 
 `,
   },
   {
