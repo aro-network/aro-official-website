@@ -91,7 +91,7 @@ const Privacy = () => {
         </div>
         <div className=" mt-2">
           <span className="title"> 16. Contact Information</span><br />
-          If you have any questions about this Privacy Policy, please contact us at  <a href="mailto:contact@enreach.network" className=" underline-offset-4 underline" >contact@enreach.network</a>.
+          If you have any questions about this Privacy Policy, please contact us at  <a href="mailto:contact@aro.network" className=" underline-offset-4 underline" >contact@aro.network</a>.
         </div>
 
         Additional Information for Users in the EEA, UK, Switzerland, or BVI

@@ -145,7 +145,7 @@ const Terms = () => {
         By using the Service, you acknowledge that you have read these Terms, understand them, and agree to be bound by their terms and conditions. You further agree that these Terms are the complete and exclusive statement of the agreement between you and ARO, superseding all proposals or prior agreements, oral or written, and any other communications between you and ARO relating to the subject matter of these Terms.
 
         <div className="title mt-5"> 23. Contact Information</div>
-        If you have any questions, concerns or suggestions regarding the Services, Content, or these Terms, please contact us at  <a href="mailto:contact@enreach.network" className=" underline-offset-4 underline" >contact@enreach.network</a>.
+        If you have any questions, concerns or suggestions regarding the Services, Content, or these Terms, please contact us at  <a href="mailto:contact@aro.network" className=" underline-offset-4 underline" >contact@aro.network</a>.
 
 
 

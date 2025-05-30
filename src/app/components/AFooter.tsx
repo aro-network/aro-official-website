@@ -24,8 +24,8 @@ const AFooter: FC = () => {
                 <div>
                   Get in Touch
                 </div>
-                <a href="mailto:contact@enreach.network" className="ng:pt-1" >
-                  contact@enreach.network
+                <a href="mailto:contact@aro.network" className="ng:pt-1" >
+                  contact@aro.network
                 </a>
               </div>
               <div className="bg">

@@ -92,7 +92,7 @@ const AJoinWaitlist = () => {
         className="flex justify-between w-full gap-[6.25rem] mo:gap-5 mt-20 mo:mt-6 mo:flex-wrap"
       >
         <div
-          onClick={() => window.open("https://x.com/EnReachNetwork", "_blank")}
+          onClick={() => window.open("https://x.com/AroNetwork", "_blank")}
           className=" hover:bg-[#EBEBEB] bg-white cursor-pointer rounded-[1.25rem] w-full border-[#7F7F7F] border mo:h-[4.25rem] h-[6.25rem] flex items-center justify-center gap-5 md:gap-[.625rem] p-[1.875rem]"
         >
           <BsTwitterX className="text-2xl text-black " />
