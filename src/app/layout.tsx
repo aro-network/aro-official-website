@@ -1,4 +1,3 @@
-'use client'
 // import type { Metadata } from "next";
 import { Poppins, Ubuntu } from "next/font/google";
 
@@ -6,9 +5,7 @@ import "./globals.css";
 import { Toaster } from "sonner";
 import classNames from "classnames";
 
-import Hotjar from '@hotjar/browser';
 import Head from "next/head";
-import { useEffect } from "react";
 
 
 
@@ -56,28 +53,7 @@ export default function RootLayout({
     console.error = function () { };
     console.warn = function () { };
   }
-  const siteId = 6397730;
-  const hotjarVersion = 6;
 
-  useEffect(() => {
-    if (typeof window !== "undefined" && process.env.NODE_ENV === "production") {
-      Hotjar.init(siteId, hotjarVersion);
-    }
-  }, []);
-
-
-  useEffect(() => {
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/service-worker.js").then(
-        (registration) => {
-          console.log("Service Worker registered:", registration);
-        },
-        (error) => {
-          console.error("Service Worker registration failed:", error);
-        }
-      );
-    }
-  }, []);
 
   return (
     <html lang="en">
