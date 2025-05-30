@@ -106,9 +106,9 @@ export default function RootLayout({
         <meta name="description" content="" />
         <link rel="canonical" href="http://aro.network/" />
 
-        <link rel="icon" href="/favicon.ico?v=2" />
+        <link rel="icon" href="/favicon.ico" />
 
-        <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" sizes="any" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any" />
 
 
         <meta
@@ -157,7 +157,7 @@ export default function RootLayout({
         ></meta>
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@EnReachNetwork" />
+        <meta name="twitter:site" content="@AroNetwork" />
         <meta
           name="twitter:title"
           content="Earn Real Income by Sharing Idle Internet to Power AI | ARO Network"
