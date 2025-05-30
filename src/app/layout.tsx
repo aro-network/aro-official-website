@@ -103,88 +103,26 @@ export default function RootLayout({
 
         </script>
 
-        <meta name="description" content="" />
-        <link rel="canonical" href="http://aro.network/" />
 
         <link rel="icon" href="/favicon.ico" />
 
         <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any" />
 
+        <meta name="title" content="Earn Real Income by Sharing Idle Internet to Power AI | ARO Network" />
+        <meta name="description" content="Turn unused internet into income. Run an ARO Node, earn $ARO tokens, and power real-time AI." />
 
-        <meta
-          data-rh="true"
-          property="og:title"
-          content="Earn Real Income by Sharing Idle Internet to Power AI | ARO Network"
-        ></meta>
-        <meta
-          name="description"
-          content="Turn unused internet into income. Run an ARO Node, earn $ARO tokens, and power real-time AI."
-        />
-
-        <meta
-          name="twitter:image"
-          content="https://aro.network/metadata-img.png"
-        ></meta>
-
-        <meta
-          name="description"
-          content="Turn unused internet into income. Run an ARO Node, earn $ARO tokens, and power real-time AI."
-        />
-        <meta
-          property="og:title"
-          content="Earn Real Income by Sharing Idle Internet to Power AI | ARO Network"
-        />
-        <meta
-          property="og:description"
-          content="Turn unused internet into income. Run an ARO Node, earn $ARO tokens, and power real-time AI."
-        />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://aro.network" />
-        <meta
-          property="og:image"
-          content="https://aro.network/metadata-img.png"
-        />
-        <meta property="og:image:alt" content="Default image description" />
-        <meta
-          property="og:site_name"
-          content="Earn Real Income by Sharing Idle Internet to Power AI | ARO Network"
-        />
-
-        <meta
-          data-rh="true"
-          property="og:description"
-          content="Turn unused internet into income. Run an ARO Node, earn $ARO tokens, and power real-time AI."
-        ></meta>
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@AroNetwork" />
-        <meta
-          name="twitter:title"
-          content="Earn Real Income by Sharing Idle Internet to Power AI | ARO Network"
-        />
-        <meta
-          name="twitter:description"
-          content="Turn unused internet into income. Run an ARO Node, earn $ARO tokens, and power real-time AI."
-        />
-        <meta
-          name="twitter:image"
-          content="https://aro.network/metadata-img.png"
-        />
-
-        <meta
-          property="og:title"
-          content="Earn Real Income by Sharing Idle Internet to Power AI | ARO Network"
-        />
-        <meta
-          property="og:description"
-          content="Turn unused internet into income. Run an ARO Node, earn $ARO tokens, and power real-time AI."
-        />
-        <meta
-          property="og:image"
-          content="https://aro.network/metadata-img.png"
-        />
         <meta property="og:url" content="https://aro.network/" />
-        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Earn Real Income by Sharing Idle Internet to Power AI | ARO Network" />
+        <meta property="og:description" content="Turn unused internet into income. Run an ARO Node, earn $ARO tokens, and power real-time AI." />
+        <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://aro.network/" />
+        <meta property="twitter:title" content="Earn Real Income by Sharing Idle Internet to Power AI | ARO Network" />
+        <meta property="twitter:description" content="Turn unused internet into income. Run an ARO Node, earn $ARO tokens, and power real-time AI." />
+        <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+        <meta name="twitter:site" content="@AroNetwork" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Aro" />
