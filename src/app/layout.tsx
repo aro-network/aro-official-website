@@ -7,7 +7,6 @@ import { Toaster } from "sonner";
 import classNames from "classnames";
 
 import Hotjar from '@hotjar/browser';
-import Head from "next/head";
 import { useEffect } from "react";
 
 
