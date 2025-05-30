@@ -11,7 +11,7 @@ import AScrollToTop from "../components/AScrollToTop"
 
 const socialLinks = [
   { href: 'https://x.com/AroNetwork', name: 'Twitter' },
-  { href: 'https://github.com/EnReachNetwork', name: 'Github' },
+  { href: 'https://github.com/aro-network', name: 'Github' },
   { href: 'https://discord.gg/Rc4BMUjbNB', name: 'Discord' },
   { href: 'https://t.me/EnReachNetwork', name: 'Telegram' },
 ]
