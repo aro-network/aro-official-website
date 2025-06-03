@@ -83,23 +83,6 @@ export default function RootLayout({
       <title>
         Earn Real Income by Sharing Idle Internet to Power AI | ARO Network
       </title>
-      <script
-        dangerouslySetInnerHTML={{
-          __html:
-            `
-   (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:6397730,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-  `
-        }}
-      >
-
-      </script>
 
 
       <link rel="icon" href="/favicon.ico" />
