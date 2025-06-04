@@ -85,9 +85,9 @@ export default function RootLayout({
       </title>
 
 
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/enreach-logo-light.svg" />
 
-      <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="any" />
+      <link rel="icon" href="/enreach-logo-light.svg" type="image/x-icon" sizes="any" />
 
       <meta name="title" content="Earn Real Income by Sharing Idle Internet to Power AI | ARO Network" />
       <meta name="description" content="Turn unused internet into income. Run an ARO Node, earn $ARO tokens, and power real-time AI." />
