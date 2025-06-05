@@ -13,7 +13,7 @@ const socialLinks = [
   { href: 'https://x.com/AroNetwork', name: 'Twitter' },
   { href: 'https://github.com/aro-network', name: 'Github' },
   { href: 'https://discord.gg/Rc4BMUjbNB', name: 'Discord' },
-  { href: 'https://t.me/EnReachNetwork', name: 'Telegram' },
+  { href: 'https://t.me/ARO_Network', name: 'Telegram' },
 ]
 type PickType = Pick<ArticleInfo.Post, 'content' | '_embedded' | 'title' | 'date'>
 const AInfo = () => {

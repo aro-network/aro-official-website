@@ -8,7 +8,7 @@ import { RiAppsFill } from "react-icons/ri";
 const socialLinks = [
     { href: 'https://x.com/AroNetwork', icon: <FaXTwitter /> },
     { href: 'https://discord.gg/Rc4BMUjbNB', icon: <FaDiscord /> },
-    { href: 'https://t.me/EnReachNetwork', icon: <FaTelegramPlane /> },
+    { href: 'https://t.me/ARO_Network', icon: <FaTelegramPlane /> },
     { href: 'blog', icon: <RiAppsFill /> },
     { href: 'https://docs.aro.network/', icon: <SiGoogledocs /> },
 ]

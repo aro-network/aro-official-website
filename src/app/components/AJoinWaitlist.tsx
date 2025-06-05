@@ -110,7 +110,7 @@ const AJoinWaitlist = () => {
           </span>
         </div>
         <div
-          onClick={() => window.open("https://t.me/EnReachNetwork", "_blank")}
+          onClick={() => window.open("https://t.me/ARO_Network", "_blank")}
           className=" hover:bg-[#EBEBEB] bg-white cursor-pointer  rounded-[1.25rem] w-full border-[#7F7F7F] border mo:h-[4.25rem]  h-[6.25rem]  flex items-center justify-center gap-5 md:gap-[.625rem]  p-[1.875rem]"
         >
           <FaTelegramPlane className="text-black text-[35px] " />
