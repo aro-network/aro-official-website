@@ -13,6 +13,7 @@ import AAboutEnReach from "./components/AAboutEnreach"
 import AEarly from "./components/AEarly"
 import AFAQ from "./components/AFAQ"
 import ARoadMap from "./components/ARoadMap"
+import ATopTips from "./components/ATopTips"
 
 export default function Home() {
 
@@ -37,6 +38,8 @@ export default function Home() {
   }, []);
 
   return <div className=" h-screen">
+    <ATopTips />
+
     <div className=" bg-[url(/banner-bg.png)] mo:bg-top bg-cover  z-[100000] lg:relative  w-full h-screen">
       <AHeader />
       <ABanner />

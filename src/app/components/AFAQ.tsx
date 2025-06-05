@@ -18,7 +18,7 @@ const AFAQ = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
           className=" aos-init aos-animate "
-          classNames={{ 'trigger': 'flex justify-between items-baseline ', }} key={index} indicator={({ isOpen }) => (isOpen ? <FiMinusCircle className="text-black" /> : <FiPlusCircle className="text-black" />)} title={<div className=" font-medium text-2xl mo:text-lg mo:text-left  text-black">{item.title}</div>}>
+          classNames={{ 'trigger': 'flex justify-between items-baseline ', }} key={index} indicator={({ isOpen }) => (isOpen ? <FiMinusCircle className="text-black" /> : <FiPlusCircle className="text-black" />)} title={<div className=" font-medium text-2xl mo:text-lg text-left  text-black">{item.title}</div>}>
           <div className=" text-base mo:text-sm text-black pt-8 mo:pt-6"> {item.content}</div>
 
         </AccordionItem>
