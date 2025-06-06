@@ -1,4 +1,4 @@
-Here is the Aro website
+Here is the ARO website
 
 ## Getting Started
 
