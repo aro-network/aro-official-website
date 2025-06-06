@@ -20,7 +20,7 @@ const ATopTips = () => {
     <div>
       <div
         className={classNames(
-          "sticky  bg-[#1C73FF] flex items-center text-white justify-between text-base py-5 px-6 md:text-sm ",
+          "sticky  bg-[#1C73FF] flex items-center text-white justify-between  py-5 px-6 mo:text-xs ",
         )}
       >
         <div className="flex items-center justify-center flex-1 h-full flex-row">
