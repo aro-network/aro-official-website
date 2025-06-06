@@ -16,14 +16,11 @@ const AIntroduce = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="  aos-init aos-animate  tab-Introduce w-full  h-[32.5rem] mo:h-auto px-5 pt-[30px] pb-10 "
+          className="  aos-init aos-animate  tab-Introduce w-full  h-[34.375rem] mo:h-auto px-5 pt-[30px] pb-10 "
         >
           <span className="font-Ubuntu font-medium text-2xl text-black">
             Plug it.
           </span>
-          <div className="text-base leading-5 text-[#000000B2] pt-[10px]">
-            Hardware or Software Client, your choice.
-          </div>
           <div className="mt-7 flex flex-col gap-5">
             <div className="flex gap-7 items-center">
               <div className="w-[30%]">
@@ -41,7 +38,24 @@ const AIntroduce = () => {
             </div>
             <div className="flex gap-7 items-center">
               <div className="w-[30%]">
-                <img src="../enreachNode.svg" width={90} height={62} />
+                <img src="./AROLite.png" width={90} height={62} />
+              </div>
+              <div className="flex gap-[.375rem] flex-col w-[60%]">
+
+                <div className="flex gap-2 mo:gap-[.125rem] items-start ">
+                  <span className=" font-medium text-base leading-4 text-black">
+                    ARO Lite
+                  </span>
+                  <img src="./commingSoon.svg" />
+                </div>
+                <div className="text-xs  text-[#000000B2]">
+                  Lightweight browser extension. Join with minimal cost and effort.
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-7 items-center">
+              <div className="w-[30%]">
+                <img src="../AROClient.png" width={90} height={62} />
               </div>
               <div className="flex gap-[.375rem] flex-col w-[60%]">
                 <div className="flex gap-2 mo:gap-[.125rem] items-start ">
@@ -51,14 +65,13 @@ const AIntroduce = () => {
                   <img src="./commingSoon.svg" />
                 </div>
                 <div className="text-xs  text-[#000000B2]">
-                  Install on your own device. Simple, flexible, and easy to
-                  start.
+                  Install on your own device to unlock more capabilities.
                 </div>
               </div>
             </div>
             <div className="flex gap-7 items-center">
               <div className="w-[30%]">
-                <img src="./enreachRouter.svg " width={90} height={62} />
+                <img src="./AROLink.png " width={90} height={62} />
               </div>
 
               <div className="flex gap-[.375rem] flex-col w-[60%]">
@@ -66,7 +79,7 @@ const AIntroduce = () => {
                   ARO Link
                 </div>
                 <div className="text-xs  text-[#000000B2]">
-                  WiFi router with built-in ARO node. Earn while you browse.
+                  WiFi router with built-in ARO node. The choice for business scenarios.
                 </div>
               </div>
             </div>
@@ -83,7 +96,7 @@ const AIntroduce = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="  aos-init aos-animate   tab-Introduce w-full h-[32.5rem] mo:h-auto  pt-[30px] px-6"
+          className="  aos-init aos-animate   tab-Introduce w-full h-[34.375rem] mo:h-auto  pt-[30px] px-6"
         >
           <span className="font-Ubuntu font-medium text-2xl text-black">
             Install it.
@@ -96,7 +109,7 @@ const AIntroduce = () => {
               height={256}
             />
           </div>
-          <div className=" text-xs leading-5 text-[#000000B2] mt-5 mo:mb-10 ">
+          <div className=" text-xs leading-5 text-[#000000B2] mt-10 mo:mb-10 ">
             Contribute your idle bandwidth as an ARO Edge Node.
           </div>
         </div>
@@ -104,7 +117,7 @@ const AIntroduce = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="  aos-init aos-animate  tab-Introduce w-full h-[32.5rem] mo:h-auto  pt-[30px] px-6 pb-6 "
+          className="  aos-init aos-animate  tab-Introduce w-full h-[34.375rem] mo:h-auto  pt-[30px] px-6 pb-6 "
         >
           <div className="font-Ubuntu font-medium text-2xl text-black ">
             Start Earning.
