@@ -62,7 +62,6 @@ const AIntroduce = () => {
                   <span className=" font-medium text-base leading-4 text-black">
                     ARO Client
                   </span>
-                  <img src="./commingSoon.svg" />
                 </div>
                 <div className="text-xs  text-[#000000B2]">
                   Install on your own device to unlock more capabilities.
