@@ -25,7 +25,7 @@ const AInfo = () => {
   const fetchPostDetail = async () => {
     try {
       const postRes = await axios.get(
-        `https://wordpress.aro.network/wp-json/wp/v2/posts/${postId}?_embed`
+        `https://shop.aro.network/wp-json/wp/v2/posts/${postId}?_embed`
       );
       setSelectedPost(postRes.data);
     } catch (error) {

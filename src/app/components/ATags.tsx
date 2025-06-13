@@ -37,14 +37,14 @@ const ATags = () => {
       if (isNumeric) {
         tagId = slug;
         const tagRes = await axios.get(
-          `https://wordpress.aro.network/wp-json/wp/v2/tags/${tagId}`
+          `https://shop.aro.network/wp-json/wp/v2/tags/${tagId}`
         );
         console.log('tagRestagRes123', tagRes);
 
         setTagName(tagRes.data.name);
       } else {
         const tagRes = await axios.get(
-          `https://wordpress.aro.network/wp-json/wp/v2/tags?slug=${slug}`
+          `https://shop.aro.network/wp-json/wp/v2/tags?slug=${slug}`
         );
         console.log('tagRestagRes', tagRes);
 
@@ -60,7 +60,7 @@ const ATags = () => {
       }
 
       const postsRes = await axios.get(
-        `https://wordpress.aro.network/wp-json/wp/v2/posts?tags=${tagId}&_embed&per_page=5&page=${pageNum}`
+        `https://shop.aro.network/wp-json/wp/v2/posts?tags=${tagId}&_embed&per_page=5&page=${pageNum}`
       );
 
       console.log('postspostsResRes', postsRes);
