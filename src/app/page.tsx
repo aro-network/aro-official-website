@@ -148,7 +148,7 @@ function RoumdMaps() {
   </div>
 }
 
-export const faqText = [
+const faqText = [
   {
     title: "1. How Does ARO Network Operate?",
     content:
