@@ -16,7 +16,7 @@
 
 body {
   color: #7c7c7c;
-  background: #F9F9F8;
+  background: #0d131b;
   font-family: Arial, Helvetica, sans-serif;
   cursor: default;
   overflow-x: hidden;
@@ -44,7 +44,7 @@ body {
 
 .ipsText:hover {
   background-color: unset;
-  border: 2px solid black ;
+  border: 2px solid black;
 }
 
 .transition-img {
@@ -256,8 +256,7 @@ body {
   padding: 10px;
   width: 150px;
   background-color: #373737;
-  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
-    hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
   animation-duration: 400ms;
   animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
   will-change: transform, opacity;
@@ -282,8 +281,7 @@ body {
   padding: 10px;
   width: 150px;
   background-color: #373737;
-  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
-    hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
   animation-duration: 400ms;
   animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
   will-change: transform, opacity;
@@ -317,10 +315,8 @@ body {
   .noBorder {
     margin-top: 20px;
     font-size: 14px;
-
-
   }
-  .tab-Introduce{
+  .tab-Introduce {
     border-radius: 40px !important;
   }
 }
@@ -369,23 +365,19 @@ textarea:-webkit-autofill {
   color: #8a8a8a;
   background-color: transparent !important;
   background-clip: padding-box !important;
-  -webkit-box-shadow: 0 0 0px 1000px #313131 inset !important; 
+  -webkit-box-shadow: 0 0 0px 1000px #313131 inset !important;
   -webkit-text-fill-color: #737373 !important;
 }
 
-
-
-.tab-Introduce{
+.tab-Introduce {
   position: relative;
   border-radius: 40px;
-  background:
-    linear-gradient(white, white) padding-box, 
-    linear-gradient(90deg, #197AD1 -8.53%, rgba(0, 186, 254, 0.1) 31.74%, rgba(0, 213, 255, 0.1) 70.82%, #16B8C3 114.18%) border-box;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(90deg, #197ad1 -8.53%, rgba(0, 186, 254, 0.1) 31.74%, rgba(0, 213, 255, 0.1) 70.82%, #16b8c3 114.18%) border-box;
   border: 1px solid transparent;
-  background-clip: padding-box, border-box; 
+  background-clip: padding-box, border-box;
   box-sizing: border-box;
 }
-
 
 .enreachInput input::placeholder {
   color: #797979;
@@ -395,14 +387,11 @@ textarea:-webkit-autofill {
   font-size: 16px;
 }
 
-
-
 .enreachInput input:focus {
   box-shadow: none;
-  border-color: #1C73FF;
+  border-color: #1c73ff;
   outline: none;
   content: "";
-
 }
 
 .enreachInput input {
@@ -411,56 +400,44 @@ textarea:-webkit-autofill {
 }
 @media (max-width: 1001px) {
   .enreachInput input {
-  width: 100%;
-
+    width: 100%;
   }
   .wp-block-heading {
     font-family: var(--font-ubuntu);
     margin-top: 0 !important ;
     margin-bottom: 0 !important;
     font-size: 24px !important;
-  font-weight: 600 !important;
-
+    font-weight: 600 !important;
   }
 
-  p strong{
-    color:#000000;
+  p strong {
+    color: #000000;
     font-weight: 700;
     font-size: 16px !important;
   }
-  p{
+  p {
     font-size: 16px !important;
     padding-top: 10px;
     padding-bottom: 10px;
-  
-  
   }
-
 }
-
-
 
 .footer {
-  box-shadow: inset 0 40px 40px -10px #E6E6E64D;
-
+  box-shadow: inset 0 40px 40px -10px #e6e6e64d;
 }
 
-.shadow-box{
-  box-shadow: 0px 0px 12px 2px #E6E6E6E5;
-
+.shadow-box {
+  box-shadow: 0px 0px 12px 2px #e6e6e6e5;
 }
 
 .current-shadow-box {
   border-radius: 8px;
-  box-shadow: 0px 0px 12px 2px  #1C73FF;
+  box-shadow: 0px 0px 12px 2px #1c73ff;
 }
-
-
 
 .navigation-wrapper {
   position: relative;
-  box-shadow: 0px 0px 12px 2px #E6E6E6E5;
-
+  box-shadow: 0px 0px 12px 2px #e6e6e6e5;
 }
 
 .dots {
@@ -488,10 +465,7 @@ textarea:-webkit-autofill {
   background: #000;
 }
 
-
 @media (min-width: 1000px) {
- 
-
   .sociallink:after {
     display: block;
     content: "";
@@ -505,35 +479,30 @@ textarea:-webkit-autofill {
     transform: scaleX(1);
     transform-origin: 0% 50%;
   }
-
-
-  
 }
-
 
 .wp-block-heading {
   font-family: var(--font-ubuntu);
-  margin-top: 10px ;
-  margin-bottom: 10px ;
-  font-weight: 600 ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
   font-size: 30px;
-  color:#000000 
+  color: #000000;
 }
 
-p strong{
-  color:#000000;
+p strong {
+  color: #000000;
   font-weight: 700;
   font-size: 20px;
 }
-p{
+p {
   font-size: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.enreach-content a{
+.enreach-content a {
   text-decoration: underline;
-  
 }
 
 .element {
@@ -544,11 +513,10 @@ p{
   font-weight: bold;
   text-align: center;
   z-index: 100;
-  
 }
 
 .element::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -568,18 +536,18 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 2px; 
+  top: 2px;
   left: 2px;
   right: 2px;
   bottom: 2px;
-  background: #fff; 
+  background: #fff;
   clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
   z-index: 0;
 }
 
-.roadMapbox{
+.roadMapbox {
   margin-top: 20px;
-  height:auto;
+  height: auto;
   width: auto;
   background-color: red !important;
 }
@@ -588,7 +556,7 @@ p{
   width: 10px;
   height: 10px;
   background-color: red;
-  content: '12321';
+  content: "12321";
   position: absolute;
   color: black;
   display: flex;
@@ -601,7 +569,7 @@ p{
   width: 1px;
   height: 10px;
   background-color: red;
-  content: '';
+  content: "";
   position: absolute;
   color: black;
   display: flex;
@@ -616,5 +584,12 @@ p{
 }
 .scrollbar-hide {
   -ms-overflow-style: none;
-  scrollbar-width: none; 
+  scrollbar-width: none;
+}
+
+.borderLinerGridentL2 {
+  background-clip: padding-box, border-box !important;
+  background-origin: padding-box, border-box !important;
+  border-color: transparent;
+  border-style: solid;
 }
