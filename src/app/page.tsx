@@ -205,7 +205,7 @@ function FAQS() {
   return <div className={cn(maxWidthClassName, 'relative pt-[124px] mo:pt-16')}>
     <TitleText text={"FAQ Highlights"} />
     <Accordion
-      data-aos="fade-up"
+      data-aos="fade-left"
       data-aos-duration="1000"
       className="aos-init aos-animate flex flex-col gap-10 mx-auto max-w-[840px] w-full mo:gap-[30px]"
       onSelectionChange={(keys) => {
