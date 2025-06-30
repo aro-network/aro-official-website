@@ -200,7 +200,7 @@ function Sponsors() {
 function FAQS() {
   const [opened, setOpened] = useState<number>()
   function RenderTit({ item, index }: { item: (typeof faqText)[number], index: number }) {
-    return <LinerGridentBorder anim={false} type={index === opened ? "2" : "5"} className="rounded-lg font-medium text-xl text-left  text-white mo:text-base"><div className="pl-[30px] pr-[62px] py-4 mo:pl-5 mo:pr-12">{item.title}</div></LinerGridentBorder>
+    return <LinerGridentBorder anim={false} type={index === opened ? "2" : "5"} className="rounded-lg font-medium text-xl text-left  text-white mo:text-base"><div className="pl-[30px] pr-[62px] py-4 mo:pl-5 mo:pr-16">{item.title}</div></LinerGridentBorder>
   }
   return <div className={cn(maxWidthClassName, 'relative pt-[124px] mo:pt-16')}>
     <TitleText text={"FAQ Highlights"} />
@@ -225,7 +225,7 @@ function FAQS() {
           HeadingComponent={'div'}
           indicator={({ isOpen }) => (isOpen ? <FiMinus className="text-[#048417] -translate-x-11 mo:-translate-x-9" /> : <FiPlus className="text-[#048417] -translate-x-11 mo:-translate-x-9" />)}
           title={<RenderTit item={item} index={index} />}>
-          <div className={cn("text-sm text-[#D3D3D6] pt-5 pr-[50px] pl-[30px] !leading-normal mo:text-xs")}>{item.content}</div>
+          <div className={cn("text-sm text-[#D3D3D6] pt-5 pr-[50px] pl-[30px] !leading-normal mo:text-xs mo:pl-5")}>{item.content}</div>
         </AccordionItem>
       })}
     </Accordion>
@@ -275,26 +275,29 @@ export default function Home() {
     <div className="z-[100000] lg:relative  w-full min-h-screen bg-black">
       <div className="pb-[124px] mo:pb-16 w-full relative flex flex-col gap-[8rem] bg-[url(/bg_flash.svg)] bg-center bg-no-repeat bg-cover mo:gap-20 mo:items-center mo:[background-position-x:75%]">
         {/* Header */}
-        <div className="bg-[#07070A] flex w-full h-[71px] mo:h-[56px]">
-          <div className={cn("flex items-center gap-5 mx-auto relative", maxWidthClassName)}>
-            <Link href={'/'} className=" flex items-center mr-auto">
-              <img alt="Logo" src="/aro-logo.svg" className="w-[205px] h-auto mo:w-[158px]" />
-            </Link>
-            <div className="flex items-center gap-5 mo:hidden">
-              {
-                headerTabList.map((item, i) =>
-                  <MBtn key={`head_${i}`}
-                    type={i === headerTabList.length - 1 ? '2' : '1'}
-                    contentClassName={i === headerTabList.length - 1 ? 'py-2.5' : ''}
-                    onClick={() => goTo(item.href)} content={item.tabName} className={i === headerTabList.length - 1 ? 'ml-4' : ''} />
-                )
-              }
-            </div>
-            <MBtn ref={trigerRef} type="2" className="rounded-lg hidden mo:block" contentClassName="px-0.5 py-0 text-2xl hover:text-[#00E42A]" content={<IoMenu />} onClick={() => setShowMenus(!showMenus)} />
-            <div ref={ref} className={cn("absolute top-full right-0 hidden mo:flex bg-black transition-all p-5 flex-col gap-4 w-[375px] z-10", showMenus ? "translate-x-0" : "translate-x-full !hidden")}>
-              {headerTabList.slice(0, headerTabList.length - 1).map((item, i) => <MBtn key={`head_${i}`} type="3" className="w-full" onClick={() => goTo(item.href)} content={item.tabName} />)}
+        <div className="w-full">
+          <div className="bg-[#07070A] flex w-full h-[71px] mo:h-[56px]">
+            <div className={cn("flex items-center gap-5 mx-auto relative", maxWidthClassName)}>
+              <Link href={'/'} className=" flex items-center mr-auto">
+                <img alt="Logo" src="/aro-logo.svg" className="w-[205px] h-auto mo:w-[158px]" />
+              </Link>
+              <div className="flex items-center gap-5 mo:hidden">
+                {
+                  headerTabList.map((item, i) =>
+                    <MBtn key={`head_${i}`}
+                      type={i === headerTabList.length - 1 ? '2' : '1'}
+                      contentClassName={i === headerTabList.length - 1 ? 'py-2.5' : ''}
+                      onClick={() => goTo(item.href)} content={item.tabName} className={i === headerTabList.length - 1 ? 'ml-4' : ''} />
+                  )
+                }
+              </div>
+              <MBtn ref={trigerRef} type="2" className="rounded-lg hidden mo:block" contentClassName="px-0.5 py-0 text-2xl hover:text-[#00E42A]" content={<IoMenu />} onClick={() => setShowMenus(!showMenus)} />
+              <div ref={ref} className={cn("absolute top-full right-0 hidden mo:flex bg-black transition-all p-5 flex-col gap-4 w-[375px] z-10", showMenus ? "translate-x-0" : "translate-x-full !hidden")}>
+                {headerTabList.slice(0, headerTabList.length - 1).map((item, i) => <MBtn key={`head_${i}`} type="3" className="w-full" onClick={() => goTo(item.href)} content={item.tabName} />)}
+              </div>
             </div>
           </div>
+          <div  className="h-[1px] w-full bg-[#384137]"></div>
         </div>
         {/* First Frame */}
         <AosAnimItem className={cn(maxWidthClassName, "flex flex-col gap-[122px] mo:items-center")}>
@@ -423,7 +426,7 @@ export default function Home() {
                   • Access to private funding rounds before the public
                 </div>
                 <AosAnimItem className="flex items-center gap-[30px] text-white text-[30px] mt-4 mo:self-center">
-                  {shortSoialLinks.map(item => <div key={item.href} onClick={() => open(item.href, '_blank')} className="cursor-pointer">{item.icon}</div>)}
+                  {shortSoialLinks.map(item => <div key={item.href} onClick={() => open(item.href, '_blank')} className="cursor-pointer hover:text-[#AEFB68]">{item.icon}</div>)}
                 </AosAnimItem>
                 <AosAnimItem className="w-fit mt-2 mo:self-center">
                   <MBtn
@@ -470,19 +473,19 @@ export default function Home() {
         <RoumdMaps />
       </div>
       <FAQS />
-      <div className={cn("max-w-[1240px] w-full mx-auto relative mt-[124px] mo:mt-16 mo:pt-12")}>
+      <AosAnimItem className={cn("max-w-[1240px] w-full mx-auto relative mt-[124px] mo:mt-16 mo:pt-12")}>
         <img src="/bg_footer_star.svg" className="w-[calc(100%-56px)] h-auto" />
         <img src="/bg_footer.svg" className="w-full h-auto" />
-        <AosAnimItem className="absolute top-0 w-full flex flex-col items-center gap-2.5">
+        <div className="absolute top-0 w-full flex flex-col items-center gap-2.5">
           <div className="text-white font-medium text-[30px] gap-8 flex items-center mo:text-2xl mo:gap-6">
-            {socialLinks.map(item => <div key={item.href} onClick={() => open(item.href, '_blank')} className="cursor-pointer">{item.icon}</div>)}
+            {socialLinks.map(item => <div key={item.href} onClick={() => open(item.href, '_blank')} className="cursor-pointer hover:text-[#AEFB68]">{item.icon}</div>)}
           </div>
           <div className="text-[#646464] mo:font-medium mo:text-xs">© ARO Network 2025. Powered by the People.</div>
           <div className="mt-3 h-0.5 w-[226px]" style={{
             background: 'linear-gradient(90deg, #090C17 0%, #00E42A 51%, #090C17 100%)'
           }} />
-        </AosAnimItem>
-      </div>
+        </div>
+      </AosAnimItem>
     </div>
 
   </div>
