@@ -173,7 +173,7 @@ const socialLinks = [
   },
   { href: 'https://x.com/AroNetwork', text: 'Twitter', icon: <BsTwitterX className="text-[0.8em]" /> },
   // { href: 'https://github.com/aro-network', text: 'Github', icon: <IoLogoGithub /> },
-  { href: '/blog', text: 'Blog', icon: <RiAppsFill /> },
+  { href: 'https://medium.com/@AroNetwork', text: 'Blog', icon: <RiAppsFill /> },
 ]
 
 const shortSoialLinks = socialLinks.filter(item => ["Telegram", 'Discord', 'Twitter'].includes(item.text))
@@ -270,44 +270,44 @@ export default function Home() {
       setShowMenus(false)
     }
   })
-  return <div className=" h-screen">
-    {/* <ATopTips /> */}
+  return <div className="">
     <div className="z-[100000] lg:relative  w-full min-h-screen bg-black">
-      <div className="pb-[124px] mo:pb-16 w-full relative flex flex-col gap-[8rem] bg-[url(/bg_flash.svg)] bg-center bg-no-repeat bg-cover mo:gap-20 mo:items-center mo:[background-position-x:75%]">
-        {/* Header */}
-        <div className="w-full">
-          <div className="bg-[#07070A] flex w-full h-[71px] mo:h-[56px]">
-            <div className={cn("flex items-center gap-5 mx-auto relative", maxWidthClassName)}>
-              <Link href={'/'} className=" flex items-center mr-auto">
-                <img alt="Logo" src="/aro-logo.svg" className="w-[205px] h-auto mo:w-[158px]" />
-              </Link>
-              <div className="flex items-center gap-5 mo:hidden">
-                {
-                  headerTabList.map((item, i) =>
-                    <MBtn key={`head_${i}`}
-                      type={i === headerTabList.length - 1 ? '2' : '1'}
-                      contentClassName={i === headerTabList.length - 1 ? 'py-2.5' : ''}
-                      onClick={() => goTo(item.href)} content={item.tabName} className={i === headerTabList.length - 1 ? 'ml-4' : ''} />
-                  )
-                }
-              </div>
-              <MBtn ref={trigerRef} type="2" className="rounded-lg hidden mo:block" contentClassName="px-0.5 py-0 text-2xl hover:text-[#00E42A]" content={<IoMenu />} onClick={() => setShowMenus(!showMenus)} />
-              <div ref={ref} className={cn("absolute top-full right-0 hidden mo:flex bg-black transition-all p-5 flex-col gap-4 w-[375px] z-10", showMenus ? "translate-x-0" : "translate-x-full !hidden")}>
-                {headerTabList.slice(0, headerTabList.length - 1).map((item, i) => <MBtn key={`head_${i}`} type="3" className="w-full" onClick={() => goTo(item.href)} content={item.tabName} />)}
-              </div>
+      {/* Header */}
+      <div className="w-full mo:sticky top-0 z-50">
+        <div className="bg-[#07070A] flex w-full h-[71px] mo:h-[56px]">
+          <div className={cn("flex items-center gap-5 mx-auto relative", maxWidthClassName)}>
+            <Link href={'/'} className=" flex items-center mr-auto">
+              <img alt="Logo" src="/aro-logo.svg" className="w-[205px] h-auto mo:w-[158px]" />
+            </Link>
+            <div className="flex items-center gap-5 mo:hidden">
+              {
+                headerTabList.map((item, i) =>
+                  <MBtn key={`head_${i}`}
+                    type={i === headerTabList.length - 1 ? '2' : '1'}
+                    contentClassName={i === headerTabList.length - 1 ? 'py-2.5' : ''}
+                    onClick={() => goTo(item.href)} content={item.tabName} className={i === headerTabList.length - 1 ? 'ml-4' : ''} />
+                )
+              }
+            </div>
+            <MBtn ref={trigerRef} type="2" className="rounded-lg hidden mo:block" contentClassName="px-0.5 py-0 text-2xl hover:text-[#00E42A]" content={<IoMenu />} onClick={() => setShowMenus(!showMenus)} />
+            <div ref={ref} className={cn("absolute top-full right-0 hidden mo:flex bg-black transition-all p-5 flex-col gap-4 w-[375px] z-10", showMenus ? "translate-x-0" : "translate-x-full !hidden")}>
+              {headerTabList.slice(0, headerTabList.length - 1).map((item, i) => <MBtn key={`head_${i}`} type="3" className="w-full" onClick={() => goTo(item.href)} content={item.tabName} />)}
             </div>
           </div>
-          <div  className="h-[1px] w-full bg-[#384137]"></div>
         </div>
+        <div className="h-[1px] w-full bg-[#384137]"></div>
+      </div>
+      <div className="pb-[124px] mo:pb-16 w-full flex flex-col gap-[8rem] bg-[url(/bg_flash.svg)] bg-center bg-no-repeat bg-cover mo:gap-20 mo:items-center mo:[background-position-x:75%]">
+        <div className=""></div>
         {/* First Frame */}
         <AosAnimItem className={cn(maxWidthClassName, "flex flex-col gap-[122px] mo:items-center")}>
           <div className="flex flex-col leading-[1.2] mo:items-center">
             <div
               style={{
                 boxSizing: 'border-box',
-                backgroundClip: 'text !important',
-                WebkitBackgroundClip: 'text',
                 background: 'linear-gradient(350deg, #00E42A 21.13%, #FFFFFF 57.73%)',
+                backgroundClip: 'text',
+                WebkitBackgroundClip: 'text',
                 textShadow: 'none',
               }}
               className="text-[66px] font-bold text-transparent w-fit pr-28 flex flex-col mo:pr-0 mo:text-center mo:text-[44px]"
