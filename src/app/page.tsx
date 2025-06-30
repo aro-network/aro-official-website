@@ -44,9 +44,13 @@ function MBtn({ type = '1', className, onClick, content, contentClassName, ref }
   </div>
 }
 
-function AosAnimItem({ className, children, as, ...props }: AllHTMLAttributes<HTMLDivElement> & { as?: (keyof ReactHTML) }) {
+function AosAnimItem({ className, children, as, anim = true, ...props }: AllHTMLAttributes<HTMLDivElement> & { as?: (keyof ReactHTML), anim?: boolean }) {
   const Component = (as ?? "div") as any
-  return <Component className={cn('aos-init aos-animate', className)} {...props} data-aos="fade-up" data-aos-duration="1000" >{children}</Component>
+  const animProps = anim ? {
+    'data-aos': "fade-up",
+    'data-aos-duration': "1000"
+  } : {}
+  return <Component className={cn({ 'aos-init aos-animate': anim }, className)} {...props} {...animProps} >{children}</Component>
 }
 function TitleText({ text, style = {}, className }: { text: React.ReactNode, style?: CSSProperties, className?: string }) {
   return <AosAnimItem
@@ -75,8 +79,8 @@ const LinerGridentMap: { [k in LinerGridentType]: string } = {
   5: 'linear-gradient(to right, #000, #000),linear-gradient(to right, #000, #000),linear-gradient(to right, #2D3239,#2D3239)',
 }
 
-function LinerGridentBorder({ className, children, type }: { className?: string, children?: React.ReactNode, type: LinerGridentType }) {
-  return <AosAnimItem style={{
+function LinerGridentBorder({ className, children, type, anim }: { className?: string, children?: React.ReactNode, type: LinerGridentType, anim?: boolean }) {
+  return <AosAnimItem anim={anim} style={{
     backgroundClip: 'padding-box, padding-box, border-box',
     backgroundOrigin: 'padding-box, padding-box, border-box',
     border: '1px solid transparent',
@@ -196,11 +200,14 @@ function Sponsors() {
 function FAQS() {
   const [opened, setOpened] = useState<number>()
   function RenderTit({ item, index }: { item: (typeof faqText)[number], index: number }) {
-    return <LinerGridentBorder type={index === opened ? "2" : "5"} className="rounded-lg font-medium text-xl text-left  text-white mo:text-base"><div className="pl-[30px] pr-[62px] py-4 mo:pl-5 mo:pr-12">{item.title}</div></LinerGridentBorder>
+    return <LinerGridentBorder anim={false} type={index === opened ? "2" : "5"} className="rounded-lg font-medium text-xl text-left  text-white mo:text-base"><div className="pl-[30px] pr-[62px] py-4 mo:pl-5 mo:pr-12">{item.title}</div></LinerGridentBorder>
   }
   return <div className={cn(maxWidthClassName, 'relative pt-[124px] mo:pt-16')}>
     <TitleText text={"FAQ Highlights"} />
     <Accordion
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      className="aos-init aos-animate flex flex-col gap-10 mx-auto max-w-[840px] w-full mo:gap-[30px]"
       onSelectionChange={(keys) => {
         console.info('keys:', keys, (keys as any).currentKey)
         if ((keys as Set<string>).size) {
@@ -209,12 +216,10 @@ function FAQS() {
           setOpened(undefined)
         }
       }}
-      variant="light" className="flex flex-col gap-10 mx-auto max-w-[840px] w-full mo:gap-[30px]" showDivider={false}>
+      variant="light"
+      showDivider={false}>
       {faqText.map((item, index) => {
         return <AccordionItem
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          className="aos-init aos-animate"
           classNames={{ trigger: 'flex justify-between items-center py-0 gap-0', heading: 'my-0', indicator: 'w-0' }}
           key={index}
           HeadingComponent={'div'}
