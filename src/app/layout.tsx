@@ -39,7 +39,7 @@ const ubuntu = Ubuntu({
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "500", '600', '700'],
   variable: "--font-poppins",
 });
 

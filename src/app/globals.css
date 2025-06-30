@@ -15,6 +15,7 @@
 }
 
 body {
+  font-size: 16px;
   color: #7c7c7c;
   background: #0d131b;
   font-family: Arial, Helvetica, sans-serif;
@@ -360,7 +361,7 @@ body {
   color: #fff;
 }
 
-input:-webkit-autofill,
+/* input:-webkit-autofill,
 textarea:-webkit-autofill {
   color: #8a8a8a;
   background-color: transparent !important;
@@ -377,7 +378,7 @@ textarea:-webkit-autofill {
   border: 1px solid transparent;
   background-clip: padding-box, border-box;
   box-sizing: border-box;
-}
+} */
 
 .enreachInput input::placeholder {
   color: #797979;

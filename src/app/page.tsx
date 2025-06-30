@@ -19,9 +19,9 @@ import { useClickAway } from "react-use"
 
 const dashboarSignup = 'https://devnet-dashboard.aro.network/signup'
 const headerTabList = [
-  { href: '/blog', tabName: 'Blog', },
+  { href: 'https://medium.com/@AroNetwork', tabName: 'Blog', },
   { href: 'https://docs.aro.network/', tabName: 'Docs' },
-  { href: '/dashboard', tabName: 'Dashbord' },
+  { href: '/dashboard', tabName: 'Dashboard' },
   { href: dashboarSignup, tabName: 'Get Started' },
 ];
 
@@ -54,17 +54,17 @@ function TitleText({ text, style = {}, className }: { text: React.ReactNode, sty
       zIndex: 2,
       lineHeight: 1.2,
       boxSizing: 'border-box',
-      backgroundClip: 'text !important',
+      backgroundImage: 'linear-gradient(314.89deg, #00E42A 21.13%, #FFFFFF 57.73%)',
+      backgroundClip: 'text',
       WebkitBackgroundClip: 'text',
-      background: 'linear-gradient(314.89deg, #00E42A 21.13%, #FFFFFF 57.73%)',
       textShadow: 'none',
       ...style
     }}
-    className={cn("text-[48px] font-semibold text-transparent w-fit mt-0 mx-auto mb-[44px] mo:text-[28px] mo:mb-[30px]", className)}>{text}</AosAnimItem>
+    className={cn("text-[48px] h-fit font-semibold text-transparent w-fit mt-0 mx-auto mb-[44px] mo:text-[28px] mo:mb-[30px]", className)}>{text}</AosAnimItem>
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const LinerGridentTypes = ['0', '1', '2', '3', '4'] as const
+const LinerGridentTypes = ['0', '1', '2', '3', '4', '5'] as const
 type LinerGridentType = (typeof LinerGridentTypes)[number]
 const LinerGridentMap: { [k in LinerGridentType]: string } = {
   0: 'linear-gradient(to right, ),linear-gradient(to right, #000, #000),linear-gradient(293.4deg, #44F54D -4.55%, #42474D 24.34%)',
@@ -72,37 +72,14 @@ const LinerGridentMap: { [k in LinerGridentType]: string } = {
   2: 'linear-gradient(124.57deg, #176123 -10.04%, rgba(115, 115, 115, 0) 38.35%),linear-gradient(to right, #000, #000),linear-gradient(113.4deg, #44F54D -0.39%, #42474D 28.51%)',
   3: 'linear-gradient(10.29deg, #1A5426 -19.77%, rgba(115, 115, 115, 0) 40.41%),linear-gradient(to right, #000, #000),linear-gradient(113.4deg, #44F54D -0.39%, #4A5A54 28.51%)',
   4: 'linear-gradient(304.57deg, #1A5026 -15.67%, rgba(115, 115, 115, 0) 32.73%),linear-gradient(to right, #000, #000),linear-gradient(293.4deg, #44F54D -4.55%, #42474D 24.34%)',
+  5: 'linear-gradient(to right, #000, #000),linear-gradient(to right, #000, #000),linear-gradient(to right, #2D3239,#2D3239)',
 }
 
 function LinerGridentBorder({ className, children, type }: { className?: string, children?: React.ReactNode, type: LinerGridentType }) {
   return <AosAnimItem style={{
-    backgroundClip: 'padding-box, padding-box, border-box !important',
-    backgroundOrigin: 'padding-box, padding-box, border-box !important',
+    backgroundClip: 'padding-box, padding-box, border-box',
+    backgroundOrigin: 'padding-box, padding-box, border-box',
     border: '1px solid transparent',
-    /**
-     
-    type1
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01)),linear-gradient(111.63deg, rgba(0, 255, 13, 0.6) -32.02%, rgba(115, 115, 115, 0) 71.94%);
-    border: 1px solid;border-image-source: linear-gradient(114.04deg, #00FF0D 8.43%, rgba(255, 255, 255, 0) 48.22%, #00FF0D 98.57%),linear-gradient(0deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.12));
-     
-    type2
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02)),linear-gradient(124.57deg, rgba(0, 255, 13, 0.5) -10.04%, rgba(115, 115, 115, 0) 38.35%);
-    border: 1px solid;border-image-source: linear-gradient(113.4deg, #00FF0D -0.39%, rgba(255, 255, 255, 0) 28.51%),linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
-
-
-    type3
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02)),linear-gradient(10.29deg, rgba(0, 255, 13, 0.5) -19.77%, rgba(115, 115, 115, 0) 40.41%);
-    border: 1px solid;border-image-source: linear-gradient(113.4deg, #00FF0D -0.39%, rgba(255, 255, 255, 0) 28.51%),linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
-
-    type4
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02)),linear-gradient(124.57deg, rgba(0, 255, 13, 0.5) -15.67%, rgba(115, 115, 115, 0) 32.73%);
-    border: 1px solid;border-image-source: linear-gradient(113.4deg, #00FF0D -4.55%, rgba(255, 255, 255, 0) 24.34%),linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
-    border: 1px solid;border-image-source: linear-gradient(113.4deg, #00FF0D -4.55%, rgba(255, 255, 255, 0) 24.34%),linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
-
-
-    
-    */
-
     backgroundImage: LinerGridentMap[type]
   }} className={className}>
     {children}
@@ -126,8 +103,8 @@ function QuteSymbol({ className }: { className?: string }) {
 
 const roundmaps = [
   { time: '2024', tit: 'Laying the Foundations', active: false, content: <>• GPoW (Geographic Proof of Work) & GPoS (Geographic Proof of Stake)<br />• Peer-HVM (Hardware Virtual Machine)<br />• Peer-DTS (Distributed Task Scheduling)<br />• Peer-Routing (Decentralized Routing Layer)</> },
-  { time: '2025 Q2', tit: 'ARO Devnet', active: false, content: <>• Activating the Network<br />• Community launch<br />• Hardware Offering</> },
-  { time: '2025 Q3', tit: 'ARO Testnet', active: true, content: <>• Proving our model with real demand<br />• Resource aggregation<br />• Kickstarting on-chain revenue</> },
+  { time: '2025 Q2-Q3', tit: 'ARO Devnet', active: true, content: <>• Activating the Network<br />• Community launch<br />• Hardware Offering</> },
+  { time: '2025 Q3-Q4', tit: 'ARO Testnet', active: false, content: <>• Proving our model with real demand<br />• Resource aggregation<br />• Kickstarting on-chain revenue</> },
   { time: '2025 Q4', tit: 'ARO Mainnet', active: false, content: <>• Mainnet launch<br />• Node expansion<br />• Customer expansion</> },
   { time: '2026', tit: 'Opening the Network', active: false, content: <>• Use cases expansion<br />• Open platform for edge apps<br />• Open governance</> },
 ]
@@ -138,36 +115,36 @@ function RoundMapItem({ data }: { data: (typeof roundmaps)[number] }) {
       <div className={cn("w-4 h-4 border-[3px] rounded-lg border-solid border-current ")}></div>
       <span>{data.time}</span>
     </div>
-    <div className={cn("text-[28px] !leading-normal mo:text-xl", colorClassName)}>{data.tit}</div>
+    <div className={cn("text-[28px] !leading-normal font-semibold mo:text-xl", colorClassName)}>{data.tit}</div>
     <div className="text-[#969696] text-sm !leading-6 mo:text-xs">{data.content}</div>
   </AosAnimItem>
 }
 function RoumdMaps() {
-  return <div className="flex flex-col gap-11 w-fit self-center mx-auto z-10 mo:self-start mo:mx-0">
+  return <div className="flex flex-col gap-11 w-fit ml-auto mr-[240px] z-10 max-w-[420px] mo:max-w-full mo:self-start mo:mx-0">
     {roundmaps.map(item => <RoundMapItem key={item.time} data={item} />)}
   </div>
 }
 
 const faqText = [
   {
-    title: "1. How Does ARO Network Operate?",
+    title: "How Does ARO Network Operate?",
     content:
       "ARO Network creates an open, decentralized edge cloud where you can share your unused bandwidth and earn real rewards. Enterprise customers buy these resources to deliver faster, smarter, and more affordable content—videos, gaming, AI services—to their users. Your contributions are tracked and rewarded fairly.",
   },
   {
-    title: "2. What Stage Is ARO Network Currently In?",
+    title: "What Stage Is ARO Network Currently In?",
     content: `
     ARO is currently in the Devnet phase, which means we are still testing the core infrastructure internally with a small group of early participants. We will soon enter the Testnet phase — this is when more participants will be able to join the network, contribute bandwidth, and start earning Jades, which can later be exchanged for $ARO tokens upon Mainnet launch. It’s still very early, and now is the perfect time to get involved if you want to become an early contributor and help shape the future of the ARO decentralized edge cloud!
 
 `,
   },
   {
-    title: "3. What Are Jades / Jade Shards?",
+    title: "What Are Jades / Jade Shards?",
     content: `Before Mainnet is live, your contributions to the ARO Testnet will be tracked and reflected as Jade Shards (or just Jades for simpler term). You will be rewarded with Jades when you participate and make contributions to the ARO Testnet. In some cases, community contributors may receive NFTs as a recognition of their special efforts. The Jades serve as a key metric to determine your eligibility for future rewards. Upon mainnet launch, you can exchange your Jades for $ARO tokens.
 `,
   },
   {
-    title: "4. Does Running ARO Nodes Compromise My Privacy?",
+    title: "Does Running ARO Nodes Compromise My Privacy?",
     content: `
   No. ARO Nodes will NEVER collect any personal data from your daily operation. The only resource ARO Network wants from you is your idle bandwidth — and nothing else.
 `,
@@ -179,7 +156,7 @@ const socialLinks = [
   { href: 'https://t.me/ARO_Network', text: 'Telegram', icon: <FaTelegramPlane /> },
   { href: 'https://discord.gg/Rc4BMUjbNB', text: 'Discord', icon: <FaDiscord /> },
   {
-    href: 'https://docs.aro.network/', text: 'Docs', icon: <svg width="1em" height="1em" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    href: 'https://docs.aro.network/', text: 'Docs', icon: <svg width="0.85em" height="0.85em" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_200_54)">
         <path d="M3.30894 23.6078C2.47769 23.1724 2.00269 22.258 2.00269 21.0982V4.13083C2.00071 1.9201 3.90071 0.125 6.24008 0.125H19.1858C21.5232 0.125 23.2471 1.9201 23.2471 4.13083V21.1022C23.2471 22.6717 22.6256 23.3248 22.1447 23.5761C21.6598 23.8295 20.6346 24.1204 19.2175 23.2535L19.1541 23.212L19.1007 23.1684C18.8632 22.9745 18.0399 22.4144 17.4046 22.4144C17.175 22.4144 16.7791 22.6123 16.3596 22.83C15.5184 23.2555 14.3646 23.8433 12.71 23.8433C11.0732 23.8433 10.1628 23.2674 9.49185 22.8458C9.03269 22.5549 8.79914 22.4183 8.46467 22.4183C7.56217 22.4183 6.61217 23.0319 6.34894 23.2417L6.2955 23.2852L6.2381 23.3248C5.62456 23.687 4.99915 23.875 4.41727 23.875C4.03113 23.876 3.65037 23.7844 3.30696 23.6078H3.30894ZM6.37467 5.12438C6.04319 5.12438 5.72528 5.25605 5.49089 5.49045C5.2565 5.72484 5.12482 6.04274 5.12482 6.37422C5.12482 6.7057 5.2565 7.0236 5.49089 7.25799C5.72528 7.49238 6.04319 7.62406 6.37467 7.62406H18.8731C19.2046 7.62406 19.5225 7.49238 19.7569 7.25799C19.9913 7.0236 20.1229 6.7057 20.1229 6.37422C20.1229 6.04274 19.9913 5.72484 19.7569 5.49045C19.5225 5.25605 19.2046 5.12438 18.8731 5.12438H6.37467ZM6.37467 10.1257C6.04319 10.1257 5.72528 10.2574 5.49089 10.4918C5.2565 10.7262 5.12482 11.0441 5.12482 11.3756C5.12482 11.7071 5.2565 12.025 5.49089 12.2593C5.72528 12.4937 6.04319 12.6254 6.37467 12.6254H18.8731C19.2046 12.6254 19.5225 12.4937 19.7569 12.2593C19.9913 12.025 20.1229 11.7071 20.1229 11.3756C20.1229 11.0441 19.9913 10.7262 19.7569 10.4918C19.5225 10.2574 19.2046 10.1257 18.8731 10.1257H6.37467ZM6.37467 15.1231C6.04319 15.1231 5.72528 15.2548 5.49089 15.4892C5.2565 15.7236 5.12482 16.0415 5.12482 16.373C5.12482 16.7044 5.2565 17.0224 5.49089 17.2567C5.72528 17.4911 6.04319 17.6228 6.37467 17.6228H12.6249C12.9564 17.6228 13.2743 17.4911 13.5086 17.2567C13.743 17.0224 13.8747 16.7044 13.8747 16.373C13.8747 16.0415 13.743 15.7236 13.5086 15.4892C13.2743 15.2548 12.9564 15.1231 12.6249 15.1231H6.37467Z" fill="currentColor" />
       </g>
@@ -190,7 +167,7 @@ const socialLinks = [
       </defs>
     </svg>
   },
-  { href: 'https://x.com/AroNetwork', text: 'Twitter', icon: <BsTwitterX /> },
+  { href: 'https://x.com/AroNetwork', text: 'Twitter', icon: <BsTwitterX className="text-[0.8em]" /> },
   // { href: 'https://github.com/aro-network', text: 'Github', icon: <IoLogoGithub /> },
   { href: '/blog', text: 'Blog', icon: <RiAppsFill /> },
 ]
@@ -213,6 +190,41 @@ function Sponsors() {
       </div>
     </AosAnimItem>
   </>
+}
+
+
+function FAQS() {
+  const [opened, setOpened] = useState<number>()
+  function RenderTit({ item, index }: { item: (typeof faqText)[number], index: number }) {
+    return <LinerGridentBorder type={index === opened ? "2" : "5"} className="rounded-lg font-medium text-xl text-left  text-white mo:text-base"><div className="pl-[30px] pr-[62px] py-4 mo:pl-5 mo:pr-12">{item.title}</div></LinerGridentBorder>
+  }
+  return <div className={cn(maxWidthClassName, 'relative pt-[124px] mo:pt-16')}>
+    <TitleText text={"FAQ Highlights"} />
+    <Accordion
+      onSelectionChange={(keys) => {
+        console.info('keys:', keys, (keys as any).currentKey)
+        if ((keys as Set<string>).size) {
+          setOpened(parseInt((keys as any).currentKey))
+        } else {
+          setOpened(undefined)
+        }
+      }}
+      variant="light" className="flex flex-col gap-10 mx-auto max-w-[840px] w-full mo:gap-[30px]" showDivider={false}>
+      {faqText.map((item, index) => {
+        return <AccordionItem
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="aos-init aos-animate"
+          classNames={{ trigger: 'flex justify-between items-center py-0 gap-0', heading: 'my-0', indicator: 'w-0' }}
+          key={index}
+          HeadingComponent={'div'}
+          indicator={({ isOpen }) => (isOpen ? <FiMinus className="text-[#048417] -translate-x-11 mo:-translate-x-9" /> : <FiPlus className="text-[#048417] -translate-x-11 mo:-translate-x-9" />)}
+          title={<RenderTit item={item} index={index} />}>
+          <div className={cn("text-sm text-[#D3D3D6] pt-5 pr-[50px] pl-[30px] !leading-normal mo:text-xs")}>{item.content}</div>
+        </AccordionItem>
+      })}
+    </Accordion>
+  </div>
 }
 
 export default function Home() {
@@ -249,14 +261,14 @@ export default function Home() {
   const ref = useRef<HTMLDivElement>(null)
   const trigerRef = useRef<HTMLDivElement>(null)
   useClickAway(ref, (e) => {
-    if (e.target && trigerRef.current && !trigerRef.current.contains(e.target as any)){
+    if (e.target && trigerRef.current && !trigerRef.current.contains(e.target as any)) {
       setShowMenus(false)
     }
   })
   return <div className=" h-screen">
     {/* <ATopTips /> */}
     <div className="z-[100000] lg:relative  w-full min-h-screen bg-black">
-      <div className="pb-[124px] mo:pb-16 w-full relative flex flex-col gap-[8rem] mo:gap-20 mo:items-center" style={{ background: `no-repeat center/cover url('/bg_flash.svg')` }}>
+      <div className="pb-[124px] mo:pb-16 w-full relative flex flex-col gap-[8rem] bg-[url(/bg_flash.svg)] bg-center bg-no-repeat bg-cover mo:gap-20 mo:items-center mo:[background-position-x:75%]">
         {/* Header */}
         <div className="bg-[#07070A] flex w-full h-[71px] mo:h-[56px]">
           <div className={cn("flex items-center gap-5 mx-auto relative", maxWidthClassName)}>
@@ -268,12 +280,13 @@ export default function Home() {
                 headerTabList.map((item, i) =>
                   <MBtn key={`head_${i}`}
                     type={i === headerTabList.length - 1 ? '2' : '1'}
+                    contentClassName={i === headerTabList.length - 1 ? 'py-2.5' : ''}
                     onClick={() => goTo(item.href)} content={item.tabName} className={i === headerTabList.length - 1 ? 'ml-4' : ''} />
                 )
               }
             </div>
             <MBtn ref={trigerRef} type="2" className="rounded-lg hidden mo:block" contentClassName="px-0.5 py-0 text-2xl hover:text-[#00E42A]" content={<IoMenu />} onClick={() => setShowMenus(!showMenus)} />
-            <div ref={ref} className={cn("absolute top-full right-0 hidden mo:flex bg-black transition-all p-5 flex-col gap-4 w-[375px] z-10", showMenus ? "translate-x-0" : "translate-x-full")}>
+            <div ref={ref} className={cn("absolute top-full right-0 hidden mo:flex bg-black transition-all p-5 flex-col gap-4 w-[375px] z-10", showMenus ? "translate-x-0" : "translate-x-full !hidden")}>
               {headerTabList.slice(0, headerTabList.length - 1).map((item, i) => <MBtn key={`head_${i}`} type="3" className="w-full" onClick={() => goTo(item.href)} content={item.tabName} />)}
             </div>
           </div>
@@ -313,7 +326,7 @@ export default function Home() {
       <TitleText text="ARO Network" />
       <div className={cn("flex flex-col gap-5 pb-[124px] mo:pb-16", maxWidthClassName)}>
         <LinerGridentBorder type="1" className="rounded-3xl">
-          <div className="flex items-center gap-10 p-10 mo:flex-col mo:px-5">
+          <div className="flex items-center gap-[73px] p-10 mo:flex-col mo:px-5">
             <div className="text-white text-[36px] font-semibold leading-[1.39] shrink-0 mo:text-[28px] mo:self-start">What is<br />ARO Network</div>
             <div className="w-0 flex-1 text-[#D3D3D6] text-sm whitespace-pre-wrap mo:w-full">
               ARO Network is a decentralized edge cloud driving real-time content delivery and next-gen AI workloads.<br className="mo:hidden" />
@@ -322,9 +335,9 @@ export default function Home() {
           </div>
         </LinerGridentBorder>
         <div className="flex gap-5 w-full mo:flex-col">
-          <AosAnimItem style={{ backgroundSize: '100% 100%' }} className="rounded-3xl flex-[7] w-0 bg-[url(/bg_card1.webp)] bg-no-repeat min-h-[314px] mo:w-full">
-            <div className="flex flex-col gap-10 p-10 justify-between h-full mo:px-5">
-              <div className="text-white text-[36px] font-semibold leading-[1.39] shrink-0">Why ARO?</div>
+          <AosAnimItem style={{ backgroundSize: '100% 100%' }} className=" flex-[7] w-0 bg-[url(/bg_card1.webp)] bg-no-repeat min-h-[314px] mo:w-full">
+            <div className="flex flex-col gap-10 p-10 justify-between h-full mo:px-5 mo:pr-8">
+              <div className="text-white text-[36px] font-semibold leading-[1.39] shrink-0 mo:text-[28px]">Why ARO?</div>
               <div className="text-[#D3D3D6] text-sm">
                 • Proven Infra: Built on a 1.5M+ node legacy<br />
                 • Earn Passively: Turn idle internet into daily rewards<br />
@@ -332,9 +345,9 @@ export default function Home() {
               </div>
             </div>
           </AosAnimItem>
-          <AosAnimItem style={{ backgroundSize: '100% 100%' }} className="rounded-3xl flex-[4] w-0 -ml-[33px]  bg-[url(/bg_card2.webp)] bg-no-repeat min-h-[314px] h-[314px] flex mo:ml-0 mo:w-full">
-            <div className="flex flex-col gap-1 p-10 h-full mt-auto mo:px-5 mo:w-full">
-              <div className="text-white text-[24px] font-semibold leading-[1.39] shrink-0 mt-auto">$154B+ Market Opportunity</div>
+          <AosAnimItem style={{ backgroundSize: '100% 100%' }} className=" flex-[4] w-0 -ml-[33px]  bg-[url(/bg_card2.webp)] bg-no-repeat min-h-[314px] h-[314px] flex mo:ml-0 mo:w-full">
+            <div className="flex flex-col gap-2 p-10 h-full mt-auto mo:px-5 mo:w-full">
+              <div className="text-white text-[24px] font-semibold leading-[1.39] shrink-0 mt-auto mo:text-xl">$154B+ Market Opportunity</div>
               <div className="text-[#D3D3D6] text-sm">Edge computing is growing 39% annually — reaching $154.7B by 2030.</div>
             </div>
           </AosAnimItem>
@@ -358,14 +371,14 @@ export default function Home() {
           <div className="px-6 pt-5 pb-12 flex flex-col items-center gap-[30px]">
             <div className="w-full text-white font-medium text-xl">3. Start Earning</div>
             <div className="flex flex-col gap-10 px-6">
-              <div className="text-sm text-[#969696] flex flex-col gap-2">
+              <div className="text-xs text-[#969696] flex flex-col gap-2">
                 <div className="flex items-center gap-2 text-base font-medium text-white">
                   <img alt="Earn" src="/earn.svg" className="w-[30px] h-[30px]" />
                   Earn $ARO Rewards
                 </div>
                 Stack Jades during Testnet, convert them to $ARO tokens at mainnet launch.
               </div>
-              <div className="text-sm text-[#969696] flex flex-col gap-2">
+              <div className="text-xs text-[#969696] flex flex-col gap-2">
                 <div className="flex items-center gap-2 text-base font-medium text-white">
                   <img alt="Earn" src="/friends.svg" className="w-[30px] h-[30px]" />
                   Recommend
@@ -383,14 +396,14 @@ export default function Home() {
           content="Get Started"
           className={cn('mx-auto mt-[52px] mb-[124px] mo:mb-16')} />
       </AosAnimItem>
-      <TitleText text="Become a Pioneer Aronaut" />
+      <TitleText text="Become a Pioneer Aronaut" className="px-5 text-center" />
       <div className={cn(maxWidthClassName, 'text-[#D3D3D6]')}>
         <AosAnimItem className={cn('w-full text-center mo:text-sm')}>
           Only <span className="text-[#00FF0D] font-semibold">1,000 spots</span> — and they’re filling fast. Help shape ARO Network from the ground up and earn exclusive rewards along the way.
         </AosAnimItem>
         <div className="w-full mt-11 flex flex-col mo:gap-5">
           <LinerGridentBorder type="2" className="rounded-3xl w-9/12 overflow-hidden mo:w-full mo:overflow-visible">
-            <div className="p-11 flex relative mo:p-5 mo:pt-[133px]">
+            <div className="p-11 flex relative mo:p-5 mo:pt-[133px] mo:pb-8">
               <div className="flex flex-col gap-4 w-0 flex-1 z-10">
                 <div className="text-[36px] leading-snug font-semibold text-white mo:text-[28px]">What We Look For</div>
                 <div className="text-sm">
@@ -410,14 +423,17 @@ export default function Home() {
                 <AosAnimItem className="w-fit mt-2 mo:self-center">
                   <MBtn
                     type="2"
+                    contentClassName="text-nowrap whitespace-nowrap"
                     onClick={() => goTo(dashboarSignup)}
                     content="Sign Up to Unlock Pioneer Access"
                   />
                 </AosAnimItem>
               </div>
+              <div className="relative w-0 flex-1 -ml-12 mo:ml-0 mo:absolute mo:top-0 mo:left-0 mo:h-full mo:w-full overflow-hidden">
+                <img alt="Bg" src="/bg_card3.svg" className="w-[478px] h-[381px] absolute -bottom-11 -right-11 mo:right-[unset] mo:left-8 mo:bottom-0 rounded-br-3xl" />
+              </div>
               <div className="relative w-0 flex-1 -ml-12 mo:ml-0 mo:absolute mo:top-0 mo:left-0 mo:h-full mo:w-full">
-                <img alt="Bg" src="/bg_card3.svg" className="w-[478px] h-[381px] absolute -bottom-11 -right-11 mo:right-0 mo:bottom-0 rounded-br-3xl" />
-                <div className="text-[72px] leading-[88px] font-semibold text-[#00FF0D] absolute right-0 top-3 mo:left-1/2 mo:right-[none] mo:-translate-x-1/2  mo:w-fit mo:whitespace-nowrap mo:text-[min(14.8vw,72px)] mo:text-center">
+                <div className="text-[72px] leading-[88px] font-semibold text-[#00FF0D] absolute right-0 top-3 mo:left-1/2 mo:right-[none] mo:-translate-x-1/2  mo:w-fit mo:whitespace-nowrap mo:text-[min(14vw,72px)] mo:text-center">
                   You are{' '}<br className="mo:hidden" />
                   Early!
                 </div>
@@ -425,7 +441,7 @@ export default function Home() {
             </div>
           </LinerGridentBorder>
           <LinerGridentBorder type="4" className="rounded-3xl w-1/2 overflow-hidden self-end -mt-[200px] mo:mt-0 mo:w-full">
-            <div className="flex flex-col gap-5 pt-12 pr-[30px] pb-[30px] pl-[68px] relative">
+            <div className="flex flex-col gap-5 pt-12 pr-[30px] pb-[30px] pl-[68px] relative mo:gap-7">
               <div className="text-white font-semibold text-2xl">Pioneer Voices</div>
               <div className="flex items-center gap-4 text-sm mo:flex-col">
                 <div className="w-fit max-w-[300px]">“ARO made passive income stupid simple. Now I’m part of something bigger.”</div>
@@ -445,33 +461,15 @@ export default function Home() {
         <AosAnimItem as="img" alt="BG RoundMap" src="/bg_roundmap.svg" className="w-[514px] h-auto absolute top-0 -right-11 mo:hidden" />
         <AosAnimItem as="img" alt="BG RoundMap" src="/bg_roundmap_mo.svg" className="w-[167px] h-auto absolute top-0 left-0 hidden mo:block" />
         <AosAnimItem as="img" alt="BG RoundMap" src="/bg_roundmap2.svg" className="w-[822px] h-[1130px] absolute -left-[233px] top-[218px] mo:hidden" />
-        <TitleText className="ml-0" text={<>ARO Roadmap:<br />From Launch to Scale</>} />
+        <TitleText className="ml-0 mt-8" text={<>ARO Roadmap:<br />From Launch to Scale</>} />
         <RoumdMaps />
       </div>
-
-      <div className={cn(maxWidthClassName, 'relative pt-[124px] mo:pt-16')}>
-        <TitleText text={"FAQ Highlights"} />
-        <Accordion variant="light" className="flex flex-col gap-10 mx-auto max-w-[840px] w-full mo:gap-[30px]" showDivider={false}>
-          {faqText.map((item, index) => {
-            return <AccordionItem
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              className="aos-init aos-animate"
-              classNames={{ trigger: 'flex justify-between items-center py-0 gap-0', heading: 'my-0', indicator: 'w-0' }}
-              key={index}
-              HeadingComponent={'div'}
-              indicator={({ isOpen }) => (isOpen ? <FiMinus className="text-[#048417] -translate-x-11 mo:-translate-x-9" /> : <FiPlus className="text-[#048417] -translate-x-11 mo:-translate-x-9" />)}
-              title={<LinerGridentBorder type="2" className="rounded-lg font-medium text-xl text-left  text-white mo:text-base"><div className="pl-[30px] pr-[62px] py-4 mo:pl-5 mo:pr-12">{item.title}</div></LinerGridentBorder>}>
-              <div className={cn("text-sm text-[#D3D3D6] pt-5 pr-[50px] pl-[30px] !leading-normal mo:text-xs")}>{item.content}</div>
-            </AccordionItem>
-          })}
-        </Accordion>
-      </div>
+      <FAQS />
       <div className={cn("max-w-[1240px] w-full mx-auto relative mt-[124px] mo:mt-16 mo:pt-12")}>
         <img src="/bg_footer_star.svg" className="w-[calc(100%-56px)] h-auto" />
         <img src="/bg_footer.svg" className="w-full h-auto" />
         <AosAnimItem className="absolute top-0 w-full flex flex-col items-center gap-2.5">
-          <div className="text-white font-medium text-[30px] gap-[50px] flex items-center mo:text-2xl mo:gap-6">
+          <div className="text-white font-medium text-[30px] gap-8 flex items-center mo:text-2xl mo:gap-6">
             {socialLinks.map(item => <div key={item.href} onClick={() => open(item.href, '_blank')} className="cursor-pointer">{item.icon}</div>)}
           </div>
           <div className="text-[#646464] mo:font-medium mo:text-xs">© ARO Network 2025. Powered by the People.</div>
