@@ -225,7 +225,7 @@ function FAQS() {
           HeadingComponent={'div'}
           indicator={({ isOpen }) => (isOpen ? <FiMinus className="text-[#048417] -translate-x-11 mo:-translate-x-9" /> : <FiPlus className="text-[#048417] -translate-x-11 mo:-translate-x-9" />)}
           title={<RenderTit item={item} index={index} />}>
-          <div className={cn("text-sm text-[#D3D3D6] pt-5 pr-[50px] pl-[30px] !leading-normal mo:text-xs mo:pl-5")}>{item.content}</div>
+          <div className={cn("text-sm text-[#D3D3D6] pt-5 px-[30px] !leading-normal mo:text-xs mo:px-5")}>{item.content}</div>
         </AccordionItem>
       })}
     </Accordion>
@@ -473,7 +473,7 @@ export default function Home() {
         <RoumdMaps />
       </div>
       <FAQS />
-      <AosAnimItem className={cn("max-w-[1240px] w-full mx-auto relative mt-[124px] mo:mt-16 mo:pt-12")}>
+      <AosAnimItem anim={false} className={cn("max-w-[1240px] w-full mx-auto relative mt-[124px] mo:mt-16 mo:pt-12")}>
         <img src="/bg_footer_star.svg" className="w-[calc(100%-56px)] h-auto" />
         <img src="/bg_footer.svg" className="w-full h-auto" />
         <div className="absolute top-0 w-full flex flex-col items-center gap-2.5">
