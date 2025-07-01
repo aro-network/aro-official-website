@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { usePathname, } from "next/navigation"
+import { useRouter, } from "next/navigation"
 import { cn } from "../utils/cn"
 import { Ref, useRef, useState } from "react"
 import { IoMenu } from "react-icons/io5"
@@ -23,7 +23,8 @@ function MBtn({ type = '1', className, onClick, content, contentClassName, ref }
   </div>
 }
 const AHeader = () => {
-  const r = usePathname()
+  const r = useRouter()
+
   const trigerRef = useRef<HTMLDivElement>(null)
   const ref = useRef<HTMLDivElement>(null)
   const [showMenus, setShowMenus] = useState(false)
