@@ -4,18 +4,18 @@ import AHeader from "../components/AHeader"
 const Terms = () => {
 
 
-  return <div className=" bg-[url(/banner-bg.png)] mo:bg-top bg-cover  z-[100000] relative  w-full h-screen">
+  return <div className="   z-[100000] relative  w-full h-full">
     <AHeader />
     <div className="w-container mo:w-full mo:px-5 m-auto mo:m-0  md:w-full md:px-[30px]  select-none relative z-[1000] px-10">
 
       <div className=" font-medium text-center mt-20 ">
-        <div className="text-2xl  text-[#000000]"> Terms & Conditions</div>
-        <span className=" text-xl text-[#000000]">
+        <div className="text-2xl  text-white"> Terms & Conditions</div>
+        <span className=" text-xl text-white">
           Effective Date: {`08/12/2024`}
         </span>
       </div>
 
-      <div className="   mt-20 font-normal ">
+      <div className="   mt-20 font-normal text-white ">
         <div className="title">1. Introduction</div>
         Welcome to ARO Network(“ARO,” “we,” “us,” or “our”). These Terms of Use (“Terms”) govern your access to and use of the ARO website(s), applications, APIs, and any other software, tools, features, or functionalities provided on or in connection with our services (collectively, the “Service”). This includes using our services to explore, interact, and utilize tools for connecting with blockchain technologies and engaging in activities such as data mining and decentralized processing, at your discretion.
         For the purpose of these Terms, “User”, “You”, and “Your” refers to you as the user of the Service. If you use the Service on behalf of a company or other legal entity, “You” also includes that entity. You represent and warrant that (a) you are an authorized representative of the entity with the authority to bind the entity to these Terms, and (b) you agree to these Terms on behalf of the entity.

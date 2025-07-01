@@ -6,17 +6,17 @@ const Privacy = () => {
 
 
 
-  return <div className=" bg-[url(/banner-bg.png)] mo:bg-top bg-cover  z-[100000] relative  w-full h-screen">
+  return <div className="  bg-black   w-full h-full">
 
     <AHeader />
-    <div className="w-container mo:w-full mo:px-5 m-auto mo:m-0  md:w-full md:px-[30px]  select-none relative z-[1000] px-10">
+    <div className="w-container  mo:w-full mo:px-5 m-auto mo:m-0 md:w-full md:px-[30px]  select-none  px-10">
       <div className=" font-medium text-center mt-20 ">
-        <div className=" text-2xl text-[#000000]">Privacy Policy</div>
-        <span className=" text-xl text-[#000000]">
+        <div className=" text-2xl text-white">Privacy Policy</div>
+        <span className=" text-xl text-white">
           Effective Date: {`08/12/2024`}
         </span>
       </div>
-      <div className="   mt-20 font-normal">
+      <div className="   mt-20 font-normal text-white">
         <span className=" ">
           Welcome to ARO Network, managed and operated by ARO Labs Ltd. (“ARO,” “we,” “us,” or “our”). This Privacy Policy outlines our handling and protection of the personal information you provide when using our services, which include our website, web extension, dashboard application, desktop and mobile applications, and related hardware (collectively referred to as the “Services”).</span>
         <div className=" mt-2 ">This Privacy Policy is designed to help you understand how we collect, use, and safeguard your information and to assist you in making informed decisions when using our Services. By accessing or using our Services, you agree to this Privacy Policy.</div>

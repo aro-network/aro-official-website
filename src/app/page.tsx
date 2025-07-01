@@ -56,7 +56,6 @@ function TitleText({ text, style = {}, className }: { text: React.ReactNode, sty
   return <AosAnimItem
     style={{
       zIndex: 2,
-      lineHeight: 1.2,
       boxSizing: 'border-box',
       backgroundImage: 'linear-gradient(314.89deg, #00E42A 21.13%, #FFFFFF 57.73%)',
       backgroundClip: 'text',
@@ -107,7 +106,7 @@ function QuteSymbol({ className }: { className?: string }) {
 
 const roundmaps = [
   { time: '2024', tit: 'Laying the Foundations', active: false, content: <>• GPoW (Geographic Proof of Work) & GPoS (Geographic Proof of Stake)<br />• Peer-HVM (Hardware Virtual Machine)<br />• Peer-DTS (Distributed Task Scheduling)<br />• Peer-Routing (Decentralized Routing Layer)</> },
-  { time: '2025 Q2-Q3', tit: 'ARO Devnet', active: true, content: <>• Activating the Network<br />• Community launch<br />• Hardware Offering</> },
+  { time: '2025 Q2-Q3', tit: 'ARO Previewnet', active: true, content: <>• Activating the Network<br />• Community launch<br />• Hardware Offering</> },
   { time: '2025 Q3-Q4', tit: 'ARO Testnet', active: false, content: <>• Proving our model with real demand<br />• Resource aggregation<br />• Kickstarting on-chain revenue</> },
   { time: '2025 Q4', tit: 'ARO Mainnet', active: false, content: <>• Mainnet launch<br />• Node expansion<br />• Customer expansion</> },
   { time: '2026', tit: 'Opening the Network', active: false, content: <>• Use cases expansion<br />• Open platform for edge apps<br />• Open governance</> },
@@ -275,22 +274,25 @@ export default function Home() {
       {/* Header */}
       <div className="w-full mo:sticky top-0 z-50">
         <div className="bg-[#07070A] flex w-full h-[71px] mo:h-[56px]">
-          <div className={cn("flex items-center gap-5 mx-auto relative", maxWidthClassName)}>
-            <Link href={'/'} className=" flex items-center mr-auto">
-              <img alt="Logo" src="/aro-logo.svg" className="w-[205px] h-auto mo:w-[158px]" />
-            </Link>
-            <div className="flex items-center gap-5 mo:hidden">
-              {
-                headerTabList.map((item, i) =>
-                  <MBtn key={`head_${i}`}
-                    type={i === headerTabList.length - 1 ? '2' : '1'}
-                    contentClassName={i === headerTabList.length - 1 ? 'py-2.5' : ''}
-                    onClick={() => goTo(item.href)} content={item.tabName} className={i === headerTabList.length - 1 ? 'ml-4' : ''} />
-                )
-              }
+          <div className={cn("flex items-center gap-5 mx-auto relative mo:px-0", maxWidthClassName)}>
+            <div className="px-4 flex w-full justify-between">
+              <Link href={'/'} className=" flex items-center mr-auto">
+                <img alt="Logo" src="/aro-logo.svg" className="w-[205px] h-auto mo:w-[158px]" />
+              </Link>
+              <div className="flex items-center gap-5 mo:hidden">
+                {
+                  headerTabList.map((item, i) =>
+                    <MBtn key={`head_${i}`}
+                      type={i === headerTabList.length - 1 ? '2' : '1'}
+                      contentClassName={i === headerTabList.length - 1 ? 'py-2.5' : ''}
+                      onClick={() => goTo(item.href)} content={item.tabName} className={i === headerTabList.length - 1 ? 'ml-4' : ''} />
+                  )
+                }
+              </div>
+
+              <MBtn ref={trigerRef} type="2" className="rounded-lg hidden mo:block" contentClassName="px-0.5 py-0 text-2xl hover:text-[#00E42A]" content={<IoMenu />} onClick={() => setShowMenus(!showMenus)} />
             </div>
-            <MBtn ref={trigerRef} type="2" className="rounded-lg hidden mo:block" contentClassName="px-0.5 py-0 text-2xl hover:text-[#00E42A]" content={<IoMenu />} onClick={() => setShowMenus(!showMenus)} />
-            <div ref={ref} className={cn("absolute top-full right-0 hidden mo:flex bg-black transition-all p-5 flex-col gap-4 w-[375px] z-10", showMenus ? "translate-x-0" : "translate-x-full !hidden")}>
+            <div ref={ref} className={cn("absolute top-full hidden w-full mo:flex bg-black transition-all p-5 flex-col gap-4  z-10", showMenus ? "translate-x-0" : "translate-x-full !hidden")}>
               {headerTabList.slice(0, headerTabList.length - 1).map((item, i) => <MBtn key={`head_${i}`} type="3" className="w-full" onClick={() => goTo(item.href)} content={item.tabName} />)}
             </div>
           </div>
@@ -355,7 +357,7 @@ export default function Home() {
           </AosAnimItem>
           <AosAnimItem style={{ backgroundSize: '100% 100%' }} className=" flex-[4] w-0 -ml-[33px]  bg-[url(/bg_card2.webp)] bg-no-repeat min-h-[314px] h-[314px] flex mo:ml-0 mo:w-full">
             <div className="flex flex-col gap-2 p-10 h-full mt-auto mo:px-5 mo:w-full">
-              <div className="text-white text-[24px] font-semibold leading-[1.39] shrink-0 mt-auto mo:text-xl">$154B+ Market Opportunity</div>
+              <div className="text-white text-[23px] font-semibold leading-[1.39] shrink-0 mt-auto mo:text-xl">$154B+ Market Opportunity</div>
               <div className="text-[#D3D3D6] text-sm">Edge computing is growing 39% annually — reaching $154.7B by 2030.</div>
             </div>
           </AosAnimItem>
@@ -410,7 +412,7 @@ export default function Home() {
           Only <span className="text-[#00FF0D] font-semibold">1,000 spots</span> — and they’re filling fast. Help shape ARO Network from the ground up and earn exclusive rewards along the way.
         </AosAnimItem>
         <div className="w-full mt-11 flex flex-col mo:gap-5">
-          <LinerGridentBorder type="2" className="rounded-3xl w-9/12 overflow-hidden mo:w-full mo:overflow-visible">
+          <LinerGridentBorder type="3" className="rounded-3xl w-9/12 overflow-hidden mo:w-full mo:overflow-visible">
             <div className="p-11 flex relative mo:p-5 mo:pt-[133px] mo:pb-8">
               <div className="flex flex-col gap-4 w-0 flex-1 z-10">
                 <div className="text-[36px] leading-snug font-semibold text-white mo:text-[28px]">What We Look For</div>
