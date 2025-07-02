@@ -24,7 +24,7 @@ const Dashboard = () => {
   }
 
 
-  return <div className=" bg-[url(/appBg.png)] bg-contain bg-no-repeat w-full h-full">
+  return <div className=" bg-[url(/appBg.png)] bg-cover object-contain bg-no-repeat  h-screen ">
     <div className="flex justify-center w-full pt-[4.75rem] mo:pt-5 flex-col items-center">
       <img src="./aro-logo-light.svg" className="mt-[11.8125rem] " />
       <div className="font-medium text-xl text-white mt-5 mo:mt-3">Mobile App</div>

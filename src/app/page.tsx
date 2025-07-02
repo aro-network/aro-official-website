@@ -412,7 +412,7 @@ export default function Home() {
           Only <span className="text-[#00FF0D] font-semibold">1,000 spots</span> — and they’re filling fast. Help shape ARO Network from the ground up and earn exclusive rewards along the way.
         </AosAnimItem>
         <div className="w-full mt-11 flex flex-col mo:gap-5">
-          <LinerGridentBorder type="3" className="rounded-3xl w-9/12 overflow-hidden mo:w-full mo:overflow-visible">
+          <LinerGridentBorder type="5" className="rounded-3xl w-9/12 overflow-hidden mo:w-full mo:overflow-visible">
             <div className="p-11 flex relative mo:p-5 mo:pt-[133px] mo:pb-8">
               <div className="flex flex-col gap-4 w-0 flex-1 z-10">
                 <div className="text-[36px] leading-snug font-semibold text-white mo:text-[28px]">What We Look For</div>
