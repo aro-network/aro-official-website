@@ -29,7 +29,7 @@ const Dashboard = () => {
       <img src="./aro-logo-light.svg" className="mt-[11.8125rem] " />
       <div className="font-medium text-xl text-white mt-5 mo:mt-3">Mobile App</div>
       <div className="text-white text-center text-sm my-6 ">
-        Follow instructions to install the Mobile App <br /> for ARO Dashboard -- your all-in-one <br /> entry to manage your ARO Account and <br />ARONodes.
+        Follow instructions to install the Mobile App <br /> for ARO Dashboard -- your all-in-one <br /> entry to manage your ARO Account and <br />ARO Nodes.
       </div>
 
       <img src="./install-guide.png" className="px-4" />
