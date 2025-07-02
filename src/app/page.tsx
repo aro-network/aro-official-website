@@ -67,7 +67,7 @@ function TitleText({ text, style = {}, className }: { text: React.ReactNode, sty
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const LinerGridentTypes = ['0', '1', '2', '3', '4', '5'] as const
+const LinerGridentTypes = ['0', '1', '2', '3', '4', '5', '6'] as const
 type LinerGridentType = (typeof LinerGridentTypes)[number]
 const LinerGridentMap: { [k in LinerGridentType]: string } = {
   0: 'linear-gradient(to right, ),linear-gradient(to right, #000, #000),linear-gradient(293.4deg, #44F54D -4.55%, #42474D 24.34%)',
@@ -76,6 +76,7 @@ const LinerGridentMap: { [k in LinerGridentType]: string } = {
   3: 'linear-gradient(10.29deg, #1A5426 -19.77%, rgba(115, 115, 115, 0) 40.41%),linear-gradient(to right, #000, #000),linear-gradient(113.4deg, #44F54D -0.39%, #4A5A54 28.51%)',
   4: 'linear-gradient(304.57deg, #1A5026 -15.67%, rgba(115, 115, 115, 0) 32.73%),linear-gradient(to right, #000, #000),linear-gradient(293.4deg, #44F54D -4.55%, #42474D 24.34%)',
   5: 'linear-gradient(to right, #000, #000),linear-gradient(to right, #000, #000),linear-gradient(to right, #2D3239,#2D3239)',
+  6: 'linear-gradient(124.57deg, #176123 -1000%, rgba(115, 115, 115, 0) 38.35%),linear-gradient(to right, #000, #000),linear-gradient(113.4deg, #44F54D -0.39%, #42474D 28.51%)',
 }
 
 function LinerGridentBorder({ className, children, type, anim }: { className?: string, children?: React.ReactNode, type: LinerGridentType, anim?: boolean }) {
@@ -412,7 +413,7 @@ export default function Home() {
           Only <span className="text-[#00FF0D] font-semibold">1,000 spots</span> — and they’re filling fast. Help shape ARO Network from the ground up and earn exclusive rewards along the way.
         </AosAnimItem>
         <div className="w-full mt-11 flex flex-col mo:gap-5">
-          <LinerGridentBorder type="5" className="rounded-3xl w-9/12 overflow-hidden mo:w-full mo:overflow-visible">
+          <LinerGridentBorder type="6" className="rounded-3xl w-9/12 overflow-hidden mo:w-full mo:overflow-visible">
             <div className="p-11 flex relative mo:p-5 mo:pt-[133px] mo:pb-8">
               <div className="flex flex-col gap-4 w-0 flex-1 z-10">
                 <div className="text-[36px] leading-snug font-semibold text-white mo:text-[28px]">What We Look For</div>
