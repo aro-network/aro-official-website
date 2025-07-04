@@ -139,7 +139,7 @@ const faqText = [
   {
     title: "What Stage Is ARO Network Currently In?",
     content: `
-    ARO is currently in the Devnet phase, which means we are still testing the core infrastructure internally with a small group of early participants. We will soon enter the Testnet phase — this is when more participants will be able to join the network, contribute bandwidth, and start earning Jades, which can later be exchanged for $ARO tokens upon Mainnet launch. It’s still very early, and now is the perfect time to get involved if you want to become an early contributor and help shape the future of the ARO decentralized edge cloud!
+    ARO is currently in the Previewnet phase, which means we are still testing the core infrastructure internally with a small group of early participants. We will soon enter the Testnet phase — this is when more participants will be able to join the network, contribute bandwidth, and start earning Jades, which can later be exchanged for $ARO tokens upon Mainnet launch. It’s still very early, and now is the perfect time to get involved if you want to become an early contributor and help shape the future of the ARO decentralized edge cloud!
 
 `,
   },
@@ -418,13 +418,13 @@ export default function Home() {
             <div className="p-11 flex relative mo:p-5 mo:pt-[133px] mo:pb-8">
               <div className="flex flex-col gap-4 w-0 flex-1 z-10">
                 <div className="text-[36px] leading-snug font-semibold text-white mo:text-[28px] text-nowrap font-Space_Grotesk">What We Look For</div>
-                <div className="text-sm">
+                <div className="text-sm w-full text-nowrap">
                   • Genuine feedback & active engagement<br />
                   • Content support: writing, videos, local advocacy<br />
                   • Belief in a decentralized, open internet
                 </div>
                 <div className="text-[36px] leading-snug font-semibold text-white mt-[30px] mo:text-[28px] font-Space_Grotesk">What You Get</div>
-                <div className="text-sm">
+                <div className="text-sm text-nowrap">
                   • Priority access to free ARO devices (select regions)<br />
                   • Early adopter perks & exclusive rewards<br />
                   • Access to private funding rounds before the public
