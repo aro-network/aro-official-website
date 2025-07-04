@@ -380,10 +380,10 @@ export default function Home() {
           </div>
         </LinerGridentBorder>
         <LinerGridentBorder type="4" className="rounded-3xl">
-          <div className="px-6 pt-5 pb-12 flex flex-col items-center gap-[30px]">
+          <div className="px-6 pt-5 pb-12 flex flex-col items-center gap-[60px] justify-between">
             <div className="w-full text-white font-medium text-xl font-Space_Grotesk">3. Start Earning</div>
-            <div className="flex flex-col gap-10 px-6">
-              <div className="text-xs text-[#969696] flex flex-col gap-2">
+            <div className="flex flex-col gap-10 px-6 items-center">
+              <div className="text-xs text-[#969696] flex flex-col gap-2 ">
                 <div className="flex items-center gap-2 text-base font-medium text-white">
                   <img alt="Earn" src="/earn.svg" className="w-[30px] h-[30px]" />
                   Earn $ARO Rewards
@@ -408,7 +408,7 @@ export default function Home() {
           content="Get Started"
           className={cn('mx-auto mt-[52px] mb-[124px] mo:mb-16 font-Space_Grotesk')} />
       </AosAnimItem>
-      <TitleText text="Become a Pioneer Aronaut" className="px-5 text-center" />
+      <TitleText text="Become a Pioneer Aronaut" className="px-5 text-center !mb-[22px]" />
       <div className={cn(maxWidthClassName, 'text-[#D3D3D6]')}>
         <AosAnimItem className={cn('w-full text-center mo:text-sm')}>
           Only <span className="text-[#00FF0D] font-semibold">1,000 spots</span> — and they’re filling fast. Help shape ARO Network from the ground up and earn exclusive rewards along the way.
