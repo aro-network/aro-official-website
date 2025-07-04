@@ -1,7 +1,12 @@
+import { Space_Grotesk } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 export default {
-  content: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -24,12 +29,14 @@ export default {
       fontFamily: {
         Ubuntu: "var(--font-ubuntu)",
         Poppins: "var(--font-poppins)",
+        Space_Grotesk: "var(--font-spaceGro)",
       },
 
       backgroundImage: {
         btn: "linear-gradient(90deg, #71FF6C 0%, #C1F967 100%)",
         // border-width: 1px, 1px, 1px, 1px;border-style: solid;border-image-source: linear-gradient(90deg, #71FF6C 0%, #C1F967 100%);
-        btnHover: "linear-gradient(to right, #000, #000),linear-gradient(90deg, #71FF6C 0%, #C1F967 100%)",
+        btnHover:
+          "linear-gradient(to right, #000, #000),linear-gradient(90deg, #71FF6C 0%, #C1F967 100%)",
       },
 
       keyframes: {

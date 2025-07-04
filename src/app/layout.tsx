@@ -1,6 +1,6 @@
 'use client'
 // import type { Metadata } from "next";
-import { Poppins, Ubuntu } from "next/font/google";
+import { Poppins, Ubuntu, Space_Grotesk } from "next/font/google";
 
 import "./globals.css";
 import { Toaster } from "sonner";
@@ -43,7 +43,14 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-const fonts = [ubuntu, poppins];
+
+const spaceGro = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["400", "500", '600', '700'],
+  variable: "--font-spaceGro",
+});
+
+const fonts = [ubuntu, poppins, spaceGro];
 
 export default function RootLayout({
   children,

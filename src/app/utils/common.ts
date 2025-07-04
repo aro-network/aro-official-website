@@ -209,8 +209,8 @@ $ARO tokens act as a key medium in this ecosystem. Your contributions will be me
 `,
   },
   {
-    title: "3. What are Jades / Jade Shards?",
-    content: `Before mainnet is live, your contributions to the ARO Testnet will be tracked and reflected as Jade Shards (or just Jades for simpler term). You will be rewarded with Jades when you participate and make contributions to the ARO Testnet. In some cases, community contributors may receive NFTs as a recognition of their special efforts. The Jades serve as a key metric to determine your eligibility for future rewards. On Mainnet launch, you will be able to exchange your Jades for $ARO tokens.. 
+    title: "3. What are Jades?",
+    content: `Before mainnet is live, your contributions to the ARO Testnet will be tracked and reflected as Jade Shards. You will be rewarded with Jades when you participate and make contributions to the ARO Testnet. In some cases, community contributors may receive NFTs as a recognition of their special efforts. The Jades serve as a key metric to determine your eligibility for future rewards. On Mainnet launch, you will be able to exchange your Jades for $ARO tokens.. 
 `,
   },
   {
@@ -227,7 +227,7 @@ ARO Hardware Nodes (ARO Pod and ARO Link) are dedicated and highly integrated de
   },
   {
     title: "6. What stage is ARO currently in?",
-    content: `ARO is currently in the Devnet phase, which means we are still testing the core infrastructure internally with a small group of early participants. We will soon enter the Testnet phase — this is when more participants will be able to join the network, contribute bandwidth, and start earning Jades, which can later be exchanged for $ARO tokens upon mainnet launch.
+    content: `ARO is currently in the Previewnet phase, which means we are still testing the core infrastructure internally with a small group of early participants. We will soon enter the Testnet phase — this is when more participants will be able to join the network, contribute bandwidth, and start earning Jades, which can later be exchanged for $ARO tokens upon mainnet launch.
 It’s still very early, and now is the perfect time to get involved if you want to become an early contributor and help shape the future of the ARO decentralized edge cloud!
 `,
   },
