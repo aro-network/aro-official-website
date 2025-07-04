@@ -104,7 +104,6 @@ function QuteSymbol({ className }: { className?: string }) {
 
 }
 
-
 const roundmaps = [
   { time: '2024', tit: 'Laying the Foundations', active: false, content: <>• GPoW (Geographic Proof of Work) & GPoS (Geographic Proof of Stake)<br />• Peer-HVM (Hardware Virtual Machine)<br />• Peer-DTS (Distributed Task Scheduling)<br />• Peer-Routing (Decentralized Routing Layer)</> },
   { time: '2025 Q2-Q3', tit: 'ARO Previewnet', active: true, content: <>• Activating the Network<br />• Community launch<br />• Hardware Offering</> },
