@@ -17,7 +17,9 @@ import { cn } from "./utils/cn"
 import { useClickAway } from "react-use"
 
 
-const dashboarSignup = 'https://enreach.fillout.com/Pioneers'
+const pioneers = 'https://enreach.fillout.com/Pioneers'
+const dashboarSignup = 'https://devnet-dashboard.aro.network/signup'
+
 const headerTabList = [
   { href: 'https://medium.com/@AroNetwork', tabName: 'Blog', },
   { href: 'https://docs.aro.network/', tabName: 'Docs' },
@@ -434,7 +436,7 @@ export default function Home() {
                   <MBtn
                     type="2"
                     contentClassName="text-nowrap whitespace-nowrap"
-                    onClick={() => goTo(dashboarSignup)}
+                    onClick={() => goTo(pioneers)}
                     content="Sign Up to Unlock Pioneer Access"
                   />
                 </AosAnimItem>
