@@ -277,7 +277,7 @@ export default function Home() {
       <div className="w-full mo:sticky top-0 z-50">
         <div className="bg-[#07070A] flex w-full h-[71px] mo:h-[56px]">
           <div className={cn("flex items-center gap-5 mx-auto relative mo:px-0", maxWidthClassName)}>
-            <div className="flex w-full justify-between">
+            <div className="mo:px-4 flex w-full justify-between">
               <Link href={'/'} className=" flex items-center mr-auto">
                 <img alt="Logo" src="/aro-logo.svg" className="w-[205px] h-auto mo:w-[158px]" />
               </Link>
