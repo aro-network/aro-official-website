@@ -17,7 +17,7 @@ import { cn } from "./utils/cn"
 import { useClickAway } from "react-use"
 
 
-const dashboarSignup = 'https://devnet-dashboard.aro.network/signup'
+const dashboarSignup = 'https://enreach.fillout.com/Pioneers'
 const headerTabList = [
   { href: 'https://medium.com/@AroNetwork', tabName: 'Blog', },
   { href: 'https://docs.aro.network/', tabName: 'Docs' },
