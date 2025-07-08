@@ -27,7 +27,6 @@ const headerTabList = [
   { href: dashboarSignup, tabName: 'Get Started' },
 ];
 
-
 const maxWidthClassName = 'max-w-[1140px] px-4 w-full mx-auto'
 
 function MBtn({ type = '1', className, onClick, content, contentClassName, ref }: { type?: '1' | '2' | "3", className?: string, onClick?: () => void, content?: React.ReactNode, contentClassName?: string, ref?: Ref<HTMLDivElement> }) {
