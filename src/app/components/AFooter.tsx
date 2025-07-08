@@ -32,7 +32,7 @@ const socialLinks = [
   },
   { href: 'https://x.com/AroNetwork', text: 'Twitter', icon: <BsTwitterX className="text-[0.8em]" /> },
   // { href: 'https://github.com/aro-network', text: 'Github', icon: <IoLogoGithub /> },
-  { href: 'https://medium.com/@AroNetwork', text: 'Blog', icon: <RiAppsFill /> },
+  { href: 'https://medium.com/aronetwork', text: 'Blog', icon: <RiAppsFill /> },
 ]
 
 const AFooter: FC = () => {

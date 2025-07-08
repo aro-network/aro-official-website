@@ -21,7 +21,7 @@ const pioneers = 'https://enreach.fillout.com/Pioneers'
 const dashboarSignup = 'https://devnet-dashboard.aro.network/signup'
 
 const headerTabList = [
-  { href: 'https://medium.com/@AroNetwork', tabName: 'Blog', },
+  { href: 'https://medium.com/aronetwork', tabName: 'Blog', },
   { href: 'https://docs.aro.network/', tabName: 'Docs' },
   { href: '/dashboard', tabName: 'Dashboard' },
   { href: dashboarSignup, tabName: 'Get Started' },
@@ -174,7 +174,7 @@ const socialLinks = [
   },
   { href: 'https://x.com/AroNetwork', text: 'Twitter', icon: <BsTwitterX className="text-[0.8em]" /> },
   // { href: 'https://github.com/aro-network', text: 'Github', icon: <IoLogoGithub /> },
-  { href: 'https://medium.com/@AroNetwork', text: 'Blog', icon: <RiAppsFill /> },
+  { href: 'https://medium.com/aronetwork', text: 'Blog', icon: <RiAppsFill /> },
 ]
 
 const shortSoialLinks = socialLinks.filter(item => ["Telegram", 'Discord', 'Twitter'].includes(item.text))
