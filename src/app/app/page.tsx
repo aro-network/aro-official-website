@@ -26,9 +26,11 @@ const App = () => {
     }
   }, []);
 
+  const ENV: "prod" | "beta" = (process.env.NEXT_PUBLIC_ENV as any) || "prod";
+
   return (
     <iframe
-      src="https://devnet-dashboard.aro.network/"
+      src={ENV === 'beta' ? 'https://staging-dashboard.aro.network/' : 'https://devnet-dashboard.aro.network/'}
       style={{ width: "100vw", height: "100vh", border: "none" }}
       allow="fullscreen"
     />

@@ -4,9 +4,11 @@ import type { MetadataRoute } from "next";
 export const dynamic = "force-static";
 
 export default function manifest(): MetadataRoute.Manifest {
+  const ENV: "prod" | "beta" = (process.env.NEXT_PUBLIC_ENV as any) || "prod";
+
   return {
-    name: "ARO Companion",
-    short_name: "ARO Companion",
+    name: ENV === "beta" ? "ARO Companion-Beta" : "ARO Companion",
+    short_name: ENV === "beta" ? "ARO Companion-Beta" : "ARO Companion",
     description: "/",
     scope: "/",
     start_url: "/app",
