@@ -183,7 +183,7 @@ const sponsorscounts = new Array(sponsorsCount * 3).fill(0)
 
 function Sponsors() {
   return <>
-    <AosAnimItem className="overflow-hidden relative w-full h-[50px] mo:h-6" >
+    <div className="overflow-hidden relative w-full h-[50px] mo:h-6" >
       <div className="flex items-center gap-[120px] w-fit h-full animate-x-loop transition-all [--x-loop-time:20s] [--x-loop:-1228px] mo:gap-[27px] mo:[--x-loop:-469.16px] mo:[--x-loop-time:7s]">
         <style>{`
             @keyframes x-loop {
@@ -192,7 +192,7 @@ function Sponsors() {
         `}</style>
         {sponsorscounts.map((_i, i) => <img key={i} src={`/sponsors/${i % sponsorsCount}.svg`} className="h-full w-auto shrink-0" />)}
       </div>
-    </AosAnimItem>
+    </div>
   </>
 }
 
@@ -250,7 +250,7 @@ export default function Home() {
       easing: "ease",
       once: false,
       mirror: false,
-      anchorPlacement: "top-bottom",
+      anchorPlacement: "top-top",
     });
     document.body.style.backgroundColor = 'black'
   }, []);
@@ -303,7 +303,7 @@ export default function Home() {
       <div className="pb-[124px] mo:pb-16 w-full flex flex-col gap-[8rem] bg-[url(/bg_flash.svg)] bg-center bg-no-repeat bg-cover mo:gap-20 mo:items-center mo:[background-position-x:75%]">
         <div className=""></div>
         {/* First Frame */}
-        <AosAnimItem className={cn(maxWidthClassName, "flex flex-col gap-[122px] mo:items-center")}>
+        <AosAnimItem anim={false} className={cn(maxWidthClassName, "flex flex-col gap-[122px] mo:items-center")}>
           <div className="flex flex-col leading-[1.2] mo:items-center">
             <div
               style={{
@@ -330,7 +330,7 @@ export default function Home() {
           </div>
         </AosAnimItem>
         {/* Sponsors */}
-        <AosAnimItem className={cn(" flex flex-col items-center", maxWidthClassName, "mo:px-0")}>
+        <AosAnimItem anim={false} className={cn(" flex flex-col items-center", maxWidthClassName, "mo:px-0")}>
           <Sponsors />
         </AosAnimItem>
       </div>
