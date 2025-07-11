@@ -1,12 +1,15 @@
+'use client'
+
+import { useEffect } from "react"
+
 const AGetStarted = () => {
 
+  useEffect(() => {
+    window.open('https://devnet-dashboard.aro.network/signup', '_self')
+  })
+  return null
 
 
-  return <iframe
-    src={'https://devnet-dashboard.aro.network/signup '}
-    style={{ width: "100vw", height: "100vh", border: "none" }}
-    allow="fullscreen"
-  />
 
 }
 
