@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[496],{7927:(e,s,t)=>{Promise.resolve().then(t.bind(t,9807))},9807:(e,s,t)=>{"use strict";t.r(s),t.d(s,{default:()=>n});var l=t(7815);let n=()=>((0,l.useEffect)(()=>{window.open("https://shop.aro.network","_self")}),null)}},e=>{var s=s=>e(e.s=s);e.O(0,[806,947,358],()=>s(7927)),_N_E=e.O()}]);

@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[145],{458:(e,s,n)=>{Promise.resolve().then(n.bind(n,5252))},5252:(e,s,n)=>{"use strict";n.r(s),n.d(s,{default:()=>r});var t=n(7815);let r=()=>((0,t.useEffect)(()=>{window.open("https://devnet-dashboard.aro.network/signup","_self")}),null)}},e=>{var s=s=>e(e.s=s);e.O(0,[806,947,358],()=>s(458)),_N_E=e.O()}]);
