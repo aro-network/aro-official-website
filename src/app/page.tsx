@@ -46,6 +46,7 @@ function AosAnimItem({ className, children, as, anim = true, ...props }: AllHTML
   } : {}
   return <Component className={cn({ 'aos-init aos-animate': anim }, className)} {...props} {...animProps} >{children}</Component>
 }
+
 function TitleText({ text, style = {}, className }: { text: React.ReactNode, style?: CSSProperties, className?: string }) {
   return <AosAnimItem
     style={{
