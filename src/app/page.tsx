@@ -20,7 +20,7 @@ const dashboarSignup = 'https://devnet-dashboard.aro.network/signup'
 
 
 
-const maxWidthClassName = 'max-w-[1440px] px-4 w-full mx-auto'
+const maxWidthClassName = 'max-w-[1140px] px-4 w-full mx-auto'
 
 function MBtn({ type = '1', className, onClick, content, contentClassName, ref }: { type?: '1' | '2' | "3", className?: string, onClick?: () => void, content?: React.ReactNode, contentClassName?: string, ref?: Ref<HTMLDivElement> }) {
   return <div className={cn('cursor-pointer text-sm select-none rounded-full w-fit transition-all bg-no-repeat hover:animate-bg-in', {
