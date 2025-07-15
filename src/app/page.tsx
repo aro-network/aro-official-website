@@ -2,32 +2,25 @@
 
 import Aos from "aos"
 import "aos/dist/aos.css"
-import React, { AllHTMLAttributes, CSSProperties, ReactHTML, Ref, useEffect, useRef, useState } from "react"
+import React, { AllHTMLAttributes, CSSProperties, ReactHTML, Ref, useEffect, useState } from "react"
 
 import { Accordion, AccordionItem } from "@heroui/accordion"
-import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { BsTwitterX } from "react-icons/bs"
 import { FaTelegramPlane } from 'react-icons/fa'
 import { FaDiscord } from 'react-icons/fa6'
 import { FiMinus, FiPlus } from "react-icons/fi"
 import { RiAppsFill } from "react-icons/ri"
-import { IoMenu } from "react-icons/io5"
 import { cn } from "./utils/cn"
-import { useClickAway } from "react-use"
+import AHeader from "./components/AHeader"
 
 
 const pioneers = 'https://enreach.fillout.com/Pioneers'
 const dashboarSignup = 'https://devnet-dashboard.aro.network/signup'
 
-const headerTabList = [
-  { href: 'https://medium.com/aronetwork', tabName: 'Blog', },
-  { href: 'https://docs.aro.network/', tabName: 'Docs' },
-  { href: '/dashboard', tabName: 'Dashboard' },
-  { href: dashboarSignup, tabName: 'Get Started' },
-];
 
-const maxWidthClassName = 'max-w-[1140px] px-4 w-full mx-auto'
+
+const maxWidthClassName = 'max-w-[1440px] px-4 w-full mx-auto'
 
 function MBtn({ type = '1', className, onClick, content, contentClassName, ref }: { type?: '1' | '2' | "3", className?: string, onClick?: () => void, content?: React.ReactNode, contentClassName?: string, ref?: Ref<HTMLDivElement> }) {
   return <div className={cn('cursor-pointer text-sm select-none rounded-full w-fit transition-all bg-no-repeat hover:animate-bg-in', {
@@ -262,44 +255,11 @@ export default function Home() {
       window.open(urlpath, '_blank')
     }
   }
-  const [showMenus, setShowMenus] = useState(false)
-  const ref = useRef<HTMLDivElement>(null)
-  const trigerRef = useRef<HTMLDivElement>(null)
-  useClickAway(ref, (e) => {
-    if (e.target && trigerRef.current && !trigerRef.current.contains(e.target as any)) {
-      setShowMenus(false)
-    }
-  })
+
   return <div className="">
     <div className="z-[100000] lg:relative  w-full min-h-screen bg-black overflow-hidden">
       {/* Header */}
-      <div className="w-full fixed top-0 z-50">
-        <div className="bg-[#07070A] flex w-full h-[71px] mo:h-[56px]">
-          <div className={cn("flex items-center gap-5 mx-auto relative mo:px-0", maxWidthClassName)}>
-            <div className="mo:px-4 flex w-full justify-between">
-              <Link href={'/'} className=" flex items-center mr-auto">
-                <img alt="Logo" src="/aro-logo.svg" className="w-[205px] h-auto mo:w-[158px]" />
-              </Link>
-              <div className="flex items-center gap-5 mo:hidden">
-                {
-                  headerTabList.map((item, i) =>
-                    <MBtn key={`head_${i}`}
-                      type={i === headerTabList.length - 1 ? '2' : '1'}
-                      contentClassName={i === headerTabList.length - 1 ? 'py-2.5 font-Space_Grotesk' : ''}
-                      onClick={() => goTo(item.href)} content={item.tabName} className={i === headerTabList.length - 1 ? 'ml-4' : ''} />
-                  )
-                }
-              </div>
-
-              <MBtn ref={trigerRef} type="2" className="rounded-lg hidden mo:block" contentClassName="px-0.5 py-0 text-2xl hover:text-[#00E42A]" content={<IoMenu />} onClick={() => setShowMenus(!showMenus)} />
-            </div>
-            <div ref={ref} className={cn("absolute top-full hidden w-full mo:flex bg-black transition-all p-5 flex-col gap-4  z-10", showMenus ? "translate-x-0" : "translate-x-full !hidden")}>
-              {headerTabList.slice(0, headerTabList.length - 1).map((item, i) => <MBtn key={`head_${i}`} type="3" className="w-full" onClick={() => goTo(item.href)} content={item.tabName} />)}
-            </div>
-          </div>
-        </div>
-        <div className="h-[1px] w-full bg-[#384137]"></div>
-      </div>
+      <AHeader />
       <div className="pb-[124px] mo:pb-16 w-full flex flex-col gap-[8rem] bg-[url(/bg_flash.svg)] bg-center bg-no-repeat bg-cover mo:gap-20 mo:items-center mo:[background-position-x:75%]">
         <div className=""></div>
         {/* First Frame */}
@@ -331,6 +291,9 @@ export default function Home() {
         </AosAnimItem>
         {/* Sponsors */}
         <AosAnimItem anim={false} className={cn(" flex flex-col items-center", maxWidthClassName, "mo:px-0")}>
+          <div className="text-white font-medium text-base mo:text-center  w-full mb-6">
+            Backed by:
+          </div>
           <Sponsors />
         </AosAnimItem>
       </div>
