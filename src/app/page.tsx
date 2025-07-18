@@ -261,7 +261,7 @@ export default function Home() {
     <div className="z-[100000] lg:relative  w-full min-h-screen bg-black overflow-hidden">
       {/* Header */}
       <AHeader />
-      <div className="pb-[124px] mo:pb-16 w-full flex flex-col gap-[7rem] md:gap-[4rem] bg-[url(/bg_flash.svg)] bg-center bg-no-repeat bg-cover mo:gap-20 mo:items-center mo:[background-position-x:75%]">
+      <div className="pb-[124px] mo:pb-16 w-full flex flex-col gap-[6rem] md:gap-[4rem] bg-[url(/bg_flash.svg)] bg-center bg-no-repeat bg-cover mo:gap-20 mo:items-center mo:[background-position-x:75%]">
         <div className=""></div>
         {/* First Frame */}
         <AosAnimItem anim={false} className={cn(maxWidthClassName, "flex flex-col gap-[122px] mo:items-center")}>
@@ -274,11 +274,11 @@ export default function Home() {
                 WebkitBackgroundClip: 'text',
                 textShadow: 'none',
               }}
-              className="text-[70px] font-Space_Grotesk font-bold text-transparent w-fit pr-28 flex flex-col mo:pr-0 mo:text-center mo:text-[44px]"
+              className="text-[66px] font-Space_Grotesk font-bold text-transparent w-fit pr-28 flex flex-col mo:pr-0 mo:text-center mo:text-[44px]"
             >
               The Decentralized Edge<br className="mo:hidden" />Cloud for the AI Era
             </div>
-            <div className="font-medium text-[22px] text-[#00FF0D] mt-[60px] mo:mt-8 mo:text-xl">
+            <div className="font-medium text-[22px] text-[#00FF0D] mt-[30px] mo:mt-8 mo:text-xl">
               Faster. Smarter. Owned by You.
             </div>
             <div className=" text-[#D3D3D6] leading-relaxed mt-2.5 text-sm mo:text-center">Turn your unused internet into rewards by powering<br className="mo:hidden" />the future of decentralized AI and content delivery.</div>
