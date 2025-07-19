@@ -96,11 +96,11 @@ const Terms = () => {
         <div className="title mt-5">13. Limitation of Liability</div>
         <div className="subTitle ">13.1 General Exclusions of Liability</div>
         <div className=" ml-7">
-          Under no circumstances will ARO Network or its affiliates be liable for any indirect, special, incidental, exemplary, punitive, or consequential damages, including but not limited to loss of profits, data, use, or other economic advantage. This exclusion applies to damages arising from or related to:
-          •	These Terms;
-          •	The operation or provision of the ARO Services, ARO Network, or any other ARO property;
-          •	Your access to or use of the ARO Services, ARO Network, or any other ARO property;
-          •	Your participation in the ARO Network;
+          Under no circumstances will ARO Network or its affiliates be liable for any indirect, special, incidental, exemplary, punitive, or consequential damages, including but not limited to loss of profits, data, use, or other economic advantage. This exclusion applies to damages arising from or related to:<br />
+          {"\u00A0"}{"\u00A0"}{"\u00A0"}{"\u00A0"}{"\u00A0"}•	These Terms;<br />
+          {"\u00A0"}{"\u00A0"}{"\u00A0"}{"\u00A0"}{"\u00A0"}•	The operation or provision of the ARO Services, ARO Network, or any other ARO property;<br />
+          {"\u00A0"}{"\u00A0"}{"\u00A0"}{"\u00A0"}{"\u00A0"}•	Your access to or use of the ARO Services, ARO Network, or any other ARO property;<br />
+          {"\u00A0"}{"\u00A0"}{"\u00A0"}{"\u00A0"}{"\u00A0"}•	Your participation in the ARO Network;<br />
           This holds regardless of the cause, whether it be a breach of these Terms (including breach of warranty), negligence, strict liability, tort, or any other theory of liability, even if ARO or its affiliates have been advised previously of the possibility of such damages.
         </div>
         <div className="subTitle mt-5">13.2 Limitation on Liability for Direct Damages</div>
