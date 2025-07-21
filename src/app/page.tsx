@@ -13,6 +13,7 @@ import { FiMinus, FiPlus } from "react-icons/fi"
 import { RiAppsFill } from "react-icons/ri"
 import { cn } from "./utils/cn"
 import AHeader from "./components/AHeader"
+import { AShowModal } from "./components/AShowModal"
 
 
 const pioneers = 'https://enreach.fillout.com/Pioneers'
@@ -275,6 +276,7 @@ export default function Home() {
     }
   }
 
+  const [showModal, setShowModal] = useState(true)
   return <div className="">
     <div className="z-[100000] lg:relative  w-full min-h-screen bg-black overflow-hidden">
       {/* Header */}
@@ -472,6 +474,48 @@ export default function Home() {
         </div>
       </AosAnimItem>
     </div>
+
+
+
+    <AShowModal isOpen={showModal} onClose={() => setShowModal(false)} closeOnOverlayClick={false}>
+      <div className="flex items-center justify-center flex-col  w-full">
+        <div
+          style={{
+            boxSizing: 'border-box',
+            background: 'linear-gradient(350deg, #00E42A 21.13%, #FFFFFF 57.73%)',
+            backgroundClip: 'text',
+            WebkitBackgroundClip: 'text',
+            textShadow: 'none',
+          }}
+          className="text-[44px] mo:text-[38px] mo:text-left  font-Space_Grotesk font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
+        >
+          ARO Previewnet Is LIVE!
+        </div>
+        <div className={`text-lg mo:text-base mo:w-full leading-normal font-medium text-center mo:text-left text-[#00FF0D] mt-10 mo:mt-4 mo:mb-10 mb-[45px]`}>
+          <div className="text-left leading-[190%]">
+            - Campaign for Grand Airdrop<br />
+            - Run and test ARO Nodes<br />
+            - $30k Top Referrer Bonus<br />
+          </div>
+        </div>
+        <div className="text-white mo:flex flex-col mo:justify-start mo:w-full">
+          <span>
+            Sign Up & Start Earning NOW!
+          </span>
+          <button onClick={() => window.open('https://docs.aro.network/campaigns/previewnet')} className="underline mo:text-xs underline-offset-1 ml-1 mo:text-left hover:text-[#00FF0D] text-white mt-5">Learn More</button>
+
+        </div>
+        <div className="mo:w-full ">
+          <MBtn
+            type="2"
+            onClick={() => goTo(dashboarSignup)}
+            className={'mt-5 mo:mt-8 font-Space_Grotesk '}
+            content={'Get Started'}
+          />
+
+        </div>
+      </div>
+    </AShowModal>
 
   </div>
 }
