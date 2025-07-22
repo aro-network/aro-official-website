@@ -296,7 +296,7 @@ export default function Home() {
               }}
               className="text-[66px] font-Space_Grotesk font-bold text-transparent w-fit pr-28 flex flex-col mo:pr-0 mo:text-center mo:text-[44px]"
             >
-              The Decentralized Edge<br className="mo:hidden" />Cloud for the AI Era
+              The Decentralized Edge<br className="mo:hidden" /> Cloud for the AI Era
             </div>
             <div className="font-medium text-[22px] text-[#00FF0D] mt-[30px] mo:mt-8 mo:text-xl">
               Faster. Smarter. Owned by You.
@@ -324,7 +324,7 @@ export default function Home() {
           <div className="flex items-center gap-[73px] p-10 mo:flex-col mo:px-5">
             <div className="text-white text-[40px] font-bold leading-[1.39] shrink-0 mo:text-[28px] mo:self-start font-Space_Grotesk">What is<br />ARO Network?</div>
             <div className="w-0 flex-1 text-[#D3D3D6] text-sm whitespace-pre-wrap mo:w-full">
-              ARO Network is a decentralized edge cloud driving real-time content delivery and next-gen AI workloads.<br className="mo:hidden" />
+              ARO Network is a decentralized edge cloud driving real-time content delivery and next-gen AI workloads. <br className="mo:hidden" />
               Powered by people—not data centers—anyone can share unused bandwidth to create a faster, smarter network and own a piece of it.
             </div>
           </div>
@@ -407,7 +407,7 @@ export default function Home() {
                   • Belief in a decentralized, open internet
                 </div>
                 <div className="text-[38px] leading-snug font-bold text-white mt-[30px] mo:text-[28px] font-Space_Grotesk">What You Get</div>
-                <div className="text-sm text-nowrap">
+                <div className="text-sm text-wrap">
                   • Priority access to free ARO devices (select regions)<br />
                   • Early adopter perks & exclusive rewards<br />
                   • Access to private funding rounds before the public
