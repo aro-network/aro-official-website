@@ -43,12 +43,12 @@ const AHeader = () => {
     }
   }
 
-  const dashboarSignup = 'https://devnet-dashboard.aro.network/signup'
+  const dashboarSignup = 'https://dashboard.aro.network/signup'
   const headerTabList = [
     { href: 'https://shop.aro.network', tabName: 'Get a Node', },
     { href: 'https://medium.com/aronetwork', tabName: 'Blog', },
     { href: 'https://docs.aro.network/', tabName: 'Docs' },
-    { href: '/dashboard', tabName: 'Dashboard' },
+    { href: dashboarSignup, tabName: 'Dashboard' },
     { href: dashboarSignup, tabName: 'Get Started' },
   ];
   const maxWidthClassName = 'max-w-[1140px] px-4 w-full mx-auto'
@@ -56,7 +56,7 @@ const AHeader = () => {
 
 
   return <div>
-    <div className="w-full mo:sticky top-0 z-50">
+    <div className="w-full fixed top-0 z-50 ">
       <div className="bg-[#07070A] flex w-full h-[71px] mo:h-[56px]">
         <div className={cn("flex items-center gap-5 mx-auto relative mo:px-0", maxWidthClassName)}>
           <div className="mo:px-4 flex w-full justify-between">

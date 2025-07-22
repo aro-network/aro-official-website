@@ -16,8 +16,8 @@ import AHeader from "./components/AHeader"
 import { AShowModal } from "./components/AShowModal"
 
 
-const pioneers = 'https://enreach.fillout.com/Pioneers'
-const dashboarSignup = 'https://devnet-dashboard.aro.network/signup'
+// const pioneers = 'https://enreach.fillout.com/Pioneers'
+const dashboarSignup = 'https://dashboard.aro.network/signup'
 
 
 
@@ -276,7 +276,7 @@ export default function Home() {
     }
   }
 
-  const [showModal, setShowModal] = useState(true)
+  const [showModal, setShowModal] = useState(false)
   return <div className="">
     <div className="z-[100000] lg:relative  w-full min-h-screen bg-black overflow-hidden">
       {/* Header */}
@@ -419,7 +419,7 @@ export default function Home() {
                   <MBtn
                     type="2"
                     contentClassName="text-nowrap whitespace-nowrap font-Space_Grotesk"
-                    onClick={() => goTo(pioneers)}
+                    onClick={() => goTo(dashboarSignup)}
                     content="Sign Up to Unlock Pioneer Access"
                   />
                 </AosAnimItem>
