@@ -45,7 +45,7 @@ const AHeader = () => {
 
   const dashboarSignup = 'https://devnet-dashboard.aro.network/signup'
   const headerTabList = [
-    // { href: 'https://shop.aro.network', tabName: 'Get a Node', },
+    { href: 'https://shop.aro.network', tabName: 'Get a Node', },
     { href: 'https://medium.com/aronetwork', tabName: 'Blog', },
     { href: 'https://docs.aro.network/', tabName: 'Docs' },
     { href: '/dashboard', tabName: 'Dashboard' },
