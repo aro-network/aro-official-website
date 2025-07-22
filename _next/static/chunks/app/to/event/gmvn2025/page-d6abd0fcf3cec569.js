@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[829],{162:(e,r,s)=>{Promise.resolve().then(s.bind(s,4870))},4870:(e,r,s)=>{"use strict";s.r(r),s.d(r,{default:()=>o});var n=s(7815);let o=()=>((0,n.useEffect)(()=>{window.open("https://order.aro.network/aro-pod/?ref=gmvn25","_self")}),null)}},e=>{var r=r=>e(e.s=r);e.O(0,[806,947,358],()=>r(162)),_N_E=e.O()}]);
