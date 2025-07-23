@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { useRouter, } from "next/navigation"
+import { useRouter } from "next/navigation"
 import { cn } from "../utils/cn"
 import { Ref, useRef, useState } from "react"
 import { IoMenu } from "react-icons/io5"
@@ -56,7 +56,7 @@ const AHeader = () => {
 
 
   return <div>
-    <div className="w-full fixed top-0 z-50 !bg-fuchsia-300 ">
+    <div className="w-full fixed top-0 z-[10000]  ">
       <div className="bg-[#07070A] flex w-full h-[71px] mo:h-[56px]">
         <div className={cn("flex items-center gap-5 mx-auto relative mo:px-0", maxWidthClassName)}>
           <div className="mo:px-4 flex w-full justify-between">

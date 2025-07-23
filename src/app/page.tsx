@@ -281,7 +281,7 @@ export default function Home() {
       {/* Header */}
       <AHeader />
 
-      <div className="mds:pb-[124px] mds:pt-20 mo:pb-16 w-full xsl:h-screen xsl:justify-center flex flex-col gap-[6rem] md:gap-[4rem] bg-[url(/bg_flash.svg)] bg-center bg-no-repeat bg-cover mo:gap-20 mo:items-center mo:[background-position-x:75%]">
+      <div className="mds:pb-[124px] mds:pt-20 mo:pb-16 w-full xsl:h-screen xsl:justify-center flex flex-col gap-[6rem] md:gap-[4rem] bg-[url(/bg_flash.svg)] bg-center bg-no-repeat bg-cover mo:gap-[100px] mo:items-center mo:[background-position-x:75%]">
         <div className=""></div>
         {/* First Frame */}
         <AosAnimItem anim={false} className={cn(maxWidthClassName, "flex flex-col gap-[122px] mo:items-center")}>
