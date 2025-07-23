@@ -36,7 +36,7 @@ const AHeader = () => {
   })
 
   const goTo = (urlpath: string) => {
-    if (urlpath === '/blog') {
+    if (urlpath === 'get-a-node') {
       r.push(urlpath)
     } else {
       window.open(urlpath, '_blank')
@@ -56,7 +56,7 @@ const AHeader = () => {
 
 
   return <div>
-    <div className="w-full mo:sticky top-0 z-50 ">
+    <div className="w-full fixed top-0 z-50 !bg-fuchsia-300 ">
       <div className="bg-[#07070A] flex w-full h-[71px] mo:h-[56px]">
         <div className={cn("flex items-center gap-5 mx-auto relative mo:px-0", maxWidthClassName)}>
           <div className="mo:px-4 flex w-full justify-between">

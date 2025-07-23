@@ -300,9 +300,9 @@ interface AGetANodeProps {
 
 export const AGetANode: React.FC<AGetANodeProps> = ({ children, className }) => {
   return (
-    <div className={cn("w-full bg-black relative overflow-hidden", className)}>
+    <div className={cn("w-full bg-black relative overflow-hidden ", className)}>
       <div
-        className="w-container flex justify-center m-auto md:w-full mo:w-full  h-full bg-bottom  bg-contain bg-no-repeat bg-[url(/GetANodePicture/bg1.png)]">
+        className="w-container  flex justify-center m-auto md:w-full mo:w-full  h-full bg-bottom  bg-contain bg-no-repeat bg-[url(/GetANodePicture/bg1.png)]">
 
 
         <div className="absolute w-full h-full top-0 left-0">
@@ -310,7 +310,7 @@ export const AGetANode: React.FC<AGetANodeProps> = ({ children, className }) => 
         </div>
 
         <div className="relative z-10 pb-20 mo:pb-12 ">
-          <div className="pt-[124px] mo:pt-16 pb-16 mo:pb-10">
+          <div className="pt-[184px] mo:pt-[120px] pb-16 mo:pb-10">
             <div className="flex flex-col items-center gap-6 mo:gap-4 m-auto  px-16 mo:px-6">
               <h1 className="bg-[linear-gradient(353deg,rgba(0,228,42,1)_17%,rgba(255,255,255,1)_59%)] [-webkit-background-clip:text] bg-clip-text [-webkit-text-fill-color:transparent] [text-fill-color:transparent] [font-family:'Poppins',Helvetica] font-bold text-transparent text-[55px] mo:text-[30px] mo:tracking-[-1.50px] leading-[60.5px] mo:leading-[33px] text-center">
                 Pick Your ARO Node
