@@ -275,7 +275,7 @@ export default function Home() {
     }
   }
 
-  const [showModal, setShowModal] = useState(false)
+  const [showModal, setShowModal] = useState(true)
   return <div className="">
     <div className="z-[100000] lg:relative  w-full min-h-screen bg-black overflow-hidden">
       {/* Header */}
@@ -474,9 +474,6 @@ export default function Home() {
         </div>
       </AosAnimItem>
     </div>
-
-
-
     <AShowModal isOpen={showModal} onClose={() => setShowModal(false)} closeOnOverlayClick={false}>
       <div className="flex items-center justify-center flex-col  w-full">
         <div
@@ -493,7 +490,7 @@ export default function Home() {
         </div>
         <div className={`text-lg mo:text-base mo:w-full leading-normal font-medium text-center mo:text-left text-[#00FF0D] mt-10 mo:mt-4 mo:mb-10 mb-[45px]`}>
           <div className="text-left leading-[190%]">
-            - Campaign for Grand Airdrop<br />
+            - Join the $ARO Reward Rush<br />
             - Run and test ARO Nodes<br />
             - $30k Top Referrer Bonus<br />
           </div>
