@@ -5,7 +5,7 @@ import { useEffect } from "react"
 const AGetStarted = () => {
 
   useEffect(() => {
-    window.open('https://order.aro.network/aro-pod/?ref=gmvn25', '_self')
+    window.open('https://aronetwork.fillout.com/t/fXa78FPQYeus5', '_self')
   })
   return null
 }
