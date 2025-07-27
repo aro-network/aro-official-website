@@ -1,4 +1,3 @@
-import { Space_Grotesk } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 export default {
