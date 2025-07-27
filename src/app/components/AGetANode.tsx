@@ -88,8 +88,9 @@ const NodeSelectionSection = () => {
         "Rewards: ⭐⭐⭐",
         "User-friendly: ⭐⭐⭐"
       ],
-      comingSoon: true,
-      url: 'https://order.aro.network/product/aro-pod-node/',
+      comingSoon: false,
+      docs: "https://docs.aro.network/user-guides/device-setup",
+      url: 'https://shop.aro.network/',
       gradient:
         "p-5 box-border bg-[linear-gradient(0deg,rgb(255,255,255,0.06),rgb(255,255,255,0.06))," +
         "linear-gradient(124.57deg,rgb(0,255,13,0.5)_-10.04%,rgb(115,115,115,0)_38.35%)] " +
@@ -104,6 +105,7 @@ const NodeSelectionSection = () => {
         "• A Wi-Fi router with a built-in ARO node.",
         "• Ideal for business use.",
       ],
+      docs: "https://docs.aro.network/user-guides/device-setup",
       metrics: [
         "Cost: $$",
         "Rewards: ⭐⭐⭐",
@@ -130,6 +132,8 @@ const NodeSelectionSection = () => {
         "Rewards: Flexible",
         "User-friendly: ⭐"
       ],
+      docs: " https://docs.aro.network/user-guides/software-setup",
+
       comingSoon: false,
       url: "https://download.aro.network/images/aro-client-latest.iso",
       gradient:
@@ -149,6 +153,8 @@ const NodeSelectionSection = () => {
         "Rewards: ⭐",
         "User-friendly: ⭐⭐⭐"
       ],
+      docs: "https://docs.aro.network/user-guides/aro-lite/",
+
       comingSoon: false,
       url: "https://chromewebstore.google.com/detail/aro-lite/dehgjeidddkjakjgnmpccdkkjdchiifh?hl=en-US&utm_source=ext_sidebar",
       gradient:
