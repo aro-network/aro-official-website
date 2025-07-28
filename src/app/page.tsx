@@ -26,7 +26,7 @@ function MBtn({ type = '1', className, onClick, content, contentClassName, ref }
   return <div className={cn('cursor-pointer text-sm select-none rounded-full w-fit transition-all bg-no-repeat hover:animate-bg-in', {
     'text-[#A6A7AD] hover:bg-btn hover:text-[#11111C]': type == '1',
     'bg-btn text-[#11111C] hover:bg-btnHover borderLinerGridentL2 border': type == '2',
-    "bg-white/10 text-white text-left text-base h-[48px] flex items-center": type == '3',
+    "bg-white/10 text-white  text-left text-base h-[48px] flex items-center hover:bg-btnHover border borderLinerGridentL2": type == '3',
   }, className)} onClick={onClick} ref={ref as any}>
     <div className={cn("select-none w-fit rounded-full transition-all", {
       'px-2 py-1': type == '1',
@@ -505,7 +505,7 @@ export default function Home() {
           }} className="underline mo:text-xs underline-offset-1 ml-1 mo:text-left hover:text-[#00FF0D] text-white mt-5 mo:mt-2.5">Learn More</button>
 
         </div>
-        <div className="mo:w-full ">
+        <div className="mo:w-full flex gap-5 ">
           <MBtn
             type="2"
             onClick={() => {
@@ -516,6 +516,16 @@ export default function Home() {
             }
             className={'mt-5 font-Space_Grotesk '}
             content={'Get Started'}
+          />
+          <MBtn
+            type="3"
+            onClick={() => {
+              setShowModal(false)
+
+            }
+            }
+            className={'mt-5 font-Space_Grotesk'}
+            content={'Skip for Now'}
           />
 
         </div>
