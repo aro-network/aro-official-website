@@ -475,7 +475,7 @@ export default function Home() {
       </AosAnimItem>
     </div>
     <AShowModal isOpen={showModal} onClose={() => setShowModal(false)} closeOnOverlayClick={false}>
-      <div className="flex items-center justify-center flex-col  w-full">
+      <div className="flex items-center justify-center flex-col  w-full mo:mb-10">
         <div
           style={{
             boxSizing: 'border-box',
@@ -484,28 +484,24 @@ export default function Home() {
             WebkitBackgroundClip: 'text',
             textShadow: 'none',
           }}
-          className="text-[44px] mo:text-[30px] mo:text-left  font-Space_Grotesk font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
+          className="text-[44px] mo:text-[30px]  font-Space_Grotesk text-center font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
         >
           ARO Previewnet Is LIVE!
         </div>
-        <div className={`text-lg  mo:text-base mo:w-full leading-normal font-medium text-center mo:text-left text-[#00FF0D] mt-10 mo:mt-4 mo:mb-2.5 mb-[45px]`}>
+        <div className={`text-lg  mo:text-base mo:w-full leading-normal font-medium text-center mo:flex justify-center  text-[#00FF0D] mt-10 mo:mt-4 mo:mb-2.5 mb-[45px]`}>
           <div className="text-left leading-[190%] mo:leading-[30px]">
             - Join the $ARO Reward Rush<br />
             - Run and test ARO Nodes<br />
             - $30k Top Referrer Bonus<br />
           </div>
         </div>
-        <div className="text-white mo:flex flex-col mo:justify-start mo:w-full ">
+        <div className="text-white mo:flex flex-col text-center mo:w-full mo:text-xs ">
           <span>
             Sign Up & Start Earning NOW!
           </span>
-          <button onClick={() => {
-            setShowModal(false)
-            window.open('https://docs.aro.network/campaigns/previewnet')
-          }} className="underline mo:text-xs underline-offset-1 ml-1 mo:text-left hover:text-[#00FF0D] text-white mt-5 mo:mt-2.5">Learn More</button>
 
         </div>
-        <div className="mo:w-full flex gap-5 ">
+        <div className="mo:w-full flex gap-5 justify-center ">
           <MBtn
             type="2"
             onClick={() => {
@@ -514,20 +510,30 @@ export default function Home() {
 
             }
             }
+            contentClassName={'mo:text-sm'}
+
             className={'mt-5 font-Space_Grotesk '}
             content={'Get Started'}
           />
-          <MBtn
-            type="3"
+
+        </div>
+        <div className="flex items-center gap-5 mt-5 ">
+          <button onClick={() => {
+            setShowModal(false)
+            window.open('https://docs.aro.network/campaigns/previewnet')
+          }} className="underline mo:text-xs underline-offset-1 ml-1 mo:ml-0 mo:text-left hover:text-[#00FF0D] text-white ">Learn More</button>
+
+          <button
+
             onClick={() => {
               setShowModal(false)
 
             }
             }
-            className={'mt-5 font-Space_Grotesk'}
-            content={'Skip for Now'}
-          />
-
+            className="underline mo:text-xs underline-offset-1  font-Space_Grotesk hover:text-[#00FF0D] text-white"
+          >
+            Skip
+          </button>
         </div>
       </div>
     </AShowModal>
