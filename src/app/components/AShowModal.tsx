@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import ReactDOM from 'react-dom'
 
 type ModalProps = {
@@ -8,7 +8,6 @@ type ModalProps = {
   onClose: () => void
   closeOnOverlayClick?: boolean
   children: React.ReactNode
-  closeOnScroll?: boolean
 }
 
 export const AShowModal: React.FC<ModalProps> = ({
@@ -17,32 +16,39 @@ export const AShowModal: React.FC<ModalProps> = ({
   closeOnOverlayClick = true,
   children
 }) => {
+  const [mounted, setMounted] = useState(false)
+
   useEffect(() => {
-    const preventScroll = (e: TouchEvent) => {
-      e.preventDefault()
-    }
+    setMounted(true)
+  }, [])
+
+  useEffect(() => {
+    if (!mounted) return
+
+    const preventScroll = (e: TouchEvent) => e.preventDefault()
 
     if (isOpen) {
       document.body.style.overflow = 'hidden'
       document.body.style.position = 'fixed'
       document.body.style.width = '100%'
-      document.addEventListener('touchmove', preventScroll, { passive: false })
+      window.addEventListener('touchmove', preventScroll, { passive: false })
     } else {
       document.body.style.overflow = ''
       document.body.style.position = ''
       document.body.style.width = ''
-      document.removeEventListener('touchmove', preventScroll)
+      window.removeEventListener('touchmove', preventScroll)
     }
 
     return () => {
       document.body.style.overflow = ''
       document.body.style.position = ''
       document.body.style.width = ''
-      document.removeEventListener('touchmove', preventScroll)
+      window.removeEventListener('touchmove', preventScroll)
     }
-  }, [isOpen])
+  }, [isOpen, mounted])
 
-  if (!isOpen) return null
+  // 等客户端挂载完后再执行 portal
+  if (!mounted || !isOpen) return null
 
   return ReactDOM.createPortal(
     <div
