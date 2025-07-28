@@ -490,9 +490,9 @@ export default function Home() {
         </div>
         <div className={`text-lg  mo:text-base mo:w-full leading-normal font-medium text-center mo:flex justify-center  text-[#00FF0D] mt-10 mo:mt-4 mo:mb-2.5 mb-[45px]`}>
           <div className="text-left leading-[190%] mo:leading-[30px]">
-            - Join the $ARO Reward Rush<br />
-            - Run and test ARO Nodes<br />
-            - $30k USDT Top Referrer Bonus<br />
+            1. Run an ARO Node & Join the Reward Rush<br />
+            2. Refer Others to Boost Your Earnings<br />
+            3. $30K USDT Bonus for the Top Referrer<br />
           </div>
         </div>
         <div className="text-white mo:flex flex-col text-center mo:w-full mo:text-xs ">
