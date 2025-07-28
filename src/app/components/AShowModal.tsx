@@ -15,7 +15,6 @@ export const AShowModal: React.FC<ModalProps> = ({
   isOpen,
   onClose,
   closeOnOverlayClick = true,
-  closeOnScroll = true,
   children
 }) => {
   useEffect(() => {
