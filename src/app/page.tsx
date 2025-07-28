@@ -519,7 +519,6 @@ export default function Home() {
         </div>
         <div className="flex items-center gap-5 mt-5 ">
           <button onClick={() => {
-            setShowModal(false)
             window.open('https://docs.aro.network/campaigns/previewnet')
           }} className="underline mo:text-xs underline-offset-1 ml-1 mo:ml-0 mo:text-left hover:text-[#00FF0D] text-white ">Learn More</button>
 

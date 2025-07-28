@@ -63,7 +63,7 @@ export const AShowModal: React.FC<ModalProps> = ({
       <div className="relative z-10 flex items-center justify-center h-full flex-col">
         <div className="max-w-[660px] p-6 mo:p-5 w-full mo:bottom-0 mb-10">
           <div className="flex justify-end w-full top-[1.875rem] relative ">
-            <img src="./hero.svg" className='mo:h-[30vh]' />
+            <img src="./hero.png" className='w-[17.5rem] h-[16.25rem] mo:w-[240px] mo:h-[240px]' />
           </div>
           <div className="rounded-lg shadow-lg p-6 mo:p-2.5 bg-contain mo:bg-cover mo:bg-right w-full h-auto bg-[#0D131B] border-r-[#00FF0D] border-r-8 border border-l-0 border-t-0 border-b-1 border-b-[#00FF0D]  bg-[url(/line.svg)] bg-no-repeat">
             <div className="float-right cursor-pointer relative z-[10000]" onClick={onClose}>
