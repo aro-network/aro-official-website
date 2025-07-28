@@ -334,7 +334,7 @@ export default function Home() {
             <div className="flex flex-col gap-10 p-10 justify-between h-full mo:px-5 mo:pr-8">
               <div className="text-white text-[40px] font-bold leading-[1.39] shrink-0 mo:text-[28px] font-Space_Grotesk">Why ARO?</div>
               <div className="text-[#D3D3D6] text-sm">
-                • Proven Infra: Built on a 1.5M+ node legacy<br />
+                • Proven Infra: Built on a 1.5M+ nodes legacy<br />
                 • Earn Passively: Turn idle internet into daily rewards<br />
                 • Ready for the Future: Power the next wave of smart, edge-driven content and AI with ultra-fast, local processing
               </div>
@@ -408,7 +408,7 @@ export default function Home() {
                 </div>
                 <div className="text-[38px] leading-snug font-bold text-white mt-[30px] mo:text-[28px] font-Space_Grotesk">What You Get</div>
                 <div className="text-sm text-wrap">
-                  • Priority access to free ARO devices (select regions)<br />
+                  • Priority access to free ARO devices (selected regions)<br />
                   • Early adopter perks & exclusive rewards<br />
                   • Access to private funding rounds before the public
                 </div>
