@@ -484,25 +484,25 @@ export default function Home() {
             WebkitBackgroundClip: 'text',
             textShadow: 'none',
           }}
-          className="text-[44px] mo:text-[38px] mo:text-left  font-Space_Grotesk font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
+          className="text-[44px] mo:text-[30px] mo:text-left  font-Space_Grotesk font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
         >
           ARO Previewnet Is LIVE!
         </div>
-        <div className={`text-lg mo:text-base mo:w-full leading-normal font-medium text-center mo:text-left text-[#00FF0D] mt-10 mo:mt-4 mo:mb-10 mb-[45px]`}>
-          <div className="text-left leading-[190%]">
+        <div className={`text-lg  mo:text-base mo:w-full leading-normal font-medium text-center mo:text-left text-[#00FF0D] mt-10 mo:mt-4 mo:mb-2.5 mb-[45px]`}>
+          <div className="text-left leading-[190%] mo:leading-[30px]">
             - Join the $ARO Reward Rush<br />
             - Run and test ARO Nodes<br />
             - $30k Top Referrer Bonus<br />
           </div>
         </div>
-        <div className="text-white mo:flex flex-col mo:justify-start mo:w-full">
+        <div className="text-white mo:flex flex-col mo:justify-start mo:w-full ">
           <span>
             Sign Up & Start Earning NOW!
           </span>
           <button onClick={() => {
             setShowModal(false)
             window.open('https://docs.aro.network/campaigns/previewnet')
-          }} className="underline mo:text-xs underline-offset-1 ml-1 mo:text-left hover:text-[#00FF0D] text-white mt-5">Learn More</button>
+          }} className="underline mo:text-xs underline-offset-1 ml-1 mo:text-left hover:text-[#00FF0D] text-white mt-5 mo:mt-2.5">Learn More</button>
 
         </div>
         <div className="mo:w-full ">
@@ -514,7 +514,7 @@ export default function Home() {
 
             }
             }
-            className={'mt-5 mo:mt-8 font-Space_Grotesk '}
+            className={'mt-5 font-Space_Grotesk '}
             content={'Get Started'}
           />
 
