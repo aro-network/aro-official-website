@@ -499,13 +499,21 @@ export default function Home() {
           <span>
             Sign Up & Start Earning NOW!
           </span>
-          <button onClick={() => window.open('https://docs.aro.network/campaigns/previewnet')} className="underline mo:text-xs underline-offset-1 ml-1 mo:text-left hover:text-[#00FF0D] text-white mt-5">Learn More</button>
+          <button onClick={() => {
+            setShowModal(false)
+            window.open('https://docs.aro.network/campaigns/previewnet')
+          }} className="underline mo:text-xs underline-offset-1 ml-1 mo:text-left hover:text-[#00FF0D] text-white mt-5">Learn More</button>
 
         </div>
         <div className="mo:w-full ">
           <MBtn
             type="2"
-            onClick={() => goTo(dashboarSignup)}
+            onClick={() => {
+              goTo(dashboarSignup)
+              setShowModal(false)
+
+            }
+            }
             className={'mt-5 mo:mt-8 font-Space_Grotesk '}
             content={'Get Started'}
           />
