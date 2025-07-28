@@ -275,7 +275,7 @@ export default function Home() {
     }
   }
 
-  const [showModal, setShowModal] = useState(true)
+  const [showModal, setShowModal] = useState(false)
   return <div className="">
     <div className="z-[100000] lg:relative  w-full min-h-screen bg-black overflow-hidden">
       {/* Header */}
