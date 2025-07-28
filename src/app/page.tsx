@@ -492,7 +492,7 @@ export default function Home() {
           <div className="text-left leading-[190%] mo:leading-[30px]">
             - Join the $ARO Reward Rush<br />
             - Run and test ARO Nodes<br />
-            - $30k Top Referrer Bonus<br />
+            - $30k USDT Top Referrer Bonus<br />
           </div>
         </div>
         <div className="text-white mo:flex flex-col text-center mo:w-full mo:text-xs ">
