@@ -1,5 +1,6 @@
-// Modal.tsx
-import React, { useEffect, useRef } from 'react'
+'use client'
+
+import React, { useEffect, useRef, useState } from 'react'
 import ReactDOM from 'react-dom'
 
 type ModalProps = {
@@ -10,11 +11,24 @@ type ModalProps = {
   closeOnScroll?: boolean
 }
 
-export const AShowModal: React.FC<ModalProps> = ({ isOpen, onClose, closeOnScroll = true, closeOnOverlayClick = true, children }) => {
+export const AShowModal: React.FC<ModalProps> = ({
+  isOpen,
+  onClose,
+  closeOnOverlayClick = true,
+  closeOnScroll = true,
+  children
+}) => {
+  const [hasMounted, setHasMounted] = useState(false)
   const scrollStartY = useRef<number>(0)
   const scrollListenerAttached = useRef(false)
 
   useEffect(() => {
+    setHasMounted(true)
+  }, [])
+
+  useEffect(() => {
+    if (!isOpen) return
+
     const handleEsc = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose()
     }
@@ -37,7 +51,6 @@ export const AShowModal: React.FC<ModalProps> = ({ isOpen, onClose, closeOnScrol
 
     document.addEventListener("keydown", handleEsc)
 
-    // ✅ 延迟绑定 scroll 监听器，避免刷新误触
     if (closeOnScroll) {
       timeoutId = setTimeout(attachScrollListener, 300)
     }
@@ -50,10 +63,9 @@ export const AShowModal: React.FC<ModalProps> = ({ isOpen, onClose, closeOnScrol
       }
       clearTimeout(timeoutId)
     }
-  }, [onClose, closeOnScroll])
+  }, [onClose, closeOnScroll, isOpen])
 
-  if (!isOpen) return null
-
+  if (!isOpen || !hasMounted) return null
 
   return ReactDOM.createPortal(
     <div
@@ -62,16 +74,16 @@ export const AShowModal: React.FC<ModalProps> = ({ isOpen, onClose, closeOnScrol
         if (closeOnOverlayClick) onClose()
       }}
     >
-      <div className='max-w-[660px] p-6 mo:p-5 w-full'>
-        <button className='flex justify-end pt-2 relative top-5 w-full '>
-          <img src='./hero.svg' />
+      <div className="max-w-[660px] p-6 mo:p-5 w-full">
+        <button className="flex justify-end pt-2 relative top-5 w-full">
+          <img src="./hero.svg" />
         </button>
 
         <div
-          className=" rounded-lg shadow-lg p-6 bg-contain mo:bg-cover  w-full h-auto bg-[#0D131B] border-r-[#00FF0D] border-r-8 border border-l-0 border-t-0 border-b-1 border-b-[#00FF0D]  bg-black/50 bg-[url(/line.svg)] bg-no-repeat "
+          className="rounded-lg shadow-lg p-6 bg-contain mo:bg-cover w-full h-auto bg-[#0D131B] border-r-[#00FF0D] border-r-8 border border-l-0 border-t-0 border-b-1 border-b-[#00FF0D] bg-black/50 bg-[url(/line.svg)] bg-no-repeat"
         >
-          <div className='float-right' onClick={onClose}>
-            <img src='./close.svg' />
+          <div className="float-right" onClick={onClose}>
+            <img src="./close.svg" />
           </div>
           {children}
         </div>
