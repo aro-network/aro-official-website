@@ -488,7 +488,7 @@ export default function Home() {
         >
           ARO Previewnet Is LIVE!
         </div>
-        <div className={`text-lg  mo:text-base mo:w-full leading-normal font-medium text-center mo:flex justify-center  text-[#00FF0D] mt-10 mo:mt-4 mo:mb-2.5 mb-[45px]`}>
+        <div className={`text-lg  mo:text-sm mo:w-full leading-normal font-medium text-center mo:flex justify-center  text-[#00FF0D] mt-10 mo:mt-4 mo:mb-2.5 mb-[45px]`}>
           <div className="text-left leading-[190%] mo:leading-[30px]">
             1. Run a Node & Join the Reward Rush<br />
             2. Refer Others for Reward Boost<br />
