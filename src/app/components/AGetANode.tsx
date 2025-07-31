@@ -90,7 +90,7 @@ const NodeSelectionSection = () => {
       ],
       comingSoon: false,
       docs: "https://docs.aro.network/user-guides/device-setup",
-      url: 'https://shop.aro.network/?coupon=gmvn25',
+      url: 'https://shop.aro.network',
       gradient:
         "p-5 box-border bg-[linear-gradient(0deg,rgb(255,255,255,0.06),rgb(255,255,255,0.06))," +
         "linear-gradient(124.57deg,rgb(0,255,13,0.5)_-10.04%,rgb(115,115,115,0)_38.35%)] " +
