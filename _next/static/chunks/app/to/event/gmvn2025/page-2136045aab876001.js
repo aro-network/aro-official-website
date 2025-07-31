@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[829],{162:(e,s,n)=>{Promise.resolve().then(n.bind(n,4870))},4870:(e,s,n)=>{"use strict";n.r(s),n.d(s,{default:()=>t});var o=n(7815);let t=()=>((0,o.useEffect)(()=>{window.open("https://shop.aro.network/?coupon=gmvn25","_self")}),null)}},e=>{var s=s=>e(e.s=s);e.O(0,[806,947,358],()=>s(162)),_N_E=e.O()}]);
