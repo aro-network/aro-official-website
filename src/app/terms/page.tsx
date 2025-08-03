@@ -7,7 +7,7 @@ const Terms = () => {
 
   return <div className="   z-[100000] relative  w-full h-full">
     <AHeader />
-    <div className="max-w-[1140px] mo:w-full mo:px-5 m-auto mo:m-0  md:w-full md:px-[30px]  select-none relative z-[1000] px-4">
+    <div className="max-w-[1140px] pt-20 mo:w-full mo:px-5 m-auto mo:m-0  md:w-full md:px-[30px]  select-none relative z-[1000] px-4">
 
       <div className=" font-medium text-center mt-20 ">
         <div className="text-2xl  text-white"> Terms & Conditions</div>
