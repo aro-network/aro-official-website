@@ -14,6 +14,7 @@ import { RiAppsFill } from "react-icons/ri"
 import { cn } from "./utils/cn"
 import AHeader from "./components/AHeader"
 import { AShowModal } from "./components/AShowModal"
+import AFooter from "./components/AFooter"
 
 
 // const pioneers = 'https://enreach.fillout.com/Pioneers'
@@ -460,19 +461,8 @@ export default function Home() {
         <RoumdMaps />
       </div>
       <FAQS />
-      <AosAnimItem anim={false} className={cn("max-w-[1240px] w-full mx-auto relative mt-[124px] mo:mt-16 mo:pt-12")}>
-        <img src="/bg_footer_star.svg" className="w-[calc(100%-56px)] h-auto" />
-        <img src="/bg_footer.svg" className="w-full h-auto" />
-        <div className="absolute top-0 w-full flex flex-col items-center gap-2.5">
-          <div className="text-white font-medium text-[30px] gap-8 flex items-center mo:text-2xl mo:gap-6">
-            {socialLinks.map(item => <div key={item.href} onClick={() => open(item.href, '_blank')} className="cursor-pointer hover:text-[#AEFB68]">{item.icon}</div>)}
-          </div>
-          <div className="text-[#646464] mo:font-medium mo:text-xs">© ARO Network 2025. Powered by the People.</div>
-          <div className="mt-3 h-0.5 w-[226px]" style={{
-            background: 'linear-gradient(90deg, #090C17 0%, #00E42A 51%, #090C17 100%)'
-          }} />
-        </div>
-      </AosAnimItem>
+      <AFooter />
+
     </div>
     <AShowModal isOpen={showModal} onClose={() => setShowModal(false)} closeOnOverlayClick={false}>
       <div className="flex items-center justify-center flex-col  w-full mo:mb-10">

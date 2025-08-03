@@ -5,6 +5,7 @@ import { FaDiscord, FaTelegramPlane } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { RiAppsFill } from "react-icons/ri";
 import { cn } from "../utils/cn";
+import { list } from "../utils/common";
 
 function AosAnimItem({ className, children, as, anim = true, ...props }: AllHTMLAttributes<HTMLDivElement> & { as?: (keyof ReactHTML), anim?: boolean }) {
   const Component = (as ?? "div") as any
@@ -33,20 +34,7 @@ const socialLinks = [
   { href: 'https://x.com/AroNetwork', text: 'Twitter', icon: <BsTwitterX className="text-[0.8em]" /> },
   // { href: 'https://github.com/aro-network', text: 'Github', icon: <IoLogoGithub /> },
   { href: 'https://medium.com/aronetwork', text: 'Blog', icon: <RiAppsFill /> },
-  {
-    href: 'https://aro.network/AroMediaKit.zip', text: 'MediaKit',
-    icon: <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g clipPath="url(#clip0_200_54)">
-        <path fill="currentColor" d="M24.4223 3.11592C24.7589 3.11592 25.0817 3.24963 25.3197 3.48764C25.5577 3.72565 25.6914 4.04846 25.6914 4.38506V22.153C25.6914 22.4896 25.5577 22.8124 25.3197 23.0504C25.0817 23.2885 24.7589 23.4222 24.4223 23.4222H1.57773C1.24114 23.4222 0.918326 23.2885 0.680316 23.0504C0.442306 22.8124 0.308594 22.4896 0.308594 22.153V1.84678C0.308594 1.51018 0.442306 1.18737 0.680316 0.94936C0.918326 0.711349 1.24114 0.577637 1.57773 0.577637H10.9871L13.5254 3.11592H18.0766V5.6542H20.6148V3.11592H24.4223ZM20.6148 13.269H18.0766V15.8073H15.5383V19.6147H20.6148V13.269ZM18.0766 10.7308H15.5383V13.269H18.0766V10.7308ZM20.6148 8.19248H18.0766V10.7308H20.6148V8.19248ZM18.0766 5.6542H15.5383V8.19248H18.0766V5.6542Z" />
-      </g>
-      <defs>
-        <clipPath id="clip0_200_54">
-          <rect width="23.75" height="23.75" fill="white" transform="translate(0.75 0.125)" />
-        </clipPath>
-      </defs>
 
-    </svg>
-  }
 ]
 
 const AFooter: FC = () => {
@@ -54,12 +42,17 @@ const AFooter: FC = () => {
 
 
 
-  return <AosAnimItem anim={false} className={cn("max-w-[1240px] w-full mx-auto relative mt-[124px] mo:mt-16 mo:pt-12")}>
+  return <AosAnimItem anim={false} className={cn("max-w-[1240px] w-full mx-auto relative mt-[124px] mo:mt-20 mo:mb-5 mo:pt-20")}>
     <img src="/bg_footer_star.svg" className="w-[calc(100%-56px)] h-auto" />
     <img src="/bg_footer.svg" className="w-full h-auto" />
-    <div className="absolute top-0 w-full flex flex-col items-center gap-2.5">
+    <div className="absolute top-0 mo:-top-10 w-full flex flex-col items-center gap-5 ">
       <div className="text-white font-medium text-[30px] gap-8 flex items-center mo:text-2xl mo:gap-6">
         {socialLinks.map(item => <div key={item.href} onClick={() => open(item.href, '_blank')} className="cursor-pointer hover:text-[#AEFB68]">{item.icon}</div>)}
+      </div>
+      <div className="flex justify-between gap-5">
+        {list.map((item, index) => (
+          <button className="hover:text-[#00E42A] mo:text-xs" key={index} onClick={() => window.open(item.link, '_blank')}>{item.name}</button>
+        ))}
       </div>
       <div className="text-[#646464] mo:font-medium mo:text-xs">© ARO Network {currentYear}. Powered by the People.</div>
       <div className="mt-3 h-0.5 w-[226px]" style={{
