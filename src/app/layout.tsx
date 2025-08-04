@@ -103,6 +103,16 @@ export default function RootLayout({
       <meta name="apple-mobile-web-app-title" content="Aro" />
       <link rel="apple-touch-icon" href="https://aro.network/icon.svg" />
 
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-TTMWKN7L');`
+        }}
+      />
+
 
       <body
         className={classNames(
@@ -111,8 +121,11 @@ export default function RootLayout({
         )}
       >
         <Toaster position="top-center" />
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TTMWKN7L"
+          height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
 
         {children}
+
       </body>
     </html>
   );
