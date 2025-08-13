@@ -16,10 +16,8 @@ import AHeader from "./components/AHeader"
 import { AShowModal } from "./components/AShowModal"
 import AFooter from "./components/AFooter"
 
-
 // const pioneers = 'https://enreach.fillout.com/Pioneers'
 const dashboarSignup = 'https://dashboard.aro.network/signup'
-
 
 const maxWidthClassName = 'max-w-[1140px] px-4 w-full mx-auto'
 
