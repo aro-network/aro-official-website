@@ -173,15 +173,17 @@ const NodeSelectionSection = () => {
           <LinerGridentBorder
             key={node.id}
             type={`${index == 3 ? '7' : '1'}`}
-            className="rounded-3xl"
+            data-aos="fade-top"
+            data-aos-duration="1000"
+            className="aos-init aos-animate rounded-3xl"
           // className="flex w-full max-w-[544px] h-auto max-h-[216px] items-center gap-[30px] mo:gap-4 p-5 mo:p-4 mo:flex-col mo:text-center rounded-3xl border-2 border-solid border-transparent backdrop-blur-md backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(12px)_brightness(100%)] relative overflow-hidden"
           // style={{
           //   background: `padding - box linear - gradient(0deg, rgba(255, 255, 255, 0.06) 0 %, rgba(255, 255, 255, 0.06) 100 %), border - box ${ node.gradient } `,
           //   backgroundClip: 'padding-box, border-box',
           // }}
           >
-            <CardContent className="p-5 mo:p-4 flex items-center gap-[30px] mo:flex-col mo:gap-4 w-full">
-              <div className="inline-flex flex-col items-start mo:items-center gap-4 relative flex-[0_0_auto] mo:w-full">
+            <CardContent className="p-5 mo:p-4 flex items-center gap-[30px] mo:flex-col mo:gap-4 w-full  h-full mo:h-auto">
+              <div className="inline-flex flex-col justify-between mo:items-center gap-4 relative flex-[0_0_auto] mo:w-full  h-full">
                 <div className=" w-full h-[130px]  rounded-lg mo:h-[130px]  p-5 ">
                   <div
                     className="bg-center bg-no-repeat bg-contain relative h-full"
@@ -199,7 +201,7 @@ const NodeSelectionSection = () => {
                 </Button>
               </div>
 
-              <div className="flex flex-col w-[265px] mo:w-full items-start gap-5 mo:gap-4 relative">
+              <div className="flex flex-col w-[265px] mo:w-full items-start gap-2.5 mo:gap-4 relative  h-full justify-between">
                 <div className="flex flex-col items-start gap-2.5 relative self-stretch w-full flex-[0_0_auto]">
                   <div className="inline-flex items-center gap-2.5 relative flex-[0_0_auto]">
                     <h3 className="w-fit mt-[-1.00px] font-medium text-white text-xl tracking-[0] leading-[30px] whitespace-nowrap relative [font-family:'Poppins',Helvetica]">
@@ -232,6 +234,8 @@ const NodeSelectionSection = () => {
                   <br />
                   {node.metrics[2]}
                 </div>
+                <button onClick={() => window.open(node.docs, '_blank')} className="text-[#568AFF] underline underline-offset-1">User Guide</button>
+
               </div>
             </CardContent>
           </LinerGridentBorder>
