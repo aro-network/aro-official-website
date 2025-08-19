@@ -234,7 +234,7 @@ const NodeSelectionSection = () => {
                   <br />
                   {node.metrics[2]}
                 </div>
-                <button onClick={() => window.open(node.docs, '_blank')} className="text-[#568AFF] underline underline-offset-1">User Guide</button>
+                <button onClick={() => window.open(node.docs, '_blank')} className="text-[#568AFF] text-xs underline underline-offset-1">User Guide</button>
 
               </div>
             </CardContent>
