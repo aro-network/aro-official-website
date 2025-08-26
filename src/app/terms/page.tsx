@@ -35,6 +35,15 @@ const Terms = () => {
         Please be aware that your access to and use of the Service may be interrupted or restricted occasionally to allow for repairs, maintenance, or the introduction of new facilities or services. We aim to restore service as promptly as possible.
         The Service is designed for users who are at least 18 years old. Minors aged 13 to 17 may use the Service under the supervision of a parent or guardian who has agreed to these Terms. Users under the age of 13 are not permitted to use the Service.
 
+        <br />
+        You agree to comply with all applicable export control, sanctions, and trade laws and regulations, including but not limited to those administered by the United States Department of the Treasury's Office of Foreign Assets Control (OFAC), the United States Department of Commerce's Bureau of Industry and Security (BIS), and equivalent laws in other jurisdictions (collectively, "Trade Laws").
+        <br />
+        You may not access or use the Services if you are located in, a resident of, or organized under the laws of any country or region subject to comprehensive sanctions under Trade Laws， including, without limitation, Cuba, Iran, Democratic People's Republic of Korea (DPRK), Syria, Mainland China, Crimea, Donetsk People's Republic (DNR), Luhansk People's Republic (LNR). Additionally, you may not use the Services if you are a person or entity designated on any restricted party list maintained under Trade Laws, such as the OFAC Specially Designated Nationals List or the BIS Denied Persons List.
+        <br />
+        We reserve the right to restrict or deny access to the Services based on your IP address, location, or other indicators to ensure compliance with Trade Laws. If we determine, in our sole discretion, that your use of the Services violates or may violate Trade Laws, we may suspend or terminate your account immediately without liability.
+
+
+
         <div className="title mt-5">4. Intellectual Property</div>
         All content you create, submit, post, promote, or display on or through the Service—including but not limited to text, materials, images, files, communications, comments, feedback, suggestions, ideas, concepts, questions, and data—is subject to the intellectual property rights of their respective owners. By using the Service, you grant ARO a worldwide, non-exclusive, sublicensable, royalty-free license to use, copy, modify, and display such content for our current and future business purposes, including to provide, promote, and improve the Service. This license includes the right to use any digital files or other materials you link to or associate with your content displayed on the Service.
         ARO does not claim ownership of the content you submit or post; however, by posting content to the Service, you allow us the right to use and showcase it as part of our operations.
