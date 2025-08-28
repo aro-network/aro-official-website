@@ -59,8 +59,8 @@ jobs:
           version: 8
 
       - name: Install dependencies & build
-        env:  
-          NEXT_PUBLIC_ENV: 'beta'
+        env:
+          NEXT_PUBLIC_ENV: "beta"
         run: |
           pnpm install --no-frozen-lockfile
           pnpm build
@@ -70,5 +70,5 @@ jobs:
         with:
           deploy_key: ${{ secrets.DK_BETA }}
           publish_dir: ./out
-          external_repository: aro-network/aro-official-website-beta
-          cname: beta.aro.network
+          external_repository: aro-network/aro-official-website-staging
+          cname: staging.aro.network
