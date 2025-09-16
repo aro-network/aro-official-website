@@ -285,13 +285,12 @@ export default function Home() {
         playsInline
         poster="fallback.jpg"
         id="bg-video"
+        webkit-playsinline="true"
         className="absolute top-0 left-0 w-full h-full  object-fill  z-0 "
       >
         <source src="./aro.mp4" type="video/mp4" />
-
       </video>
-
-      <div className="relative z-10 flex flex-col  md:gap-[4rem] w-full h-full mo:h-auto  py-[12.5rem] mo:py-[150px] sm:justify-between  mds:justify-center mds:gap-60 items-center  text-center">
+      <div className="relative z-10 flex flex-col  md:gap-[4rem] w-full h- mo:h-auto   py-[150px] sm:justify-between  mds:justify-center mds:gap-60 items-center  text-center">
         <div className="">
           <div
             style={{
