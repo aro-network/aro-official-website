@@ -336,7 +336,7 @@ export default function Home() {
       </div>
     </div>
 
-    <div className="mt-5">
+    <div className="mt-10">
 
       <TitleText text="ARO Network" />
       <div className={cn("flex flex-col gap-5 pb-[124px] mo:pb-16", maxWidthClassName)}>
