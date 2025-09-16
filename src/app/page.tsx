@@ -288,7 +288,7 @@ export default function Home() {
         webkit-playsinline="true"
         preload="auto"
 
-        className="absolute top-0 left-0 w-full h-full  object-fill  z-0 "
+        className="absolute top-0 left-0 w-full h-full  object-fill mo:object-cover  z-0 "
       >
         <source src="./aro.mp4" type="video/mp4" />
       </video>
