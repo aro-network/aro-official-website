@@ -286,6 +286,8 @@ export default function Home() {
         poster="fallback.jpg"
         id="bg-video"
         webkit-playsinline="true"
+        preload="auto"
+
         className="absolute top-0 left-0 w-full h-full  object-fill  z-0 "
       >
         <source src="./aro.mp4" type="video/mp4" />
