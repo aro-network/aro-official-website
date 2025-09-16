@@ -290,7 +290,7 @@ export default function Home() {
       >
         <source src="./aro.mp4" type="video/mp4" />
       </video>
-      <div className="relative z-10 flex flex-col  md:gap-[4rem] w-full h- mo:h-auto   py-[150px] sm:justify-between  mds:justify-center mds:gap-60 items-center  text-center">
+      <div className="relative z-10 flex flex-col  md:gap-[4rem] w-full  mo:h-auto   py-[130px] sm:justify-between  mds:justify-center mds:gap-60 items-center  text-center">
         <div className="">
           <div
             style={{
@@ -319,7 +319,7 @@ export default function Home() {
           <MBtn
             type="2"
             onClick={() => goTo(dashboarSignup)}
-            className=" mo:mt-8 font-Space_Grotesk text-center m-auto mt-[126px]"
+            className=" mo:mt-8 font-Space_Grotesk text-center m-auto mt-[100px]"
             content="Get Started"
           />
         </div>
@@ -424,7 +424,7 @@ export default function Home() {
                   • Prove edge delivery with real demand<br />
                   • Refine technology in a live mode
                 </div>
-                <div className="text-[38px] leading-snug font-bold text-white mt-[30px] mo:text-[28px] font-Space_Grotesk">What You Can Do</div>
+                <div className="text-[38px] leading-snug font-bold text-white mt-[30px] mo:text-[28px] text-nowrap font-Space_Grotesk">What You Can Do</div>
                 <div className="text-sm text-wrap">
                   • Run and test out ARO nodes / devices<br />
                   • Earn Jade rewards (convertible to $ARO)<br />
