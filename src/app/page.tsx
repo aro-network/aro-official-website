@@ -411,20 +411,20 @@ export default function Home() {
           content="Get Started"
           className={cn('mx-auto mt-[52px] mb-[124px] mo:mb-16 font-Space_Grotesk')} />
       </AosAnimItem>
-      <TitleText text="Become a Pioneer Aronaut" className="px-5 text-center !mb-[22px]" />
+      <TitleText text="Testnet is Live" className="px-5 text-center !mb-[22px]" />
       <div className={cn(maxWidthClassName, 'text-[#D3D3D6]')}>
 
         <div className="w-full mt-11 flex flex-col mo:gap-5">
           <LinerGridentBorder type="6" className="rounded-3xl w-9/12 overflow-hidden mo:w-full mo:overflow-visible">
             <div className="p-11 flex relative mo:p-5 mo:pt-[133px] mo:pb-8">
               <div className="flex flex-col gap-4 w-0 flex-1 z-10">
-                <div className="text-[38px] leading-snug font-bold text-white mo:text-[28px] text-nowrap font-Space_Grotesk">What You Can Do</div>
+                <div className="text-[38px] leading-snug font-bold text-white mo:text-[28px] text-nowrap font-Space_Grotesk">Why Testnet</div>
                 <div className="text-sm w-full text-nowrap">
                   • Aggregate resources & expand network<br />
                   • Prove edge delivery with real demand<br />
                   • Refine technology in a live mode
                 </div>
-                <div className="text-[38px] leading-snug font-bold text-white mt-[30px] mo:text-[28px] font-Space_Grotesk">What You Get</div>
+                <div className="text-[38px] leading-snug font-bold text-white mt-[30px] mo:text-[28px] font-Space_Grotesk">What You Can Do</div>
                 <div className="text-sm text-wrap">
                   • Run and test out ARO nodes / devices<br />
                   • Earn Jade rewards (convertible to $ARO)<br />
