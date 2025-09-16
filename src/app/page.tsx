@@ -100,8 +100,8 @@ function QuteSymbol({ className }: { className?: string }) {
 
 const roundmaps = [
   { time: '2024', tit: 'Laying the Foundations', active: false, content: <>• GPoW (Geographic Proof of Work) & GPoS (Geographic Proof of Stake)<br />• Peer-HVM (Hardware Virtual Machine)<br />• Peer-DTS (Distributed Task Scheduling)<br />• Peer-Routing (Decentralized Routing Layer)</> },
-  { time: '2025 Q2-Q3', tit: 'ARO Previewnet', active: true, content: <>• Activating the Network<br />• Community launch<br />• Hardware Offering</> },
-  { time: '2025 Q3-Q4', tit: 'ARO Testnet', active: false, content: <>• Proving our model with real demand<br />• Resource aggregation<br />• Kickstarting on-chain revenue</> },
+  { time: '2025 Q2-Q3', tit: 'ARO Previewnet', active: false, content: <>• Activating the Network<br />• Community launch<br />• Hardware Offering</> },
+  { time: '2025 Q3-Q4', tit: 'ARO Testnet', active: true, content: <>• Proving our model with real demand<br />• Resource aggregation<br />• Kickstarting on-chain revenue</> },
   { time: '2026', tit: 'ARO Mainnet', active: false, content: <>• Mainnet launch<br />• Node expansion<br />• Customer expansion</> },
   { time: '2027', tit: 'Opening the Network', active: false, content: <>• Use cases expansion<br />• Open platform for edge apps<br />• Open governance</> },
 ]
@@ -131,13 +131,13 @@ const faqText = [
   {
     title: "What Stage Is ARO Network Currently In?",
     content: `
-    ARO is currently in the Previewnet phase, which means we are still testing the core infrastructure internally with a small group of early participants. We will soon enter the Testnet phase — this is when more participants will be able to join the network, contribute bandwidth, and start earning Jades, which can later be exchanged for $ARO tokens upon Mainnet launch. It’s still very early, and now is the perfect time to get involved if you want to become an early contributor and help shape the future of the ARO decentralized edge cloud!
+    ARO has progressed from the Previewnet phase to the current Testnet phase. During the ARO Testnet, more participants can join the network, test ARO Nodes and devices, contribute bandwidth, and earn Jades and Badges as rewards. It's still early, making now an ideal time to get involved.
 
 `,
   },
   {
     title: "What Are Jades?",
-    content: `Before Mainnet is live, your contributions to the ARO Testnet will be tracked and reflected as Jade Shards. You will be rewarded with Jades when you participate and make contributions to the ARO Testnet. In some cases, community contributors may receive NFTs as a recognition of their special efforts. The Jades serve as a key metric to determine your eligibility for future rewards. Upon mainnet launch, you can exchange your Jades for $ARO tokens.
+    content: `Before the Mainnet launch, your contributions of edge resources to the ARO Testnet will be tracked and rewarded with Jade Shards. By running nodes and providing bandwidth to the network, you will earn Jades, and in certain cases, Badges to recognize your exceptional efforts. Jades and Badges are key metrics for determining eligibility for future rewards. Upon the Mainnet launch, your Jades can be converted into $ARO tokens.
 `,
   },
   {
@@ -274,7 +274,7 @@ export default function Home() {
     }
   }
 
-  const [showModal, setShowModal] = useState(true)
+  const [showModal, setShowModal] = useState(false)
   return <div className="">
     <div className="z-[100000] lg:relative  w-full min-h-screen bg-black overflow-hidden">
       {/* Header */}
@@ -392,24 +392,22 @@ export default function Home() {
       </AosAnimItem>
       <TitleText text="Become a Pioneer Aronaut" className="px-5 text-center !mb-[22px]" />
       <div className={cn(maxWidthClassName, 'text-[#D3D3D6]')}>
-        <AosAnimItem className={cn('w-full text-center mo:text-sm')}>
-          Only <span className="text-[#00FF0D] font-semibold">1,000 spots</span> — and they’re filling fast. Help shape ARO Network from the ground up and earn exclusive rewards along the way.
-        </AosAnimItem>
+
         <div className="w-full mt-11 flex flex-col mo:gap-5">
           <LinerGridentBorder type="6" className="rounded-3xl w-9/12 overflow-hidden mo:w-full mo:overflow-visible">
             <div className="p-11 flex relative mo:p-5 mo:pt-[133px] mo:pb-8">
               <div className="flex flex-col gap-4 w-0 flex-1 z-10">
-                <div className="text-[38px] leading-snug font-bold text-white mo:text-[28px] text-nowrap font-Space_Grotesk">What We Look For</div>
+                <div className="text-[38px] leading-snug font-bold text-white mo:text-[28px] text-nowrap font-Space_Grotesk">What You Can Do</div>
                 <div className="text-sm w-full text-nowrap">
-                  • Genuine feedback & active engagement<br />
-                  • Content support: writing, videos, local advocacy<br />
-                  • Belief in a decentralized, open internet
+                  • Aggregate resources & expand network<br />
+                  • Prove edge delivery with real demand<br />
+                  • Refine technology in a live mode
                 </div>
                 <div className="text-[38px] leading-snug font-bold text-white mt-[30px] mo:text-[28px] font-Space_Grotesk">What You Get</div>
                 <div className="text-sm text-wrap">
-                  • Priority access to free ARO devices (selected regions)<br />
-                  • Early adopter perks & exclusive rewards<br />
-                  • Access to private funding rounds before the public
+                  • Run and test out ARO nodes / devices<br />
+                  • Earn Jade rewards (convertible to $ARO)<br />
+                  • Invite your friends and get referral rewards
                 </div>
                 <AosAnimItem className="flex items-center gap-[30px] text-white text-[30px] mt-4 mo:self-center">
                   {shortSoialLinks.map(item => <div key={item.href} onClick={() => open(item.href, '_blank')} className="cursor-pointer hover:text-[#AEFB68]">{item.icon}</div>)}
@@ -419,7 +417,7 @@ export default function Home() {
                     type="2"
                     contentClassName="text-nowrap whitespace-nowrap font-Space_Grotesk"
                     onClick={() => goTo(dashboarSignup)}
-                    content="Sign Up to Unlock Pioneer Access"
+                    content="Join Testnet Now"
                   />
                 </AosAnimItem>
               </div>
@@ -436,7 +434,7 @@ export default function Home() {
           </LinerGridentBorder>
           <LinerGridentBorder type="4" className="rounded-3xl w-1/2 overflow-hidden self-end -mt-[200px] mo:mt-0 mo:w-full">
             <div className="flex flex-col gap-5 pt-12 pr-[30px] pb-[30px] pl-[68px] relative mo:gap-7">
-              <div className="text-white font-bold text-[26px] font-Space_Grotesk">Pioneer Voices</div>
+              <div className="text-white font-bold text-[26px] font-Space_Grotesk">Aronaut Voice</div>
               <div className="flex items-center gap-4 text-sm mo:flex-col">
                 <div className="w-fit max-w-[300px]">“ARO made passive income stupid simple. Now I’m part of something bigger.”</div>
                 <div className="font-semibold whitespace-nowrap shrink-0 mo:ml-auto">— Fatima, Jakarta</div>
@@ -474,13 +472,13 @@ export default function Home() {
           }}
           className="text-[44px] mo:text-[30px]  font-Space_Grotesk text-center font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
         >
-          ARO Previewnet Is LIVE!
+          ARO Testnet Is LIVE!
         </div>
         <div className={`text-lg  mo:text-sm mo:w-full leading-normal font-medium text-center mo:flex justify-center  text-[#00FF0D] mt-10 mo:mt-4 mo:mb-2.5 mb-[45px]`}>
           <div className="text-left leading-[190%] mo:leading-[30px]">
-            1. Run a Node & Join the Reward Rush<br />
-            2. Refer Others for Reward Boost<br />
-            3. $30K USDT Bonus for Top Referrers<br />
+            1. Install & Run an ARO Node<br />
+            2. Stack Jade Rewards for Future Drops<br />
+            3. Invite Friends & Earn Referral Bonus<br />
           </div>
         </div>
         <div className="text-white mo:flex flex-col text-center mo:w-full mo:text-xs ">
