@@ -207,7 +207,6 @@ function Sponsors() {
   </>
 }
 
-
 function FAQS() {
   const [opened, setOpened] = useState<number>()
   function RenderTit({ item, index }: { item: (typeof faqText)[number], index: number }) {
@@ -276,47 +275,70 @@ export default function Home() {
 
   const [showModal, setShowModal] = useState(false)
   return <div className="">
-    <div className="z-[100000] lg:relative  w-full min-h-screen bg-black overflow-hidden">
-      {/* Header */}
-      <AHeader />
+    <div className="z-[100000] relative w-full h-full bg-black overflow-hidden">
 
-      <div className="mds:pb-[124px] mds:pt-20 mo:pb-16 w-full xsl:h-screen xsl:justify-center flex flex-col gap-[6rem] md:gap-[4rem] bg-[url(/bg_flash.svg)] bg-center bg-no-repeat bg-cover mo:gap-[100px] mo:items-center mo:[background-position-x:75%]">
-        <div className=""></div>
-        {/* First Frame */}
-        <AosAnimItem anim={false} className={cn(maxWidthClassName, "flex flex-col gap-[122px] mo:items-center")}>
-          <div className="flex flex-col leading-[1.2] mo:items-center">
-            <div
-              style={{
-                boxSizing: 'border-box',
-                background: 'linear-gradient(350deg, #00E42A 21.13%, #FFFFFF 57.73%)',
-                backgroundClip: 'text',
-                WebkitBackgroundClip: 'text',
-                textShadow: 'none',
-              }}
-              className="text-[66px] font-Space_Grotesk font-bold text-transparent w-fit pr-28 flex flex-col mo:pr-0 mo:text-center mo:text-[44px]"
-            >
-              The Decentralized Edge<br className="mo:hidden" /> Cloud for the AI Era
-            </div>
-            <div className="font-medium text-[22px] text-[#00FF0D] mt-[30px] mo:mt-8 mo:text-xl">
-              Faster. Smarter. Owned by You.
-            </div>
-            <div className=" text-[#D3D3D6] leading-relaxed mt-2.5 text-sm mo:text-center">Turn your unused internet into rewards by powering<br className="mo:hidden" />the future of decentralized AI and content delivery.</div>
-            <MBtn
-              type="2"
-              onClick={() => goTo(dashboarSignup)}
-              className={'mt-5 mo:mt-8 font-Space_Grotesk'}
-              content={'Get Started'}
-            />
+      <AHeader />
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster="fallback.jpg"
+        id="bg-video"
+        className="absolute top-0 left-0 w-full h-full  object-fill  z-0 "
+      >
+        <source src="./aro.mp4" type="video/mp4" />
+
+      </video>
+
+      <div className="relative z-10 flex flex-col  md:gap-[4rem] w-full h-full mo:h-auto  py-[12.5rem] mo:py-[150px] sm:justify-between  mds:justify-center mds:gap-60 items-center  text-center">
+        <div className="">
+          <div
+            style={{
+              boxSizing: "border-box",
+              background: "linear-gradient(350deg, #00E42A 21.13%, #FFFFFF 57.73%)",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              textShadow: "none",
+            }}
+            className="text-[66px] font-Space_Grotesk font-bold text-transparent w-fit  mo:text-[44px]"
+          >
+            The Decentralized Edge<br className="mo:hidden" /> Cloud for the AI Era
           </div>
-        </AosAnimItem>
+
+          <div className="font-medium text-[22px] text-[#00FF0D] mt-[30px] mo:mt-8 mo:text-xl">
+            Faster. Smarter. Owned by You.
+          </div>
+
+          <div className="text-[#D3D3D6] leading-relaxed mt-2.5 text-sm px-5">
+            Turn your unused internet into rewards by powering
+            <br className="mo:hidden" />
+            the future of decentralized AI and content delivery.
+          </div>
+
+
+          <MBtn
+            type="2"
+            onClick={() => goTo(dashboarSignup)}
+            className=" mo:mt-8 font-Space_Grotesk text-center m-auto mt-[126px]"
+            content="Get Started"
+          />
+        </div>
+
+
+
         {/* Sponsors */}
-        <AosAnimItem anim={false} className={cn(" flex flex-col items-center ", maxWidthClassName, "mo:px-0")}>
-          <div className="text-white font-medium text-base mo:text-center  w-full mb-6">
+        <AosAnimItem anim={false} className={cn("flex flex-col items-center m", maxWidthClassName, "mo:px-0 mt-10")}>
+          <div className="text-white font-medium text-base mo:text-center w-full mb-6">
             Backed by:
           </div>
           <Sponsors />
         </AosAnimItem>
       </div>
+    </div>
+
+    <div className="mt-5">
+
       <TitleText text="ARO Network" />
       <div className={cn("flex flex-col gap-5 pb-[124px] mo:pb-16", maxWidthClassName)}>
         <LinerGridentBorder type="1" className="rounded-3xl">
@@ -458,8 +480,8 @@ export default function Home() {
       </div>
       <FAQS />
       <AFooter />
-
     </div>
+
     <AShowModal isOpen={showModal} onClose={() => setShowModal(false)} closeOnOverlayClick={false}>
       <div className="flex items-center justify-center flex-col  w-full mo:mb-10">
         <div
@@ -523,5 +545,5 @@ export default function Home() {
       </div>
     </AShowModal>
 
-  </div>
+  </div >
 }
