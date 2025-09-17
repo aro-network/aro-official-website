@@ -329,7 +329,7 @@ export default function Home() {
 
 
         {/* Sponsors */}
-        <AosAnimItem anim={false} className={cn("flex flex-col items-center m", maxWidthClassName, "mo:px-0 mt-10")}>
+        <AosAnimItem anim={false} className={cn("flex flex-col items-center", maxWidthClassName, "mo:px-0 mt-10")}>
           <div className="text-white font-medium text-base mo:text-center w-full mb-6">
             Backed by:
           </div>

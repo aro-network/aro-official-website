@@ -132,8 +132,8 @@ const NodeSelectionSection = () => {
         "Rewards: Flexible",
         "User-friendly: ⭐"
       ],
-      docs: " https://docs.aro.network/user-guides/software-setup",
-
+      docs: 'https://docs.aro.network/node-operator-guide/aro-client/choose-installation-method',
+      docsBtn: 'Installation Guide',
       comingSoon: false,
       url: "https://download.aro.network/images/aro-client-latest.iso",
       gradient:
@@ -234,7 +234,7 @@ const NodeSelectionSection = () => {
                   <br />
                   {node.metrics[2]}
                 </div>
-                <button onClick={() => window.open(node.docs, '_blank')} className="text-[#568AFF] text-xs underline underline-offset-1">User Guide</button>
+                <button onClick={() => window.open(node.docs, '_blank')} className="text-[#568AFF] text-xs underline underline-offset-1">{node.docsBtn || 'User Guide'}</button>
 
               </div>
             </CardContent>
