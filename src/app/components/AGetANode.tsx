@@ -132,10 +132,10 @@ const NodeSelectionSection = () => {
         "Rewards: Flexible",
         "User-friendly: ⭐"
       ],
-      docs: 'https://docs.aro.network/node-operator-guide/aro-client/choose-installation-method',
+      docs: 'https://docs.aro.network/user-guides/software-setup',
       docsBtn: 'Installation Guide',
       comingSoon: false,
-      url: "https://download.aro.network/images/aro-client-latest.iso",
+      url: "https://download.aro.network/files/images/aro-client-host-1.0.0.iso",
       gradient:
         "bg-[linear-gradient(0deg,rgb(255,255,255,0.06),rgb(255,255,255,0.06)),linear-gradient(124.57deg,rgb(0,255,13,0.5)_-10.04%,rgb(115,115,115,0)_38.35%)] backdrop-blur-[12px] rounded-3xl flex-none order-0"
     },
