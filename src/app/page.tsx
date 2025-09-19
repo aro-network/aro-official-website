@@ -207,7 +207,6 @@ function Sponsors() {
   </>
 }
 
-
 function FAQS() {
   const [opened, setOpened] = useState<number>()
   function RenderTit({ item, index }: { item: (typeof faqText)[number], index: number }) {
