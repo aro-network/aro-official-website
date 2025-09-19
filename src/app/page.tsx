@@ -483,12 +483,8 @@ export default function Home() {
             <div className=" text-white text-left mt-5">
               Prepare Your Node for the Coming Testnet<br />  and Stay Tuned!
             </div>
-
           </div>
-
         </div>
-
-
         <div className="mo:w-full flex gap-5 justify-center ">
           <MBtn
             type="2"
