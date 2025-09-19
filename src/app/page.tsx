@@ -476,17 +476,18 @@ export default function Home() {
         >
           Testnet Is Coming Soon!
         </div>
-        <div className={`text-lg  mo:text-sm mo:w-full leading-normal font-medium text-center mo:flex justify-center  text-[#00FF0D] mt-10 mo:mt-4 mo:mb-2.5 mb-[45px]`}>
+        <div className={`text-lg  mo:text-sm mo:w-full leading-normal font-medium text-center mo:flex justify-center  text-[#00FF0D] mt-10 mo:mt-4 mo:mb-2.5 mb-[25px]`}>
           <div className="text-left leading-[190%] mo:leading-[30px]">
             1. Previewnet Referral Sprint has concludedh<br />
             2. Est. Testnet Launch: 28 SEP<br />
+            <div className=" text-white text-left mt-5">
+              Prepare Your Node for the Coming Testnet<br />  and Stay Tuned!
+            </div>
 
           </div>
 
         </div>
-        <div className=" text-white">
-          Prepare Your Node for the Coming Testnet<br />  and Stay Tuned!
-        </div>
+
 
         <div className="mo:w-full flex gap-5 justify-center ">
           <MBtn
