@@ -480,11 +480,12 @@ export default function Home() {
           <div className="text-left leading-[190%] mo:leading-[30px]">
             1. Previewnet Referral Sprint has concludedh<br />
             2. Est. Testnet Launch: 28 SEP<br />
-            <div className=" mt-2.5">
-              Prepare Your Node for the Coming Testnet<br />  and Stay Tuned!
-            </div>
+
           </div>
 
+        </div>
+        <div className=" text-white">
+          Prepare Your Node for the Coming Testnet<br />  and Stay Tuned!
         </div>
 
         <div className="mo:w-full flex gap-5 justify-center ">
