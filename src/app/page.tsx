@@ -474,41 +474,35 @@ export default function Home() {
           }}
           className="text-[44px] mo:text-[30px]  font-Space_Grotesk text-center font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
         >
-          ARO Previewnet Is LIVE!
+          Testnet Is Coming Soon!
         </div>
         <div className={`text-lg  mo:text-sm mo:w-full leading-normal font-medium text-center mo:flex justify-center  text-[#00FF0D] mt-10 mo:mt-4 mo:mb-2.5 mb-[45px]`}>
           <div className="text-left leading-[190%] mo:leading-[30px]">
-            1. Run a Node & Join the Reward Rush<br />
-            2. Refer Others for Reward Boost<br />
-            3. $30K USDT Bonus for Top Referrers<br />
+            1. Previewnet Referral Sprint has concludedh<br />
+            2. Est. Testnet Launch: 28 SEP<br />
+            <div className=" mt-2.5">
+              Prepare Your Node for the Coming Testnet<br />  and Stay Tuned!
+            </div>
           </div>
-        </div>
-        <div className="text-white mo:flex flex-col text-center mo:w-full mo:text-xs ">
-          <span>
-            Sign Up & Start Earning NOW!
-          </span>
 
         </div>
+
         <div className="mo:w-full flex gap-5 justify-center ">
           <MBtn
             type="2"
             onClick={() => {
-              goTo(dashboarSignup)
+              goTo('https://medium.com/aronetwork/previewnet-to-testnet-aros-next-leap-224c729e7ab5')
               setShowModal(false)
-
             }
             }
             contentClassName={'mo:text-sm'}
 
             className={'mt-5 font-Space_Grotesk '}
-            content={'Get Started'}
+            content={'Learn More'}
           />
 
         </div>
         <div className="flex items-center gap-5 mt-5 ">
-          <button onClick={() => {
-            window.open('https://docs.aro.network/campaigns/previewnet')
-          }} className="underline mo:text-xs underline-offset-1 ml-1 mo:ml-0 mo:text-left hover:text-[#00FF0D] text-white ">Learn More</button>
 
           <button
 
@@ -523,7 +517,7 @@ export default function Home() {
           </button>
         </div>
       </div>
-    </AShowModal>
+    </AShowModal >
 
-  </div>
+  </div >
 }
