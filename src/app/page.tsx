@@ -478,7 +478,7 @@ export default function Home() {
         </div>
         <div className={`text-lg  mo:text-sm mo:w-full leading-normal font-medium text-center mo:flex justify-center  text-[#00FF0D] mt-10 mo:mt-4 mo:mb-2.5 mb-[25px]`}>
           <div className="text-left leading-[190%] mo:leading-[30px]">
-            1. Previewnet Referral Sprint has concludedh<br />
+            1. Previewnet Referral Sprint has concluded<br />
             2. Est. Testnet Launch: 28 SEP<br />
             <div className=" text-white text-left mt-5">
               Prepare Your Node for the Coming Testnet<br />  and Stay Tuned!
