@@ -4,6 +4,7 @@ import { cn } from "../utils/cn"
 import { Ref, useRef, useState } from "react"
 import { IoMenu } from "react-icons/io5"
 import { useClickAway } from "react-use"
+import { AllLink } from "../utils/allLink"
 
 
 
@@ -47,7 +48,7 @@ const AHeader = () => {
   const headerTabList = [
     { href: 'get-a-node', tabName: 'Get a Node', },
     { href: 'https://medium.com/aronetwork', tabName: 'Blog', },
-    { href: 'https://docs.aro.network/', tabName: 'Docs' },
+    { href: AllLink.docs, tabName: 'Docs' },
     { href: dashboarSignup, tabName: 'Dashboard' },
     { href: dashboarSignup, tabName: 'Get Started' },
   ];

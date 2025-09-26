@@ -1,10 +1,12 @@
+import { AllLink } from "./allLink";
+
 export const headerBtnList = [
   { name: "Home", href: "/", target: "_self" },
   { name: "About Us", href: "/aboutUs", target: "_self" },
   {},
   {
     name: "Docs",
-    href: "https://docs.aro.network",
+    href: AllLink.docs,
     target: "_blank",
   },
   {
