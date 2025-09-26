@@ -4,6 +4,7 @@ import { cn } from "@/app/utils/cn";
 import TitleText from "./ATitleText";
 import LinerGridentBorder from "./LinerGridentBorder";
 import AosAnimItem from "./AosAnimItem";
+import { AllLink } from "../utils/allLink";
 
 
 function MBtn({ type = '1', className, onClick, content, contentClassName, ref }: { type?: '1' | '2' | "3", className?: string, onClick?: () => void, content?: React.ReactNode, contentClassName?: string, ref?: React.Ref<HTMLDivElement> }) {
@@ -89,7 +90,8 @@ const NodeSelectionSection = () => {
         "User-friendly: ⭐⭐⭐"
       ],
       comingSoon: false,
-      docs: "https://docs.aro.network/user-guides/device-setup",
+      // docs: "https://docs.aro.network/user-guides/device-setup",
+      docs: AllLink.podUserGuide,
       url: 'https://shop.aro.network',
       gradient:
         "p-5 box-border bg-[linear-gradient(0deg,rgb(255,255,255,0.06),rgb(255,255,255,0.06))," +
@@ -105,7 +107,8 @@ const NodeSelectionSection = () => {
         "• A Wi-Fi router with a built-in ARO node.",
         "• Ideal for business use.",
       ],
-      docs: "https://docs.aro.network/user-guides/device-setup",
+      // docs: "https://docs.aro.network/user-guides/device-setup",
+      docs: AllLink.linkUserGuide,
       metrics: [
         "Cost: $$",
         "Rewards: ⭐⭐⭐",
@@ -132,7 +135,8 @@ const NodeSelectionSection = () => {
         "Rewards: Flexible",
         "User-friendly: ⭐"
       ],
-      docs: 'https://docs.aro.network/user-guides/software-setup',
+      // docs: 'https://docs.aro.network/user-guides/software-setup',
+      docs: AllLink.clientUserGuide,
       docsBtn: 'Installation Guide',
       comingSoon: false,
       url: "https://download.aro.network/files/images/aro-client-host-1.0.0.iso",
@@ -153,7 +157,8 @@ const NodeSelectionSection = () => {
         "Rewards: ⭐",
         "User-friendly: ⭐⭐⭐"
       ],
-      docs: "https://docs.aro.network/user-guides/aro-lite/",
+      // docs: "https://docs.aro.network/user-guides/aro-lite/",
+      docs: AllLink.liteUserGuide,
 
       comingSoon: false,
       url: "https://chromewebstore.google.com/detail/aro-lite/dehgjeidddkjakjgnmpccdkkjdchiifh?hl=en-US&utm_source=ext_sidebar",
