@@ -125,7 +125,7 @@ const NodeSelectionSection = () => {
       id: "aro-client",
       title: "ARO Client",
       image: "/aro-client.png",
-      buttonText: "Download .ISO",
+      buttonText: "Installation Guide",
       description: [
         "• A software image for your server or PC.",
         "• Perfect for pro users with strong internet.",
@@ -135,11 +135,10 @@ const NodeSelectionSection = () => {
         "Rewards: Flexible",
         "User-friendly: ⭐"
       ],
-      // docs: 'https://docs.aro.network/user-guides/software-setup',
       docs: AllLink.clientUserGuide,
-      docsBtn: 'Installation Guide',
+      docsBtn: '',
       comingSoon: false,
-      url: "https://download.aro.network/files/images/aro-client-host-1.0.0.iso",
+      url: "https://docs.aro.network/node-operator-guide/aro-client/aro-client-introduction",
       gradient:
         "bg-[linear-gradient(0deg,rgb(255,255,255,0.06),rgb(255,255,255,0.06)),linear-gradient(124.57deg,rgb(0,255,13,0.5)_-10.04%,rgb(115,115,115,0)_38.35%)] backdrop-blur-[12px] rounded-3xl flex-none order-0"
     },
@@ -239,7 +238,7 @@ const NodeSelectionSection = () => {
                   <br />
                   {node.metrics[2]}
                 </div>
-                <button onClick={() => window.open(node.docs, '_blank')} className="text-[#568AFF] text-xs underline underline-offset-1">{node.docsBtn || 'User Guide'}</button>
+                {index !== 2 && <button onClick={() => window.open(node.docs, '_blank')} className="text-[#568AFF] text-xs underline underline-offset-1">{node.docsBtn || 'User Guide'}</button>}
 
               </div>
             </CardContent>
