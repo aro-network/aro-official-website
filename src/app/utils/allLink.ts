@@ -1,5 +1,5 @@
-const use = "https://docs-stage.aro.network";
-// const use = "https://docs.aro.network";
+// const use = "https://docs-stage.aro.network";
+const use = "https://docs.aro.network";
 
 export const AllLink = {
   docs: use,
@@ -8,4 +8,5 @@ export const AllLink = {
   linkUserGuide: `${use}/node-operator-guide/aro-link`,
   liteUserGuide: `${use}/node-operator-guide/aro-lite/get-aro-lite`,
   podSeeGuidance: `${use}/node-operator-guide/aro-pod/aro-pod-installation-guide`,
+  learnMore: `${use}/campaign-hub/aro-testnet`,
 };

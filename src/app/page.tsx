@@ -529,8 +529,7 @@ export default function Home() {
         </div>
         <div className="flex items-center gap-5 mt-5 ">
           <button onClick={() => {
-            window.open('https://docs-stage.aro.network/campaign-hub/aro-testnet')
-            // window.open('https://docs.aro.network/campaign-hub/aro-testnet')
+            window.open(AllLink.learnMore)
 
           }} className="underline mo:text-xs underline-offset-1 ml-1 mo:ml-0 mo:text-left hover:text-[#00FF0D] text-white ">Learn More</button>
 
