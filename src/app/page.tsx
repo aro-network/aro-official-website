@@ -322,7 +322,7 @@ export default function Home() {
           <MBtn
             type="2"
             onClick={() => goTo(dashboarSignup)}
-            className=" mo:mt-8 font-Space_Grotesk text-center m-auto mt-[80px]"
+            className=" mo:mt-8 font-Space_Grotesk text-center m-auto mt-[75px]"
             content="Get Started"
           />
         </div>
