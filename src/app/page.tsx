@@ -293,7 +293,7 @@ export default function Home() {
       >
         <source src="./aro.mp4" type="video/mp4" />
       </video>
-      <div className="relative z-10 flex flex-col  md:gap-[4rem] w-full  mo:h-auto   py-[130px] sm:justify-between  mds:justify-center mds:gap-60 items-center  text-center">
+      <div className="relative z-10 flex flex-col  w-full  mo:h-auto   py-[130px] sm:justify-between  mds:justify-center mds:gap-[150px] items-center  text-center">
         <div className="">
           <div
             style={{
@@ -322,7 +322,7 @@ export default function Home() {
           <MBtn
             type="2"
             onClick={() => goTo(dashboarSignup)}
-            className=" mo:mt-8 font-Space_Grotesk text-center m-auto mt-[100px]"
+            className=" mo:mt-8 font-Space_Grotesk text-center m-auto mt-[80px]"
             content="Get Started"
           />
         </div>
