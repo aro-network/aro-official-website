@@ -42,7 +42,8 @@ function AosAnimItem({ className, children, as, anim = true, ...props }: AllHTML
   const Component = (as ?? "div") as any
   const animProps = anim ? {
     'data-aos': "fade-up",
-    'data-aos-duration': "1000"
+    'data-aos-duration': "1000",
+    "data-aos-offset": '0'
   } : {}
   return <Component className={cn({ 'aos-init aos-animate': anim }, className)} {...props} {...animProps} >{children}</Component>
 }
@@ -303,7 +304,7 @@ export default function Home() {
               WebkitBackgroundClip: "text",
               textShadow: "none",
             }}
-            className="text-[66px] font-Space_Grotesk font-bold text-transparent w-fit  mo:text-[44px]"
+            className="text-[60px] font-Space_Grotesk font-bold text-transparent w-fit  mo:text-[44px]"
           >
             The Decentralized Edge<br className="mo:hidden" /> Cloud for the AI Era
           </div>
