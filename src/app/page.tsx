@@ -195,18 +195,51 @@ const sponsorsCount = 4
 const sponsorscounts = new Array(sponsorsCount * 3).fill(0)
 
 function Sponsors() {
-  return <>
-    <div className="overflow-hidden relative w-full h-[50px] mo:h-6" >
-      <div className="flex items-center gap-[120px] w-fit h-full animate-x-loop transition-all [--x-loop-time:20s] [--x-loop:-1228px] mo:gap-[27px] mo:[--x-loop:-469.16px] mo:[--x-loop-time:7s]">
-        <style>{`
+  const [loadedCount, setLoadedCount] = useState(0);
+  const allLoaded = loadedCount >= sponsorsCount;
+
+  useEffect(() => {
+    sponsorscounts.slice(0, sponsorsCount).forEach((_i, i) => {
+      const img = new Image();
+      img.src = `/sponsors/${i}.svg`;
+      img.onload = () => {
+        setLoadedCount((prev) => prev + 1);
+      };
+    });
+  }, []);
+
+  return (
+    <div className="overflow-hidden relative w-full h-[50px] mo:h-6 ">
+      {!allLoaded ? (
+        <div
+          className="absolute inset-0 rounded flex items-center justify-center flex-shrink"
+          style={{
+
+            animation: "shimmer 3s infinite ease-in-out",
+          }}
+        >
+          <div className="text-white text-6xl loading -translate-y-1 h-auto mt-0"></div>
+        </div>
+      ) : (
+        <div className="flex items-center gap-[120px] w-fit h-full animate-x-loop transition-all [--x-loop-time:20s] [--x-loop:-1228px] mo:gap-[27px] mo:[--x-loop:-469.16px] mo:[--x-loop-time:7s]">
+          <style>{`
             @keyframes x-loop {
-                 100% { transform: translateX(var(--x-loop)); }
+              100% { transform: translateX(var(--x-loop)); }
             }
-        `}</style>
-        {sponsorscounts.map((_i, i) => <img key={i} src={`/sponsors/${i % sponsorsCount}.svg`} className="h-full w-auto shrink-0" />)}
-      </div>
+          `}</style>
+
+          {sponsorscounts.map((_i, i) => (
+            <img
+              key={i}
+              src={`/sponsors/${i % sponsorsCount}.svg`}
+              className="h-full w-auto shrink-0"
+              alt={`sponsor-${i}`}
+            />
+          ))}
+        </div>
+      )}
     </div>
-  </>
+  );
 }
 
 function FAQS() {
