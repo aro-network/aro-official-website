@@ -2,7 +2,7 @@
 
 import Aos from "aos"
 import "aos/dist/aos.css"
-import React, { AllHTMLAttributes, CSSProperties, ReactHTML, Ref, useEffect, useState } from "react"
+import React, { AllHTMLAttributes, CSSProperties, Fragment, ReactHTML, Ref, useEffect, useState } from "react"
 
 import { Accordion, AccordionItem } from "@heroui/accordion"
 import { useRouter } from "next/navigation"
@@ -310,6 +310,70 @@ export default function Home() {
 
   const [showModal, setShowModal] = useState(true)
   return <div className="">
+    {showModal && (<AShowModal isOpen={showModal} onClose={() => setShowModal(false)} closeOnOverlayClick={false}>
+      <div className="flex items-center justify-center flex-col  w-full mo:mb-10">
+        <div
+          style={{
+            boxSizing: 'border-box',
+            background: 'linear-gradient(350deg, #00E42A 21.13%, #FFFFFF 57.73%)',
+            backgroundClip: 'text',
+            WebkitBackgroundClip: 'text',
+            textShadow: 'none',
+          }}
+          className="text-[44px] mo:text-[30px]  font-Space_Grotesk text-center font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
+        >
+          ARO Testnet Is LIVE!
+        </div>
+        <div className={`text-lg  mo:text-sm mo:w-full leading-normal font-medium text-center mo:flex justify-center  text-[#00FF0D] mt-10 mo:mt-4 mo:mb-2.5 mb-[45px]`}>
+          <div className="text-left leading-[190%] mo:leading-[30px]">
+            1. Install & Run an ARO Node<br />
+            2. Stack Jade Rewards for Future Drops<br />
+            3. Invite Friends & Earn Referral Bonus<br />
+          </div>
+        </div>
+        <div className="text-white mo:flex flex-col text-center mo:w-full mo:text-xs ">
+          <span>
+            Sign Up & Start Earning NOW!
+          </span>
+
+        </div>
+        <div className="mo:w-full flex gap-5 justify-center ">
+          <MBtn
+            type="2"
+            onClick={() => {
+              goTo(dashboarSignup)
+              setShowModal(false)
+
+            }
+            }
+            contentClassName={'mo:text-sm'}
+
+            className={'mt-5 font-Space_Grotesk '}
+            content={'Get Started'}
+          />
+
+        </div>
+        <div className="flex items-center gap-5 mt-5 ">
+          <button onClick={() => {
+            window.open(AllLink.learnMore)
+
+          }} className="underline mo:text-xs underline-offset-1 ml-1 mo:ml-0 mo:text-left hover:text-[#00FF0D] text-white ">Learn More</button>
+
+          <button
+
+            onClick={() => {
+              setShowModal(false)
+
+            }
+            }
+            className="underline mo:text-xs underline-offset-1  font-Space_Grotesk hover:text-[#00FF0D] text-white"
+          >
+            Skip
+          </button>
+        </div>
+      </div>
+    </AShowModal>
+    )}
     <div className="z-[100000] relative w-full h-full bg-black overflow-hidden">
 
       <AHeader />
@@ -318,7 +382,7 @@ export default function Home() {
         muted
         loop
         playsInline
-        poster="fallback.jpg"
+        poster="static.png"
         id="bg-video"
         webkit-playsinline="true"
         preload="auto"
@@ -518,69 +582,7 @@ export default function Home() {
       <AFooter />
     </div>
 
-    <AShowModal isOpen={showModal} onClose={() => setShowModal(false)} closeOnOverlayClick={false}>
-      <div className="flex items-center justify-center flex-col  w-full mo:mb-10">
-        <div
-          style={{
-            boxSizing: 'border-box',
-            background: 'linear-gradient(350deg, #00E42A 21.13%, #FFFFFF 57.73%)',
-            backgroundClip: 'text',
-            WebkitBackgroundClip: 'text',
-            textShadow: 'none',
-          }}
-          className="text-[44px] mo:text-[30px]  font-Space_Grotesk text-center font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
-        >
-          ARO Testnet Is LIVE!
-        </div>
-        <div className={`text-lg  mo:text-sm mo:w-full leading-normal font-medium text-center mo:flex justify-center  text-[#00FF0D] mt-10 mo:mt-4 mo:mb-2.5 mb-[45px]`}>
-          <div className="text-left leading-[190%] mo:leading-[30px]">
-            1. Install & Run an ARO Node<br />
-            2. Stack Jade Rewards for Future Drops<br />
-            3. Invite Friends & Earn Referral Bonus<br />
-          </div>
-        </div>
-        <div className="text-white mo:flex flex-col text-center mo:w-full mo:text-xs ">
-          <span>
-            Sign Up & Start Earning NOW!
-          </span>
 
-        </div>
-        <div className="mo:w-full flex gap-5 justify-center ">
-          <MBtn
-            type="2"
-            onClick={() => {
-              goTo(dashboarSignup)
-              setShowModal(false)
-
-            }
-            }
-            contentClassName={'mo:text-sm'}
-
-            className={'mt-5 font-Space_Grotesk '}
-            content={'Get Started'}
-          />
-
-        </div>
-        <div className="flex items-center gap-5 mt-5 ">
-          <button onClick={() => {
-            window.open(AllLink.learnMore)
-
-          }} className="underline mo:text-xs underline-offset-1 ml-1 mo:ml-0 mo:text-left hover:text-[#00FF0D] text-white ">Learn More</button>
-
-          <button
-
-            onClick={() => {
-              setShowModal(false)
-
-            }
-            }
-            className="underline mo:text-xs underline-offset-1  font-Space_Grotesk hover:text-[#00FF0D] text-white"
-          >
-            Skip
-          </button>
-        </div>
-      </div>
-    </AShowModal>
 
   </div >
 }
