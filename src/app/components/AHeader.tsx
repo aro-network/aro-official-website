@@ -45,11 +45,13 @@ const AHeader = () => {
   }
 
   const dashboarSignup = 'https://dashboard.aro.network/signup'
+  const dashboarSignin = 'https://dashboard.aro.network/signin'
+
   const headerTabList = [
     { href: 'get-a-node', tabName: 'Get a Node', },
     { href: 'https://medium.com/aronetwork', tabName: 'Blog', },
     { href: AllLink.docs, tabName: 'Docs' },
-    { href: dashboarSignup, tabName: 'Dashboard' },
+    { href: dashboarSignin, tabName: 'Dashboard' },
     { href: dashboarSignup, tabName: 'Get Started' },
   ];
   const maxWidthClassName = 'max-w-[1140px] px-4 w-full mx-auto'
