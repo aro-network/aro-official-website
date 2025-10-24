@@ -185,8 +185,6 @@ const socialLinks = [
   }
 
 
-
-
 ]
 
 const shortSoialLinks = socialLinks.filter(item => ["Telegram", 'Discord', 'Twitter'].includes(item.text))
