@@ -8,5 +8,5 @@ export const AllLink = {
   linkUserGuide: `${use}/node-operator-guide/aro-link`,
   liteUserGuide: `${use}/node-operator-guide/aro-lite/get-aro-lite`,
   podSeeGuidance: `${use}/node-operator-guide/aro-pod/aro-pod-installation-guide`,
-  learnMore: `${use}/campaign-hub/aro-testnet`,
+  learnMore: `https://medium.com/@ARONetwork/aro-testnet-sprint-1-wagmi-friend-invitation-campaign-is-live-a03ea1caee60`,
 };

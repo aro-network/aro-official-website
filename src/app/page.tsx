@@ -325,13 +325,13 @@ export default function Home() {
         <div className={`text-lg  mo:text-sm mo:w-full leading-normal font-medium text-center mo:flex justify-center  text-[#00FF0D] mt-10 mo:mt-4 mo:mb-2.5 mb-[45px]`}>
           <div className="text-left leading-[190%] mo:leading-[30px]">
             1. Invite 3 New Friends<br />
-            2. Collect Badges<br />
-            3. Share $30,000 Bonus Pool <br />
+            2. Collect "Sprint One WAGMI" Badge<br />
+            3. Split $30,000 Prize Pool <br />
           </div>
         </div>
         <div className="text-white mo:flex flex-col text-center mo:w-full mo:text-xs ">
           <span>
-            Time-limited Campaign: 10/25-11/25
+            Time-limited Campaign: 10/24-11/24
           </span>
 
         </div>
