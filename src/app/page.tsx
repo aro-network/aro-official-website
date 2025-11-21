@@ -330,7 +330,7 @@ export default function Home() {
         </div>
         <div className="text-white mo:flex flex-col text-center mo:w-full mo:text-xs ">
           <span>
-            Time-limited Campaign: 10/24-11/24
+            Time-limited Campaign: 10/24-12/8
           </span>
 
         </div>
