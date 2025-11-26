@@ -58,7 +58,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   if (process.env.NODE_ENV === "production") {
-    console.log = function () { };
+    // console.log = function () { };
     console.error = function () { };
     console.warn = function () { };
   }
