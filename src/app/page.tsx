@@ -205,6 +205,9 @@ function Sponsors() {
     });
   }, []);
 
+
+  console.log(process.env.PUBLIC_KEY)
+
   return (
     <div className="overflow-hidden relative w-full h-[50px] mo:h-6 ">
       {!allLoaded ? (
