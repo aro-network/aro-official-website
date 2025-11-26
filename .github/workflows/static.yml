@@ -61,7 +61,7 @@ jobs:
       - name: Install dependencies & build
         env:
           NEXT_PUBLIC_ENV: "beta"
-          PUBLIC_KEY: ${{ secrets.PUBLIC_KEY }}
+          PUBLIC_KEY: ${{ vars.PUBLIC_KEY }}
         run: |
           pnpm install --no-frozen-lockfile
           pnpm build
