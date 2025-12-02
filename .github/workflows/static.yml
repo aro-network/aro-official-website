@@ -48,6 +48,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+      NEXT_PUBLIC_PUBLIC_KEY: ${{ secrets.PUBLIC_KEY }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -60,7 +61,7 @@ jobs:
 
       - name: Inject Secrets for Build
         run: |
-          echo "NEXT_PUBLIC_PUBLIC_KEY=${{ secrets.PUBLIC_KEY }}" >> .env.production
+          echo "NEXT_PUBLIC_PUBLIC_KEY=${{ secrets.PUBLIC_KEY }}" >> $GITHUB_ENV
 
       - name: Install dependencies & build
         env:
