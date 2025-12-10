@@ -322,18 +322,18 @@ export default function Home() {
           }}
           className="text-[1.875rem]  font-Space_Grotesk text-center font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
         >
-          $30,000 Referral Campaign!
+          ARO Testnet Is LIVE!
         </div>
         <div className={`text-lg  mo:text-sm mo:w-full leading-normal font-medium text-center mo:flex justify-center  text-[#00FF0D] mt-10 mo:mt-4 mo:mb-2.5 mb-[45px]`}>
           <div className="text-left leading-[190%] mo:leading-[30px]">
-            1. Invite 3 New Friends<br />
-            2. Collect “Sprint One WAGMI“ Badge<br />
-            3. Split $30,000 Prize Pool <br />
+            1. Install & Run an ARO Node<br />
+            2. Stack Jade Rewards for Future Drops<br />
+            3. Invite Friends & Earn Referral Bonus<br />
           </div>
         </div>
         <div className="text-white mo:flex flex-col text-center mo:w-full mo:text-xs ">
           <span>
-            Time-limited Campaign: 10/24-12/8
+            Sign Up & Start Earning NOW!
           </span>
 
         </div>
