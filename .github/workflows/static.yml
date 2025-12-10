@@ -48,7 +48,6 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-      NEXT_PUBLIC_PUBLIC_KEY: ${{ secrets.PUBLIC_KEY }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
