@@ -324,20 +324,8 @@ export default function Home() {
         >
           Welcome to the Next Phase of ARO Lite!
         </div>
-        <div
-          style={{
-            boxSizing: 'border-box',
-            background: 'linear-gradient(350deg, #00E42A 21.13%, #FFFFFF 57.73%)',
-            backgroundClip: 'text',
-            WebkitBackgroundClip: 'text',
-            textShadow: 'none',
-          }}
-          className="text-lg  font-Space_Grotesk text-center mt-[.3125rem]  font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
-        >
-          ARO Lite is preparing for its global expansion and App-based upgrade.
-          By joining the 2026 Welcome Bounty, you can:
-        </div>
-        <div className={`text-lg  mo:text-sm mo:w-full leading-normal font-medium text-center mo:flex justify-center  text-[#00FF0D] mt-5 mo:mb-2.5 mb-[45px]`}>
+
+        <div className={`text-lg  mo:text-sm mo:w-full leading-normal font-medium text-center mo:flex justify-center mt-5  text-[#00FF0D]  mo:mb-2.5 mb-[45px]`}>
           <div className="text-left leading-[190%] mo:leading-[30px]">
             • Light up your exclusive 2026 Badge<br />
             • Earn Jade by running ARO Lite and inviting others<br />
