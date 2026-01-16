@@ -322,7 +322,7 @@ export default function Home() {
           }}
           className="text-[1.875rem]  font-Space_Grotesk text-center font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
         >
-          Welcome to the Next Phase of ARO Lite!
+          Welcome to the Next Phase<br /> of ARO Lite!
         </div>
         <div
           style={{
@@ -332,7 +332,7 @@ export default function Home() {
             WebkitBackgroundClip: 'text',
             textShadow: 'none',
           }}
-          className="text-xl  font-Space_Grotesk text-center  font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
+          className="text-xl  font-Space_Grotesk text-center mt-2.5  font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
         >
           ARO Lite is preparing for its global expansion and App-based upgrade.
           By joining the 2026 Welcome Bounty, you can:
