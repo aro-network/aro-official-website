@@ -320,7 +320,7 @@ export default function Home() {
             WebkitBackgroundClip: 'text',
             textShadow: 'none',
           }}
-          className="text-[1.875rem]  font-Space_Grotesk text-center font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
+          className="text-[1.75rem]  font-Space_Grotesk text-center font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
         >
           Welcome to the Next Phase<br /> of ARO Lite!
         </div>
@@ -332,16 +332,16 @@ export default function Home() {
             WebkitBackgroundClip: 'text',
             textShadow: 'none',
           }}
-          className="text-xl  font-Space_Grotesk text-center mt-2.5  font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
+          className="text-lg  font-Space_Grotesk text-center mt-[.3125rem]  font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
         >
           ARO Lite is preparing for its global expansion and App-based upgrade.
           By joining the 2026 Welcome Bounty, you can:
         </div>
         <div className={`text-lg  mo:text-sm mo:w-full leading-normal font-medium text-center mo:flex justify-center  text-[#00FF0D] mt-5 mo:mb-2.5 mb-[45px]`}>
           <div className="text-left leading-[190%] mo:leading-[30px]">
-            • $20,000 USDT in rewards<br />
-            • Stack Jade Rewards for Future Drops<br />
-            • Invite Friends & Earn Referral Bonus<br />
+            • Light up your exclusive 2026 Badge<br />
+            • Earn Jade by running ARO Lite and inviting others<br />
+            • Compete for a share of $20,000 USDT<br />
           </div>
         </div>
         <div className="text-white mo:flex flex-col text-center mo:w-full mo:text-xs ">
