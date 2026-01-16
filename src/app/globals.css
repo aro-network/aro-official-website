@@ -632,3 +632,21 @@ p {
         transform: rotate(-180deg) translateX(var(--space));
     }
 }
+
+
+::-webkit-scrollbar {
+  border-radius: 100px;
+  width: 0.25rem;
+  height: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}

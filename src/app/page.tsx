@@ -311,7 +311,7 @@ export default function Home() {
   const [showModal, setShowModal] = useState(true)
   return <div className="">
     {showModal && (<AShowModal isOpen={showModal} onClose={() => setShowModal(false)} closeOnOverlayClick={false}>
-      <div className="flex items-center justify-center flex-col  w-full mo:mb-10">
+      <div className="flex items-center flex-col  w-full mo:mb-5  overflow-auto  mo:max-h-[50vh] ">
         <div
           style={{
             boxSizing: 'border-box',
@@ -320,7 +320,7 @@ export default function Home() {
             WebkitBackgroundClip: 'text',
             textShadow: 'none',
           }}
-          className="text-[1.75rem]  font-Space_Grotesk text-center font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
+          className="text-[1.75rem]  font-Space_Grotesk text-center font-bold text-transparent w-fit mo:pt-0 flex flex-col mo:pr-0  "
         >
           Welcome to the Next Phase of ARO Lite!
         </div>
