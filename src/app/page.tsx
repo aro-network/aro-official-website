@@ -322,18 +322,31 @@ export default function Home() {
           }}
           className="text-[1.875rem]  font-Space_Grotesk text-center font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
         >
-          ARO Testnet Is LIVE!
+          Welcome to the Next Phase of ARO Lite!
         </div>
-        <div className={`text-lg  mo:text-sm mo:w-full leading-normal font-medium text-center mo:flex justify-center  text-[#00FF0D] mt-10 mo:mt-4 mo:mb-2.5 mb-[45px]`}>
+        <div
+          style={{
+            boxSizing: 'border-box',
+            background: 'linear-gradient(350deg, #00E42A 21.13%, #FFFFFF 57.73%)',
+            backgroundClip: 'text',
+            WebkitBackgroundClip: 'text',
+            textShadow: 'none',
+          }}
+          className="text-xl  font-Space_Grotesk text-center  font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
+        >
+          ARO Lite is preparing for its global expansion and App-based upgrade.
+          By joining the 2026 Welcome Bounty, you can:
+        </div>
+        <div className={`text-lg  mo:text-sm mo:w-full leading-normal font-medium text-center mo:flex justify-center  text-[#00FF0D] mt-5 mo:mb-2.5 mb-[45px]`}>
           <div className="text-left leading-[190%] mo:leading-[30px]">
-            1. Install & Run an ARO Node<br />
-            2. Stack Jade Rewards for Future Drops<br />
-            3. Invite Friends & Earn Referral Bonus<br />
+            • $20,000 USDT in rewards<br />
+            • Stack Jade Rewards for Future Drops<br />
+            • Invite Friends & Earn Referral Bonus<br />
           </div>
         </div>
         <div className="text-white mo:flex flex-col text-center mo:w-full mo:text-xs ">
           <span>
-            Sign Up & Start Earning NOW!
+            This is the best time to get involved!
           </span>
 
         </div>
