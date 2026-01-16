@@ -322,7 +322,7 @@ export default function Home() {
           }}
           className="text-[1.75rem]  font-Space_Grotesk text-center font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
         >
-          Welcome to the Next Phase<br /> of ARO Lite!
+          Welcome to the Next Phase of ARO Lite!
         </div>
         <div
           style={{
