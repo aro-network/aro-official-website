@@ -19,7 +19,7 @@ function AosAnimItem({ className, children, as, anim = true, ...props }: AllHTML
 
 const socialLinks = [
   { href: 'https://t.me/ARO_Network', text: 'Telegram', icon: <FaTelegramPlane /> },
-  { href: 'https://discord.gg/Rc4BMUjbNB', text: 'Discord', icon: <FaDiscord /> },
+  { href: 'https://discord.gg/6nVH4UJ2zC', text: 'Discord', icon: <FaDiscord /> },
   {
     href: AllLink.docs, text: 'Docs', icon: <svg width="0.85em" height="0.85em" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_200_54)">
