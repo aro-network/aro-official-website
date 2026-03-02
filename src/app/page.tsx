@@ -311,7 +311,7 @@ export default function Home() {
   const [showModal, setShowModal] = useState(true)
   return <div className="">
     {showModal && (<AShowModal isOpen={showModal} onClose={() => setShowModal(false)} closeOnOverlayClick={false}>
-      <div className="flex items-center flex-col  w-full mo:mb-5  overflow-auto  mo:max-h-[50vh] ">
+      <div className="flex items-center justify-center flex-col  w-full mo:mb-10">
         <div
           style={{
             boxSizing: 'border-box',
@@ -320,21 +320,20 @@ export default function Home() {
             WebkitBackgroundClip: 'text',
             textShadow: 'none',
           }}
-          className="text-[1.75rem]  font-Space_Grotesk text-center font-bold text-transparent w-fit mo:pt-0 flex flex-col mo:pr-0  "
+          className="text-[1.875rem]  font-Space_Grotesk text-center font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
         >
-          Welcome to the Next Phase of ARO Lite!
+          ARO Testnet Is LIVE!
         </div>
-
-        <div className={`text-lg  mo:text-sm mo:w-full leading-normal font-medium text-center mo:flex justify-center mt-5  text-[#00FF0D]  mo:mb-2.5 mb-[45px]`}>
+        <div className={`text-lg  mo:text-sm mo:w-full leading-normal font-medium text-center mo:flex justify-center  text-[#00FF0D] mt-10 mo:mt-4 mo:mb-2.5 mb-[45px]`}>
           <div className="text-left leading-[190%] mo:leading-[30px]">
-            • Light up your exclusive 2026 Badge<br />
-            • Earn Jade by running ARO Lite and inviting others<br />
-            • Compete for a share of $20,000 USDT<br />
+            1. Install & Run an ARO Node<br />
+            2. Stack Jade Rewards for Future Drops<br />
+            3. Invite Friends & Earn Referral Bonus<br />
           </div>
         </div>
         <div className="text-white mo:flex flex-col text-center mo:w-full mo:text-xs ">
           <span>
-            This is the best time to get involved!
+            Sign Up & Start Earning NOW!
           </span>
 
         </div>
