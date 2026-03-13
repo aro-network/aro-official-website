@@ -24,7 +24,7 @@ export default {
         smd: [{ min: "1001px", max: "1260px" }],
         lg: { min: "1000px" },
         llg: { min: "1440px" },
-        xsl: { min: "1000px", max: "1800px" },
+        xsl: { min: "1000px", max: "1500px" },
         mds: { min: "1801px" },
       },
       fontFamily: {

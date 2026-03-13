@@ -335,18 +335,31 @@ export default function Home() {
           }}
           className="text-[1.875rem]  font-Space_Grotesk text-center font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
         >
-          ARO Testnet Is LIVE!
+          Testnet Sprint 2 is LIVE!
         </div>
+        <div
+          style={{
+            boxSizing: 'border-box',
+            background: 'linear-gradient(350deg, #00E42A 21.13%, #FFFFFF 57.73%)',
+            backgroundClip: 'text',
+            WebkitBackgroundClip: 'text',
+            textShadow: 'none',
+          }}
+          className="text-lg pt-2.5  font-Space_Grotesk text-center font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
+        >
+          ARO is now in full acceleration into Agentic AI. By joining Testnet S2, you enjoy:
+        </div>
+
         <div className={`text-lg  mo:text-sm mo:w-full leading-normal font-medium text-center mo:flex justify-center  text-[#00FF0D] mt-10 mo:mt-4 mo:mb-2.5 mb-[45px]`}>
           <div className="text-left leading-[190%] mo:leading-[30px]">
-            1. Install & Run an ARO Node<br />
-            2. Stack Jade Rewards for Future Drops<br />
-            3. Invite Friends & Earn Referral Bonus<br />
+            • Easy Earn with Desktop & Mobile Apps<br />
+            • 2,000 Jade Quick Start Bonus<br />
+            • 30,000 USDT Prize Pool<br />
           </div>
         </div>
         <div className="text-white mo:flex flex-col text-center mo:w-full mo:text-xs ">
           <span>
-            Sign Up & Start Earning NOW!
+            Light the S2 Badge, climb the leaderboard, and boost rewards with referrals!
           </span>
 
         </div>
@@ -387,7 +400,7 @@ export default function Home() {
       </div>
     </AShowModal>
     )}
-    <div className="z-[100000] relative w-full h-full bg-black overflow-hidden">
+    <div className="z-[100000] relative w-full h-full bg-black overflow-hidden xsl:h-screen">
 
       <AHeader />
       <video
@@ -404,7 +417,7 @@ export default function Home() {
       >
         <source src="./aro.mp4" type="video/mp4" />
       </video>
-      <div className="relative z-10 flex flex-col  w-full  mo:h-auto   py-[130px] sm:justify-between  mds:justify-center mds:gap-[150px] items-center  text-center">
+      <div className="relative z-10 flex flex-col  w-full  mo:h-auto xsl:h-full xsl:justify-between  py-[130px] sm:justify-between  mds:justify-center mds:gap-[150px] items-center  text-center">
         <div className="">
           <div
             style={{
@@ -430,23 +443,26 @@ export default function Home() {
           </div> */}
 
 
+        </div>
+        <div >
+
+
           <MBtn
             type="2"
             onClick={() => goTo(dashboarSignup)}
             className=" mo:mt-8 font-Space_Grotesk text-center m-auto mt-[75px]"
             content="Get Started"
           />
+
+
+          {/* Sponsors */}
+          <AosAnimItem anim={false} className={cn("flex flex-col items-center", maxWidthClassName, "mo:px-0 mt-10")}>
+            <div className="text-white font-medium text-base mo:text-center w-full mb-6">
+              Backed by:
+            </div>
+            <Sponsors />
+          </AosAnimItem>
         </div>
-
-
-
-        {/* Sponsors */}
-        <AosAnimItem anim={false} className={cn("flex flex-col items-center", maxWidthClassName, "mo:px-0 mt-10")}>
-          <div className="text-white font-medium text-base mo:text-center w-full mb-6">
-            Backed by:
-          </div>
-          <Sponsors />
-        </AosAnimItem>
       </div>
     </div>
 
