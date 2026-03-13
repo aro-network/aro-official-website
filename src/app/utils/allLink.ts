@@ -9,4 +9,5 @@ export const AllLink = {
   liteUserGuide: `${use}/node-operator-guide/aro-lite/get-aro-lite`,
   podSeeGuidance: `${use}/node-operator-guide/aro-pod/aro-pod-installation-guide`,
   learnMore: `https://medium.com/@ARONetwork/aro-lite-powering-the-next-global-phase-07b3c97e8466?postPublishedType=initial`,
+  dashboard:'https://dashboard.aro.network/'
 };

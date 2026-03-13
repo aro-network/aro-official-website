@@ -102,9 +102,9 @@ function QuteSymbol({ className }: { className?: string }) {
 
 const roundmaps = [
   { time: '2024', tit: 'Laying the Foundations', active: false, content: <>• GPoW (Geographic Proof of Work) & GPoS (Geographic Proof of Stake)<br />• Peer-HVM (Hardware Virtual Machine)<br />• Peer-DTS (Distributed Task Scheduling)<br />• Peer-Routing (Decentralized Routing Layer)</> },
-  { time: '2025 Q2-Q3', tit: 'ARO Previewnet', active: false, content: <>• Activating the Network<br />• Community launch<br />• Hardware Offering</> },
-  { time: '2025 Q3-Q4', tit: 'ARO Testnet', active: true, content: <>• Proving our model with real demand<br />• Resource aggregation<br />• Kickstarting on-chain revenue</> },
-  { time: '2026', tit: 'ARO Mainnet', active: false, content: <>• Mainnet launch<br />• Node expansion<br />• Customer expansion</> },
+  { time: '2025 Q2', tit: 'ARO Previewnet', active: false, content: <>• Activating the Network<br />• Community launch<br />• Hardware Offering</> },
+  { time: '2025 Q3', tit: 'ARO Testnet', active: true, content: <>• Proving our model with real demand<br />• Resource aggregation<br />• Kickstarting on-chain revenue</> },
+  { time: '2026 Q4', tit: 'ARO Mainnet', active: false, content: <>• Mainnet launch<br />• Node expansion<br />• Customer expansion</> },
   { time: '2027', tit: 'Opening the Network', active: false, content: <>• Use cases expansion<br />• Open platform for edge apps<br />• Open governance</> },
 ]
 function RoundMapItem({ data }: { data: (typeof roundmaps)[number] }) {
@@ -126,26 +126,39 @@ function RoumdMaps() {
 
 const faqText = [
   {
-    title: "How Does ARO Network Operate?",
+    title: "How Do I Earn by Participating in ARO?",
     content:
-      "ARO Network creates an open, decentralized edge cloud where you can share your unused bandwidth and earn real rewards. Enterprise customers buy these resources to deliver faster, smarter, and more affordable content—videos, gaming, AI services—to their users. Your contributions are tracked and rewarded fairly.",
+      `Simply sign up for an ARO account and run one or more ARO nodes.\n
+      We provide node options for everyone: desktop app, mobile app, dedicated hardware, or more advanced professional implementations.
+      `,
   },
   {
-    title: "What Stage Is ARO Network Currently In?",
+    title: "What resources do I need to share, and how easy is it to start?",
     content: `
-    ARO has progressed from the Previewnet phase to the current Testnet phase. During the ARO Testnet, more participants can join the network, test ARO Nodes and devices, contribute bandwidth, and earn Jades and Badges as rewards. It's still early, making now an ideal time to get involved.
+    You need to mainly contribute your IP, idle bandwidth and hardware such as your computer and mobile phone to fuel an AI agent.\n
+    It’s easy to start. Get your everyday device, sign up, run a node, and you are all set.
 
 `,
   },
   {
-    title: "What Are Jades?",
-    content: `Before the Mainnet launch, your contributions of edge resources to the ARO Testnet will be tracked and rewarded with Jade Shards. By running nodes and providing bandwidth to the network, you will earn Jades, and in certain cases, Badges to recognize your exceptional efforts. Jades and Badges are key metrics for determining eligibility for future rewards. Upon the Mainnet launch, your Jades can be converted into $ARO tokens.
+    title: "How does ARO make AI agents personal and live in my residence?",
+    content: `
+    Today, most AI agents run in centralized clouds or data centers. They can’t access or use your local resources, and they are easily censored or blocked.\n
+    ARO changes that. With one-click installation, your agents run on the network edge, act autonomously on your behalf 24/7.\n
+    This makes agents feel like genuine extensions of you — private, low-latency, uncensored, and powered by what’s already in your home.
+    `,
+  },
+  {
+    title: "Is participating in ARO safe? What about my privacy and data security?",
+    content: `
+ Yes, ARO prioritizes safety and privacy. Your data stays local on your devices and never leaves unless you explicitly allow it. We verify contributions without exposing your activity. You control permissions and decide what data your agents can access. No central database holds your info.
 `,
   },
   {
-    title: "Does Running ARO Nodes Compromise My Privacy?",
+    title: "What Stage Is ARO Network Currently In?",
     content: `
-  No. ARO Nodes will NEVER collect any personal data from your daily operation. The only resource ARO Network wants from you is your idle bandwidth — and nothing else.
+ ARO is in the Testnet phase and we are kicking off Sprint 2 for broader participation. During the Testnet, you can sign up for an ARO Account, run ARO nodes, and earn rewards.\n
+ Your contributions in the Testnet will be tracked and rewarded with ‘Jade’. By running nodes and providing edge resources to the network, you will earn Jades, and in certain cases, Badges to recognize your exceptional efforts. Jades and Badges are key metrics for determining eligibility for future rewards. Upon the Mainnet launch, your Jades can be converted into $ARO tokens.
 `,
   },
 ];
@@ -270,7 +283,7 @@ function FAQS() {
           HeadingComponent={'div'}
           indicator={({ isOpen }) => (isOpen ? <FiMinus className="text-[#048417] -translate-x-11 mo:-translate-x-9" /> : <FiPlus className="text-[#048417] -translate-x-11 mo:-translate-x-9" />)}
           title={<RenderTit item={item} index={index} />}>
-          <div className={cn("text-sm text-[#D3D3D6] pt-5 px-[30px] !leading-normal mo:text-xs mo:px-5")}>{item.content}</div>
+          <div style={{ whiteSpace: "pre-line" }} className={cn("text-sm text-[#D3D3D6] pt-5 px-[30px] !leading-normal mo:text-xs mo:px-5")}>{item.content}</div>
         </AccordionItem>
       })}
     </Accordion>
@@ -403,18 +416,18 @@ export default function Home() {
             }}
             className="text-[60px] font-Space_Grotesk font-bold text-transparent w-fit  mo:text-[44px]"
           >
-            The Decentralized Edge<br className="mo:hidden" /> Cloud for the AI Era
+            Let AI Work For You.
           </div>
 
-          <div className="font-medium text-[22px] text-[#00FF0D] mt-[30px] mo:mt-8 mo:text-xl">
-            Faster. Smarter. Owned by You.
+          <div className="font-medium text-white text-xl  mt-5 mo:mt-8 mo:text-xl">
+            Own an AI agent that works & earns for you.
           </div>
 
-          <div className="text-[#D3D3D6] leading-relaxed mt-2.5 text-sm px-5">
+          {/* <div className="text-[#D3D3D6] leading-relaxed mt-2.5 text-sm px-5">
             Turn your unused internet into rewards by powering
             <br className="mo:hidden" />
             the future of decentralized AI and content delivery.
-          </div>
+          </div> */}
 
 
           <MBtn
@@ -445,26 +458,28 @@ export default function Home() {
           <div className="flex items-center gap-[73px] p-10 mo:flex-col mo:px-5">
             <div className="text-white text-[40px] font-bold leading-[1.39] shrink-0 mo:text-[28px] mo:self-start font-Space_Grotesk">What is<br />ARO Network?</div>
             <div className="w-0 flex-1 text-[#D3D3D6] text-sm whitespace-pre-wrap mo:w-full">
-              ARO Network is a decentralized edge cloud driving real-time content delivery and next-gen AI workloads. <br className="mo:hidden" />
-              Powered by people—not data centers—anyone can share unused bandwidth to create a faster, smarter network and own a piece of it.
+              ARO Network is an agentic edge network natively built for the agentic AI era. <br className="mo:hidden" />
+              ARO Network envisions a world where AI agents will be as fundamental as the web today. We make that vision real, secure, and affordable to everyone.
             </div>
           </div>
         </LinerGridentBorder>
         <div className="flex gap-5 w-full mo:flex-col">
           <AosAnimItem style={{ backgroundSize: '100% 100%' }} className=" flex-[7] w-0 bg-[url(/bg_card1.webp)] bg-no-repeat min-h-[314px] mo:w-full">
             <div className="flex flex-col gap-10 p-10 justify-between h-full mo:px-5 mo:pr-8">
-              <div className="text-white text-[40px] font-bold leading-[1.39] shrink-0 mo:text-[28px] font-Space_Grotesk">Why ARO?</div>
+              <div className="text-white text-[40px] font-bold leading-[1.39] shrink-0 mo:text-[28px] font-Space_Grotesk">Agents Live in Your Place.</div>
               <div className="text-[#D3D3D6] text-sm">
-                • Proven Infra: Built on a 1.5M+ nodes legacy<br />
-                • Earn Passively: Turn idle internet into daily rewards<br />
-                • Ready for the Future: Power the next wave of smart, edge-driven content and AI with ultra-fast, local processing
+                • AI agents are becoming essential and deeply personal.<br />
+                They are shifting from big data centers to the internet edge and right into your local devices.<br />
+                • ARO Network puts agents in your residence. With your permission,<br />
+                they use your real local resources – residential IP, bandwidth, devices, accounts – and become your personal digital extension.<br />
               </div>
             </div>
           </AosAnimItem>
           <AosAnimItem style={{ backgroundSize: '100% 100%' }} className=" flex-[4] w-0 -ml-[33px]  bg-[url(/bg_card2.webp)] bg-no-repeat min-h-[314px] h-[314px] flex mo:ml-0 mo:w-full">
             <div className="flex flex-col gap-2 p-10 h-full mt-auto mo:px-5 mo:w-full">
-              <div className="text-white text-[23px] font-bold leading-[1.39] shrink-0 mt-auto mo:text-xl font-Space_Grotesk">$154B+ Market Opportunity</div>
-              <div className="text-[#D3D3D6] text-sm">Edge computing is growing 39% annually — reaching $154.7B by 2030.</div>
+              <div className="text-white text-[23px] font-bold leading-[1.39] shrink-0 mt-auto mo:text-xl font-Space_Grotesk">Agents Earn You Money.</div>
+              <div className="text-[#D3D3D6] text-sm">The first thing your agent does for you is make you money.
+                ARO orchestrates a powerful network of AI agents, so yours delivers non-stop value and income.</div>
             </div>
           </AosAnimItem>
         </div>

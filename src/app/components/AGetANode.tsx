@@ -75,44 +75,19 @@ const NodeSelectionSection = () => {
 
 
   const nodeOptions = [
+
     {
-      id: "aro-pod",
-      title: "ARO Pod",
-      image: "/aro-pod.png",
-      buttonText: "Order ARO Pod",
+      id: "aro-desktop",
+      title: "ARO Desktop (App)",
+      image: "../device/desktop.png",
       description: [
-        "• A plug-and-play device that runs 24/7 with low energy use.",
-        "• Best for household runners.",
+        `• A desktop app. Install, run, and leave it.`,
       ],
-      metrics: [
-        "Cost: $",
-        "Rewards: ⭐⭐⭐",
-        "User-friendly: ⭐⭐⭐"
-      ],
-      comingSoon: false,
-      // docs: "https://docs.aro.network/user-guides/device-setup",
-      docs: AllLink.podUserGuide,
-      url: 'https://shop.aro.network',
-      gradient:
-        "p-5 box-border bg-[linear-gradient(0deg,rgb(255,255,255,0.06),rgb(255,255,255,0.06))," +
-        "linear-gradient(124.57deg,rgb(0,255,13,0.5)_-10.04%,rgb(115,115,115,0)_38.35%)] " +
-        "backdrop-blur-[12px] rounded-3xl flex-none order-0"
-    },
-    {
-      id: "aro-link",
-      title: "ARO Link",
-      image: "/aro-link.png",
-      buttonText: "Order ARO Link",
-      description: [
-        "• A Wi-Fi router with a built-in ARO node.",
-        "• Ideal for business use.",
-      ],
-      // docs: "https://docs.aro.network/user-guides/device-setup",
-      docs: AllLink.linkUserGuide,
-      metrics: [
-        "Cost: $$",
-        "Rewards: ⭐⭐⭐",
-        "User-friendly: ⭐⭐⭐"
+      moreLink: [
+        { 'title': 'macOS 15.5+', 'url': 'https://shop.aro.network/products/aro-desktop-for-macos' },
+        { 'title': ' Windows 10+', 'url': 'https://shop.aro.network/products/aro-desktop-for-windows' },
+        { 'title': ' Linux', 'url': 'https://shop.aro.network/products/aro-desktop-for-linux' },
+        { 'title': 'User Guide', 'url': 'https://shop.aro.network/products/aro-desktop-for-linux' },
       ],
       url: '',
       comingSoon: true,
@@ -122,47 +97,40 @@ const NodeSelectionSection = () => {
     },
 
     {
-      id: "aro-client",
-      title: "ARO Client",
-      image: "/aro-client.png",
-      buttonText: "Installation Guide",
+      id: "aro-mobile",
+      title: "ARO Mobile",
+      image: "../device/app.png",
       description: [
-        "• A software image for your server or PC.",
-        "• Perfect for pro users with strong internet.",
+        `• A mobile app. Earn wherever you are.`,
       ],
-      metrics: [
-        "Cost: your device",
-        "Rewards: Flexible",
-        "User-friendly: ⭐"
+      moreLink: [
+        { 'title': 'Download Ios App', 'url': 'https://shop.aro.network/products/aro-desktop-for-macos' },
+        { 'title': 'Download Android App', 'url': 'https://shop.aro.network/products/aro-desktop-for-linux' },
       ],
-      docs: AllLink.clientUserGuide,
-      docsBtn: '',
-      comingSoon: false,
-      url: "https://docs.aro.network/node-operator-guide/aro-client/aro-client-introduction",
       gradient:
         "bg-[linear-gradient(0deg,rgb(255,255,255,0.06),rgb(255,255,255,0.06)),linear-gradient(124.57deg,rgb(0,255,13,0.5)_-10.04%,rgb(115,115,115,0)_38.35%)] backdrop-blur-[12px] rounded-3xl flex-none order-0"
     },
     {
-      id: "aro-lite",
-      title: "ARO Lite",
-      image: "/aro-lite.png",
-      buttonText: `Download Extension`,
+      id: "aro-client",
+      title: "ARO Client",
+      image: "../device/client.png",
       description: [
-        "• A lightweight browser extension.",
-        "• Runs with zero cost and minimal effort.",
+        `• A bare-metal / workstation image. For pro users.`,
       ],
-      metrics: [
-        "Cost: 0",
-        "Rewards: ⭐",
-        "User-friendly: ⭐⭐⭐"
-      ],
-      // docs: "https://docs.aro.network/user-guides/aro-lite/",
-      docs: AllLink.liteUserGuide,
-
-      comingSoon: false,
-      url: "https://chromewebstore.google.com/detail/aro-lite/dehgjeidddkjakjgnmpccdkkjdchiifh?hl=en-US&utm_source=ext_sidebar",
       gradient:
         "bg-[linear-gradient(0deg,rgb(255,255,255,0.06),rgb(255,255,255,0.06)),linear-gradient(124.57deg,rgb(0,255,13,0.5)_-10.04%,rgb(115,115,115,0)_38.35%)] backdrop-blur-[12px] rounded-3xl flex-none order-0"
+    },
+    {
+      id: "aro-pod",
+      title: "ARO Pod",
+      image: "../device/pod.png",
+      description: [
+        `• A bare-metal / workstation image. For pro users.`,
+      ],
+      gradient:
+        "p-5 box-border bg-[linear-gradient(0deg,rgb(255,255,255,0.06),rgb(255,255,255,0.06))," +
+        "linear-gradient(124.57deg,rgb(0,255,13,0.5)_-10.04%,rgb(115,115,115,0)_38.35%)] " +
+        "backdrop-blur-[12px] rounded-3xl flex-none order-0"
     },
 
   ];
@@ -188,7 +156,7 @@ const NodeSelectionSection = () => {
           >
             <CardContent className="p-5 mo:p-4 flex items-center gap-[30px] mo:flex-col mo:gap-4 w-full  h-full mo:h-auto">
               <div className="inline-flex flex-col justify-between mo:items-center gap-4 relative flex-[0_0_auto] mo:w-full  h-full">
-                <div className=" w-full h-[130px]  rounded-lg mo:h-[130px]  p-5 ">
+                <div className=" w-[12.5rem] h-[130px]  rounded-lg mo:h-[130px]  p-5 bg-[#FFFFFF24]">
                   <div
                     className="bg-center bg-no-repeat bg-contain relative h-full"
                     style={{ backgroundImage: `url(${node.image})` }}
@@ -196,13 +164,6 @@ const NodeSelectionSection = () => {
                   />
                 </div>
 
-                <Button
-                  onClick={() => node.comingSoon ? null : handleOrderClick(node.url)}
-                  className={`flex w-[196px] ${node.comingSoon ? '!cursor-not-allowed' : 'cursor-default'} mo:w-full h-[30px] mo:h-[36px] items-center justify-center gap-2.5 px-9 mo:px-6 py-0 mo:py-1 rounded-3xl shadow-[0px_4px_4px_#00000040,inset_-1px_-1px_5.8px_#8b8b8b3b] bg-[linear-gradient(90deg,rgba(113,255,108,1)_0%,rgba(193,249,103,1)_100%)] hover:bg-[linear-gradient(90deg,rgba(113,255,108,0.9)_0%,rgba(193,249,103,0.9)_100%)] cursor-pointer`}>
-                  <span className="relative w-fit [font-family:'Albert_Sans',Helvetica] font-medium text-[#11111c] text-xs mo:text-sm tracking-[0] leading-[normal] whitespace-nowrap mo:text-center">
-                    {node.buttonText}
-                  </span>
-                </Button>
               </div>
 
               <div className="flex flex-col w-[265px] mo:w-full items-start gap-2.5 mo:gap-4 relative  h-full justify-between">
@@ -212,33 +173,34 @@ const NodeSelectionSection = () => {
                       {node.title}
                     </h3>
 
-                    {node.comingSoon && (
-                      <Badge className="inline-flex items-center justify-center gap-2.5 px-1 py-0.5 relative flex-[0_0_auto] bg-[#02b421] rounded">
-                        <span className="relative w-fit [font-family:'Poppins',Helvetica] font-medium text-white text-[8px] tracking-[0.08px] leading-[8px] whitespace-nowrap">
-                          Coming Soon
-                        </span>
-                      </Badge>
-                    )}
-                  </div>
 
+                  </div>
                   <div className="relative self-stretch [font-family:'Poppins',Helvetica] font-normal text-white text-[13px] tracking-[0] leading-[19.5px]">
                     {node.description.map((line, index) => (
                       <React.Fragment key={index}>
                         {line}
-                        {index < node.description.length - 1 && <br />}
                       </React.Fragment>
                     ))}
                   </div>
-                </div>
+                  <div className="flex gap-[.3125rem] smd:gap-[.625rem] text-xs flex-wrap">
+                    {node.moreLink?.map((item) => {
+                      return <button onClick={() => window.open(item.url)} className={`text-[#568AFF] underline underline-offset-1 font-funnel cursor-pointer}`}>{item.title}</button>
+                    })
+                    }
 
-                <div className="relative w-fit self-start [font-family:'Poppins',Helvetica] font-normal text-white text-[13px] tracking-[0] leading-[19.5px]">
-                  {node.metrics[0]}
-                  <br />
-                  {node.metrics[1]}
-                  <br />
-                  {node.metrics[2]}
+                  </div>
+
+                  <Button
+                    onClick={() => handleOrderClick(AllLink.dashboard)}
+                    className={`flex w-[196px] ${node.comingSoon ? '!cursor-not-allowed' : 'cursor-default'} mo:w-full h-[30px] mo:h-[36px] items-center justify-center gap-2.5 px-9 mo:px-6 py-0 mo:py-1 rounded-3xl shadow-[0px_4px_4px_#00000040,inset_-1px_-1px_5.8px_#8b8b8b3b] bg-[linear-gradient(90deg,rgba(113,255,108,1)_0%,rgba(193,249,103,1)_100%)] hover:bg-[linear-gradient(90deg,rgba(113,255,108,0.9)_0%,rgba(193,249,103,0.9)_100%)] cursor-pointer`}
+                  >
+                    <span className="relative w-fit [font-family:'Albert_Sans',Helvetica] font-medium text-[#11111c] text-xs mo:text-sm tracking-[0] leading-[normal] whitespace-nowrap mo:text-center">
+                      Go to Dashboard
+                    </span>
+                  </Button>
+
+
                 </div>
-                {index !== 2 && <button onClick={() => window.open(node.docs, '_blank')} className="text-[#568AFF] text-xs underline underline-offset-1">{node.docsBtn || 'User Guide'}</button>}
 
               </div>
             </CardContent>
@@ -330,7 +292,8 @@ export const AGetANode: React.FC<AGetANodeProps> = ({ children, className }) => 
                 Pick Your ARO Node
               </h1>
               <p className="[font-family:'Poppins',Helvetica] font-normal text-[#d3d3d6] text-lg mo:text-sm text-center tracking-[0] leading-[28.8px] mo:leading-[22.4px] max-w-[850px] mo:max-w-[400px] px-4 mo:px-2">
-                Explore ARO Network&apos;s diverse nodes—hardware, software, and browser extensions—then choose the perfect ARO Node for you.
+                Welcome aboard, new Aronauts! &apos;
+                Explore ARO Network’s diverse nodes and choose the perfect ARO Node for you.
               </p>
             </div>
           </div>
