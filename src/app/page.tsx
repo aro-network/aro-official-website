@@ -359,7 +359,7 @@ export default function Home() {
         </div>
         <div className="text-white mo:flex flex-col text-center mo:w-full mo:text-xs ">
           <span>
-            Light the S2 Badge, climb the leaderboard, and boost rewards with referrals!
+            Light the S2 Badge, climb the leaderboard, <br />and boost rewards with referrals!
           </span>
 
         </div>
