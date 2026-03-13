@@ -177,8 +177,8 @@ const NodeSelectionSection = () => {
                     ))}
                   </div>
                   <div className="flex gap-[.3125rem] smd:gap-[.625rem] text-xs flex-wrap">
-                    {node.moreLink?.map((item) => {
-                      return <button onClick={() => window.open(item.url)} className={`text-[#568AFF] underline underline-offset-1 font-funnel cursor-pointer}`}>{item.title}</button>
+                    {node.moreLink?.map((item, index) => {
+                      return <button key={`more-link-${index}`} onClick={() => window.open(item.url)} className={`text-[#568AFF] underline underline-offset-1 font-funnel cursor-pointer}`}>{item.title}</button>
                     })
                     }
 
