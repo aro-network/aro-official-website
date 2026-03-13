@@ -23,13 +23,7 @@ function MBtn({ type = '1', className, onClick, content, contentClassName, ref }
   </div>
 }
 
-const Badge = ({ className, children, ...props }: { className?: string; children: React.ReactNode;[key: string]: any }) => {
-  return (
-    <div className={`inline-flex items-center px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 ${className}`} {...props}>
-      {children}
-    </div>
-  );
-};
+
 
 const Button = ({ className, children, ...props }: { className?: string; children: React.ReactNode;[key: string]: any }) => {
   return (
