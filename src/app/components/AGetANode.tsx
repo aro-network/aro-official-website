@@ -195,7 +195,7 @@ const NodeSelectionSection = () => {
 
                   <Button
                     onClick={() => handleOrderClick(AllLink.dashboard)}
-                    className={`flex w-[196px] ${node.comingSoon ? '!cursor-not-allowed' : 'cursor-default'} mo:w-full h-[30px] mo:h-[36px] items-center justify-center gap-2.5 px-9 mo:px-6 py-0 mo:py-1 rounded-3xl shadow-[0px_4px_4px_#00000040,inset_-1px_-1px_5.8px_#8b8b8b3b] bg-[linear-gradient(90deg,rgba(113,255,108,1)_0%,rgba(193,249,103,1)_100%)] hover:bg-[linear-gradient(90deg,rgba(113,255,108,0.9)_0%,rgba(193,249,103,0.9)_100%)] cursor-pointer`}
+                    className={`flex w-[196px]  mo:w-full h-[30px] mo:h-[36px] items-center justify-center gap-2.5 px-9 mo:px-6 py-0 mo:py-1 rounded-3xl shadow-[0px_4px_4px_#00000040,inset_-1px_-1px_5.8px_#8b8b8b3b] bg-[linear-gradient(90deg,rgba(113,255,108,1)_0%,rgba(193,249,103,1)_100%)] hover:bg-[linear-gradient(90deg,rgba(113,255,108,0.9)_0%,rgba(193,249,103,0.9)_100%)] cursor-pointer`}
                   >
                     <span className="relative w-fit [font-family:'Albert_Sans',Helvetica] font-medium text-[#11111c] text-xs mo:text-sm tracking-[0] leading-[normal] whitespace-nowrap mo:text-center">
                       Go to Dashboard
