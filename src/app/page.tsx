@@ -335,7 +335,7 @@ export default function Home() {
           }}
           className="text-[1.875rem]  font-Space_Grotesk text-center font-bold text-transparent w-fit  flex flex-col mo:pr-0  "
         >
-          Testnet Sprint 2 is LIVE!
+          S2 is LIVE!
         </div>
         <div
           style={{
@@ -427,7 +427,7 @@ export default function Home() {
               WebkitBackgroundClip: "text",
               textShadow: "none",
             }}
-            className="text-[60px] font-Space_Grotesk font-bold text-transparent w-fit  mo:text-[44px]"
+            className="text-[60px] font-Space_Grotesk font-bold text-transparent w-full  mo:text-[40px]"
           >
             Let AI Work For You.
           </div>
