@@ -353,16 +353,16 @@ export default function Home() {
         <div className={`text-lg  mo:text-sm mo:w-full leading-normal font-medium text-center mo:flex justify-center  text-[#00FF0D] mt-10 mo:mt-4 mo:mb-2.5 mb-[45px]`}>
           <div className="text-left leading-[190%] mo:leading-[30px]">
             • Easy Earn with Desktop & Mobile Apps<br />
-            • 2,000 Jade Quick Start Bonus<br />
-            • 30,000 USDT Prize Pool<br />
+            • Win S2 Badge + Jade Bonus<br />
+            • 30,000 USDT Pool for Leaderboard<br />
           </div>
         </div>
-        <div className="text-white mo:flex flex-col text-center mo:w-full mo:text-xs ">
+        {/* <div className="text-white mo:flex flex-col text-center mo:w-full mo:text-xs ">
           <span>
             Light the S2 Badge, climb the leaderboard, <br />and boost rewards with referrals!
           </span>
 
-        </div>
+        </div> */}
         <div className="mo:w-full flex gap-5 justify-center ">
           <MBtn
             type="2"
