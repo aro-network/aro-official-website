@@ -100,6 +100,8 @@ const NodeSelectionSection = () => {
       moreLink: [
         { 'title': 'Download Ios App', 'url': 'https://shop.aro.network/products/aro-desktop-for-macos' },
         { 'title': 'Download Android App', 'url': `${AllLink.nodeUserGuide}aro-mobile/aro-mobile-installation-guide` },
+        { 'title': 'User Guide', 'url': `${AllLink.nodeUserGuide}aro-mobile/aro-mobile-installation-guide` },
+
       ],
       gradient:
         "bg-[linear-gradient(0deg,rgb(255,255,255,0.06),rgb(255,255,255,0.06)),linear-gradient(124.57deg,rgb(0,255,13,0.5)_-10.04%,rgb(115,115,115,0)_38.35%)] backdrop-blur-[12px] rounded-3xl flex-none order-0"
