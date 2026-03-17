@@ -1,5 +1,14 @@
+import { ENV } from "@/env";
+
 // const use = "https://docs-stage.aro.network";
-const use = "https://docs.aro.network";
+const BASE_ENV: { [key: string]: string } ={
+  beta: 'https://docs-stage.aro.network/',
+  prod:'https://docs.aro.network/'
+}
+
+const use = BASE_ENV[ENV];
+
+
 
 export const AllLink = {
   docs: use,
@@ -9,5 +18,7 @@ export const AllLink = {
   liteUserGuide: `${use}/node-operator-guide/aro-lite/get-aro-lite`,
   podSeeGuidance: `${use}/node-operator-guide/aro-pod/aro-pod-installation-guide`,
   learnMore: `https://medium.com/@ARONetwork/aro-lite-powering-the-next-global-phase-07b3c97e8466?postPublishedType=initial`,
-  dashboard:'https://dashboard.aro.network/'
+  dashboard:'https://dashboard.aro.network/',
+  nodeUserGuide: `${use}/node-operator-guide/`,
+
 };

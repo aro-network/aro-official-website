@@ -81,7 +81,7 @@ const NodeSelectionSection = () => {
         { 'title': 'macOS 15.5+', 'url': 'https://shop.aro.network/products/aro-desktop-for-macos' },
         { 'title': ' Windows 10+', 'url': 'https://shop.aro.network/products/aro-desktop-for-windows' },
         { 'title': ' Linux', 'url': 'https://shop.aro.network/products/aro-desktop-for-linux' },
-        { 'title': 'User Guide', 'url': 'https://shop.aro.network/products/aro-desktop-for-linux' },
+        { 'title': 'User Guide', 'url': `${AllLink.nodeUserGuide}aro-desktop/aro-desktop-installation-guide` },
       ],
       url: '',
       comingSoon: true,
@@ -99,7 +99,7 @@ const NodeSelectionSection = () => {
       ],
       moreLink: [
         { 'title': 'Download Ios App', 'url': 'https://shop.aro.network/products/aro-desktop-for-macos' },
-        { 'title': 'Download Android App', 'url': 'https://shop.aro.network/products/aro-desktop-for-linux' },
+        { 'title': 'Download Android App', 'url': `${AllLink.nodeUserGuide}aro-mobile/aro-mobile-installation-guide` },
       ],
       gradient:
         "bg-[linear-gradient(0deg,rgb(255,255,255,0.06),rgb(255,255,255,0.06)),linear-gradient(124.57deg,rgb(0,255,13,0.5)_-10.04%,rgb(115,115,115,0)_38.35%)] backdrop-blur-[12px] rounded-3xl flex-none order-0"
@@ -112,7 +112,8 @@ const NodeSelectionSection = () => {
         `• A bare-metal / workstation image. For pro users.`,
       ],
       moreLink: [
-        { 'title': 'Installation Guide', 'url': 'https://shop.aro.network/products/aro-desktop-for-linux' },
+        { 'title': 'Installation Guide', 'url': `${AllLink.nodeUserGuide}aro-client/aro-client-installation-guide` },
+
 
       ],
       gradient:
@@ -127,8 +128,7 @@ const NodeSelectionSection = () => {
       ],
       moreLink: [
         { 'title': 'Order ARO Pod', 'url': 'https://shop.aro.network/products/aro-desktop-for-linux' },
-        { 'title': 'User Guide', 'url': 'https://shop.aro.network/products/aro-desktop-for-linux' },
-
+        { 'title': 'User Guide', 'url': `${AllLink.nodeUserGuide}aro-pod/aro-pod-installation-guide` },
       ],
       gradient:
         "p-5 box-border bg-[linear-gradient(0deg,rgb(255,255,255,0.06),rgb(255,255,255,0.06))," +
