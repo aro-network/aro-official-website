@@ -129,15 +129,13 @@ const faqText = [
     title: "How Do I Earn by Participating in ARO?",
     content:
       `Simply sign up for an ARO account and run one or more ARO nodes.\n
-      We provide node options for everyone: desktop app, mobile app, dedicated hardware, or more advanced professional implementations.
-      `,
+      We provide node options for everyone: desktop app, mobile app, dedicated hardware, or more advanced professional implementations.`,
   },
   {
     title: "What resources do I need to share, and how easy is it to start?",
     content: `
     You need to mainly contribute your IP, idle bandwidth and hardware such as your computer and mobile phone to fuel an AI agent.\n
     It’s easy to start. Get your everyday device, sign up, run a node, and you are all set.
-
 `,
   },
   {
@@ -151,14 +149,19 @@ const faqText = [
   {
     title: "Is participating in ARO safe? What about my privacy and data security?",
     content: `
- Yes, ARO prioritizes safety and privacy. Your data stays local on your devices and never leaves unless you explicitly allow it. We verify contributions without exposing your activity. You control permissions and decide what data your agents can access. No central database holds your info.
+ Yes, ARO prioritizes safety and privacy. Your data stays local on your devices and never leaves unless you explicitly allow it.\n
+ We verify contributions without exposing your activity. You control permissions and decide what data your agents can access. No central database holds your info.
 `,
   },
   {
     title: "What Stage Is ARO Network Currently In?",
     content: `
- ARO is in the Testnet phase and we are kicking off Sprint 2 for broader participation. During the Testnet, you can sign up for an ARO Account, run ARO nodes, and earn rewards.\n
- Your contributions in the Testnet will be tracked and rewarded with ‘Jade’. By running nodes and providing edge resources to the network, you will earn Jades, and in certain cases, Badges to recognize your exceptional efforts. Jades and Badges are key metrics for determining eligibility for future rewards. Upon the Mainnet launch, your Jades can be converted into $ARO tokens.
+ ARO is in the Testnet phase and we are kicking off Sprint 2 for broader participation.\n 
+ During the Testnet, you can sign up for an ARO Account, run ARO nodes, and earn rewards.\n
+ Your contributions in the Testnet will be tracked and rewarded with ‘Jade’.\n
+ By running nodes and providing edge resources to the network, you will earn Jades, and in certain cases,\n
+ Badges to recognize your exceptional efforts. Jades and Badges are key metrics for determining eligibility for future rewards.\n
+ Upon the Mainnet launch, your Jades can be converted into $ARO tokens.
 `,
   },
 ];
@@ -258,12 +261,12 @@ function Sponsors() {
 function FAQS() {
   const [opened, setOpened] = useState<number>()
   function RenderTit({ item, index }: { item: (typeof faqText)[number], index: number }) {
-    return <LinerGridentBorder anim={false} type={index === opened ? "2" : "5"} className="rounded-lg font-semibold text-[22px] text-left font-Space_Grotesk  text-white mo:text-base"><div className="pl-[30px] pr-[62px] py-4 mo:pl-5 mo:pr-16">{item.title}</div></LinerGridentBorder>
+    return <LinerGridentBorder anim={false} type={index === opened ? "2" : "5"} className="rounded-lg font-semibold text-xl text-left font-Space_Grotesk  text-white mo:text-base"><div className="pl-[30px] pr-[62px] py-4 mo:pl-5 mo:pr-16 whitespace-pre-wrap">{item.title}</div></LinerGridentBorder>
   }
   return <div className={cn(maxWidthClassName, 'relative  pt-[124px]  mo:pt-16')}>
     <TitleText text={"FAQ Highlights"} />
     <Accordion
-      data-aos="fade-left"
+      data-aos="fade-right"
       data-aos-duration="1000"
       className="aos-init aos-animate flex flex-col gap-10 mx-auto max-w-[840px] w-full mo:gap-[30px]"
       onSelectionChange={(keys) => {
@@ -401,7 +404,6 @@ export default function Home() {
     </AShowModal>
     )}
     <div className="z-[100000] relative w-full h-full bg-black overflow-hidden xsl:h-screen">
-
       <AHeader />
       <video
         autoPlay
@@ -432,7 +434,7 @@ export default function Home() {
             Let AI Work For You.
           </div>
 
-          <div className="font-medium text-white text-xl  mt-5 mo:mt-8 mo:text-xl">
+          <div className="font-medium text-white text-xl  mt-5 mo:mt-8 mo:text-xl mo:px-5">
             Own an AI agent that works & earns for you.
           </div>
 
