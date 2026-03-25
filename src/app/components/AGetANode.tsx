@@ -77,12 +77,7 @@ const NodeSelectionSection = () => {
       description: [
         `• A desktop app. Install, run, and leave it.`,
       ],
-      moreLink: [
-        { 'title': 'macOS 15.5+', 'url': 'https://shop.aro.network/products/aro-desktop-for-macos' },
-        { 'title': ' Windows 10+', 'url': 'https://shop.aro.network/products/aro-desktop-for-windows' },
-        { 'title': ' Linux', 'url': 'https://shop.aro.network/products/aro-desktop-for-linux' },
-        { 'title': 'User Guide', 'url': `${AllLink.nodeUserGuide}aro-desktop/aro-desktop-installation-guide` },
-      ],
+
       url: '',
       comingSoon: true,
       gradient:
@@ -97,27 +92,18 @@ const NodeSelectionSection = () => {
       description: [
         `• A mobile app. Earn wherever you are.`,
       ],
-      moreLink: [
-        { 'title': 'Download Ios App', 'url': 'https://shop.aro.network/products/aro-desktop-for-macos' },
-        { 'title': 'Download Android App', 'url': `${AllLink.nodeUserGuide}aro-mobile/aro-mobile-installation-guide` },
-        { 'title': 'User Guide', 'url': `${AllLink.nodeUserGuide}aro-mobile/aro-mobile-installation-guide` },
 
-      ],
       gradient:
         "bg-[linear-gradient(0deg,rgb(255,255,255,0.06),rgb(255,255,255,0.06)),linear-gradient(124.57deg,rgb(0,255,13,0.5)_-10.04%,rgb(115,115,115,0)_38.35%)] backdrop-blur-[12px] rounded-3xl flex-none order-0"
     },
     {
       id: "aro-client",
-      title: "ARO Client",
+      title: "Server",
       image: "../device/client.png",
       description: [
         `• A bare-metal / workstation image. For pro users.`,
       ],
-      moreLink: [
-        { 'title': 'Installation Guide', 'url': `${AllLink.nodeUserGuide}aro-client/aro-client-installation-guide` },
 
-
-      ],
       gradient:
         "bg-[linear-gradient(0deg,rgb(255,255,255,0.06),rgb(255,255,255,0.06)),linear-gradient(124.57deg,rgb(0,255,13,0.5)_-10.04%,rgb(115,115,115,0)_38.35%)] backdrop-blur-[12px] rounded-3xl flex-none order-0"
     },
@@ -128,14 +114,9 @@ const NodeSelectionSection = () => {
       description: [
         `• A bare-metal / workstation image. For pro users.`,
       ],
-      moreLink: [
-        { 'title': 'Order ARO Pod', 'url': 'https://shop.aro.network/products/aro-desktop-for-linux' },
-        { 'title': 'User Guide', 'url': `${AllLink.nodeUserGuide}aro-pod/aro-pod-installation-guide` },
-      ],
+
       gradient:
-        "p-5 box-border bg-[linear-gradient(0deg,rgb(255,255,255,0.06),rgb(255,255,255,0.06))," +
-        "linear-gradient(124.57deg,rgb(0,255,13,0.5)_-10.04%,rgb(115,115,115,0)_38.35%)] " +
-        "backdrop-blur-[12px] rounded-3xl flex-none order-0"
+        "bg-[linear-gradient(0deg,rgb(255,255,255,0.06),rgb(255,255,255,0.06)),linear-gradient(124.57deg,rgb(0,255,13,0.5)_-10.04%,rgb(115,115,115,0)_38.35%)] backdrop-blur-[12px] rounded-3xl flex-none order-0"
     },
 
   ];
@@ -171,7 +152,7 @@ const NodeSelectionSection = () => {
 
               </div>
 
-              <div className="flex flex-col w-[265px] mo:w-full items-start gap-2.5 mo:gap-4 relative  h-full justify-between">
+              <div className="flex flex-col w-[265px] mo:w-full items-start gap-2.5 mo:gap-4 relative  h-full justify-center">
                 <div className="flex flex-col items-start gap-2.5 relative self-stretch w-full flex-[0_0_auto]">
                   <div className="inline-flex items-center gap-2.5 relative flex-[0_0_auto]">
                     <h3 className="w-fit mt-[-1.00px] font-medium text-white text-xl tracking-[0] leading-[30px] whitespace-nowrap relative [font-family:'Poppins',Helvetica]">
