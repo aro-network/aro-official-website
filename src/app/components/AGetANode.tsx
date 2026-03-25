@@ -153,7 +153,7 @@ const NodeSelectionSection = () => {
               </div>
 
               <div className="flex flex-col w-[265px] mo:w-full items-start gap-2.5 mo:gap-4 relative  h-full justify-center">
-                <div className="flex flex-col items-start gap-2.5 relative self-stretch w-full flex-[0_0_auto]">
+                <div className="flex flex-col items-start gap-2.5 relative self-stretch w-full flex-[0_0_auto] h-full justify-between">
                   <div className="inline-flex items-center gap-2.5 relative flex-[0_0_auto]">
                     <h3 className="w-fit mt-[-1.00px] font-medium text-white text-xl tracking-[0] leading-[30px] whitespace-nowrap relative [font-family:'Poppins',Helvetica]">
                       {node.title}
