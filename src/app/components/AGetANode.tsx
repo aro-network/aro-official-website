@@ -87,7 +87,7 @@ const NodeSelectionSection = () => {
 
     {
       id: "aro-mobile",
-      title: "ARO Mobile",
+      title: "ARO Mobile (App)",
       image: "../device/app.png",
       description: [
         `• A mobile app. Earn wherever you are.`,
@@ -98,7 +98,7 @@ const NodeSelectionSection = () => {
     },
     {
       id: "aro-client",
-      title: "ARO Server",
+      title: "ARO Server (Image)",
       image: "../device/client.png",
       description: [
         `• A bare-metal / workstation image. For pro users.`,
@@ -109,7 +109,7 @@ const NodeSelectionSection = () => {
     },
     {
       id: "aro-pod",
-      title: "ARO Pod",
+      title: "ARO Pod (Hardware)",
       image: "../device/pod.png",
       description: [
         `• A bare-metal / workstation image. For pro users.`,
