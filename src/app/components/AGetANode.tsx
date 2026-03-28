@@ -98,7 +98,7 @@ const NodeSelectionSection = () => {
     },
     {
       id: "aro-client",
-      title: "Server",
+      title: "ARO Server",
       image: "../device/client.png",
       description: [
         `• A bare-metal / workstation image. For pro users.`,

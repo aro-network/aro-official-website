@@ -17,8 +17,8 @@ export const AllLink = {
   linkUserGuide: `${use}/node-operator-guide/aro-link`,
   liteUserGuide: `${use}/node-operator-guide/aro-lite/get-aro-lite`,
   podSeeGuidance: `${use}/node-operator-guide/aro-pod/aro-pod-installation-guide`,
-  learnMore: `https://medium.com/@ARONetwork/aro-lite-powering-the-next-global-phase-07b3c97e8466?postPublishedType=initial`,
-  dashboard:'https://dashboard.aro.network/',
+  learnMore: `${use}campaign-hub/testnet-s2/`,
+  dashboard:'https://dashboard.aro.network/?mode=testnet&tab=nodes&type=add',
   nodeUserGuide: `${use}/node-operator-guide/`,
 
 };
